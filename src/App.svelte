@@ -30,7 +30,7 @@
   <div class="brand">Spoznaj svet</div>
   <div class="spacer"></div>
   <button on:click={() => go("settings")}>Nastavenia</button>
-  <button on:click={() => go("credits")}>Credits</button>
+  <button on:click={() => go("credits")}>Credentials</button>
 </nav>
 
 <!-- POSTAVIČKA – zobraziť na menu a na mape -->

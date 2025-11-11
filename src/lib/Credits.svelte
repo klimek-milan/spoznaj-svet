@@ -1,7 +1,7 @@
 <script lang="ts">export let onBack = () => {};</script>
 
 <section class="page">
-  <h1>Credits</h1>
+  <h1>Credentials</h1>
   <ul>
     <li>Milan Klimek</li>
     <li>Roman</li>
