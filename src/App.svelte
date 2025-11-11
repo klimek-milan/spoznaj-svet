@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import Splash from "./lib/Splash.svelte";
   import HowTo from "./lib/HowTo.svelte";
   import MapSelect from "./lib/MapSelect.svelte";
@@ -7,19 +8,33 @@
   import Settings from "./lib/Settings.svelte";
   import Credits from "./lib/Credits.svelte";
 
+  const base = import.meta.env.BASE_URL; // napr. "/spoznaj-svet/"
+
   type View = "splash" | "howto" | "map" | "game" | "final" | "settings" | "credits";
   let view: View = "splash";
   let continent = "europe";
   let lastScore = 0, lastTotal = 0;
 
-  function startGame(c: string) { continent = c; view = "game"; }
+  onMount(() => {
+    // nastaví CSS var pre celé DOM (funguje lokálne aj na GitHub Pages)
+    document.documentElement.style.setProperty(
+      "--bg-img",
+      `url('${base}img/bg-world.webp')`
+    );
+  });
 
+  function startGame(c: string) { continent = c; view = "game"; }
   function handleFinished(score: number, total: number) {
     lastScore = score; lastTotal = total; view = "final";
   }
-
-  function go(to: View) { view = to; }            // náhrada za history.back() || ...
+  function go(to: View) { view = to; }
 </script>
+
+<svelte:head>
+  <style>
+    :root { --bg-img: url('${base}img/bg-world.webp'); }
+  </style>
+</svelte:head>
 
 <nav class="nav">
   <div class="brand">Spoznaj svet</div>
