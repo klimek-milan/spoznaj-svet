@@ -36,15 +36,18 @@
 <!-- POSTAVIČKA – zobraziť na menu a na mape -->
 {#if view === "menu" || view === "map"}
   <WalkFrames
-    folder="anim/char" 
+    folder="anim/char"
     action="walk"
     frames={2}
-    speed={8}
+    speed={6}
     size={140}
-    x={24}
-    y={24}
-    flip={false}
+    x={334}
+    y={124}
     across={true}
+    dx="40vw"
+    dy="-20vh"
+    duration={12}   
+    bounce={true} 
   />
 {/if}
 
