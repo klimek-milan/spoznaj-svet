@@ -23,7 +23,7 @@
       </button>
   
       <button class="pill" on:click={onCredits}>
-        <span>Credits</span>
+        <span>Credentials</span>
       </button>
     </div>
   
