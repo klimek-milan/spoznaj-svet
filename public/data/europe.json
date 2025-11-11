@@ -1,0 +1,36 @@
+{
+    "total": 3,
+    "rounds": [
+      {
+        "question": "Ktorá krajina je spojená s Eiffelovou vežou?",
+        "options": [
+          { "code": "FR", "text": "France",  "correct": true  },
+          { "code": "IT", "text": "Italy",   "correct": false },
+          { "code": "ES", "text": "Spain",   "correct": false }
+        ],
+        "explanation": "Eiffelova veža je v Paríži (Francúzsko).",
+        "facts": ["Rok otvorenia 1889", "Výška ~324 m", "Pôvodne dočasná stavba"]
+      },
+      {
+        "question": "Aké je hlavné mesto Slovenska?",
+        "options": [
+          { "code": "BA", "text": "Bratislava", "correct": true },
+          { "code": "KE", "text": "Košice",     "correct": false },
+          { "code": "BB", "text": "Banská Bystrica", "correct": false }
+        ],
+        "explanation": "Hlavné mesto SR je Bratislava.",
+        "facts": ["Pri rieke Dunaj", "Historicky Prešporok", "≈ 430k obyvateľov"]
+      },
+      {
+        "question": "Ktorá krajina leží na Apeninskom polostrove?",
+        "options": [
+          { "code": "IT", "text": "Italy",     "correct": true },
+          { "code": "DE", "text": "Germany",   "correct": false },
+          { "code": "PT", "text": "Portugal",  "correct": false }
+        ],
+        "explanation": "Apeninský polostrov tvorí najmä Taliansko.",
+        "facts": ["Hlavné mesto Rím", "Renesancia – Florencia", "Stredomorie"]
+      }
+    ]
+  }
+  

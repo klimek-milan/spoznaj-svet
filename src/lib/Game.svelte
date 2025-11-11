@@ -1,7 +1,9 @@
 <script lang="ts">
     import { onMount } from "svelte";
     const base = import.meta.env.BASE_URL;
-  
+    export let continent: string = "europe";                 // ktorý kontinent hráme
+    export let onFinished = (score: number, total: number)=>{}; // callback po dohraní
+
     type Opt = { code: string; text: string; correct: boolean };
     type Round = {
       image?: string;
@@ -19,7 +21,7 @@
     let locked = false;
   
     onMount(async () => {
-      const data = await (await fetch(base + "data/questions.json")).json();
+      const data = await (await fetch(base + `data/${continent}.json`)).json();
       rounds = data.rounds;
       total = data.total ?? rounds.length;
     });
@@ -36,6 +38,7 @@
       i++;
       selected = null;
       locked = false;
+      if (i >= total) onFinished(score, total); // po dohraní spustí finálne skóre
     }
   
     $: progress = total ? (i + (locked ? 1 : 0)) / total : 0;
@@ -84,11 +87,6 @@
       {/each}
     </section>
   </div>
-  {:else}
-  <section class="done">
-    <h1>Hotovo!</h1>
-    <p>Tvoje skóre: <b>{score}</b> / {total}</p>
-  </section>
   {/if}
   
   <style>
