@@ -44,10 +44,10 @@
     x={334}
     y={124}
     across={true}
-    dx="40vw"
-    dy="-20vh"
-    duration={12}   
-    bounce={true} 
+    dxRatio={0.40} 
+    dyRatio={-0.20} 
+    duration={12}
+    bounce={true}
   />
 {/if}
 
