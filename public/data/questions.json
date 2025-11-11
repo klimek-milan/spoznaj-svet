@@ -1,0 +1,51 @@
+{
+    "total": 3,
+    "rounds": [
+      {
+        "image": "media/europe.jpg",
+        "question": "Ktorá krajina je spojená s Eiffelovou vežou?",
+        "options": [
+          { "code": "FR", "text": "France", "correct": true },
+          { "code": "IT", "text": "Italy", "correct": false },
+          { "code": "ES", "text": "Spain", "correct": false }
+        ],
+        "explanation": "Eiffelova veža je v Paríži (Francúzsko).",
+        "facts": [
+          "Postavená v roku 1889.",
+          "Výška ~324 m s anténami.",
+          "Pôvodne mala byť dočasná."
+        ]
+      },
+      {
+        "image": "media/slovakia.jpg",
+        "question": "Aké je hlavné mesto Slovenska?",
+        "options": [
+          { "code": "BA", "text": "Bratislava", "correct": true },
+          { "code": "KE", "text": "Košice", "correct": false },
+          { "code": "BB", "text": "Banská Bystrica", "correct": false }
+        ],
+        "explanation": "Hlavné mesto Slovenska je Bratislava.",
+        "facts": [
+          "Leží pri Dunaji.",
+          "Historicky známa ako Prešporok.",
+          "Počet obyvateľov ~430 tis."
+        ]
+      },
+      {
+        "image": "media/europe.jpg",
+        "question": "Ktorá krajina leží na Apeninskom polostrove?",
+        "options": [
+          { "code": "IT", "text": "Italy", "correct": true },
+          { "code": "DE", "text": "Germany", "correct": false },
+          { "code": "PT", "text": "Portugal", "correct": false }
+        ],
+        "explanation": "Apeninský polostrov tvorí najmä Taliansko.",
+        "facts": [
+          "Hlavné mesto Rím.",
+          "Domov renesancie (Florencia).",
+          "Obklopené Stredozemným morom."
+        ]
+      }
+    ]
+  }
+  
