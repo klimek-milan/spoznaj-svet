@@ -1,0 +1,52 @@
+{
+  "id": "geography",
+  "name": "Geografia",
+  "description": "Otázky o geografii Európy",
+  "facts": {
+    "FR": [
+      "Toto mesto je známe svojimi bulvármi, kaviarňami a umeleckou scénou.",
+      "V jeho centre sa nachádza železná stavba, ktorá bola pôvodne postavená na svetovú výstavu.",
+      "Je domovom slávneho múzea, kde sa nachádza Mona Lisa."
+    ],
+    "BA": [
+      "Toto mesto je jediné hlavné mesto, ktoré susedí s dvoma štátmi.",
+      "Je známe svojou historickou starou radnicou a hradom na kopci.",
+      "V jeho uliciach sa konajú tradičné trhy a festivaly."
+    ],
+    "IT": [
+      "Táto krajina je známa antickými ruinami, stredomorským podnebím a bohatou históriou.",
+      "V jej hlavnom meste sa nachádza najmenší štát na svete.",
+      "Je domovom mesta, kde sa zrodila renesancia."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Ktorá krajina je spojená s Eiffelovou vežou?",
+      "options": [
+        { "code": "FR", "text": "France", "correct": true },
+        { "code": "IT", "text": "Italy", "correct": false },
+        { "code": "ES", "text": "Spain", "correct": false }
+      ],
+      "explanation": "Eiffelova veža je v Paríži (Francúzsko)."
+    },
+    {
+      "question": "Aké je hlavné mesto Slovenska?",
+      "options": [
+        { "code": "BA", "text": "Bratislava", "correct": true },
+        { "code": "KE", "text": "Košice", "correct": false },
+        { "code": "BB", "text": "Banská Bystrica", "correct": false }
+      ],
+      "explanation": "Hlavné mesto SR je Bratislava."
+    },
+    {
+      "question": "Ktorá krajina leží na Apeninskom polostrove?",
+      "options": [
+        { "code": "IT", "text": "Italy", "correct": true },
+        { "code": "DE", "text": "Germany", "correct": false },
+        { "code": "PT", "text": "Portugal", "correct": false }
+      ],
+      "explanation": "Apeninský polostrov tvorí najmä Taliansko."
+    }
+  ]
+}

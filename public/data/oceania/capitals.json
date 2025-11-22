@@ -1,0 +1,52 @@
+{
+  "id": "capitals",
+  "name": "Hlavné mestá Oceánie",
+  "description": "Otázky o hlavných mestách Oceánie",
+  "facts": {
+    "AU": [
+      "Toto mesto bolo postavené medzi dvoma najväčšími mestami krajiny ako kompromis.",
+      "Je známe veľkým umelým jazerom a modernou architektúrou.",
+      "V jeho centre sa nachádza významná budova, kde sa schádza vláda."
+    ],
+    "NZ": [
+      "Toto mesto je známe svojimi farebnými domami na kopcoch a rušným prístavom.",
+      "Leží v oblasti, kde sa často vyskytujú silné vetry.",
+      "Je kultúrnym centrom krajiny a sídlom mnohých festivalov."
+    ],
+    "FJ": [
+      "Toto mesto je najväčším prístavom v krajine a dôležitým obchodným centrom.",
+      "Leží na juhovýchodnom pobreží najväčšieho ostrova krajiny.",
+      "Je známe tropickým podnebím a pestrou zmesou kultúr."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Aké je hlavné mesto Austrálie?",
+      "options": [
+        { "code": "AU", "text": "Canberra", "correct": true },
+        { "code": "NZ", "text": "Wellington", "correct": false },
+        { "code": "FJ", "text": "Suva", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Austrálie je Canberra."
+    },
+    {
+      "question": "Aké je hlavné mesto Nového Zélandu?",
+      "options": [
+        { "code": "NZ", "text": "Wellington", "correct": true },
+        { "code": "AU", "text": "Canberra", "correct": false },
+        { "code": "FJ", "text": "Suva", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Nového Zélandu je Wellington."
+    },
+    {
+      "question": "Aké je hlavné mesto Fidži?",
+      "options": [
+        { "code": "FJ", "text": "Suva", "correct": true },
+        { "code": "AU", "text": "Canberra", "correct": false },
+        { "code": "NZ", "text": "Wellington", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Fidži je Suva."
+    }
+  ]
+}

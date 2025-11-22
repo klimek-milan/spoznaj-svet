@@ -1,0 +1,52 @@
+{
+  "id": "geography",
+  "name": "Geografia Ázie",
+  "description": "Otázky o geografii Ázie",
+  "facts": {
+    "CN": [
+      "V tejto krajine sa nachádza púšť Gobi aj tropické oblasti na juhu.",
+      "Je domovom najväčšieho jazera slanej vody v Ázii.",
+      "Na jej území sa rozprestiera rozsiahla sieť riek a kanálov."
+    ],
+    "IN": [
+      "V tejto krajine sa nachádza najvyšší vrch sveta, ktorý je súčasťou veľkého pohoria.",
+      "Je známa rozmanitosťou podnebia od tropických pláží po zasnežené hory.",
+      "Na severe krajiny sa rozprestiera rozsiahla planina, ktorá je úrodná vďaka veľkým riekam."
+    ],
+    "JP": [
+      "Táto krajina je tvorená tisíckami ostrovov a je známa aktívnymi sopkami.",
+      "V jej strede sa týči hora, ktorá je symbolom a častým motívom v umení.",
+      "Je obklopená morami, ktoré sú bohaté na morské plody."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Ktorá krajina je najľudnatejšia v Ázii?",
+      "options": [
+        { "code": "CN", "text": "Čína", "correct": true },
+        { "code": "IN", "text": "India", "correct": false },
+        { "code": "JP", "text": "Japonsko", "correct": false }
+      ],
+      "explanation": "Čína je najľudnatejšia krajina sveta."
+    },
+    {
+      "question": "Kde sa nachádza pohorie Himaláje?",
+      "options": [
+        { "code": "IN", "text": "India", "correct": true },
+        { "code": "CN", "text": "Čína", "correct": false },
+        { "code": "JP", "text": "Japonsko", "correct": false }
+      ],
+      "explanation": "Himaláje sa nachádzajú v Indii a susedných krajinách."
+    },
+    {
+      "question": "Ktorá krajina je známa horou Fudži?",
+      "options": [
+        { "code": "JP", "text": "Japonsko", "correct": true },
+        { "code": "CN", "text": "Čína", "correct": false },
+        { "code": "IN", "text": "India", "correct": false }
+      ],
+      "explanation": "Fudži je najvyššia hora Japonska."
+    }
+  ]
+}

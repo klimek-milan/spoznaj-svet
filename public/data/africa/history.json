@@ -1,0 +1,52 @@
+{
+  "id": "history",
+  "name": "História Afriky",
+  "description": "Otázky o histórii Afriky",
+  "facts": {
+    "EG": [
+      "Táto krajina bola domovom faraónov a monumentálnych stavieb, ktoré dodnes fascinujú archeológov.",
+      "V jej histórii zohrávali významnú úlohu mocné kráľovné a písomné systémy.",
+      "Jej kultúra ovplyvnila mnohé civilizácie v okolí Stredozemného mora."
+    ],
+    "ZA": [
+      "V tejto krajine sa odohrali významné zmeny v 20. storočí, ktoré ovplyvnili celý kontinent.",
+      "Je známa bojom za rovnosť a slobodu, ktorý viedli významné osobnosti.",
+      "Jej moderné dejiny sú spojené s prekonaním dlhého obdobia segregácie."
+    ],
+    "NG": [
+      "V tejto krajine sa nachádzajú staroveké artefakty, ktoré dokazujú bohatú históriu miestnych kráľovstiev.",
+      "Je známa rozmanitosťou etnických skupín a tradícií, ktoré formovali jej dejiny.",
+      "V minulosti bola významným obchodným centrom v západnej Afrike."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Kde sa nachádzala civilizácia starovekého Egypta?",
+      "options": [
+        { "code": "EG", "text": "Egypt", "correct": true },
+        { "code": "ZA", "text": "Juhoafrická republika", "correct": false },
+        { "code": "NG", "text": "Nigéria", "correct": false }
+      ],
+      "explanation": "Staroveký Egypt bol jednou z najstarších civilizácií."
+    },
+    {
+      "question": "Kto bol prvý černošský prezident Juhoafrickej republiky?",
+      "options": [
+        { "code": "ZA", "text": "Nelson Mandela", "correct": true },
+        { "code": "EG", "text": "Kleopatra", "correct": false },
+        { "code": "NG", "text": "Oba Ewuare", "correct": false }
+      ],
+      "explanation": "Nelson Mandela bol prvý černošský prezident Juhoafrickej republiky."
+    },
+    {
+      "question": "Ktorá krajina získala nezávislosť od Británie v roku 1960?",
+      "options": [
+        { "code": "NG", "text": "Nigéria", "correct": true },
+        { "code": "EG", "text": "Egypt", "correct": false },
+        { "code": "ZA", "text": "Juhoafrická republika", "correct": false }
+      ],
+      "explanation": "Nigéria získala nezávislosť od Británie v roku 1960."
+    }
+  ]
+}

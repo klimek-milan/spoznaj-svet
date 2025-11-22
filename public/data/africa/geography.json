@@ -1,0 +1,52 @@
+{
+  "id": "geography",
+  "name": "Geografia Afriky",
+  "description": "Otázky o geografii Afriky",
+  "facts": {
+    "EG": [
+      "V tejto krajine sa nachádza najväčšia arabská populácia na svete.",
+      "Jej územím preteká rieka, ktorá je považovaná za kolísku civilizácie.",
+      "Na severe krajiny sa rozprestiera obrovská púšť, ktorá ovplyvňuje jej podnebie."
+    ],
+    "ZA": [
+      "Táto krajina je známa rozmanitosťou prírody a bohatou faunou.",
+      "Na jej území sa nachádza významný mys, ktorý je dôležitý pre námornú dopravu.",
+      "Je domovom mnohých národných parkov a rezervácií."
+    ],
+    "NG": [
+      "V tejto krajine sa hovorí viac ako 500 jazykmi.",
+      "Jej hlavné mesto bolo presunuté z pobrežia do vnútrozemia kvôli lepšej dostupnosti.",
+      "Je známa bohatou hudobnou a filmovou scénou, ktorá ovplyvňuje celý kontinent."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Kde sa nachádzajú pyramídy v Gíze?",
+      "options": [
+        { "code": "EG", "text": "Egypt", "correct": true },
+        { "code": "ZA", "text": "Juhoafrická republika", "correct": false },
+        { "code": "NG", "text": "Nigéria", "correct": false }
+      ],
+      "explanation": "Pyramídy v Gíze sa nachádzajú v Egypte."
+    },
+    {
+      "question": "Ktorá krajina má tri hlavné mestá?",
+      "options": [
+        { "code": "ZA", "text": "Juhoafrická republika", "correct": true },
+        { "code": "EG", "text": "Egypt", "correct": false },
+        { "code": "NG", "text": "Nigéria", "correct": false }
+      ],
+      "explanation": "Juhoafrická republika má tri hlavné mestá: Pretoria, Kapské Mesto a Bloemfontein."
+    },
+    {
+      "question": "Ktorá krajina je najľudnatejšia v Afrike?",
+      "options": [
+        { "code": "NG", "text": "Nigéria", "correct": true },
+        { "code": "EG", "text": "Egypt", "correct": false },
+        { "code": "ZA", "text": "Juhoafrická republika", "correct": false }
+      ],
+      "explanation": "Nigéria je najľudnatejšia krajina Afriky."
+    }
+  ]
+}

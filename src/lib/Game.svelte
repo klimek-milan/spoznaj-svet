@@ -18,6 +18,7 @@
   // - continent: which JSON file with questions to load
   // - onFinished: callback when the quiz ends (score, total)
   export let continent: string = "europe";
+  export let category: string = "geography";
   export let onFinished: (score: number, total: number) => void = () => {};
 
   // Types for options and rounds
@@ -27,7 +28,6 @@
     question: string;
     options: Opt[];
     explanation: string;
-    facts: string[];
   };
 
   // Game state
@@ -38,6 +38,32 @@
   let selected: number | null = null;
   let locked = false;
 
+  // Top-level facts object from JSON
+  let facts: Record<string, string[]> = {};
+  let randomFact: string = "";
+
+  // Helper to get continent name from id
+  function getContinentName(continentId: string): string {
+    const map: Record<string, string> = {
+      europe: "Európa",
+      asia: "Ázia",
+      africa: "Afrika",
+      na: "Severná Amerika",
+      sa: "Južná Amerika",
+      oceania: "Oceánia"
+    };
+    return map[continentId] || continentId;
+  }
+
+  // Helper to get topic name from id
+  function getTopicName(topicId: string): string {
+    const map: Record<string, string> = {
+      geography: "Geografia",
+      capitals: "Hlavné mestá",
+      history: "História"
+    };
+    return map[topicId] || topicId;
+  }
   // Celebration state for correct answer:
   // - celebrate: toggles confetti + character cheer
   // - confettiCanvas: canvas element for drawing particles
@@ -48,10 +74,26 @@
 
   // Load questions for the selected continent on mount
   onMount(async () => {
-    const data = await (await fetch(base + `data/${continent}.json`)).json();
+    // Load questions for selected continent and category
+    const data = await (await fetch(base + `data/${continent}/${category}.json`)).json();
     rounds = data.rounds;
     total = data.total ?? rounds.length;
+    facts = data.facts || {};
+    pickRandomFact();
   });
+
+  // Pick a random fact for the current round based on correct country code
+  function pickRandomFact() {
+    if (rounds[i] && Array.isArray(rounds[i].options)) {
+      const correctOpt = rounds[i].options.find(o => o.correct);
+      if (correctOpt && facts[correctOpt.code] && facts[correctOpt.code].length > 0) {
+        const arr = facts[correctOpt.code];
+        randomFact = arr[Math.floor(Math.random() * arr.length)];
+        return;
+      }
+    }
+    randomFact = "";
+  }
 
   // Simple confetti particle system drawn on <canvas>
   function burstConfetti() {
@@ -150,6 +192,7 @@
     i++;
     selected = null;
     locked = false;
+    pickRandomFact();
 
     // Reached the end – report score to parent
     if (i >= total) onFinished(score, total);
@@ -179,29 +222,29 @@
       </div>
     </header>
 
-    <!-- LEFT: feedback / explanation panel -->
-    <aside class="left">
-      {#if locked}
-        <div class="feedback">
-          <h3>{rounds[i].explanation}</h3>
-          <ul>
-            {#each rounds[i].facts as f}
-              <li>{f}</li>
-            {/each}
-          </ul>
-          <button class="next" on:click={next}>Ďalej</button>
-        </div>
-      {:else}
-        <div class="hint">
-          Zvoľ odpoveď → tu sa zobrazí vysvetlenie a fakty.
-        </div>
-      {/if}
-    </aside>
+  <!-- ĽAVO: feedback -->
+  <aside class="left">
+    {#if locked}
+      <div class="feedback">
+        <h3>{rounds[i].explanation}</h3>
+        <button class="next" on:click={next}>Ďalej</button>
+      </div>
+    {:else}
+      <div class="hint">Zvoľ odpoveď → tu sa zobrazí vysvetlenie a fakty.</div>
+    {/if}
+  </aside>
 
-    <!-- CENTER: question bubble -->
-    <main class="center">
-      <div class="bubble">{rounds[i].question}</div>
-    </main>
+  <!-- STRED: otázka -->
+  <main class="center">
+    <div class="bubble">
+      <div class="continent-header">{getContinentName(continent)}</div>
+      <div class="topic-header">Téma: {getTopicName(category)}</div>
+      <div class="question">{rounds[i].question}</div>
+      {#if randomFact}
+        <div class="tip"><span class="tip-label">Tip:</span> {randomFact}</div>
+      {/if}
+    </div>
+  </main>
 
     <!-- BOTTOM: answer cards in a row -->
     <section class="answers">
@@ -362,6 +405,47 @@
     max-width:min(1000px, 80vw);
     text-align:center;
     color:var(--text);
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:16px; padding:20px 24px; box-shadow:var(--shadow);
+    max-width:min(1000px, 80vw); text-align:center; color:var(--text);
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .continent-header {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--primary, #2563EB);
+    margin-bottom: 4px;
+  }
+  .topic-header {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--secondary, #3B82F6);
+    margin-bottom: 14px;
+    letter-spacing: 0.2px;
+  }
+  .question {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: var(--text, #1E293B);
+  }
+  .tip {
+    margin-top: 0;
+    background: var(--surface, #F8FAFC);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 17px;
+    color: var(--muted, #334155);
+    box-shadow: var(--shadow);
+    max-width: min(800px, 70vw);
+    text-align: center;
+    font-style: italic;
+  }
+  .tip-label {
+    font-weight: bold;
+    color: var(--primary, #2563EB);
+    margin-right: 6px;
   }
 
   /* ANSWERS: three cards in a row */

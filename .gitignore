@@ -1,3 +1,5 @@
+# Ignore Visual Studio workspace folder
+.vs/
 # Logs
 logs
 *.log

@@ -3,6 +3,7 @@
   import MainMenu from "./lib/MainMenu.svelte";
   import HowTo from "./lib/HowTo.svelte";
   import MapSelect from "./lib/MapSelect.svelte";
+  import CategorySelect from "./lib/CategorySelect.svelte";
   import Game from "./lib/Game.svelte";
   import FinalScore from "./lib/FinalScore.svelte";
   import Settings from "./lib/Settings.svelte";
@@ -10,10 +11,10 @@
 
   const base = import.meta.env.BASE_URL;
 
-  type View = "menu" | "howto" | "map" | "game" | "final" | "settings" | "credits";
+  type View = "menu" | "howto" | "map" | "category" | "game" | "final" | "settings" | "credits";
   let view: View = "menu";
-
-  let continent = "europe";
+  let continent = "";
+  let category = "";
   let lastScore = 0;
   let lastTotal = 0;
 
@@ -28,11 +29,16 @@
     );
   });
 
-  function startGame(c: string) {
-    // remember which continent we are starting so the next move
-    // on the map can start from this point
-    lastContinentId = c;
+  // Called when a category is picked
+  function handleCategoryPick(cat: string) {
+    category = cat;
+    view = "map";
+  }
+
+  // Called when a continent is picked
+  function handleContinentPick(c: string) {
     continent = c;
+    lastContinentId = c;
     view = "game";
   }
 
@@ -43,11 +49,9 @@
   }
 
   function go(to: View) {
-    // if you ever want to completely reset the route chain,
-    // you could set lastContinentId = null when going back to "menu"
-    // but for now we keep it so the next map transition is from last continent
     view = to;
   }
+  // Removed old handlers, replaced by new workflow above
 </script>
 
 <nav class="nav">
@@ -59,24 +63,26 @@
 
 {#if view === "menu"}
   <MainMenu
-    onStart={() => go("map")}
+    onStart={() => go("category")}
     onHowTo={() => go("howto")}
     onSettings={() => go("settings")}
     onCredits={() => go("credits")}
   />
 {:else if view === "howto"}
-  <HowTo onBack={() => go("menu")} onNext={() => go("map")} />
+  <HowTo onBack={() => go("menu")} onNext={() => go("category")} />
+{:else if view === "category"}
+  <CategorySelect onPickCategory={handleCategoryPick} />
 {:else if view === "map"}
-  <!-- pass lastContinentId so MapSelect knows where to start the walk from -->
-  <MapSelect onPick={startGame} lastContinentId={lastContinentId} />
+  <MapSelect onPick={handleContinentPick} lastContinentId={lastContinentId} />
 {:else if view === "game"}
-  <Game continent={continent} onFinished={handleFinished} />
+  <Game continent={continent} category={category} onFinished={handleFinished} />
 {:else if view === "final"}
   <FinalScore
     score={lastScore}
     total={lastTotal}
-    onRestart={() => go("map")}
+    onRestart={() => go("category")}
     onMap={() => go("map")}
+    onMenu={() => go("menu")}
   />
 {:else if view === "settings"}
   <Settings onBack={() => go("menu")} />

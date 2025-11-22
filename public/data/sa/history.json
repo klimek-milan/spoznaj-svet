@@ -1,0 +1,52 @@
+{
+  "id": "history",
+  "name": "História Južnej Ameriky",
+  "description": "Otázky o histórii Južnej Ameriky",
+  "facts": {
+    "BR": [
+      "Táto krajina prešla významnými zmenami v 19. storočí, ktoré ovplyvnili jej politický systém.",
+      "Je známa panovníkom, ktorý vyhlásil nezávislosť a stal sa jej prvým vládcom.",
+      "Ako posledná v regióne zrušila jednu z najväčších spoločenských nerovností."
+    ],
+    "AR": [
+      "V tejto krajine sa odohrali revolučné udalosti, ktoré viedli k jej samostatnosti.",
+      "Je známa hrdinom, ktorý bojoval za slobodu nielen doma, ale aj v susedných krajinách.",
+      "Jej hlavné mesto bolo centrom politických zmien v 19. storočí."
+    ],
+    "CO": [
+      "Táto krajina je známa bojom za nezávislosť, ktorý viedol významný osloboditeľ.",
+      "V jej hlavnom meste sa konali dôležité stretnutia revolucionárov.",
+      "Jej dejiny sú spojené s oslobodením viacerých krajín regiónu."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Ktorá krajina získala nezávislosť od Portugalska v roku 1822?",
+      "options": [
+        { "code": "BR", "text": "Brazília", "correct": true },
+        { "code": "AR", "text": "Argentína", "correct": false },
+        { "code": "CO", "text": "Kolumbia", "correct": false }
+      ],
+      "explanation": "Brazília získala nezávislosť od Portugalska v roku 1822."
+    },
+    {
+      "question": "Kto bol hrdina nezávislosti Argentíny?",
+      "options": [
+        { "code": "AR", "text": "José de San Martín", "correct": true },
+        { "code": "BR", "text": "Dom Pedro I.", "correct": false },
+        { "code": "CO", "text": "Simón Bolívar", "correct": false }
+      ],
+      "explanation": "José de San Martín bol hrdina nezávislosti Argentíny."
+    },
+    {
+      "question": "Ktorá krajina získala nezávislosť od Španielska v roku 1810?",
+      "options": [
+        { "code": "CO", "text": "Kolumbia", "correct": true },
+        { "code": "AR", "text": "Argentína", "correct": false },
+        { "code": "BR", "text": "Brazília", "correct": false }
+      ],
+      "explanation": "Kolumbia získala nezávislosť od Španielska v roku 1810."
+    }
+  ]
+}

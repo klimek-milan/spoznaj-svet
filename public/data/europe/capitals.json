@@ -1,0 +1,52 @@
+{
+  "id": "capitals",
+  "name": "Hlavné mestá",
+  "description": "Otázky o hlavných mestách Európy",
+  "facts": {
+    "FR": [
+      "Toto mesto je známe svojimi kaviarňami, umením a romantickou atmosférou.",
+      "Je domovom slávneho múzea, kde sa nachádza Mona Lisa.",
+      "V jeho centre sa týči ikonická železná stavba z 19. storočia."
+    ],
+    "DE": [
+      "Toto mesto bolo kedysi rozdelené múrom, ktorý ovplyvnil jeho históriu.",
+      "Je známe bohatým nočným životom a modernou architektúrou.",
+      "V jeho uliciach sa nachádza slávna brána, ktorá je symbolom zjednotenia."
+    ],
+    "IT": [
+      "Toto mesto je známe antickými ruinami a fontánami.",
+      "Je domovom najmenšieho štátu na svete.",
+      "V jeho uliciach sa nachádza aréna, kde sa kedysi konali gladiátorské zápasy."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Aké je hlavné mesto Francúzska?",
+      "options": [
+        { "code": "FR", "text": "Paríž", "correct": true },
+        { "code": "DE", "text": "Berlín", "correct": false },
+        { "code": "IT", "text": "Rím", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Francúzska je Paríž."
+    },
+    {
+      "question": "Aké je hlavné mesto Nemecka?",
+      "options": [
+        { "code": "DE", "text": "Berlín", "correct": true },
+        { "code": "FR", "text": "Paríž", "correct": false },
+        { "code": "IT", "text": "Rím", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Nemecka je Berlín."
+    },
+    {
+      "question": "Aké je hlavné mesto Talianska?",
+      "options": [
+        { "code": "IT", "text": "Rím", "correct": true },
+        { "code": "DE", "text": "Berlín", "correct": false },
+        { "code": "FR", "text": "Paríž", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Talianska je Rím."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "history",
+  "name": "História Ázie",
+  "description": "Otázky o histórii Ázie",
+  "facts": {
+    "CN": [
+      "V tejto krajine sa striedali mocné dynastie, ktoré formovali jej kultúru a architektúru.",
+      "Je známa monumentálnymi stavbami, ktoré mali obranný aj symbolický význam.",
+      "V 20. storočí tu prebehli zásadné spoločenské zmeny pod vedením významných osobností."
+    ],
+    "IN": [
+      "V tejto krajine sa odohrávali významné hnutia za slobodu, ktoré ovplyvnili celý región.",
+      "Je domovom mnohých historických pamiatok, ktoré sú symbolom lásky a viery.",
+      "Jej dejiny sú spojené s rozmanitosťou náboženstiev a kultúr."
+    ],
+    "JP": [
+      "V tejto krajine existovala trieda bojovníkov, ktorí boli známi svojím kódexom cti.",
+      "Dlhé obdobie izolácie umožnilo rozvoj unikátnej kultúry a tradícií.",
+      "Je známa obdobím, keď moc držali vojenskí vládcovia a ich rodiny."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Kde bola vyhlásená nezávislosť v roku 1947?",
+      "options": [
+        { "code": "IN", "text": "India", "correct": true },
+        { "code": "CN", "text": "Čína", "correct": false },
+        { "code": "JP", "text": "Japonsko", "correct": false }
+      ],
+      "explanation": "Indická nezávislosť bola vyhlásená v roku 1947."
+    },
+    {
+      "question": "Ktorá krajina je známa dynastiou Čching?",
+      "options": [
+        { "code": "CN", "text": "Čína", "correct": true },
+        { "code": "IN", "text": "India", "correct": false },
+        { "code": "JP", "text": "Japonsko", "correct": false }
+      ],
+      "explanation": "Dynastia Čching bola posledná cisárska dynastia Číny."
+    },
+    {
+      "question": "Kde boli samuraji vojenskou triedou?",
+      "options": [
+        { "code": "JP", "text": "Japonsko", "correct": true },
+        { "code": "CN", "text": "Čína", "correct": false },
+        { "code": "IN", "text": "India", "correct": false }
+      ],
+      "explanation": "Samuraji boli vojenská trieda v Japonsku."
+    }
+  ]
+}
