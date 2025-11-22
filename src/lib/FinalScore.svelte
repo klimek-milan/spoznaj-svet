@@ -3,6 +3,7 @@
     export let total = 0;
     export let onRestart = () => {};
     export let onMap = () => {};
+    export let onMenu = () => {};
   </script>
   
   <section class="done">
@@ -10,8 +11,11 @@
       <h1>Výsledné skóre</h1>
       <p><b>{score}</b> / {total}</p>
       <div class="row">
-        <button on:click={onRestart}>Hrať znova</button>
+        <button on:click={onRestart}>Vybrať kategóriu</button>
         <button on:click={onMap}>Vybrať kontinent</button>
+      </div>
+      <div class="row">
+        <button on:click={onMenu}>Do hlavného menu</button>
       </div>
     </div>
   </section>

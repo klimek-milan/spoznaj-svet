@@ -1,5 +1,4 @@
 <script lang="ts">
-  export let continent: string;
   export let onPickCategory = (category: string) => {};
 
   // Example categories, you can load these dynamically if needed
@@ -11,7 +10,7 @@
 </script>
 
 <section class="page">
-  <h1>Vyber kategóriu otázok pre {continent}</h1>
+  <h1>Vyber kategóriu otázok</h1>
   <div class="grid">
     {#each categories as cat}
       <button class="card" on:click={() => onPickCategory(cat.id)}>
