@@ -1,0 +1,52 @@
+{
+  "id": "history",
+  "name": "História",
+  "description": "Otázky o histórii Európy",
+  "facts": {
+    "FR": [
+      "Táto krajina je známa revolučnými zmenami, ktoré ovplyvnili celú Európu.",
+      "V jej histórii sa objavujú významné osobnosti, ktoré menili politické usporiadanie kontinentu.",
+      "Je domovom paláca, kde sa podpisovali dôležité medzinárodné dohody."
+    ],
+    "DE": [
+      "V tejto krajine sa nachádza mesto, ktoré bolo kedysi rozdelené múrom.",
+      "Je známa zásadnými zmenami v 20. storočí, ktoré viedli k jej zjednoteniu.",
+      "Jej dejiny sú spojené s reformáciou a významnými náboženskými pohybmi."
+    ],
+    "RU": [
+      "V tejto krajine sa odohrali významné revolúcie, ktoré zmenili jej politický systém.",
+      "Je známa rozsiahlou železničnou sieťou, ktorá spája Európu s Áziou.",
+      "V jej hlavnom meste sa rozhodovalo o osude veľkej časti sveta v 20. storočí."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Kde sa odohrala Veľká francúzska revolúcia?",
+      "options": [
+        { "code": "FR", "text": "Francúzsko", "correct": true },
+        { "code": "DE", "text": "Nemecko", "correct": false },
+        { "code": "RU", "text": "Rusko", "correct": false }
+      ],
+      "explanation": "Veľká francúzska revolúcia sa odohrala vo Francúzsku v roku 1789."
+    },
+    {
+      "question": "Ktorá krajina bola rozdelená Berlínskym múrom?",
+      "options": [
+        { "code": "DE", "text": "Nemecko", "correct": true },
+        { "code": "FR", "text": "Francúzsko", "correct": false },
+        { "code": "RU", "text": "Rusko", "correct": false }
+      ],
+      "explanation": "Berlínsky múr rozdeľoval Nemecko od roku 1961 do 1989."
+    },
+    {
+      "question": "Kde prebehla Ruská revolúcia v roku 1917?",
+      "options": [
+        { "code": "RU", "text": "Rusko", "correct": true },
+        { "code": "DE", "text": "Nemecko", "correct": false },
+        { "code": "FR", "text": "Francúzsko", "correct": false }
+      ],
+      "explanation": "Ruská revolúcia prebehla v Rusku v roku 1917."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "capitals",
+  "name": "Hlavné mestá Severnej Ameriky",
+  "description": "Otázky o hlavných mestách Severnej Ameriky",
+  "facts": {
+    "US": [
+      "Toto mesto je známe pamätníkom, ktorý má tvar obelisku a je venovaný prvému prezidentovi krajiny.",
+      "V jeho uliciach sa nachádza sídlo vlády, ktoré je bielej farby.",
+      "Leží na východnom pobreží krajiny, medzi štátmi Maryland a Virgínia."
+    ],
+    "CA": [
+      "Toto mesto je známe festivalom tulipánov a nachádza sa na brehu rieky.",
+      "Je sídlom parlamentu, ktorého budova je jednou z najznámejších v krajine.",
+      "Leží neďaleko hranice s Quebecom a je dvojjazyčné."
+    ],
+    "MX": [
+      "Toto mesto je postavené na mieste bývalého aztéckeho hlavného mesta.",
+      "Je známe svojimi rušnými námestiami a bohatou kultúrou.",
+      "Leží vo vysokej nadmorskej výške a je obklopené horami."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Aké je hlavné mesto USA?",
+      "options": [
+        { "code": "US", "text": "Washington, D.C.", "correct": true },
+        { "code": "CA", "text": "Ottawa", "correct": false },
+        { "code": "MX", "text": "Mexiko City", "correct": false }
+      ],
+      "explanation": "Hlavné mesto USA je Washington, D.C." 
+    },
+    {
+      "question": "Aké je hlavné mesto Kanady?",
+      "options": [
+        { "code": "CA", "text": "Ottawa", "correct": true },
+        { "code": "US", "text": "Washington, D.C.", "correct": false },
+        { "code": "MX", "text": "Mexiko City", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Kanady je Ottawa."
+    },
+    {
+      "question": "Aké je hlavné mesto Mexika?",
+      "options": [
+        { "code": "MX", "text": "Mexiko City", "correct": true },
+        { "code": "CA", "text": "Ottawa", "correct": false },
+        { "code": "US", "text": "Washington, D.C.", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Mexika je Mexiko City."
+    }
+  ]
+}

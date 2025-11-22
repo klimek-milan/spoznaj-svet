@@ -1,0 +1,52 @@
+{
+  "id": "capitals",
+  "name": "Hlavné mestá Južnej Ameriky",
+  "description": "Otázky o hlavných mestách Južnej Ameriky",
+  "facts": {
+    "BR": [
+      "Toto mesto bolo vybudované v 20. storočí a je známe svojím futuristickým dizajnom.",
+      "Leží v centrálnej časti krajiny, ďaleko od pobrežia.",
+      "Je domovom mnohých vládnych budov a pamätníkov."
+    ],
+    "AR": [
+      "Toto mesto je známe svojimi kaviarňami, tangom a rušnými bulvármi.",
+      "Leží pri veľkej rieke, ktorá ústi do Atlantického oceánu.",
+      "Je kultúrnym centrom krajiny a domovom slávneho divadla."
+    ],
+    "CO": [
+      "Toto mesto sa nachádza vo vysokej nadmorskej výške v pohorí Andy.",
+      "Je známe bohatou históriou a množstvom múzeí.",
+      "V jeho okolí sa pestuje kvalitná káva, ktorá je známa po celom svete."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Aké je hlavné mesto Brazílie?",
+      "options": [
+        { "code": "BR", "text": "Brasília", "correct": true },
+        { "code": "AR", "text": "Buenos Aires", "correct": false },
+        { "code": "CO", "text": "Bogotá", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Brazílie je Brasília."
+    },
+    {
+      "question": "Aké je hlavné mesto Argentíny?",
+      "options": [
+        { "code": "AR", "text": "Buenos Aires", "correct": true },
+        { "code": "BR", "text": "Brasília", "correct": false },
+        { "code": "CO", "text": "Bogotá", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Argentíny je Buenos Aires."
+    },
+    {
+      "question": "Aké je hlavné mesto Kolumbie?",
+      "options": [
+        { "code": "CO", "text": "Bogotá", "correct": true },
+        { "code": "AR", "text": "Buenos Aires", "correct": false },
+        { "code": "BR", "text": "Brasília", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Kolumbie je Bogotá."
+    }
+  ]
+}

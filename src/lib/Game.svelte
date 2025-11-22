@@ -6,6 +6,7 @@
 
   // props
   export let continent: string = "europe";
+  export let category: string = "geography";
   export let onFinished: (score: number, total: number) => void = () => {};
 
   // typy
@@ -15,7 +16,6 @@
     question: string;
     options: Opt[];
     explanation: string;
-    facts: string[];
   };
 
   // stav hry
@@ -26,16 +26,58 @@
   let selected: number | null = null;
   let locked = false;
 
+  // Top-level facts object from JSON
+  let facts: Record<string, string[]> = {};
+  let randomFact: string = "";
+
+  // Helper to get continent name from id
+  function getContinentName(continentId: string): string {
+    const map: Record<string, string> = {
+      europe: "Európa",
+      asia: "Ázia",
+      africa: "Afrika",
+      na: "Severná Amerika",
+      sa: "Južná Amerika",
+      oceania: "Oceánia"
+    };
+    return map[continentId] || continentId;
+  }
+
+  // Helper to get topic name from id
+  function getTopicName(topicId: string): string {
+    const map: Record<string, string> = {
+      geography: "Geografia",
+      capitals: "Hlavné mestá",
+      history: "História"
+    };
+    return map[topicId] || topicId;
+  }
   // „radosť“ pri správnej odpovedi
   let celebrate = false;
   let confettiCanvas: HTMLCanvasElement;
   let sfxOk: HTMLAudioElement;
 
   onMount(async () => {
-    const data = await (await fetch(base + `data/${continent}.json`)).json();
+    // Load questions for selected continent and category
+    const data = await (await fetch(base + `data/${continent}/${category}.json`)).json();
     rounds = data.rounds;
     total = data.total ?? rounds.length;
+    facts = data.facts || {};
+    pickRandomFact();
   });
+
+  // Pick a random fact for the current round based on correct country code
+  function pickRandomFact() {
+    if (rounds[i] && Array.isArray(rounds[i].options)) {
+      const correctOpt = rounds[i].options.find(o => o.correct);
+      if (correctOpt && facts[correctOpt.code] && facts[correctOpt.code].length > 0) {
+        const arr = facts[correctOpt.code];
+        randomFact = arr[Math.floor(Math.random() * arr.length)];
+        return;
+      }
+    }
+    randomFact = "";
+  }
 
   function burstConfetti() {
     if (!confettiCanvas) return;
@@ -114,6 +156,7 @@
     i++;
     selected = null;
     locked = false;
+    pickRandomFact();
     if (i >= total) onFinished(score, total);
   }
 
@@ -136,7 +179,6 @@
     {#if locked}
       <div class="feedback">
         <h3>{rounds[i].explanation}</h3>
-        <ul>{#each rounds[i].facts as f}<li>{f}</li>{/each}</ul>
         <button class="next" on:click={next}>Ďalej</button>
       </div>
     {:else}
@@ -146,7 +188,14 @@
 
   <!-- STRED: otázka -->
   <main class="center">
-    <div class="bubble">{rounds[i].question}</div>
+    <div class="bubble">
+      <div class="continent-header">{getContinentName(continent)}</div>
+      <div class="topic-header">Téma: {getTopicName(category)}</div>
+      <div class="question">{rounds[i].question}</div>
+      {#if randomFact}
+        <div class="tip"><span class="tip-label">Tip:</span> {randomFact}</div>
+      {/if}
+    </div>
   </main>
 
   <!-- DOLE: tri odpovede v jednom rade -->
@@ -238,9 +287,46 @@
   .center{ grid-area:center; display:grid; place-items:center; }
   .bubble{
     background:var(--surface); border:1px solid var(--border);
-    border-radius:16px; padding:20px 24px; font-size:24px;
-    box-shadow:var(--shadow); max-width:min(1000px, 80vw); text-align:center;
-    color:var(--text);
+    border-radius:16px; padding:20px 24px; box-shadow:var(--shadow);
+    max-width:min(1000px, 80vw); text-align:center; color:var(--text);
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .continent-header {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--primary, #2563EB);
+    margin-bottom: 4px;
+  }
+  .topic-header {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--secondary, #3B82F6);
+    margin-bottom: 14px;
+    letter-spacing: 0.2px;
+  }
+  .question {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: var(--text, #1E293B);
+  }
+  .tip {
+    margin-top: 0;
+    background: var(--surface, #F8FAFC);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 17px;
+    color: var(--muted, #334155);
+    box-shadow: var(--shadow);
+    max-width: min(800px, 70vw);
+    text-align: center;
+    font-style: italic;
+  }
+  .tip-label {
+    font-weight: bold;
+    color: var(--primary, #2563EB);
+    margin-right: 6px;
   }
 
   /* ANSWERS – tri karty v rade */

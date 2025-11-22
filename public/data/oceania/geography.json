@@ -1,0 +1,52 @@
+{
+  "id": "geography",
+  "name": "Geografia Oceánie",
+  "description": "Otázky o geografii Oceánie",
+  "facts": {
+    "AU": [
+      "Táto krajina je známa rozľahlými púšťami, dažďovými lesmi a unikátnymi živočíchmi.",
+      "Pri jej pobreží sa nachádza farebný podmorský svet, ktorý láka potápačov z celého sveta.",
+      "V jej vnútrozemí sa rozprestiera oblasť, kde žije málo ľudí a je známa extrémnymi teplotami."
+    ],
+    "NZ": [
+      "Táto krajina je známa zelenými kopcami, fjordmi a aktívnymi sopkami.",
+      "Na jej území sa nachádza hora, ktorá je najvyššia v južnej časti Pacifiku.",
+      "Je domovom gejzírov, horúcich prameňov a bohatého vtáčieho života."
+    ],
+    "FJ": [
+      "Táto krajina je tvorená stovkami ostrovov s tropickým podnebím.",
+      "Je známa pestrou kultúrou, tradičnými tancami a hudbou.",
+      "Na jej ostrovoch sa nachádzajú koralové útesy a palmové pláže."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Kde sa nachádza Veľký bariérový útes?",
+      "options": [
+        { "code": "AU", "text": "Austrália", "correct": true },
+        { "code": "NZ", "text": "Nový Zéland", "correct": false },
+        { "code": "FJ", "text": "Fidži", "correct": false }
+      ],
+      "explanation": "Veľký bariérový útes sa nachádza pri pobreží Austrálie."
+    },
+    {
+      "question": "Ktorá krajina sa skladá z dvoch hlavných ostrovov?",
+      "options": [
+        { "code": "NZ", "text": "Nový Zéland", "correct": true },
+        { "code": "AU", "text": "Austrália", "correct": false },
+        { "code": "FJ", "text": "Fidži", "correct": false }
+      ],
+      "explanation": "Nový Zéland sa skladá z dvoch hlavných ostrovov."
+    },
+    {
+      "question": "Ktorá krajina je známa krásnymi plážami?",
+      "options": [
+        { "code": "FJ", "text": "Fidži", "correct": true },
+        { "code": "NZ", "text": "Nový Zéland", "correct": false },
+        { "code": "AU", "text": "Austrália", "correct": false }
+      ],
+      "explanation": "Fidži je známe krásnymi plážami."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "capitals",
+  "name": "Hlavné mestá Ázie",
+  "description": "Otázky o hlavných mestách Ázie",
+  "facts": {
+    "JP": [
+      "Toto mesto je domovom najrušnejšej železničnej stanice na svete.",
+      "V jeho uliciach sa konajú slávne festivaly sakúr.",
+      "Je známe svojimi technologickými inováciami a tradičnými svätyňami."
+    ],
+    "CN": [
+      "V tomto meste sa nachádza palác, ktorý bol sídlom cisárov po stáročia.",
+      "Je známe svojimi historickými parky a čajovými domami.",
+      "Leží v blízkosti Veľkého čínskeho múru."
+    ],
+    "IN": [
+      "Toto mesto je centrom politického diania a sídlom mnohých pamätníkov.",
+      "Je známe rozsiahlou zelenou plochou zvanou Rajpath.",
+      "V jeho okolí sa nachádza významná stavba z červeného pieskovca."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Aké je hlavné mesto Japonska?",
+      "options": [
+        { "code": "JP", "text": "Tokio", "correct": true },
+        { "code": "CN", "text": "Peking", "correct": false },
+        { "code": "IN", "text": "Naí Dillí", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Japonska je Tokio."
+    },
+    {
+      "question": "Aké je hlavné mesto Číny?",
+      "options": [
+        { "code": "CN", "text": "Peking", "correct": true },
+        { "code": "JP", "text": "Tokio", "correct": false },
+        { "code": "IN", "text": "Naí Dillí", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Číny je Peking."
+    },
+    {
+      "question": "Aké je hlavné mesto Indie?",
+      "options": [
+        { "code": "IN", "text": "Naí Dillí", "correct": true },
+        { "code": "JP", "text": "Tokio", "correct": false },
+        { "code": "CN", "text": "Peking", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Indie je Naí Dillí."
+    }
+  ]
+}

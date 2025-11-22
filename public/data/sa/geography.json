@@ -1,0 +1,52 @@
+{
+  "id": "geography",
+  "name": "Geografia Južnej Ameriky",
+  "description": "Otázky o geografii Južnej Ameriky",
+  "facts": {
+    "BR": [
+      "Táto krajina je domovom najväčšej tropickej oblasti na svete, kde žije množstvo unikátnych živočíchov.",
+      "Na jej území sa rozprestiera rieka, ktorá je jednou z najdlhších a najvodnatejších na svete.",
+      "Je známa rozmanitosťou prírody od pláží po dažďové pralesy."
+    ],
+    "AR": [
+      "V tejto krajine sa nachádza rozsiahla oblasť s veterným podnebím a nádhernými ľadovcami.",
+      "Je domovom najvyššieho vrchu Južnej Ameriky, ktorý láka horolezcov z celého sveta.",
+      "Na jej území sa rozprestierajú nekonečné trávnaté pláne, kde sa chovajú dobytok a kone."
+    ],
+    "CO": [
+      "Táto krajina je známa horami, tropickými dažďovými lesmi a pobrežím pri dvoch moriach.",
+      "Na jej území sa pestuje jedna z najkvalitnejších káv na svete.",
+      "Je domovom bohatých kultúr a tradícií, ktoré sa odrážajú v hudbe a tanci."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Ktorá krajina má najväčší dažďový prales na svete?",
+      "options": [
+        { "code": "BR", "text": "Brazília", "correct": true },
+        { "code": "AR", "text": "Argentína", "correct": false },
+        { "code": "CO", "text": "Kolumbia", "correct": false }
+      ],
+      "explanation": "Brazília má najväčší dažďový prales na svete."
+    },
+    {
+      "question": "Kde sa nachádza hora Aconcagua?",
+      "options": [
+        { "code": "AR", "text": "Argentína", "correct": true },
+        { "code": "BR", "text": "Brazília", "correct": false },
+        { "code": "CO", "text": "Kolumbia", "correct": false }
+      ],
+      "explanation": "Aconcagua je najvyššia hora Argentíny."
+    },
+    {
+      "question": "Ktorá krajina leží pri Karibskom mori?",
+      "options": [
+        { "code": "CO", "text": "Kolumbia", "correct": true },
+        { "code": "AR", "text": "Argentína", "correct": false },
+        { "code": "BR", "text": "Brazília", "correct": false }
+      ],
+      "explanation": "Kolumbia leží pri Karibskom mori."
+    }
+  ]
+}

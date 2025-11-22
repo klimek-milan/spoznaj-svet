@@ -1,0 +1,52 @@
+{
+  "id": "history",
+  "name": "História Oceánie",
+  "description": "Otázky o histórii Oceánie",
+  "facts": {
+    "AU": [
+      "Táto krajina má bohatú históriu pôvodných obyvateľov, ktorí tu žijú desaťtisíce rokov.",
+      "V 18. storočí sem dorazili prví európski osadníci, čo zásadne zmenilo jej vývoj.",
+      "Na prelome 20. storočia sa spojilo niekoľko kolónií do jedného štátu."
+    ],
+    "NZ": [
+      "V tejto krajine žije pôvodný polynézsky národ, ktorý má bohaté tradície a legendy.",
+      "V 20. storočí získala plnú samostatnosť od európskej mocnosti.",
+      "Jeden z jej obyvateľov sa preslávil výstupom na najvyšší vrch sveta."
+    ],
+    "FJ": [
+      "Táto krajina bola dlhé roky pod správou európskej mocnosti, kým získala samostatnosť.",
+      "Je známa pestrou zmesou kultúr, tancov a tradičných slávností.",
+      "Na jej ostrovoch sa odohrávali významné historické udalosti v 19. a 20. storočí."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Kde sa nachádzali domorodí obyvatelia pred viac ako 50 000 rokmi?",
+      "options": [
+        { "code": "AU", "text": "Austrália", "correct": true },
+        { "code": "NZ", "text": "Nový Zéland", "correct": false },
+        { "code": "FJ", "text": "Fidži", "correct": false }
+      ],
+      "explanation": "Austrália bola osídlená domorodými obyvateľmi pred viac ako 50 000 rokmi."
+    },
+    {
+      "question": "Kto bol prvý človek na vrchole Mount Everestu?",
+      "options": [
+        { "code": "NZ", "text": "Edmund Hillary", "correct": true },
+        { "code": "AU", "text": "Austrália", "correct": false },
+        { "code": "FJ", "text": "Fidži", "correct": false }
+      ],
+      "explanation": "Edmund Hillary z Nového Zélandu bol prvý človek na vrchole Mount Everestu."
+    },
+    {
+      "question": "Ktorá krajina získala nezávislosť od Británie v roku 1970?",
+      "options": [
+        { "code": "FJ", "text": "Fidži", "correct": true },
+        { "code": "NZ", "text": "Nový Zéland", "correct": false },
+        { "code": "AU", "text": "Austrália", "correct": false }
+      ],
+      "explanation": "Fidži získalo nezávislosť od Británie v roku 1970."
+    }
+  ]
+}

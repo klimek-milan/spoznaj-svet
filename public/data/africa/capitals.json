@@ -1,0 +1,52 @@
+{
+  "id": "capitals",
+  "name": "Hlavné mestá Afriky",
+  "description": "Otázky o hlavných mestách Afriky",
+  "facts": {
+    "EG": [
+      "Toto mesto je domovom najväčšieho trhu s ťavami v Afrike.",
+      "V jeho uliciach sa nachádza najstaršia univerzita na svete.",
+      "Je známe svojimi rušnými bazármi a historickými mešitami."
+    ],
+    "ZA": [
+      "V tomto meste kvitnú na jar tisíce stromov jacaranda, ktoré ho sfarbia do fialova.",
+      "Je sídlom mnohých vládnych inštitúcií a ambasád.",
+      "Leží v blízkosti hlavného mesta krajiny, kde sa nachádza aj významná botanická záhrada."
+    ],
+    "NG": [
+      "Toto mesto bolo vybudované v 80. rokoch 20. storočia ako nové administratívne centrum krajiny.",
+      "Leží v srdci krajiny, ďaleko od pobrežia Atlantického oceánu.",
+      "Je známe modernou architektúrou a širokými bulvármi."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Aké je hlavné mesto Egypta?",
+      "options": [
+        { "code": "EG", "text": "Káhira", "correct": true },
+        { "code": "ZA", "text": "Pretoria", "correct": false },
+        { "code": "NG", "text": "Abuja", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Egypta je Káhira."
+    },
+    {
+      "question": "Aké je hlavné mesto Juhoafrickej republiky?",
+      "options": [
+        { "code": "ZA", "text": "Pretoria", "correct": true },
+        { "code": "EG", "text": "Káhira", "correct": false },
+        { "code": "NG", "text": "Abuja", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Juhoafrickej republiky je Pretoria."
+    },
+    {
+      "question": "Aké je hlavné mesto Nigérie?",
+      "options": [
+        { "code": "NG", "text": "Abuja", "correct": true },
+        { "code": "EG", "text": "Káhira", "correct": false },
+        { "code": "ZA", "text": "Pretoria", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Nigérie je Abuja."
+    }
+  ]
+}

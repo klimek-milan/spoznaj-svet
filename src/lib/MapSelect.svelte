@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let onPick = (c:string)=>{};
+    export let onPick = (c:string)=>{}; // Will now redirect to category select
     const continents = [
       { id:"europe",  name:"Európa" },
       { id:"asia",    name:"Ázia" },

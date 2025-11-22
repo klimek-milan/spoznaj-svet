@@ -1,0 +1,52 @@
+{
+  "id": "history",
+  "name": "História Severnej Ameriky",
+  "description": "Otázky o histórii Severnej Ameriky",
+  "facts": {
+    "US": [
+      "V tejto krajine sa odohrali významné udalosti, ktoré ovplyvnili vznik moderných demokracií.",
+      "Je známa prezidentom, ktorý viedol krajinu počas občianskej vojny a je spojený s emancipáciou otrokov.",
+      "Na jej území bola vybudovaná železnica, ktorá spojila východné a západné pobrežie."
+    ],
+    "CA": [
+      "Táto krajina získala samostatnosť v 19. storočí a je známa svojou dvojjazyčnosťou.",
+      "Jej prvý premiér je považovaný za otca konfederácie.",
+      "V 60. rokoch 20. storočia prijala nový štátny symbol s javorovým listom."
+    ],
+    "MX": [
+      "V tejto krajine sa odohrala revolúcia, ktorá zmenila jej politický systém v 20. storočí.",
+      "Je známa významnými osobnosťami, ktoré bojovali za práva domorodých obyvateľov.",
+      "Na jej území sa nachádzali staroveké civilizácie s bohatou kultúrou a architektúrou."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Kde bola podpísaná Deklarácia nezávislosti v roku 1776?",
+      "options": [
+        { "code": "US", "text": "USA", "correct": true },
+        { "code": "CA", "text": "Kanada", "correct": false },
+        { "code": "MX", "text": "Mexiko", "correct": false }
+      ],
+      "explanation": "Deklarácia nezávislosti USA bola podpísaná v roku 1776."
+    },
+    {
+      "question": "Ktorá krajina získala nezávislosť od Británie v roku 1867?",
+      "options": [
+        { "code": "CA", "text": "Kanada", "correct": true },
+        { "code": "US", "text": "USA", "correct": false },
+        { "code": "MX", "text": "Mexiko", "correct": false }
+      ],
+      "explanation": "Kanada získala nezávislosť od Británie v roku 1867."
+    },
+    {
+      "question": "Kde bola Aztécka civilizácia?",
+      "options": [
+        { "code": "MX", "text": "Mexiko", "correct": true },
+        { "code": "US", "text": "USA", "correct": false },
+        { "code": "CA", "text": "Kanada", "correct": false }
+      ],
+      "explanation": "Aztécka civilizácia bola v oblasti dnešného Mexika."
+    }
+  ]
+}

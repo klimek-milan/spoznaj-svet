@@ -3,6 +3,7 @@
   import MainMenu from "./lib/MainMenu.svelte";
   import HowTo from "./lib/HowTo.svelte";
   import MapSelect from "./lib/MapSelect.svelte";
+  import CategorySelect from "./lib/CategorySelect.svelte";
   import Game from "./lib/Game.svelte";
   import FinalScore from "./lib/FinalScore.svelte";
   import Settings from "./lib/Settings.svelte";
@@ -11,9 +12,10 @@
 
   const base = import.meta.env.BASE_URL;
 
-  type View = "menu" | "howto" | "map" | "game" | "final" | "settings" | "credits";
+  type View = "menu" | "howto" | "map" | "category" | "game" | "final" | "settings" | "credits";
   let view: View = "menu";
-  let continent = "europe";
+  let continent = "";
+  let category = "";
   let lastScore = 0, lastTotal = 0;
 
   onMount(() => {
@@ -21,7 +23,15 @@
     document.documentElement.style.setProperty("--bg-img", `url('${base}img/bg-world.webp')`);
   });
 
-  function startGame(c: string) { continent = c; view = "game"; }
+  function handleContinentPick(c: string) {
+    continent = c;
+    view = "category";
+  }
+
+  function handleCategoryPick(cat: string) {
+    category = cat;
+    view = "game";
+  }
   function handleFinished(score: number, total: number) { lastScore = score; lastTotal = total; view = "final"; }
   function go(to: View) { view = to; }
 </script>
@@ -61,9 +71,11 @@
 {:else if view === "howto"}
   <HowTo onBack={() => go("menu")} onNext={() => go("map")} />
 {:else if view === "map"}
-  <MapSelect onPick={startGame} />
+  <MapSelect onPick={handleContinentPick} />
+{:else if view === "category"}
+  <CategorySelect continent={continent} onPickCategory={handleCategoryPick} />
 {:else if view === "game"}
-  <Game continent={continent} onFinished={handleFinished} />
+  <Game continent={continent} category={category} onFinished={handleFinished} />
 {:else if view === "final"}
   <FinalScore score={lastScore} total={lastTotal} onRestart={() => go("map")} onMap={() => go("map")} />
 {:else if view === "settings"}

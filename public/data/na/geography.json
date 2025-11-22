@@ -1,0 +1,52 @@
+{
+  "id": "geography",
+  "name": "Geografia Severnej Ameriky",
+  "description": "Otázky o geografii Severnej Ameriky",
+  "facts": {
+    "US": [
+      "Táto krajina je známa rozmanitosťou prírody od púští po dažďové lesy.",
+      "Na jej území sa nachádza veľké pohorie, ktoré sa tiahne od Kanady až po Nové Mexiko.",
+      "Je domovom najväčšieho sladkovodného jazera na svete."
+    ],
+    "CA": [
+      "V tejto krajine sa nachádza najväčšia koncentrácia jazier na svete.",
+      "Je známa rozsiahlymi lesmi a tundrou na severe.",
+      "Na jej území sa rozprestiera rieka, ktorá tečie na sever do arktického oceánu."
+    ],
+    "MX": [
+      "Táto krajina je známa vysokými horami, púšťami aj tropickými plážami.",
+      "Na jej území sa nachádza aktívna sopka, ktorá je jednou z najvyšších v Severnej Amerike.",
+      "Je obklopená dvoma oceánmi a má bohatú biodiverzitu."
+    ]
+  },
+  "total": 3,
+  "rounds": [
+    {
+      "question": "Ktorá krajina je druhá najväčšia na svete?",
+      "options": [
+        { "code": "CA", "text": "Kanada", "correct": true },
+        { "code": "US", "text": "USA", "correct": false },
+        { "code": "MX", "text": "Mexiko", "correct": false }
+      ],
+      "explanation": "Kanada je druhá najväčšia krajina sveta."
+    },
+    {
+      "question": "Kde sa nachádza pohorie Rocky Mountains?",
+      "options": [
+        { "code": "US", "text": "USA", "correct": true },
+        { "code": "CA", "text": "Kanada", "correct": false },
+        { "code": "MX", "text": "Mexiko", "correct": false }
+      ],
+      "explanation": "Rocky Mountains sú hlavné pohorie západu USA."
+    },
+    {
+      "question": "Ktorá krajina má pobrežie pri Tichom aj Atlantickom oceáne?",
+      "options": [
+        { "code": "MX", "text": "Mexiko", "correct": true },
+        { "code": "US", "text": "USA", "correct": false },
+        { "code": "CA", "text": "Kanada", "correct": false }
+      ],
+      "explanation": "Mexiko má pobrežie pri Tichom aj Atlantickom oceáne."
+    }
+  ]
+}
