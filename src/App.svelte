@@ -9,49 +9,73 @@
   import Settings from "./lib/Settings.svelte";
   import Credits from "./lib/Credits.svelte";
 
+  // Root application shell + navigation between screens.
+  // Part of sprint task: "coding – pohyb postavičky" (character movement)
+  // Implemented by: Milan Klimek, November 2025
+
   const base = import.meta.env.BASE_URL;
 
-  type View = "menu" | "howto" | "map" | "category" | "game" | "final" | "settings" | "credits";
+  type View =
+    | "menu"
+    | "howto"
+    | "map"
+    | "category"
+    | "game"
+    | "final"
+    | "settings"
+    | "credits";
+
   let view: View = "menu";
   let continent = "";
   let category = "";
   let lastScore = 0;
   let lastTotal = 0;
 
-  // remembers from which continent the player should start walking next time
+  // Remembers from which continent the player should start walking next time
+  // (used by MapSelect to place the character on the last continent).
   let lastContinentId: string | null = null;
 
   onMount(() => {
-    // global background image
+    // Global background image for the whole app
     document.documentElement.style.setProperty(
       "--bg-img",
       `url('${base}img/bg-world.webp')`
     );
   });
 
-  // Called when a category is picked
+  // Called when a category is picked on CategorySelect
   function handleCategoryPick(cat: string) {
     category = cat;
     view = "map";
   }
 
-  // Called when a continent is picked
+  // Called when a continent is picked on MapSelect
   function handleContinentPick(c: string) {
     continent = c;
-    lastContinentId = c;
+    lastContinentId = c; // remember last continent for the map character
     view = "game";
   }
 
+  // Called when a quiz round is finished
   function handleFinished(score: number, total: number) {
     lastScore = score;
     lastTotal = total;
+    // lastContinentId is kept so the character can stand on that continent
     view = "final";
   }
 
+  // Central navigation function
   function go(to: View) {
+    if (to === "menu") {
+      // Hard reset of character path:
+      // when we go back to the main menu, we forget the last continent.
+      // Next time the game starts, the character appears from the side button
+      // instead of standing on the map.
+      lastContinentId = null;
+    }
+
     view = to;
   }
-  // Removed old handlers, replaced by new workflow above
 </script>
 
 <nav class="nav">
