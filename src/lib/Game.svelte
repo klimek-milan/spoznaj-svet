@@ -4,19 +4,21 @@
 
   const base = import.meta.env.BASE_URL;
 
-  // Game screen with quiz rounds.
-  // Sprint task: "coding – pohyb postavičky" (character movement)
-  // Implemented by: Milan Klimek, November 2025
-  //
-  // NOTE:
-  // - This file controls WHEN the character animation is shown.
-  // - For this sprint we only trigger a basic "cheer" animation
-  //   after a correct answer.
-  // - Path / waypoint based movement between points will be added later.
+  /**
+   * Game screen with quiz rounds.
+   *
+   * Sprint 1 – quiz core:
+   *   - load questions from JSON by continent + category
+   *   - show image, question, answers and explanation panel
+   *   - show continent / topic header and an optional hint (random fact)
+   *
+   * Sprint 2 – character behaviour:
+   *   - character has 3 moods: idle / cheer / fall
+   *   - cheer on correct answer, fall + shake on wrong answer
+   *   - optional "correct" / "wrong" sounds
+   */
 
-  // Props from parent:
-  // - continent: which JSON file with questions to load
-  // - onFinished: callback when the quiz ends (score, total)
+  // Props from parent
   export let continent: string = "europe";
   export let category: string = "geography";
   export let onFinished: (score: number, total: number) => void = () => {};
@@ -30,6 +32,17 @@
     explanation: string;
   };
 
+  // Character mood:
+  //  - "idle"  -> player_idle.png
+  //  - "cheer" -> player_cheer1.png + player_cheer2.png
+  //  - "fall"  -> player_fall.png
+  type Mood = "idle" | "cheer" | "fall";
+  let mood: Mood = "idle";
+  let moodTimeout: number | null = null;
+
+  // Small shake effect for wrong answer
+  let shake = false;
+
   // Game state
   let rounds: Round[] = [];
   let total = 0;
@@ -41,6 +54,12 @@
   // Top-level facts object from JSON
   let facts: Record<string, string[]> = {};
   let randomFact: string = "";
+
+  // Celebration / sounds
+  let celebrate = false;
+  let confettiCanvas: HTMLCanvasElement;
+  let sfxOk: HTMLAudioElement;
+  let sfxBad: HTMLAudioElement;
 
   // Helper to get continent name from id
   function getContinentName(continentId: string): string {
@@ -64,18 +83,11 @@
     };
     return map[topicId] || topicId;
   }
-  // Celebration state for correct answer:
-  // - celebrate: toggles confetti + character cheer
-  // - confettiCanvas: canvas element for drawing particles
-  // - sfxOk: audio element with "correct" sound
-  let celebrate = false;
-  let confettiCanvas: HTMLCanvasElement;
-  let sfxOk: HTMLAudioElement;
 
   // Load questions for the selected continent on mount
   onMount(async () => {
-    // Load questions for selected continent and category
-    const data = await (await fetch(base + `data/${continent}/${category}.json`)).json();
+    const resp = await fetch(base + `data/${continent}/${category}.json`);
+    const data = await resp.json();
     rounds = data.rounds;
     total = data.total ?? rounds.length;
     facts = data.facts || {};
@@ -85,8 +97,12 @@
   // Pick a random fact for the current round based on correct country code
   function pickRandomFact() {
     if (rounds[i] && Array.isArray(rounds[i].options)) {
-      const correctOpt = rounds[i].options.find(o => o.correct);
-      if (correctOpt && facts[correctOpt.code] && facts[correctOpt.code].length > 0) {
+      const correctOpt = rounds[i].options.find((o) => o.correct);
+      if (
+        correctOpt &&
+        facts[correctOpt.code] &&
+        facts[correctOpt.code].length > 0
+      ) {
         const arr = facts[correctOpt.code];
         randomFact = arr[Math.floor(Math.random() * arr.length)];
         return;
@@ -95,7 +111,24 @@
     randomFact = "";
   }
 
-  // Simple confetti particle system drawn on <canvas>
+  // Helper: set character mood for a given time and then return to "idle"
+  function setMood(next: Mood, holdMs = 1500) {
+    mood = next;
+
+    if (moodTimeout !== null) {
+      clearTimeout(moodTimeout);
+      moodTimeout = null;
+    }
+
+    if (next !== "idle" && holdMs > 0) {
+      moodTimeout = window.setTimeout(() => {
+        mood = "idle";
+        moodTimeout = null;
+      }, holdMs);
+    }
+  }
+
+  // Confetti particle system drawn on <canvas>
   function burstConfetti() {
     if (!confettiCanvas) return;
     const ctx = confettiCanvas.getContext("2d");
@@ -132,7 +165,7 @@
         if (p.life-- <= 0) continue;
         alive = true;
 
-        // basic physics: gravity + movement + rotation
+        // Basic physics
         p.vy += p.g;
         p.x += p.vx;
         p.y += p.vy;
@@ -146,7 +179,6 @@
         ctx.restore();
       }
 
-      // Stop after some frames or when all particles are dead
       if (alive && frame < 240) requestAnimationFrame(tick);
       else ctx.clearRect(0, 0, width, height);
     })();
@@ -159,43 +191,63 @@
     locked = true;
 
     const correct = rounds[i].options[idx].correct;
+
     if (correct) {
       score++;
 
-      // 🎉 Celebration:
-      // - enable confetti
-      // - trigger character cheer animation via <WalkFrames>
+      // Good answer → cheer
+      setMood("cheer", 1500);
+
+      // Confetti + correct sound
       celebrate = true;
       burstConfetti();
 
       try {
         if (sfxOk) {
-          // reset audio to the beginning and play
           sfxOk.currentTime = 0;
-          // allowed because user already clicked on an answer
           void sfxOk.play();
         }
       } catch {
-        // ignore audio errors (autoplay restrictions, etc.)
+        // Ignore autoplay errors
       }
 
-      // Turn off cheer flag after a short time.
-      // Confetti animation will finish on its own.
       setTimeout(() => (celebrate = false), 1500);
+    } else {
+      // Wrong answer → fall
+      setMood("fall", 1500);
+
+      // Small shake effect
+      shake = true;
+      setTimeout(() => (shake = false), 400);
+
+      // Optional "wrong" sound
+      try {
+        if (sfxBad) {
+          sfxBad.currentTime = 0;
+          void sfxBad.play();
+        }
+      } catch {
+        // Ignore autoplay errors
+      }
     }
   }
 
-  // Go to the next question
+  // Move to the next question
   function next() {
     if (!locked) return;
 
     i++;
     selected = null;
     locked = false;
-    pickRandomFact();
+    shake = false;
+    setMood("idle", 0);
 
-    // Reached the end – report score to parent
-    if (i >= total) onFinished(score, total);
+    if (i >= total) {
+      onFinished(score, total);
+      return;
+    }
+
+    pickRandomFact();
   }
 
   // Derived progress value in 0..1
@@ -205,6 +257,7 @@
 {#if rounds[i]}
   <div
     class="layout"
+    class:shake={shake}
     style={`--img:${
       rounds[i].image ? `url('${base + rounds[i].image}')` : "none"
     }`}
@@ -222,29 +275,33 @@
       </div>
     </header>
 
-  <!-- ĽAVO: feedback -->
-  <aside class="left">
-    {#if locked}
-      <div class="feedback">
-        <h3>{rounds[i].explanation}</h3>
-        <button class="next" on:click={next}>Ďalej</button>
-      </div>
-    {:else}
-      <div class="hint">Zvoľ odpoveď → tu sa zobrazí vysvetlenie a fakty.</div>
-    {/if}
-  </aside>
-
-  <!-- STRED: otázka -->
-  <main class="center">
-    <div class="bubble">
-      <div class="continent-header">{getContinentName(continent)}</div>
-      <div class="topic-header">Téma: {getTopicName(category)}</div>
-      <div class="question">{rounds[i].question}</div>
-      {#if randomFact}
-        <div class="tip"><span class="tip-label">Tip:</span> {randomFact}</div>
+    <!-- LEFT: feedback panel -->
+    <aside class="left">
+      {#if locked}
+        <div class="feedback">
+          <h3>{rounds[i].explanation}</h3>
+          <button class="next" on:click={next}>Ďalej</button>
+        </div>
+      {:else}
+        <div class="hint">
+          Zvoľ odpoveď → tu sa zobrazí vysvetlenie a fakty.
+        </div>
       {/if}
-    </div>
-  </main>
+    </aside>
+
+    <!-- CENTER: question bubble -->
+    <main class="center">
+      <div class="bubble">
+        <div class="continent-header">{getContinentName(continent)}</div>
+        <div class="topic-header">Téma: {getTopicName(category)}</div>
+        <div class="question">{rounds[i].question}</div>
+        {#if randomFact}
+          <div class="tip">
+            <span class="tip-label">Tip:</span> {randomFact}
+          </div>
+        {/if}
+      </div>
+    </main>
 
     <!-- BOTTOM: answer cards in a row -->
     <section class="answers">
@@ -255,11 +312,11 @@
               ? o.correct
                 ? "ok"
                 : selected === idx
-                ? "bad"
-                : ""
+                  ? "bad"
+                  : ""
               : selected === idx
-              ? "chosen"
-              : ""
+                ? "chosen"
+                : ""
           }`}
           on:click={() => pick(idx)}
           disabled={locked}
@@ -272,154 +329,158 @@
   </div>
 {/if}
 
-<!-- OVERLAY: confetti + sound + character cheer animation -->
+<!-- OVERLAY: confetti + sounds + character -->
 <canvas bind:this={confettiCanvas} class="confetti"></canvas>
 <audio bind:this={sfxOk} src={`${base}sfx/correct.mp3`} preload="auto"></audio>
+<audio bind:this={sfxBad} src={`${base}sfx/wrong.mp3`} preload="auto"></audio>
 
-{#if celebrate}
-  <!-- For this sprint we only use WalkFrames for a simple cheer animation.
-       Continuous / path-based movement will be added in a later iteration. -->
-  <WalkFrames action="cheer" frames={2} speed={8} size={160} x={24} y={24} />
-{/if}
+<!-- Character:
+     - idle  -> player_idle.png
+     - cheer -> player_cheer1.png + player_cheer2.png
+     - fall  -> player_fall.png -->
+<WalkFrames
+  action={mood}
+  frames={mood === "cheer" ? 2 : 1}
+  speed={8}
+  size={160}
+  x={24}
+  y={24}
+/>
 
 <style>
   /* GRID: top | (left,center) | answers */
-  .layout{
-    display:grid;
+  .layout {
+    box-sizing: border-box;
+    display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 82px 1fr 160px;
     grid-template-areas:
       "top     top"
       "left    center"
       "left    answers";
-    gap:20px;
-    padding:24px;
-    min-height:100dvh;
+    gap: 20px;
+    padding: 24px;
+    min-height: 100dvh;
     background: var(--bg);
     color: var(--text);
     position: relative;
   }
-  .layout::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    z-index:0;
+  .layout::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
     background-image: var(--img);
     background-size: cover;
     background-position: center;
-    opacity:.10;
-    pointer-events:none;
+    opacity: 0.1;
+    pointer-events: none;
   }
   header,
   .left,
   .center,
-  .answers{
-    position:relative;
-    z-index:1;
+  .answers {
+    position: relative;
+    z-index: 1;
   }
 
   /* TOP: score + progress bar */
-  header.top{
+  header.top {
     grid-area: top;
-    display:grid;
+    display: grid;
     grid-template-columns: 300px 1fr;
-    align-items:center;
+    align-items: center;
   }
-  .score{
-    justify-self:start;
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:999px;
-    padding:10px 14px;
-    box-shadow:var(--shadow);
+  .score {
+    justify-self: start;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 10px 14px;
+    box-shadow: var(--shadow);
   }
-  .progress{
-    justify-self:center;
-    display:flex;
-    align-items:center;
-    gap:12px;
-    width:min(980px, 72vw);
+  .progress {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: min(980px, 72vw);
   }
-  .bar{
-    flex:1;
-    height:14px;
-    background:#EEF2FF;
-    border:1px solid #E5E7EB;
-    border-radius:999px;
-    overflow:hidden;
+  .bar {
+    flex: 1;
+    height: 14px;
+    background: #eef2ff;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
   }
-  .bar span{
-    display:block;
-    height:100%;
-    background:linear-gradient(90deg,#60A5FA,#818CF8);
+  .bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #60a5fa, #818cf8);
   }
-  .ratio{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:6px 10px;
-    box-shadow:var(--shadow);
+  .ratio {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 6px 10px;
+    box-shadow: var(--shadow);
   }
 
   /* LEFT: explanation / facts panel */
-  .left{
-    grid-area:left;
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:18px;
-    padding:18px;
-    box-shadow:var(--shadow);
+  .left {
+    grid-area: left;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: var(--shadow);
     min-height: 420px;
   }
-  .hint{
-    color:var(--muted);
+  .hint {
+    color: var(--muted);
   }
-  .feedback h3{
-    margin:0 0 8px 0;
+  .feedback h3 {
+    margin: 0 0 8px 0;
   }
-  .feedback ul{
-    margin:0 0 12px 18px;
-  }
-  .next{
-    padding:10px 16px;
-    border-radius:12px;
-    border:1px solid var(--border);
-    background:var(--surface);
-    cursor:pointer;
-    box-shadow:var(--shadow);
+  .next {
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    cursor: pointer;
+    box-shadow: var(--shadow);
   }
 
   /* CENTER: question bubble */
-  .center{
-    grid-area:center;
-    display:grid;
-    place-items:center;
+  .center {
+    grid-area: center;
+    display: grid;
+    place-items: center;
   }
-  .bubble{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:16px;
-    padding:20px 24px;
-    font-size:24px;
-    box-shadow:var(--shadow);
-    max-width:min(1000px, 80vw);
-    text-align:center;
-    color:var(--text);
-    background:var(--surface); border:1px solid var(--border);
-    border-radius:16px; padding:20px 24px; box-shadow:var(--shadow);
-    max-width:min(1000px, 80vw); text-align:center; color:var(--text);
-    display: flex; flex-direction: column; align-items: center;
+  .bubble {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: var(--shadow);
+    max-width: min(1000px, 80vw);
+    text-align: center;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .continent-header {
     font-size: 1.3em;
     font-weight: bold;
-    color: var(--primary, #2563EB);
+    color: var(--primary, #2563eb);
     margin-bottom: 4px;
   }
   .topic-header {
     font-size: 1.1em;
     font-weight: 500;
-    color: var(--secondary, #3B82F6);
+    color: var(--secondary, #3b82f6);
     margin-bottom: 14px;
     letter-spacing: 0.2px;
   }
@@ -427,11 +488,11 @@
     font-size: 24px;
     margin-bottom: 12px;
     font-weight: 500;
-    color: var(--text, #1E293B);
+    color: var(--text, #1e293b);
   }
   .tip {
     margin-top: 0;
-    background: var(--surface, #F8FAFC);
+    background: var(--surface, #f8fafc);
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 10px 16px;
@@ -444,93 +505,125 @@
   }
   .tip-label {
     font-weight: bold;
-    color: var(--primary, #2563EB);
+    color: var(--primary, #2563eb);
     margin-right: 6px;
   }
 
-  /* ANSWERS: three cards in a row */
-  .answers{
-    grid-area:answers;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
+  /* ANSWERS: cards in a row */
+  .answers {
+    grid-area: answers;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
   }
-  .card{
-    display:grid;
-    grid-template-columns:86px 1fr;
-    align-items:center;
-    width:min(420px, 30vw);
-    min-width:260px;
-    background:var(--surface);
-    border:2px solid var(--border);
-    border-radius:22px;
-    padding:16px;
-    text-align:left;
-    cursor:pointer;
-    box-shadow:var(--shadow);
+  .card {
+    display: grid;
+    grid-template-columns: 86px 1fr;
+    align-items: center;
+    width: min(420px, 30vw);
+    min-width: 260px;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 22px;
+    padding: 16px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: var(--shadow);
     transition:
-      transform .06s ease,
-      box-shadow .1s ease,
-      border-color .2s,
-      background .2s;
+      transform 0.06s ease,
+      box-shadow 0.1s ease,
+      border-color 0.2s,
+      background 0.2s;
   }
-  .card:hover{
+  .card:hover {
     transform: translateY(-1px);
-    box-shadow:0 10px 26px rgba(15,23,42,.12);
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
   }
-  .card:disabled{
-    cursor:default;
+  .card:disabled {
+    cursor: default;
   }
 
-  .code{
-    width:74px;
-    height:74px;
-    display:grid;
-    place-items:center;
-    background:#F1F5F9;
-    border:1px solid var(--border);
-    border-radius:16px;
-    font-weight:900;
-    font-size:26px;
-    color:var(--text);
+  .code {
+    width: 74px;
+    height: 74px;
+    display: grid;
+    place-items: center;
+    background: #f1f5f9;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    font-weight: 900;
+    font-size: 26px;
+    color: var(--text);
   }
-  .text{
-    padding-left:14px;
-    font-size:18px;
-    color:var(--text);
+  .text {
+    padding-left: 14px;
+    font-size: 18px;
+    color: var(--text);
   }
 
   /* Visual states of answer cards */
-  .card.chosen{
-    border-color:#93C5FD;
-    background:#F0F9FF;
+  .card.chosen {
+    border-color: #93c5fd;
+    background: #f0f9ff;
   }
-  .card.ok{
-    border-color:#16A34A;
-    background:#ECFDF5;
-    box-shadow:0 0 0 4px rgba(22,163,74,.15), var(--shadow);
+  .card.ok {
+    border-color: #16a34a;
+    background: #ecfdf5;
+    box-shadow:
+      0 0 0 4px rgba(22, 163, 74, 0.15),
+      var(--shadow);
   }
-  .card.bad{
-    border-color:#DC2626;
-    background:#FEF2F2;
-    box-shadow:0 0 0 4px rgba(220,38,38,.12), var(--shadow);
+  .card.bad {
+    border-color: #dc2626;
+    background: #fef2f2;
+    box-shadow:
+      0 0 0 4px rgba(220, 38, 38, 0.12),
+      var(--shadow);
   }
 
   /* Full-screen confetti overlay */
-  .confetti{
+  .confetti {
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 50;
   }
 
-  /* DONE (currently unused, final score handled by parent) */
-  .done{
-    min-height:100dvh;
-    display:grid;
-    place-items:center;
-    text-align:center;
+  /* Shake animation for wrong answer */
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    15% {
+      transform: translateX(-6px);
+    }
+    30% {
+      transform: translateX(6px);
+    }
+    45% {
+      transform: translateX(-4px);
+    }
+    60% {
+      transform: translateX(4px);
+    }
+    75% {
+      transform: translateX(-2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .layout.shake {
+    animation: shake 0.4s ease-in-out;
+  }
+
+  /* Final screen – currently unused, handled by parent */
+  .done {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    text-align: center;
   }
 </style>
