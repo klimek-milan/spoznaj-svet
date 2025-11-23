@@ -8,15 +8,17 @@
   import FinalScore from "./lib/FinalScore.svelte";
   import Settings from "./lib/Settings.svelte";
   import Credits from "./lib/Credits.svelte";
+  import PlayerName from "./lib/PlayerName.svelte";
 
   // Root application shell + navigation between screens.
-  // Part of sprint task: "coding – pohyb postavičky" (character movement)
+  // Part of sprint task: "coding – character movement and reactions"
   // Implemented by: Milan Klimek, November 2025
 
   const base = import.meta.env.BASE_URL;
 
   type View =
     | "menu"
+    | "player"
     | "howto"
     | "map"
     | "category"
@@ -25,11 +27,23 @@
     | "settings"
     | "credits";
 
+  // Single score entry for local high-score table
+  type ScoreEntry = {
+    name: string;
+    score: number;
+    total: number;
+    date: string; // ISO string
+  };
+
   let view: View = "menu";
+  let playerName = "";
   let continent = "";
   let category = "";
   let lastScore = 0;
   let lastTotal = 0;
+
+  // Local high-score table (top 10 per browser / per device)
+  let bestScores: ScoreEntry[] = [];
 
   // Remembers from which continent the player should start walking next time
   // (used by MapSelect to place the character on the last continent).
@@ -58,7 +72,55 @@
       const img = new Image();
       img.src = `${base}${path}`;
     });
+
+    // Restore last used player name from localStorage (if any)
+    const savedName = localStorage.getItem("spoznaj-svet-playerName");
+    if (savedName) {
+      playerName = savedName;
+    }
+
+    // Restore local high-score table from localStorage (if any)
+    const savedScores = localStorage.getItem("spoznaj-svet-bestScores");
+    if (savedScores) {
+      try {
+        const parsed = JSON.parse(savedScores) as ScoreEntry[];
+        if (Array.isArray(parsed)) {
+          bestScores = parsed;
+        }
+      } catch {
+        // If parsing fails, start with empty table
+        bestScores = [];
+      }
+    }
   });
+
+  // Update local high-score table and persist to localStorage (JSON)
+  function saveBestScore(name: string, score: number, total: number) {
+    const safeName = name.trim() || "Unknown player";
+
+    const newEntry: ScoreEntry = {
+      name: safeName,
+      score,
+      total,
+      date: new Date().toISOString()
+    };
+
+    bestScores = [...bestScores, newEntry]
+      // Sort by score (desc), then by total (desc) as a tie-breaker
+      .sort((a, b) => {
+        if (b.score === a.score) {
+          return b.total - a.total;
+        }
+        return b.score - a.score;
+      })
+      // Keep only top 10 entries
+      .slice(0, 10);
+
+    localStorage.setItem(
+      "spoznaj-svet-bestScores",
+      JSON.stringify(bestScores)
+    );
+  }
 
   // Called when a category is picked on CategorySelect
   function handleCategoryPick(cat: string) {
@@ -69,7 +131,8 @@
   // Called when a continent is picked on MapSelect
   function handleContinentPick(c: string) {
     continent = c;
-    lastContinentId = c; // remember last continent for the map character
+    // Remember last continent for the map character
+    lastContinentId = c;
     view = "game";
   }
 
@@ -77,8 +140,19 @@
   function handleFinished(score: number, total: number) {
     lastScore = score;
     lastTotal = total;
+
+    // Update local high-score table (per browser / per device)
+    saveBestScore(playerName, score, total);
+
     // lastContinentId is kept so the character can stand on that continent
     view = "final";
+  }
+
+  // Called when the player confirms their name on PlayerName screen
+  function handlePlayerConfirm(name: string) {
+    playerName = name;
+    localStorage.setItem("spoznaj-svet-playerName", name);
+    view = "category";
   }
 
   // Central navigation function
@@ -99,15 +173,21 @@
   <div class="brand">Spoznaj svet</div>
   <div class="spacer"></div>
   <button on:click={() => go("settings")}>Nastavenia</button>
-  <button on:click={() => go("credits")}>Credentials</button>
+  <button on:click={() => go("credits")}>Credits</button>
 </nav>
 
 {#if view === "menu"}
   <MainMenu
-    onStart={() => go("category")}
+    onStart={() => (view = "player")}
     onHowTo={() => go("howto")}
     onSettings={() => go("settings")}
     onCredits={() => go("credits")}
+  />
+{:else if view === "player"}
+  <PlayerName
+    currentName={playerName}
+    on:confirm={(e) => handlePlayerConfirm(e.detail.name)}
+    on:back={() => go("menu")}
   />
 {:else if view === "howto"}
   <HowTo onBack={() => go("menu")} onNext={() => go("category")} />
@@ -116,7 +196,11 @@
 {:else if view === "map"}
   <MapSelect onPick={handleContinentPick} lastContinentId={lastContinentId} />
 {:else if view === "game"}
-  <Game continent={continent} category={category} onFinished={handleFinished} />
+  <Game
+    continent={continent}
+    category={category}
+    onFinished={handleFinished}
+  />
 {:else if view === "final"}
   <FinalScore
     score={lastScore}
