@@ -35,12 +35,29 @@
   // (used by MapSelect to place the character on the last continent).
   let lastContinentId: string | null = null;
 
+  // Sprites used by WalkFrames (map + in-game reactions).
+  // Preloading them removes the first-time flicker on the web build.
+  const heroSprites = [
+    "anim/char/player_walk1.png",
+    "anim/char/player_walk2.png",
+    "anim/char/player_idle.png",
+    "anim/char/player_cheer1.png",
+    "anim/char/player_cheer2.png",
+    "anim/char/player_fall.png"
+  ];
+
   onMount(() => {
     // Global background image for the whole app
     document.documentElement.style.setProperty(
       "--bg-img",
       `url('${base}img/bg-world.webp')`
     );
+
+    // Preload hero sprites to avoid flicker on first use
+    heroSprites.forEach((path) => {
+      const img = new Image();
+      img.src = `${base}${path}`;
+    });
   });
 
   // Called when a category is picked on CategorySelect
