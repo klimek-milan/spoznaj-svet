@@ -143,7 +143,14 @@
   }
 
   function startWalk(continentId: string) {
-    // block only when already walking; allow click while resting
+    // If the player clicks the same continent where the character
+    // is already standing, skip walking-in-place and go straight to the game.
+    if (lastContinentId === continentId && resting) {
+      onPick(continentId);
+      return;
+    }
+
+    // Block only when already walking; allow click while resting
     if (walking) return;
     resting = false;
 
