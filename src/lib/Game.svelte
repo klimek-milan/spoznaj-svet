@@ -360,7 +360,7 @@
       "left    answers";
     gap: 20px;
     padding: 24px;
-    min-height: 100dvh;
+    min-height: calc(100dvh - 64px); /* rovnaký princíp ako v MainMenu */
     background: var(--bg);
     color: var(--text);
     position: relative;
