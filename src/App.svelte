@@ -9,6 +9,7 @@
   import Settings from "./lib/Settings.svelte";
   import Credits from "./lib/Credits.svelte";
   import PlayerName from "./lib/PlayerName.svelte";
+  import HighScores from "./lib/HighScores.svelte";
 
   // Root application shell + navigation between screens.
   // Part of sprint task: "coding – character movement and reactions"
@@ -25,7 +26,8 @@
     | "game"
     | "final"
     | "settings"
-    | "credits";
+    | "credits"
+    | "scores";
 
   // Single score entry for local high-score table
   type ScoreEntry = {
@@ -57,7 +59,7 @@
     "anim/char/player_idle.png",
     "anim/char/player_cheer1.png",
     "anim/char/player_cheer2.png",
-    "anim/char/player_fall.png"
+    "anim/char/player_fall.png",
   ];
 
   onMount(() => {
@@ -102,7 +104,7 @@
       name: safeName,
       score,
       total,
-      date: new Date().toISOString()
+      date: new Date().toISOString(),
     };
 
     bestScores = [...bestScores, newEntry]
@@ -116,10 +118,7 @@
       // Keep only top 10 entries
       .slice(0, 10);
 
-    localStorage.setItem(
-      "spoznaj-svet-bestScores",
-      JSON.stringify(bestScores)
-    );
+    localStorage.setItem("spoznaj-svet-bestScores", JSON.stringify(bestScores));
   }
 
   // Called when a category is picked on CategorySelect
@@ -182,6 +181,7 @@
     onHowTo={() => go("howto")}
     onSettings={() => go("settings")}
     onCredits={() => go("credits")}
+    onScores={() => go("scores")}
   />
 {:else if view === "player"}
   <PlayerName
@@ -194,13 +194,9 @@
 {:else if view === "category"}
   <CategorySelect onPickCategory={handleCategoryPick} />
 {:else if view === "map"}
-  <MapSelect onPick={handleContinentPick} lastContinentId={lastContinentId} />
+  <MapSelect onPick={handleContinentPick} {lastContinentId} />
 {:else if view === "game"}
-  <Game
-    continent={continent}
-    category={category}
-    onFinished={handleFinished}
-  />
+  <Game {continent} {category} onFinished={handleFinished} />
 {:else if view === "final"}
   <FinalScore
     score={lastScore}
@@ -213,6 +209,8 @@
   <Settings onBack={() => go("menu")} />
 {:else if view === "credits"}
   <Credits onBack={() => go("menu")} />
+{:else if view === "scores"}
+  <HighScores onBack={() => go("menu")} />
 {/if}
 
 <style>
