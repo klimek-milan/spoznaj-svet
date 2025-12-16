@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { settings } from "../stores/settings";
   import WalkFrames from "./WalkFrames.svelte";
 
   const base = import.meta.env.BASE_URL;
@@ -60,6 +61,14 @@
   let confettiCanvas: HTMLCanvasElement;
   let sfxOk: HTMLAudioElement;
   let sfxBad: HTMLAudioElement;
+
+  // Import settings store
+  import { get } from "svelte/store";
+  const s = get(settings);
+
+  // Timer state
+  let timeLeft = s.seconds;
+  let timerInterval: number | null = null;
 
   // Helper to get continent name from id
   function getContinentName(continentId: string): string {
@@ -184,11 +193,71 @@
     })();
   }
 
+  // Start the timer for the current question
+  function startTimer() {
+    if (!s.timer) return; // Only start if timer is enabled
+
+    timeLeft = s.seconds;
+    if (timerInterval !== null) {
+      clearInterval(timerInterval);
+    }
+
+    timerInterval = window.setInterval(() => {
+      timeLeft -= 1;
+      if (timeLeft <= 0) {
+        if (timerInterval !== null) {
+          clearInterval(timerInterval);
+        }
+        timerInterval = null;
+        handleTimeout();
+      }
+    }, 1000);
+  }
+
+  // Handle timeout (mark question as incorrect)
+  function handleTimeout() {
+    if (locked || !rounds[i]) return;
+    selected = null; // No answer selected
+    locked = true;
+
+    // Wrong answer → fall
+    setMood("fall", 1500);
+
+    // Small shake effect
+    shake = true;
+    setTimeout(() => (shake = false), 400);
+  }
+
+  // Reset timer when moving to the next question
+  function next() {
+    if (!locked) return;
+
+    i++;
+    selected = null;
+    locked = false;
+    shake = false;
+    setMood("idle", 0);
+
+    if (i >= total) {
+      onFinished(score, total);
+      return;
+    }
+
+    pickRandomFact();
+    startTimer(); // Restart timer for the next question
+  }
+
   // Handle user picking an answer
   function pick(idx: number) {
     if (locked || !rounds[i]) return;
     selected = idx;
     locked = true;
+
+    // Stop the timer when an answer is selected
+    if (timerInterval !== null) {
+      clearInterval(timerInterval);
+      timerInterval = null;
+    }
 
     const correct = rounds[i].options[idx].correct;
 
@@ -232,35 +301,20 @@
     }
   }
 
-  // Move to the next question
-  function next() {
-    if (!locked) return;
-
-    i++;
-    selected = null;
-    locked = false;
-    shake = false;
-    setMood("idle", 0);
-
-    if (i >= total) {
-      onFinished(score, total);
-      return;
-    }
-
-    pickRandomFact();
-  }
-
   // Derived progress value in 0..1
   $: progress = total ? (i + (locked ? 1 : 0)) / total : 0;
+
+  // Start timer on mount
+  onMount(() => {
+    startTimer();
+  });
 </script>
 
 {#if rounds[i]}
   <div
     class="layout"
     class:shake={shake}
-    style={`--img:${
-      rounds[i].image ? `url('${base + rounds[i].image}')` : "none"
-    }`}
+    style={`--img:${rounds[i].image ? `url('${base + rounds[i].image}')` : "none"}`}
   >
     <!-- TOP: score + progress bar -->
     <header class="top">
@@ -275,6 +329,23 @@
       </div>
     </header>
 
+    <!-- CENTER: question bubble -->
+    <main class="center">
+      <div class="bubble">
+        {#if s.timer}
+          <div class="timer">Čas: {timeLeft}s</div>
+        {/if}
+        <div class="continent-header">{getContinentName(continent)}</div>
+        <div class="topic-header">Téma: {getTopicName(category)}</div>
+        <div class="question">{rounds[i].question}</div>
+        {#if randomFact}
+          <div class="tip">
+            <span class="tip-label">Tip:</span> {randomFact}
+          </div>
+        {/if}
+      </div>
+    </main>
+
     <!-- LEFT: feedback panel -->
     <aside class="left">
       {#if locked}
@@ -288,20 +359,6 @@
         </div>
       {/if}
     </aside>
-
-    <!-- CENTER: question bubble -->
-    <main class="center">
-      <div class="bubble">
-        <div class="continent-header">{getContinentName(continent)}</div>
-        <div class="topic-header">Téma: {getTopicName(category)}</div>
-        <div class="question">{rounds[i].question}</div>
-        {#if randomFact}
-          <div class="tip">
-            <span class="tip-label">Tip:</span> {randomFact}
-          </div>
-        {/if}
-      </div>
-    </main>
 
     <!-- BOTTOM: answer cards in a row -->
     <section class="answers">
@@ -626,4 +683,17 @@
     place-items: center;
     text-align: center;
   }
+
+  .timer {
+    justify-self: end;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 10px 14px;
+    box-shadow: var(--shadow);
+    font-weight: bold;
+    color: var(--text);
+  }
 </style>
+
+<!-- Ensure the component is properly exported -->
