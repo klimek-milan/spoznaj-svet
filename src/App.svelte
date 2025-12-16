@@ -38,6 +38,13 @@
   };
 
   let view: View = "menu";
+  $: {
+  if (view === "map") {
+    document.body.classList.add("mapselect");
+  } else {
+    document.body.classList.remove("mapselect");
+  }
+}
   let playerName = "";
   let continent = "";
   let category = "";
@@ -175,6 +182,7 @@
   <button on:click={() => go("credits")}>Credits</button>
 </nav>
 
+<div class="app-content">
 {#if view === "menu"}
   <MainMenu
     onStart={() => (view = "player")}
@@ -212,6 +220,7 @@
 {:else if view === "scores"}
   <HighScores onBack={() => go("menu")} />
 {/if}
+</div>
 
 <style>
   .nav {
