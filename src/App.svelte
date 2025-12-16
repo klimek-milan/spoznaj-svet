@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { settings } from "./stores/settings";
   import MainMenu from "./lib/MainMenu.svelte";
   import HowTo from "./lib/HowTo.svelte";
   import MapSelect from "./lib/MapSelect.svelte";
@@ -43,6 +44,19 @@
   let category = "";
   let lastScore = 0;
   let lastTotal = 0;
+
+  // Background music
+  let audio: HTMLAudioElement | null = null;
+
+  // Update audio volume and play/pause when settings change
+  $: if (audio) {
+    audio.volume = $settings.volume / 100;
+    if ($settings.music) {
+      audio.play().catch((err) => console.error("Audio play failed:", err));
+    } else {
+      audio.pause();
+    }
+  }
 
   // Local high-score table (top 10 per browser / per device)
   let bestScores: ScoreEntry[] = [];
@@ -156,6 +170,9 @@
 
   // Central navigation function
   function go(to: View) {
+    // Start music on first user interaction
+    startMusic();
+    
     if (to === "menu") {
       // Hard reset of character path:
       // when we go back to the main menu, we forget the last continent.
@@ -165,6 +182,15 @@
     }
 
     view = to;
+  }
+
+  function startMusic() {
+    if (!audio) {
+      audio = new Audio(`${base}data/sounds/ambient.mp3`);
+      audio.loop = true;
+      audio.volume = $settings.volume / 100;
+      audio.play().catch((err) => console.error("Audio play failed:", err));
+    }
   }
 </script>
 
@@ -177,7 +203,7 @@
 
 {#if view === "menu"}
   <MainMenu
-    onStart={() => (view = "player")}
+    onStart={() => { startMusic(); view = "player"; }}
     onHowTo={() => go("howto")}
     onSettings={() => go("settings")}
     onCredits={() => go("credits")}

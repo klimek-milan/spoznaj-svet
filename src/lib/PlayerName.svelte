@@ -40,6 +40,7 @@
         <button class="secondary" on:click={() => (isChangingName = true)}>
           Nie, iný hráč
         </button>
+        <button class="secondary" on:click={() => dispatch("back")}>Späť</button>
       </div>
   
       {#if isChangingName}
@@ -112,4 +113,3 @@
       margin-top: 16px;
     }
   </style>
-  
