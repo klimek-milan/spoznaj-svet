@@ -25,10 +25,10 @@
   const SHOW_DEBUG_POINTS = false;
 
   type RawPoint = {
-    id: string;      // "europe", "asia", ...
-    order: number;   // 1..6 for UI labels
-    name: string;    // "Európa"
-    pxX: number;     // pixel position from GIMP (original image)
+    id: string; // "europe", "asia", ...
+    order: number; // 1..6 for UI labels
+    name: string; // "Európa"
+    pxX: number; // pixel position from GIMP (original image)
     pxY: number;
   };
 
@@ -39,12 +39,18 @@
 
   // Positions measured in GIMP on the original image (pixels)
   const rawPoints: RawPoint[] = [
-    { id: "europe",  order: 1, name: "Európa",            pxX: 1220, pxY: 576 },
-    { id: "africa",  order: 2, name: "Afrika",            pxX: 1342, pxY: 821 },
-    { id: "asia",    order: 3, name: "Ázia",              pxX: 1831, pxY: 513 },
-    { id: "oceania", order: 4, name: "Austrália/Oceánia", pxX: 2240, pxY: 1104 },
-    { id: "sa",      order: 5, name: "Južná Amerika",     pxX: 429,  pxY: 546 },
-    { id: "na",      order: 6, name: "Severná Amerika",   pxX: 726,  pxY: 1035 }
+    { id: "europe", order: 1, name: "Európa", pxX: 1220, pxY: 576 },
+    { id: "africa", order: 2, name: "Afrika", pxX: 1342, pxY: 821 },
+    { id: "asia", order: 3, name: "Ázia", pxX: 1831, pxY: 513 },
+    {
+      id: "oceania",
+      order: 4,
+      name: "Austrália/Oceánia",
+      pxX: 2240,
+      pxY: 1104,
+    },
+    { id: "sa", order: 5, name: "Južná Amerika", pxX: 429, pxY: 546 },
+    { id: "na", order: 6, name: "Severná Amerika", pxX: 726, pxY: 1035 },
   ];
 
   function toPercent(p: RawPoint): MapPoint {
@@ -73,7 +79,7 @@
     return {
       destroy() {
         delete cardRefs[id];
-      }
+      },
     };
   }
 
@@ -82,7 +88,7 @@
     return {
       destroy() {
         delete markerRefs[id];
-      }
+      },
     };
   }
 
@@ -91,8 +97,8 @@
   const walkerSize = 140;
   const EXTRA_DELAY_MS = 1_000; // how long the player stands on the continent before switching screen
 
-  let walking = false;  // walking animation is active
-  let resting = false;  // player is standing on the continent
+  let walking = false; // walking animation is active
+  let resting = false; // player is standing on the continent
 
   // Position for animated walk (WalkFrames with across=true)
   let walkerX = 0;
@@ -201,7 +207,7 @@
 
     // Start: feet at start position.
     walkerX = sx - size / 2; // center horizontally
-    walkerY = h - sy;        // bottom-aligned to the start point
+    walkerY = h - sy; // bottom-aligned to the start point
 
     // Target: feet at the center of the map marker.
     restX = ex - size / 2;
@@ -235,10 +241,13 @@
     }, walkerDuration * 1000);
 
     // Phase 2: after standing delay, call onPick and go to game screen
-    nextTimeout = window.setTimeout(() => {
-      resting = false;
-      onPick(continentId);
-    }, walkerDuration * 1000 + EXTRA_DELAY_MS);
+    nextTimeout = window.setTimeout(
+      () => {
+        resting = false;
+        onPick(continentId);
+      },
+      walkerDuration * 1000 + EXTRA_DELAY_MS
+    );
   }
 
   function handlePointClick(p: MapPoint) {
@@ -250,86 +259,88 @@
   }
 </script>
 
-<div class="map-layout">
-  <!-- LEFT PANEL: continents 1–3 -->
-  <aside class="side-panel left-panel">
-    <div class="panel-inner">
-      <h2>Vyber kontinent</h2>
-      <div class="continent-grid">
-        {#each leftPoints as p}
-          <button
-            class="continent-card"
-            use:cardRef={p.id}
-            on:click={() => handleCardClick(p.id)}
-          >
-            <div class="continent-code">{p.order}</div>
-            <div class="continent-text">
-              <div class="continent-name">{p.name}</div>
-              <div class="continent-sub">Spusti hru</div>
-            </div>
-          </button>
-        {/each}
-      </div>
-    </div>
-  </aside>
-
-  <!-- MAP IN THE CENTER -->
-  <main class="map-center">
-    <div class="map-wrapper">
-      <img
-        bind:this={mapImg}
-        src={`${base}img/mapa.png`}
-        alt="Mapa sveta"
-        class="map-image"
-        on:load={handleMapLoad}
-      />
-
-      {#each points as p}
-        <div
-          class="map-marker"
-          use:markerRef={p.id}
-          style={`left:${p.x}%; top:${p.y}%;`}
-        >
-          {#if SHOW_DEBUG_POINTS}
+<div class="mapselect-screen">
+  <div class="map-layout">
+    <!-- LEFT PANEL: continents 1–3 -->
+    <aside class="side-panel left-panel">
+      <div class="panel-inner">
+        <h2>Vyber kontinent</h2>
+        <div class="continent-grid">
+          {#each leftPoints as p}
             <button
-              class="map-point"
-              on:click={() => handlePointClick(p)}
-              aria-label={`Bod ${p.order} - ${p.name}`}
-              title={`Bod ${p.order} - ${p.name} (${p.pxX}×${p.pxY}px)`}
-            />
-            <div class="map-label">
-              Bod {p.order} - {p.name}
-              <span class="coords">
-                {p.x.toFixed(2)}%, {p.y.toFixed(2)}%
-              </span>
-            </div>
-          {/if}
+              class="continent-card"
+              use:cardRef={p.id}
+              on:click={() => handleCardClick(p.id)}
+            >
+              <div class="continent-code">{p.order}</div>
+              <div class="continent-text">
+                <div class="continent-name">{p.name}</div>
+                <div class="continent-sub">Spusti hru</div>
+              </div>
+            </button>
+          {/each}
         </div>
-      {/each}
-    </div>
-  </main>
+      </div>
+    </aside>
 
-  <!-- RIGHT PANEL: continents 4–6 -->
-  <aside class="side-panel right-panel">
-    <div class="panel-inner">
-      <h2>Vyber kontinent</h2>
-      <div class="continent-grid">
-        {#each rightPoints as p}
-          <button
-            class="continent-card"
-            use:cardRef={p.id}
-            on:click={() => handleCardClick(p.id)}
+    <!-- MAP IN THE CENTER -->
+    <main class="map-center">
+      <div class="map-wrapper">
+        <img
+          bind:this={mapImg}
+          src={`${base}img/mapa.png`}
+          alt="Mapa sveta"
+          class="map-image"
+          on:load={handleMapLoad}
+        />
+
+        {#each points as p}
+          <div
+            class="map-marker"
+            use:markerRef={p.id}
+            style={`left:${p.x}%; top:${p.y}%;`}
           >
-            <div class="continent-code">{p.order}</div>
-            <div class="continent-text">
-              <div class="continent-name">{p.name}</div>
-              <div class="continent-sub">Spusti hru</div>
-            </div>
-          </button>
+            {#if SHOW_DEBUG_POINTS}
+              <button
+                class="map-point"
+                on:click={() => handlePointClick(p)}
+                aria-label={`Bod ${p.order} - ${p.name}`}
+                title={`Bod ${p.order} - ${p.name} (${p.pxX}×${p.pxY}px)`}
+              />
+              <div class="map-label">
+                Bod {p.order} - {p.name}
+                <span class="coords">
+                  {p.x.toFixed(2)}%, {p.y.toFixed(2)}%
+                </span>
+              </div>
+            {/if}
+          </div>
         {/each}
       </div>
-    </div>
-  </aside>
+    </main>
+
+    <!-- RIGHT PANEL: continents 4–6 -->
+    <aside class="side-panel right-panel">
+      <div class="panel-inner">
+        <h2>Vyber kontinent</h2>
+        <div class="continent-grid">
+          {#each rightPoints as p}
+            <button
+              class="continent-card"
+              use:cardRef={p.id}
+              on:click={() => handleCardClick(p.id)}
+            >
+              <div class="continent-code">{p.order}</div>
+              <div class="continent-text">
+                <div class="continent-name">{p.name}</div>
+                <div class="continent-sub">Spusti hru</div>
+              </div>
+            </button>
+          {/each}
+        </div>
+      </div>
+    </aside>
+  </div>
 </div>
 
 {#if walking}
@@ -373,13 +384,25 @@
 {/if}
 
 <style>
-  .map-layout {
-    display: flex;
-    gap: 16px;
-    padding: 16px;
-    box-sizing: border-box;
-    min-height: 100vh;
-  }
+  .mapselect-screen {
+  background: #28caf0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.map-layout {
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
 
   .side-panel {
     flex: 0 0 clamp(180px, 18vw, 260px);
@@ -399,12 +422,12 @@
 
   .map-wrapper {
     position: relative;
-    width: 100%;
-    max-width: 1700px;
+    width: 90%;
+    max-width: 1615px;
     background: var(--surface);
-    border-radius: var(--radius);
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: none;
   }
 
   .map-image {
