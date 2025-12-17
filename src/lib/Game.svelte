@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import { settings } from "../stores/settings";
   import WalkFrames from "./WalkFrames.svelte";
+  import PauseMenu from "./PauseMenu.svelte";
 
   const base = import.meta.env.BASE_URL;
 
@@ -69,6 +70,9 @@
   // Timer state
   let timeLeft = s.seconds;
   let timerInterval: number | null = null;
+
+  // Pause state
+  let isPaused = false;
 
   // Helper to get continent name from id
   function getContinentName(continentId: string): string {
@@ -301,6 +305,26 @@
     }
   }
 
+  // Toggle pause state
+  function togglePause() {
+    isPaused = !isPaused;
+  }
+
+  // Keyboard event handler
+  onMount(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        togglePause();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  });
+
   // Derived progress value in 0..1
   $: progress = total ? (i + (locked ? 1 : 0)) / total : 0;
 
@@ -403,6 +427,10 @@
   x={24}
   y={24}
 />
+
+{#if isPaused}
+  <PauseMenu on:resume={togglePause} />
+{/if}
 
 <style>
   /* GRID: top | (left,center) | answers */

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import WalkFrames from "./WalkFrames.svelte";
+  import PauseMenu from "./PauseMenu.svelte";
 
   // Map selection screen with animated walk between continent points.
   // Sprint task: "coding – pohyb postavičky" (character movement)
@@ -257,6 +258,30 @@
   function handleCardClick(continentId: string) {
     startWalk(continentId);
   }
+
+  let isPaused = false;
+
+  function togglePause() {
+    isPaused = !isPaused;
+  }
+
+  onMount(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        togglePause();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  });
+
+  $: if (isPaused) {
+    // Pause menu logic
+  }
 </script>
 
 <div class="mapselect-screen">
@@ -306,7 +331,7 @@
                 on:click={() => handlePointClick(p)}
                 aria-label={`Bod ${p.order} - ${p.name}`}
                 title={`Bod ${p.order} - ${p.name} (${p.pxX}×${p.pxY}px)`}
-              />
+              ></button>
               <div class="map-label">
                 Bod {p.order} - {p.name}
                 <span class="coords">
@@ -381,6 +406,10 @@
     duration={1}
     bounce={false}
   />
+{/if}
+
+{#if isPaused}
+  <PauseMenu on:resume={togglePause} />
 {/if}
 
 <style>

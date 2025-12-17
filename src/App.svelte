@@ -11,6 +11,7 @@
   import Credits from "./lib/Credits.svelte";
   import PlayerName from "./lib/PlayerName.svelte";
   import HighScores from "./lib/HighScores.svelte";
+  import PauseMenu from "./lib/PauseMenu.svelte";
 
   // Root application shell + navigation between screens.
   // Part of sprint task: "coding – character movement and reactions"
@@ -115,6 +116,18 @@
         bestScores = [];
       }
     }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        togglePause();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   });
 
   // Update local high-score table and persist to localStorage (JSON)
@@ -175,17 +188,26 @@
     view = "category";
   }
 
+  let isPaused = false;
+
+  function togglePause() {
+    if (view !== "menu") {
+      isPaused = !isPaused;
+    }
+  }
+
   // Central navigation function
   function go(to: View) {
     // Start music on first user interaction
     startMusic();
-    
+
     if (to === "menu") {
       // Hard reset of character path:
       // when we go back to the main menu, we forget the last continent.
       // Next time the game starts, the character appears from the side button
       // instead of standing on the map.
       lastContinentId = null;
+      isPaused = false; // Ensure pause menu is closed when navigating to main menu
     }
 
     view = to;
@@ -208,44 +230,56 @@
   <button on:click={() => go("credits")}>Credits</button>
 </nav>
 
-<div class="app-content">
-{#if view === "menu"}
-  <MainMenu
-    onStart={() => { startMusic(); view = "player"; }}
-    onHowTo={() => go("howto")}
-    onSettings={() => go("settings")}
-    onCredits={() => go("credits")}
-    onScores={() => go("scores")}
-  />
-{:else if view === "player"}
-  <PlayerName
-    currentName={playerName}
-    on:confirm={(e) => handlePlayerConfirm(e.detail.name)}
-    on:back={() => go("menu")}
-  />
-{:else if view === "howto"}
-  <HowTo onBack={() => go("menu")} onNext={() => go("category")} />
-{:else if view === "category"}
-  <CategorySelect onPickCategory={handleCategoryPick} />
-{:else if view === "map"}
-  <MapSelect onPick={handleContinentPick} {lastContinentId} />
-{:else if view === "game"}
-  <Game {continent} {category} onFinished={handleFinished} />
-{:else if view === "final"}
-  <FinalScore
-    score={lastScore}
-    total={lastTotal}
-    onRestart={() => go("category")}
-    onMap={() => go("map")}
-    onMenu={() => go("menu")}
-  />
-{:else if view === "settings"}
-  <Settings onBack={() => go("menu")} />
-{:else if view === "credits"}
-  <Credits onBack={() => go("menu")} />
-{:else if view === "scores"}
-  <HighScores onBack={() => go("menu")} />
-{/if}
+<div class="app-wrapper">
+  <div class="app-content" class:disabled={isPaused}>
+    {#if view === "menu"}
+      <MainMenu
+        onStart={() => { startMusic(); view = "player"; }}
+        onHowTo={() => go("howto")}
+        onSettings={() => go("settings")}
+        onCredits={() => go("credits")}
+        onScores={() => go("scores")}
+      />
+    {:else if view === "player"}
+      <PlayerName
+        currentName={playerName}
+        on:confirm={(e) => handlePlayerConfirm(e.detail.name)}
+        on:back={() => go("menu")}
+      />
+    {:else if view === "howto"}
+      <HowTo onBack={() => go("menu")} onNext={() => go("category")} />
+    {:else if view === "category"}
+      <CategorySelect onPickCategory={handleCategoryPick} />
+    {:else if view === "map"}
+      <MapSelect onPick={handleContinentPick} {lastContinentId} />
+    {:else if view === "game"}
+      <Game {continent} {category} onFinished={handleFinished} />
+    {:else if view === "final"}
+      <FinalScore
+        score={lastScore}
+        total={lastTotal}
+        onRestart={() => go("category")}
+        onMap={() => go("map")}
+        onMenu={() => go("menu")}
+      />
+    {:else if view === "settings"}
+      <Settings onBack={() => go("menu")} />
+    {:else if view === "credits"}
+      <Credits onBack={() => go("menu")} />
+    {:else if view === "scores"}
+      <HighScores onBack={() => go("menu")} />
+    {/if}
+  </div>
+
+  {#if isPaused}
+    <div class="pause-menu-overlay">
+      <PauseMenu 
+        onResume={togglePause} 
+        onSettings={() => { isPaused = false; go("settings"); }} 
+        onMenu={() => go("menu")} 
+      />
+    </div>
+  {/if}
 </div>
 
 <style>
@@ -275,5 +309,23 @@
     border-radius: 10px;
     box-shadow: var(--shadow);
     cursor: pointer;
+  }
+
+  .app-wrapper {
+    position: relative;
+  }
+
+  .app-content.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .pause-menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
   }
 </style>
