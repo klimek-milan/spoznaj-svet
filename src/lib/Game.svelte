@@ -24,6 +24,7 @@
   export let continent: string = "europe";
   export let category: string = "geography";
   export let onFinished: (score: number, total: number) => void = () => {};
+  export let onQuit: () => void = () => {};
 
   // Types for options and rounds
   type Opt = { code: string; text: string; correct: boolean };
@@ -73,6 +74,9 @@
 
   // Pause state
   let isPaused = false;
+
+  // Quit confirmation dialog state
+  let showQuitDialog = false;
 
   // Helper to get continent name from id
   function getContinentName(continentId: string): string {
@@ -310,6 +314,22 @@
     isPaused = !isPaused;
   }
 
+  // Show quit confirmation dialog
+  function confirmQuit() {
+    showQuitDialog = true;
+  }
+
+  // Cancel quit and close dialog
+  function cancelQuit() {
+    showQuitDialog = false;
+  }
+
+  // Confirm quit and return to menu
+  function proceedQuit() {
+    showQuitDialog = false;
+    onQuit();
+  }
+
   // Keyboard event handler
   onMount(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -382,6 +402,7 @@
           Zvoľ odpoveď → tu sa zobrazí vysvetlenie a fakty.
         </div>
       {/if}
+      <button class="quit" on:click={confirmQuit}>Ukončiť hru</button>
     </aside>
 
     <!-- BOTTOM: answer cards in a row -->
@@ -429,7 +450,24 @@
 />
 
 {#if isPaused}
-  <PauseMenu on:resume={togglePause} />
+  <PauseMenu 
+    onResume={togglePause} 
+    onSettings={() => {}}
+    onMenu={() => {}}
+  />
+{/if}
+
+{#if showQuitDialog}
+  <div class="dialog-overlay">
+    <div class="dialog-box" on:click|stopPropagation>
+      <h2>Ukončiť hru?</h2>
+      <p>Naozaj chceš ukončiť hru? Všetok progres bude stratený.</p>
+      <div class="dialog-buttons">
+        <button class="dialog-cancel" on:click={cancelQuit}>Zrušiť</button>
+        <button class="dialog-confirm" on:click={proceedQuit}>Ukončiť</button>
+      </div>
+    </div>
+  </div>
 {/if}
 
 <style>
@@ -535,6 +573,16 @@
     background: var(--surface);
     cursor: pointer;
     box-shadow: var(--shadow);
+  }
+  .quit {
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    margin-top: 12px;
+    width: 100%;
   }
 
   /* CENTER: question bubble */
@@ -721,6 +769,76 @@
     box-shadow: var(--shadow);
     font-weight: bold;
     color: var(--text);
+  }
+
+  /* Quit confirmation dialog */
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dialog-box {
+    background: var(--surface);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    max-width: 400px;
+    min-width: 320px;
+  }
+
+  .dialog-box h2 {
+    margin: 0 0 12px 0;
+    font-size: 1.5em;
+  }
+
+  .dialog-box p {
+    margin: 0 0 20px 0;
+    color: var(--muted);
+  }
+
+  .dialog-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .dialog-cancel,
+  .dialog-confirm {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    font: inherit;
+    font-weight: 600;
+  }
+
+  .dialog-cancel {
+    background: var(--surface);
+    color: var(--text);
+  }
+
+  .dialog-cancel:hover {
+    background: #f3f4f6;
+  }
+
+  .dialog-confirm {
+    background: #dc2626;
+    color: white;
+    border-color: #dc2626;
+  }
+
+  .dialog-confirm:hover {
+    background: #b91c1c;
   }
 </style>
 

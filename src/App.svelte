@@ -189,10 +189,42 @@
   }
 
   let isPaused = false;
+  let viewBeforeSettings: View | null = null;
 
   function togglePause() {
     if (view !== "menu") {
       isPaused = !isPaused;
+    }
+  }
+
+  function openSettingsFromPause() {
+    viewBeforeSettings = view;
+    isPaused = false;
+    view = "settings";
+  }
+
+  function openSettings() {
+    viewBeforeSettings = view;
+    view = "settings";
+  }
+
+  function closeSettings() {
+    if (viewBeforeSettings) {
+      const targetView = viewBeforeSettings;
+      viewBeforeSettings = null;
+      view = targetView;
+    } else {
+      go("menu");
+    }
+  }
+
+  function closeSettingsFromPause() {
+    if (viewBeforeSettings) {
+      view = viewBeforeSettings;
+      viewBeforeSettings = null;
+      isPaused = true;
+    } else {
+      go("menu");
     }
   }
 
@@ -226,7 +258,7 @@
 <nav class="nav">
   <div class="brand">Spoznaj svet</div>
   <div class="spacer"></div>
-  <button on:click={() => go("settings")}>Nastavenia</button>
+  <button on:click={openSettings}>Nastavenia</button>
   <button on:click={() => go("credits")}>Credits</button>
 </nav>
 
@@ -249,11 +281,11 @@
     {:else if view === "howto"}
       <HowTo onBack={() => go("menu")} onNext={() => go("category")} />
     {:else if view === "category"}
-      <CategorySelect onPickCategory={handleCategoryPick} />
+      <CategorySelect onPickCategory={handleCategoryPick} onBack={() => go("player")} />
     {:else if view === "map"}
-      <MapSelect onPick={handleContinentPick} {lastContinentId} />
+      <MapSelect onPick={handleContinentPick} {lastContinentId} onBack={() => go("category")} />
     {:else if view === "game"}
-      <Game {continent} {category} onFinished={handleFinished} />
+      <Game {continent} {category} onFinished={handleFinished} onQuit={() => go("menu")} />
     {:else if view === "final"}
       <FinalScore
         score={lastScore}
@@ -263,7 +295,7 @@
         onMenu={() => go("menu")}
       />
     {:else if view === "settings"}
-      <Settings onBack={() => go("menu")} />
+      <Settings onBack={viewBeforeSettings ? (isPaused ? closeSettingsFromPause : closeSettings) : () => go("menu")} />
     {:else if view === "credits"}
       <Credits onBack={() => go("menu")} />
     {:else if view === "scores"}
@@ -275,7 +307,7 @@
     <div class="pause-menu-overlay">
       <PauseMenu 
         onResume={togglePause} 
-        onSettings={() => { isPaused = false; go("settings"); }} 
+        onSettings={openSettingsFromPause} 
         onMenu={() => go("menu")} 
       />
     </div>

@@ -6,7 +6,7 @@
 </script>
 
 <div class="pause-menu-overlay">
-  <div class="pause-menu">
+  <div class="pause-menu" on:click|stopPropagation>
     <h2>Pauza</h2>
     <button on:click={onResume}>Pokračovať</button>
     <button on:click={() => { onSettings(); }}>Nastavenia</button>

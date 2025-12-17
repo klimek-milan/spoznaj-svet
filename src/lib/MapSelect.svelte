@@ -14,6 +14,7 @@
 
   export let onPick: (continentId: string) => void;
   export let lastContinentId: string | null = null;
+  export let onBack: () => void = () => {};
 
   const base = import.meta.env.BASE_URL;
 
@@ -268,6 +269,7 @@
   onMount(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
+        event.preventDefault();
         togglePause();
       }
     };
@@ -284,7 +286,7 @@
   }
 </script>
 
-<div class="mapselect-screen">
+<div class="mapselect-screen" class:disabled={isPaused}>
   <div class="map-layout">
     <!-- LEFT PANEL: continents 1–3 -->
     <aside class="side-panel left-panel">
@@ -366,6 +368,9 @@
       </div>
     </aside>
   </div>
+  <div class="back-button-container">
+    <button class="back-button" on:click={onBack}>Späť</button>
+  </div>
 </div>
 
 {#if walking}
@@ -409,7 +414,11 @@
 {/if}
 
 {#if isPaused}
-  <PauseMenu on:resume={togglePause} />
+  <PauseMenu 
+    onResume={togglePause} 
+    onSettings={() => {}}
+    onMenu={() => {}}
+  />
 {/if}
 
 <style>
@@ -593,5 +602,32 @@
     .continent-card {
       min-width: 160px;
     }
+  }
+
+  .mapselect-screen.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .back-button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .back-button {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    font-weight: 600;
+  }
+
+  .back-button:hover {
+    background: #f3f4f6;
   }
 </style>

@@ -25,10 +25,11 @@
     }
   </script>
   
-  <section class="player">
-    <h2>Zadaj meno hráča</h2>
+  <div class="container">
+    <section class="player">
+      <h2>Zadaj meno hráča</h2>
   
-    {#if currentName}
+      {#if currentName}
       <!-- Už máme meno z minula -->
       <p>
         Minule hral: <strong>{currentName}</strong>.<br />
@@ -69,11 +70,20 @@
       </div>
     {/if}
   </section>
+</div>
   
   <style>
+    .container {
+      min-height: calc(100dvh - 64px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
     .player {
       max-width: 480px;
-      margin: 40px auto;
+      width: 100%;
       padding: 24px;
       border-radius: var(--radius);
       background: var(--surface);
