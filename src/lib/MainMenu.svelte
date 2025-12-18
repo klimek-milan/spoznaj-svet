@@ -84,6 +84,15 @@
     font-size: 56px;
     line-height: 1.05;
     text-align: center;
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
   }
 
   .pill {

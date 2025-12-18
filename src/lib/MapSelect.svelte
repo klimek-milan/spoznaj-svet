@@ -15,6 +15,8 @@
   export let onPick: (continentId: string) => void;
   export let lastContinentId: string | null = null;
   export let onBack: () => void = () => {};
+  export let categoryColor: string = "#ffffff";
+  export let categoryName: string = "";
 
   const base = import.meta.env.BASE_URL;
 
@@ -287,11 +289,14 @@
 </script>
 
 <div class="mapselect-screen" class:disabled={isPaused}>
+  <div class="topic-header" style="background: #ffffff">
+    <span class="topic-name">{categoryName}</span>
+  </div>
   <div class="map-layout">
     <!-- LEFT PANEL: continents 1–3 -->
-    <aside class="side-panel left-panel">
+    <aside class="side-panel left-panel" style="background: {categoryColor};">
       <div class="panel-inner">
-        <h2>Vyber kontinent</h2>
+        <h2 class="continents-title">Vyber kontinent</h2>
         <div class="continent-grid">
           {#each leftPoints as p}
             <button
@@ -347,9 +352,9 @@
     </main>
 
     <!-- RIGHT PANEL: continents 4–6 -->
-    <aside class="side-panel right-panel">
+    <aside class="side-panel right-panel" style="background: {categoryColor};">
       <div class="panel-inner">
-        <h2>Vyber kontinent</h2>
+        <h2 class="continents-title">Vyber kontinent</h2>
         <div class="continent-grid">
           {#each rightPoints as p}
             <button
@@ -429,6 +434,33 @@
   overflow: hidden;
   box-sizing: border-box;
 }
+
+  .topic-header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    border-radius: 16px;
+    border: 2px solid var(--border);
+    box-shadow: var(--shadow);
+    z-index: 5;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .topic-label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .topic-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+  }
 
 .map-layout {
   display: flex;
@@ -629,5 +661,18 @@
 
   .back-button:hover {
     background: #f3f4f6;
+  }
+
+  .continents-title{
+    font-size: 24px !important;
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
   }
 </style>

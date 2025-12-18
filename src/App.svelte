@@ -50,6 +50,8 @@
   let playerName = "";
   let continent = "";
   let category = "";
+  let categoryName = "";
+  let categoryColor = "#ffffff";
   let lastScore = 0;
   let lastTotal = 0;
 
@@ -156,8 +158,10 @@
   }
 
   // Called when a category is picked on CategorySelect
-  function handleCategoryPick(cat: string) {
-    category = cat;
+  function handleCategoryPick(cat: { id: string, name: string, color: string }) {
+    category = cat.id;
+    categoryName = cat.name;
+    categoryColor = cat.color;
     view = "map";
   }
 
@@ -283,7 +287,7 @@
     {:else if view === "category"}
       <CategorySelect onPickCategory={handleCategoryPick} onBack={() => go("player")} />
     {:else if view === "map"}
-      <MapSelect onPick={handleContinentPick} {lastContinentId} onBack={() => go("category")} />
+      <MapSelect onPick={handleContinentPick} {lastContinentId} {categoryColor} {categoryName} onBack={() => go("category")} />
     {:else if view === "game"}
       <Game {continent} {category} onFinished={handleFinished} onQuit={() => go("menu")} />
     {:else if view === "final"}
