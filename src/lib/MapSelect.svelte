@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import WalkFrames from "./WalkFrames.svelte";
   import PauseMenu from "./PauseMenu.svelte";
+  import Settings from "./Settings.svelte";
 
   // Map selection screen with animated walk between continent points.
   // Sprint task: "coding – pohyb postavičky" (character movement)
@@ -15,6 +16,7 @@
   export let onPick: (continentId: string) => void;
   export let lastContinentId: string | null = null;
   export let onBack: () => void = () => {};
+  export let onMenu: () => void = () => {};
   export let categoryColor: string = "#ffffff";
   export let categoryName: string = "";
 
@@ -263,9 +265,24 @@
   }
 
   let isPaused = false;
+  let showSettings = false;
 
   function togglePause() {
     isPaused = !isPaused;
+  }
+
+  function openSettings() {
+    isPaused = false;
+    showSettings = true;
+  }
+
+  function closeSettings() {
+    showSettings = false;
+  }
+
+  function handleMenuFromPause() {
+    isPaused = false;
+    onMenu();
   }
 
   onMount(() => {
@@ -419,14 +436,55 @@
 {/if}
 
 {#if isPaused}
-  <PauseMenu 
-    onResume={togglePause} 
-    onSettings={() => {}}
-    onMenu={() => {}}
-  />
+  <div class="pause-overlay">
+    <PauseMenu 
+      onResume={togglePause} 
+      onSettings={openSettings}
+      onMenu={handleMenuFromPause}
+    />
+  </div>
+{/if}
+
+{#if showSettings}
+  <div class="settings-overlay">
+    <div class="settings-wrapper" on:click|stopPropagation>
+      <Settings onBack={closeSettings} />
+    </div>
+  </div>
 {/if}
 
 <style>
+  .pause-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .settings-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .settings-wrapper {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
   .mapselect-screen {
   background: #28caf0;
   height: 100%;

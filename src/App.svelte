@@ -120,7 +120,7 @@
     }
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
+      if (event.key === "Escape" && view !== "game" && view !== "map") {
         togglePause();
       }
     };
@@ -287,7 +287,7 @@
     {:else if view === "category"}
       <CategorySelect onPickCategory={handleCategoryPick} onBack={() => go("player")} />
     {:else if view === "map"}
-      <MapSelect onPick={handleContinentPick} {lastContinentId} {categoryColor} {categoryName} onBack={() => go("category")} />
+      <MapSelect onPick={handleContinentPick} {lastContinentId} {categoryColor} {categoryName} onBack={() => go("category")} onMenu={() => go("menu")} />
     {:else if view === "game"}
       <Game {continent} {category} onFinished={handleFinished} onQuit={() => go("menu")} />
     {:else if view === "final"}
@@ -357,11 +357,15 @@
   }
 
   .pause-menu-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>

@@ -3,6 +3,7 @@
   import { settings } from "../stores/settings";
   import WalkFrames from "./WalkFrames.svelte";
   import PauseMenu from "./PauseMenu.svelte";
+  import Settings from "./Settings.svelte";
 
   const base = import.meta.env.BASE_URL;
 
@@ -74,6 +75,9 @@
 
   // Pause state
   let isPaused = false;
+
+  // Settings state
+  let showSettings = false;
 
   // Quit confirmation dialog state
   let showQuitDialog = false;
@@ -222,6 +226,26 @@
     }, 1000);
   }
 
+  // Resume the timer from current timeLeft value
+  function resumeTimer() {
+    if (!s.timer || timeLeft <= 0) return;
+
+    if (timerInterval !== null) {
+      clearInterval(timerInterval);
+    }
+
+    timerInterval = window.setInterval(() => {
+      timeLeft -= 1;
+      if (timeLeft <= 0) {
+        if (timerInterval !== null) {
+          clearInterval(timerInterval);
+        }
+        timerInterval = null;
+        handleTimeout();
+      }
+    }, 1000);
+  }
+
   // Handle timeout (mark question as incorrect)
   function handleTimeout() {
     if (locked || !rounds[i]) return;
@@ -312,6 +336,41 @@
   // Toggle pause state
   function togglePause() {
     isPaused = !isPaused;
+    
+    // Pause/resume timer when pausing
+    if (isPaused) {
+      if (timerInterval !== null) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+    } else {
+      // Resume timer if not locked and timer is enabled
+      if (!locked && s.timer && timerInterval === null) {
+        resumeTimer();
+      }
+    }
+  }
+
+  // Open settings and pause timer
+  function openSettings() {
+    isPaused = false; // Close pause menu when opening settings
+    showSettings = true;
+    
+    // Pause timer when settings opens
+    if (timerInterval !== null) {
+      clearInterval(timerInterval);
+      timerInterval = null;
+    }
+  }
+
+  // Close settings and resume timer
+  function closeSettings() {
+    showSettings = false;
+    
+    // Resume timer if not locked and timer is enabled
+    if (!locked && s.timer && timerInterval === null) {
+      resumeTimer();
+    }
   }
 
   // Show quit confirmation dialog
@@ -450,11 +509,21 @@
 />
 
 {#if isPaused}
-  <PauseMenu 
-    onResume={togglePause} 
-    onSettings={() => {}}
-    onMenu={() => {}}
-  />
+  <div class="pause-overlay">
+    <PauseMenu 
+      onResume={togglePause} 
+      onSettings={openSettings}
+      onMenu={onQuit}
+    />
+  </div>
+{/if}
+
+{#if showSettings}
+  <div class="settings-overlay">
+    <div class="settings-wrapper" on:click|stopPropagation>
+      <Settings onBack={closeSettings} />
+    </div>
+  </div>
 {/if}
 
 {#if showQuitDialog}
@@ -839,6 +908,39 @@
 
   .dialog-confirm:hover {
     background: #b91c1c;
+  }
+
+  /* Pause overlay */
+  .pause-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Settings overlay */
+  .settings-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .settings-wrapper {
+    max-height: 90vh;
+    overflow-y: auto;
   }
 </style>
 

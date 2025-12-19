@@ -5,29 +5,14 @@
   export let onMenu: () => void = () => {};
 </script>
 
-<div class="pause-menu-overlay">
-  <div class="pause-menu" on:click|stopPropagation>
-    <h2>Pauza</h2>
-    <button on:click={onResume}>Pokračovať</button>
-    <button on:click={() => { onSettings(); }}>Nastavenia</button>
-    <button on:click={onMenu}>Hlavné menu</button>
-  </div>
+<div class="pause-menu" on:click|stopPropagation>
+  <h2>Pauza</h2>
+  <button on:click={onResume}>Pokračovať</button>
+  <button on:click={() => { onSettings(); }}>Nastavenia</button>
+  <button on:click={onMenu}>Hlavné menu</button>
 </div>
 
 <style>
-  .pause-menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .pause-menu {
     background: var(--surface);
     padding: 20px;
