@@ -6,11 +6,13 @@ export type Settings = {
   seconds: number;
   volume: number;
   music: boolean;
+  soundVolume: number;
 };
 export const settings = writable<Settings>({
   sound: true,
   timer: false,
   seconds: 20,
   volume: 50,
-  music: true
+  music: true,
+  soundVolume: 50
 });

@@ -303,13 +303,16 @@
       celebrate = true;
       burstConfetti();
 
-      try {
-        if (sfxOk) {
-          sfxOk.currentTime = 0;
-          void sfxOk.play();
+      if (s.sound) {
+        try {
+          if (sfxOk) {
+            sfxOk.volume = s.soundVolume / 100;
+            sfxOk.currentTime = 0;
+            void sfxOk.play();
+          }
+        } catch {
+          // Ignore autoplay errors
         }
-      } catch {
-        // Ignore autoplay errors
       }
 
       setTimeout(() => (celebrate = false), 1500);
@@ -322,13 +325,16 @@
       setTimeout(() => (shake = false), 400);
 
       // Optional "wrong" sound
-      try {
-        if (sfxBad) {
-          sfxBad.currentTime = 0;
-          void sfxBad.play();
+      if (s.sound) {
+        try {
+          if (sfxBad) {
+            sfxBad.volume = s.soundVolume / 100;
+            sfxBad.currentTime = 0;
+            void sfxBad.play();
+          }
+        } catch {
+          // Ignore autoplay errors
         }
-      } catch {
-        // Ignore autoplay errors
       }
     }
   }
@@ -492,8 +498,8 @@
 
 <!-- OVERLAY: confetti + sounds + character -->
 <canvas bind:this={confettiCanvas} class="confetti"></canvas>
-<audio bind:this={sfxOk} src={`${base}sfx/correct.mp3`} preload="auto"></audio>
-<audio bind:this={sfxBad} src={`${base}sfx/wrong.mp3`} preload="auto"></audio>
+<audio bind:this={sfxOk} src={`${base}data/sounds/correct.mp3`} preload="auto"></audio>
+<audio bind:this={sfxBad} src={`${base}data/sounds/wrong.mp3`} preload="auto"></audio>
 
 <!-- Character:
      - idle  -> player_idle.png

@@ -25,6 +25,11 @@
     </label>
   
     <label class="row">
+      <span>Hlasitosť zvukov: {s.soundVolume}%</span>
+      <input class="slider" type="range" min="0" max="100" step="1" bind:value={s.soundVolume} disabled={!s.sound} />
+    </label>
+  
+    <label class="row">
       <input type="checkbox" bind:checked={s.timer} />
       Časovač na otázku
     </label>
