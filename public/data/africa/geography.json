@@ -1,5 +1,5 @@
 {
-  "id": "geography_africa",
+  "id": "geografia_afrika",
   "name": "Geografia Afriky",
   "description": "Otázky z geografie Afriky pre 8. ročník ZŠ",
   "facts": {
@@ -13,9 +13,9 @@
       "Rozmanitý krajinný ráz: savany a tropické lesy.",
       "Hlavné mesto je Abuja."
     ],
-    "SOUTH_AFRICA": [
+    "JAR": [
       "Leží na juhu kontinentu.",
-      "Má tri hlavné mestá: Pretoria, Kapské Mesto, Bloemfontein.",
+      "Má tri hlavné mestá: Pretoria, Kapské Mesto a Bloemfontein.",
       "Rozmanité podnebie."
     ],
     "SAHARA": [
@@ -23,7 +23,7 @@
       "Rozprestiera sa cez severnú Afriku.",
       "Extrémne suché a horúce podnebie."
     ],
-    "NILE": [
+    "NIL": [
       "Najdlhšia rieka Afriky.",
       "Preteká cez Egypt a Sudán.",
       "Dôležitá pre poľnohospodárstvo."
@@ -38,17 +38,17 @@
       "Sezónne dažde a suché obdobia.",
       "Rozprestiera sa cez západnú a strednú Afriku."
     ],
-    "CONGO": [
+    "KONGO": [
       "Rieka v strednej Afrike.",
       "Husté dažďové pralesy.",
       "Druhá najdlhšia rieka Afriky."
     ],
-    "MADAGASCAR": [
+    "MADAGASKAR": [
       "Veľký ostrov pri východnom pobreží Afriky.",
       "Bohatá biodiverzita.",
       "Hlavné mesto je Antananarivo."
     ],
-    "VICTORIA_LAKE": [
+    "VIKTORIA": [
       "Najväčšie jazero Afriky.",
       "Rozprestiera sa medzi Tanzániou, Ugandou a Keňou.",
       "Dôležité pre rybolov."
@@ -58,23 +58,23 @@
   "rounds": [
     { "question": "Kde leží Egypt?", "options": [ { "code": "EGYPT", "text": "V severovýchodnej Afrike", "correct": true }, { "code": "EGYPT", "text": "V južnej Afrike", "correct": false }, { "code": "EGYPT", "text": "V západnej Afrike", "correct": false } ], "explanation": "Egypt leží v severovýchodnej Afrike." },
     { "question": "Ktorá krajina Afriky je najľudnatejšia?", "options": [ { "code": "NIGERIA", "text": "Nigéria", "correct": true }, { "code": "NIGERIA", "text": "Egypt", "correct": false }, { "code": "NIGERIA", "text": "Juhoafrická republika", "correct": false } ], "explanation": "Najľudnatejšia krajina je Nigéria." },
-    { "question": "Koľko hlavných miest má Juhoafrická republika?", "options": [ { "code": "SOUTH_AFRICA", "text": "Tri", "correct": true }, { "code": "SOUTH_AFRICA", "text": "Jedno", "correct": false }, { "code": "SOUTH_AFRICA", "text": "Dve", "correct": false } ], "explanation": "Juhoafrická republika má tri hlavné mestá." },
+    { "question": "Koľko hlavných miest má Juhoafrická republika?", "options": [ { "code": "JAR", "text": "Tri", "correct": true }, { "code": "JAR", "text": "Jedno", "correct": false }, { "code": "JAR", "text": "Dve", "correct": false } ], "explanation": "Juhoafrická republika má tri hlavné mestá." },
     { "question": "Ktorá púšť je najväčšia v Afrike?", "options": [ { "code": "SAHARA", "text": "Sahara", "correct": true }, { "code": "SAHARA", "text": "Kalahari", "correct": false }, { "code": "SAHARA", "text": "Namib", "correct": false } ], "explanation": "Najväčšia púšť Afriky je Sahara." },
-    { "question": "Ktorá rieka je najdlhšia v Afrike?", "options": [ { "code": "NILE", "text": "Níl", "correct": true }, { "code": "NILE", "text": "Kongo", "correct": false }, { "code": "NILE", "text": "Niger", "correct": false } ], "explanation": "Najdlhšia rieka Afriky je Níl." },
+    { "question": "Ktorá rieka je najdlhšia v Afrike?", "options": [ { "code": "NIL", "text": "Níl", "correct": true }, { "code": "NIL", "text": "Kongo", "correct": false }, { "code": "NIL", "text": "Niger", "correct": false } ], "explanation": "Najdlhšia rieka Afriky je Níl." },
     { "question": "Kde leží Kilimandžáro?", "options": [ { "code": "KILIMANJARO", "text": "V Tanzánii", "correct": true }, { "code": "KILIMANJARO", "text": "V Keni", "correct": false }, { "code": "KILIMANJARO", "text": "V Ugande", "correct": false } ], "explanation": "Kilimandžáro leží v Tanzánii." },
-    { "question": "Čo je Sahel?", "options": [ { "code": "SAHEL", "text": "Polopúštna oblasť pod Saharou", "correct": true }, { "code": "SAHEL", "text": "Jazero v Afrike", "correct": false }, { "code": "SAHEL", "text": "Hora v Afrike", "correct": false } ], "explanation": "Sahel je polopúštna oblasť pod Saharou." },
-    { "question": "Ktorá rieka preteká hustými dažďovými pralesmi v strednej Afrike?", "options": [ { "code": "CONGO", "text": "Kongo", "correct": true }, { "code": "CONGO", "text": "Níl", "correct": false }, { "code": "CONGO", "text": "Niger", "correct": false } ], "explanation": "Rieka Kongo preteká hustými dažďovými pralesmi." },
-    { "question": "Kde leží ostrov Madagascar?", "options": [ { "code": "MADAGASCAR", "text": "Pri východnom pobreží Afriky", "correct": true }, { "code": "MADAGASCAR", "text": "V Strednej Afrike", "correct": false }, { "code": "MADAGASCAR", "text": "V severnej Afrike", "correct": false } ], "explanation": "Madagascar leží pri východnom pobreží Afriky." },
-    { "question": "Ktoré je najväčšie jazero Afriky?", "options": [ { "code": "VICTORIA_LAKE", "text": "Viktóriino jazero", "correct": true }, { "code": "VICTORIA_LAKE", "text": "Tanganika", "correct": false }, { "code": "VICTORIA_LAKE", "text": "Čadské jazero", "correct": false } ], "explanation": "Najväčšie jazero Afriky je Viktóriino jazero." },
+    { "question": "Čo je Sahel?", "options": [ { "code": "SAHEL", "text": "Polopúšť pod Saharou", "correct": true }, { "code": "SAHEL", "text": "Jazero", "correct": false }, { "code": "SAHEL", "text": "Hora", "correct": false } ], "explanation": "Sahel je polopúštna oblasť pod Saharou." },
+    { "question": "Ktorá rieka preteká hustými dažďovými pralesmi?", "options": [ { "code": "KONGO", "text": "Kongo", "correct": true }, { "code": "KONGO", "text": "Níl", "correct": false }, { "code": "KONGO", "text": "Niger", "correct": false } ], "explanation": "Rieka Kongo preteká hustými dažďovými pralesmi." },
+    { "question": "Kde leží ostrov Madagaskar?", "options": [ { "code": "MADAGASKAR", "text": "Pri východnom pobreží Afriky", "correct": true }, { "code": "MADAGASKAR", "text": "V strednej Afrike", "correct": false }, { "code": "MADAGASKAR", "text": "V severnej Afrike", "correct": false } ], "explanation": "Madagaskar leží pri východnom pobreží Afriky." },
+    { "question": "Ktoré je najväčšie jazero Afriky?", "options": [ { "code": "VIKTORIA", "text": "Viktóriino jazero", "correct": true }, { "code": "VIKTORIA", "text": "Tanganika", "correct": false }, { "code": "VIKTORIA", "text": "Čadské jazero", "correct": false } ], "explanation": "Najväčšie jazero Afriky je Viktóriino jazero." },
     { "question": "Hlavné mesto Egypta je?", "options": [ { "code": "EGYPT", "text": "Káhira", "correct": true }, { "code": "EGYPT", "text": "Alexandria", "correct": false }, { "code": "EGYPT", "text": "Gíza", "correct": false } ], "explanation": "Hlavné mesto Egypta je Káhira." },
     { "question": "Hlavné mesto Nigérie je?", "options": [ { "code": "NIGERIA", "text": "Abuja", "correct": true }, { "code": "NIGERIA", "text": "Lagos", "correct": false }, { "code": "NIGERIA", "text": "Kano", "correct": false } ], "explanation": "Hlavné mesto Nigérie je Abuja." },
-    { "question": "Jedna z hlavných častí Juhoafrickej republiky je?", "options": [ { "code": "SOUTH_AFRICA", "text": "Pretoria", "correct": true }, { "code": "SOUTH_AFRICA", "text": "Durban", "correct": false }, { "code": "SOUTH_AFRICA", "text": "Johannesburg", "correct": false } ], "explanation": "Jedným z hlavných miest Juhoafrickej republiky je Pretoria." },
+    { "question": "Jedna z hlavných častí Juhoafrickej republiky je?", "options": [ { "code": "JAR", "text": "Pretoria", "correct": true }, { "code": "JAR", "text": "Durban", "correct": false }, { "code": "JAR", "text": "Johannesburg", "correct": false } ], "explanation": "Jedným z hlavných miest JAR je Pretoria." },
     { "question": "Sahara sa nachádza v ktorej časti Afriky?", "options": [ { "code": "SAHARA", "text": "Severná Afrika", "correct": true }, { "code": "SAHARA", "text": "Južná Afrika", "correct": false }, { "code": "SAHARA", "text": "Východná Afrika", "correct": false } ], "explanation": "Sahara sa rozprestiera v severnej Afrike." },
-    { "question": "Níl preteká cez ktoré krajiny?", "options": [ { "code": "NILE", "text": "Egypt a Sudán", "correct": true }, { "code": "NILE", "text": "Nigéria a Mali", "correct": false }, { "code": "NILE", "text": "Keňa a Tanzánia", "correct": false } ], "explanation": "Níl preteká cez Egypt a Sudán." },
+    { "question": "Níl preteká cez ktoré krajiny?", "options": [ { "code": "NIL", "text": "Egypt a Sudán", "correct": true }, { "code": "NIL", "text": "Nigéria a Mali", "correct": false }, { "code": "NIL", "text": "Keňa a Tanzánia", "correct": false } ], "explanation": "Níl preteká cez Egypt a Sudán." },
     { "question": "Kilimandžáro je najvyššia hora Afriky – pravda alebo lož?", "options": [ { "code": "KILIMANJARO", "text": "Pravda", "correct": true }, { "code": "KILIMANJARO", "text": "Lož", "correct": false } ], "explanation": "Kilimandžáro je najvyššia hora Afriky." },
     { "question": "Sahel je charakterizovaný ako?", "options": [ { "code": "SAHEL", "text": "Polopúšť", "correct": true }, { "code": "SAHEL", "text": "Hora", "correct": false }, { "code": "SAHEL", "text": "Jazero", "correct": false } ], "explanation": "Sahel je polopúšť pod Saharou." },
-    { "question": "Rieka Kongo je známa pre?", "options": [ { "code": "CONGO", "text": "Husté dažďové pralesy", "correct": true }, { "code": "CONGO", "text": "Púštne oblasti", "correct": false }, { "code": "CONGO", "text": "Jazerá", "correct": false } ], "explanation": "Rieka Kongo preteká hustými dažďovými pralesmi." },
-    { "question": "Hlavné mesto Madagaskaru je?", "options": [ { "code": "MADAGASCAR", "text": "Antananarivo", "correct": true }, { "code": "MADAGASCAR", "text": "Toliara", "correct": false }, { "code": "MADAGASCAR", "text": "Fianarantsoa", "correct": false } ], "explanation": "Hlavné mesto Madagaskaru je Antananarivo." },
-    { "question": "Viktóriino jazero sa nachádza medzi ktorými krajinami?", "options": [ { "code": "VICTORIA_LAKE", "text": "Tanzánia, Uganda, Keňa", "correct": true }, { "code": "VICTORIA_LAKE", "text": "Egypt, Sudán, Líbya", "correct": false }, { "code": "VICTORIA_LAKE", "text": "Nigéria, Mali, Čad", "correct": false } ], "explanation": "Viktóriino jazero sa rozprestiera medzi Tanzániou, Ugandou a Keňou." }
+    { "question": "Rieka Kongo je známa pre?", "options": [ { "code": "KONGO", "text": "Husté dažďové pralesy", "correct": true }, { "code": "KONGO", "text": "Púštne oblasti", "correct": false }, { "code": "KONGO", "text": "Jazerá", "correct": false } ], "explanation": "Rieka Kongo preteká hustými dažďovými pralesmi." },
+    { "question": "Hlavné mesto Madagaskaru je?", "options": [ { "code": "MADAGASKAR", "text": "Antananarivo", "correct": true }, { "code": "MADAGASKAR", "text": "Toliara", "correct": false }, { "code": "MADAGASKAR", "text": "Fianarantsoa", "correct": false } ], "explanation": "Hlavné mesto Madagaskaru je Antananarivo." },
+    { "question": "Viktóriino jazero sa nachádza medzi ktorými krajinami?", "options": [ { "code": "VIKTORIA", "text": "Tanzánia, Uganda, Keňa", "correct": true }, { "code": "VIKTORIA", "text": "Egypt, Sudán, Líbya", "correct": false }, { "code": "VIKTORIA", "text": "Nigéria, Mali, Čad", "correct": false } ], "explanation": "Viktóriino jazero sa rozprestiera medzi Tanzániou, Ugandou a Keňou." }
   ]
 }
