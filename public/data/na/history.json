@@ -1,52 +1,150 @@
 {
-  "id": "history",
+  "id": "history_north_america",
   "name": "História Severnej Ameriky",
-  "description": "Otázky o histórii Severnej Ameriky",
+  "description": "Otázky z histórie Severnej Ameriky pre 8. ročník ZŠ",
   "facts": {
-    "US": [
-      "V tejto krajine sa odohrali významné udalosti, ktoré ovplyvnili vznik moderných demokracií.",
-      "Je známa prezidentom, ktorý viedol krajinu počas občianskej vojny a je spojený s emancipáciou otrokov.",
-      "Na jej území bola vybudovaná železnica, ktorá spojila východné a západné pobrežie."
+    "NA_IND": [
+      "Obývali kontinent pred príchodom Európanov.",
+      "Mali rozmanité kultúry a jazyky.",
+      "Niektoré kmene stavali obydlia z kameňa alebo dreva."
     ],
-    "CA": [
-      "Táto krajina získala samostatnosť v 19. storočí a je známa svojou dvojjazyčnosťou.",
-      "Jej prvý premiér je považovaný za otca konfederácie.",
-      "V 60. rokoch 20. storočia prijala nový štátny symbol s javorovým listom."
+    "COLON": [
+      "Začala v 16. storočí.",
+      "Európske mocnosti založili osady.",
+      "Ovplyvnila pôvodných obyvateľov."
     ],
-    "MX": [
-      "V tejto krajine sa odohrala revolúcia, ktorá zmenila jej politický systém v 20. storočí.",
-      "Je známa významnými osobnosťami, ktoré bojovali za práva domorodých obyvateľov.",
-      "Na jej území sa nachádzali staroveké civilizácie s bohatou kultúrou a architektúrou."
+    "USA_IND": [
+      "Vznikla v 18. storočí.",
+      "Vyhlásila nezávislosť od Británie.",
+      "Má Ústavu a prezidenta."
+    ],
+    "USA_CIV": [
+      "Prebiehala v 19. storočí.",
+      "Bojovalo sa o otroctvo a moc štátov.",
+      "Vyhrala Severná časť."
+    ],
+    "US_EXP": [
+      "19. storočie.",
+      "Expanzia na západ kontinentu.",
+      "Vznikali nové štáty a železnice."
+    ],
+    "CAN": [
+      "Kolónia Francúzska a Británie.",
+      "Postupne získavala samosprávu.",
+      "Stala sa nezávislým štátom."
+    ],
+    "MEX": [
+      "Bolo súčasťou Španielskej ríše.",
+      "Vzniklo po boji za nezávislosť.",
+      "Má bohatú kultúru a históriu."
+    ],
+    "WW1": [
+      "Severná Amerika sa zapojila do prvej svetovej vojny.",
+      "USA vstúpili v roku 1917.",
+      "Kanada bola súčasťou Britského impéria."
+    ],
+    "WW2": [
+      "Severná Amerika sa zapojila do druhej svetovej vojny.",
+      "USA vstúpili po útoku na Pearl Harbor.",
+      "Kanada bojovala s Britániou proti Nemecku."
+    ],
+    "COLD": [
+      "Obdobie napätia medzi USA a ZSSR.",
+      "Trvalo od 1947 do 1991.",
+      "Charakterizovalo ho pretekanie v zbrojení a vesmírny pretek."
     ]
   },
-  "total": 3,
+  "total": 10,
   "rounds": [
     {
-      "question": "Kde bola podpísaná Deklarácia nezávislosti v roku 1776?",
+      "question": "Kto obýval Severnú Ameriku pred príchodom Európanov?",
       "options": [
-        { "code": "US", "text": "USA", "correct": true },
-        { "code": "CA", "text": "Kanada", "correct": false },
-        { "code": "MX", "text": "Mexiko", "correct": false }
+        { "code": "NA_IND", "text": "Pôvodní obyvatelia (Indiáni)", "correct": true },
+        { "code": "NA_IND", "text": "Európania", "correct": false },
+        { "code": "NA_IND", "text": "Afrikánci", "correct": false }
       ],
-      "explanation": "Deklarácia nezávislosti USA bola podpísaná v roku 1776."
+      "explanation": "Pôvodní obyvatelia obývali kontinent pred Európanmi."
     },
     {
-      "question": "Ktorá krajina získala nezávislosť od Británie v roku 1867?",
+      "question": "Kedy začala kolonizácia Severnej Ameriky?",
       "options": [
-        { "code": "CA", "text": "Kanada", "correct": true },
-        { "code": "US", "text": "USA", "correct": false },
-        { "code": "MX", "text": "Mexiko", "correct": false }
+        { "code": "COLON", "text": "16. storočie", "correct": true },
+        { "code": "COLON", "text": "18. storočie", "correct": false },
+        { "code": "COLON", "text": "15. storočie", "correct": false }
       ],
-      "explanation": "Kanada získala nezávislosť od Británie v roku 1867."
+      "explanation": "Kolonizácia začala v 16. storočí."
     },
     {
-      "question": "Kde bola Aztécka civilizácia?",
+      "question": "Kedy vznikli USA?",
       "options": [
-        { "code": "MX", "text": "Mexiko", "correct": true },
-        { "code": "US", "text": "USA", "correct": false },
-        { "code": "CA", "text": "Kanada", "correct": false }
+        { "code": "USA_IND", "text": "18. storočie", "correct": true },
+        { "code": "USA_IND", "text": "17. storočie", "correct": false },
+        { "code": "USA_IND", "text": "19. storočie", "correct": false }
       ],
-      "explanation": "Aztécka civilizácia bola v oblasti dnešného Mexika."
+      "explanation": "USA vznikli v 18. storočí vyhlásením nezávislosti od Británie."
+    },
+    {
+      "question": "O čo sa bojovalo počas americkej občianskej vojny?",
+      "options": [
+        { "code": "USA_CIV", "text": "O otroctvo a moc štátov", "correct": true },
+        { "code": "USA_CIV", "text": "O nezávislosť od Británie", "correct": false },
+        { "code": "USA_CIV", "text": "O územie Kanady", "correct": false }
+      ],
+      "explanation": "Americká občianska vojna prebiehala kvôli otroctvu a moci štátov."
+    },
+    {
+      "question": "Čo charakterizovala expanzia USA na západ?",
+      "options": [
+        { "code": "US_EXP", "text": "Vznik nových štátov a železníc", "correct": true },
+        { "code": "US_EXP", "text": "Kolonizácia Kanady", "correct": false },
+        { "code": "US_EXP", "text": "Boje s Mexikom", "correct": false }
+      ],
+      "explanation": "Expanzia priniesla vznik nových štátov a železníc."
+    },
+    {
+      "question": "Ako získala Kanada nezávislosť?",
+      "options": [
+        { "code": "CAN", "text": "Postupne od Francúzska a Británie", "correct": true },
+        { "code": "CAN", "text": "Po vojne s USA", "correct": false },
+        { "code": "CAN", "text": "V 18. storočí", "correct": false }
+      ],
+      "explanation": "Kanada získala nezávislosť postupne od Francúzska a Británie."
+    },
+    {
+      "question": "Ktorá krajina Severnej Ameriky bola súčasťou Španielskej ríše?",
+      "options": [
+        { "code": "MEX", "text": "Mexiko", "correct": true },
+        { "code": "MEX", "text": "Kanada", "correct": false },
+        { "code": "MEX", "text": "USA", "correct": false }
+      ],
+      "explanation": "Mexiko bolo súčasťou Španielskej ríše."
+    },
+    {
+      "question": "Kedy vstúpili USA do prvej svetovej vojny?",
+      "options": [
+        { "code": "WW1", "text": "1917", "correct": true },
+        { "code": "WW1", "text": "1914", "correct": false },
+        { "code": "WW1", "text": "1918", "correct": false }
+      ],
+      "explanation": "USA vstúpili do prvej svetovej vojny v roku 1917."
+    },
+    {
+      "question": "Čo spôsobilo vstup USA do druhej svetovej vojny?",
+      "options": [
+        { "code": "WW2", "text": "Útok na Pearl Harbor", "correct": true },
+        { "code": "WW2", "text": "Útok Nemecka na Poľsko", "correct": false },
+        { "code": "WW2", "text": "Obchodné sankcie", "correct": false }
+      ],
+      "explanation": "Vstup USA do druhej svetovej vojny spôsobil útok na Pearl Harbor."
+    },
+    {
+      "question": "Ako sa nazývalo obdobie napätia medzi USA a ZSSR?",
+      "options": [
+        { "code": "COLD", "text": "Studená vojna", "correct": true },
+        { "code": "COLD", "text": "Prvá svetová vojna", "correct": false },
+        { "code": "COLD", "text": "Druhá svetová vojna", "correct": false }
+      ],
+      "explanation": "Obdobie napätia sa nazývalo studená vojna."
     }
   ]
 }

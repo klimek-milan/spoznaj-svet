@@ -1,52 +1,141 @@
 {
-  "id": "history",
+  "id": "history_south_america",
   "name": "História Južnej Ameriky",
-  "description": "Otázky o histórii Južnej Ameriky",
+  "description": "Otázky z histórie Južnej Ameriky pre 8. ročník ZŠ",
   "facts": {
-    "BR": [
-      "Táto krajina prešla významnými zmenami v 19. storočí, ktoré ovplyvnili jej politický systém.",
-      "Je známa panovníkom, ktorý vyhlásil nezávislosť a stal sa jej prvým vládcom.",
-      "Ako posledná v regióne zrušila jednu z najväčších spoločenských nerovností."
+    "INCA": [
+      "Žili v Andách.",
+      "Vytvorili rozsiahlu cestnú sieť.",
+      "Stavali kamenné mestá ako Machu Picchu."
     ],
-    "AR": [
-      "V tejto krajine sa odohrali revolučné udalosti, ktoré viedli k jej samostatnosti.",
-      "Je známa hrdinom, ktorý bojoval za slobodu nielen doma, ale aj v susedných krajinách.",
-      "Jej hlavné mesto bolo centrom politických zmien v 19. storočí."
+    "MAYA": [
+      "Žili v Strednej Amerike a Mexiku.",
+      "Preslávili sa písaným jazykom a kalendárom.",
+      "Vyvinuli pyramídy a chrámy."
     ],
-    "CO": [
-      "Táto krajina je známa bojom za nezávislosť, ktorý viedol významný osloboditeľ.",
-      "V jej hlavnom meste sa konali dôležité stretnutia revolucionárov.",
-      "Jej dejiny sú spojené s oslobodením viacerých krajín regiónu."
+    "AZTEC": [
+      "Žili v Mexiku.",
+      "Mali mocné mestá ako Tenochtitlán.",
+      "Boli známi obetnými rituálmi."
+    ],
+    "COLON": [
+      "Európske krajiny kolonizovali Južnú Ameriku.",
+      "Španieli a Portugalci mali najväčší vplyv.",
+      "Ovplyvnilo to kultúru a jazyk."
+    ],
+    "BRAZ": [
+      "Bola kolóniou Portugalska.",
+      "Vznikla po kolonizácii v 16. storočí.",
+      "Stala sa nezávislou v 19. storočí."
+    ],
+    "SPAN": [
+      "Španielske kolónie v Južnej Amerike.",
+      "Vznikli boje za nezávislosť v 19. storočí.",
+      "Kultúra a jazyk sú dodnes silno ovplyvnené."
+    ],
+    "INDEP": [
+      "Vznikali nezávislé štáty po boji proti kolonizátorom.",
+      "Začalo sa v 19. storočí.",
+      "Prvými boli Argentína a Chile."
+    ],
+    "WW1": [
+      "Južná Amerika bola vo veľkej miere neutrálnou oblasťou.",
+      "Niektoré krajiny poskytovali materiálnu podporu.",
+      "Zapojenie bolo obmedzené."
+    ],
+    "WW2": [
+      "Niektoré krajiny sa pridali k Spojencom.",
+      "Brazília poslala vojenské jednotky do Európy.",
+      "Ekonomika bola ovplyvnená vojnou."
+    ],
+    "MODERN": [
+      "Dnes je Južná Amerika zložená z nezávislých štátov.",
+      "Má bohatú kultúru a prírodné zdroje.",
+      "Zachovávajú sa aj tradície pôvodných civilizácií."
     ]
   },
-  "total": 3,
+  "total": 10,
   "rounds": [
     {
-      "question": "Ktorá krajina získala nezávislosť od Portugalska v roku 1822?",
+      "question": "Kde žili Inkovia?",
       "options": [
-        { "code": "BR", "text": "Brazília", "correct": true },
-        { "code": "AR", "text": "Argentína", "correct": false },
-        { "code": "CO", "text": "Kolumbia", "correct": false }
+        { "code": "INCA", "text": "V Andách", "correct": true },
+        { "code": "INCA", "text": "V Amazónii", "correct": false },
+        { "code": "INCA", "text": "V Patagónii", "correct": false }
       ],
-      "explanation": "Brazília získala nezávislosť od Portugalska v roku 1822."
+      "explanation": "Inkovia žili v Andách."
     },
     {
-      "question": "Kto bol hrdina nezávislosti Argentíny?",
+      "question": "Čo je známe pre civilizáciu Mayov?",
       "options": [
-        { "code": "AR", "text": "José de San Martín", "correct": true },
-        { "code": "BR", "text": "Dom Pedro I.", "correct": false },
-        { "code": "CO", "text": "Simón Bolívar", "correct": false }
+        { "code": "MAYA", "text": "Kalendár a písaný jazyk", "correct": true },
+        { "code": "MAYA", "text": "Obetné rituály", "correct": false },
+        { "code": "MAYA", "text": "Kamenné mestá Machu Picchu", "correct": false }
       ],
-      "explanation": "José de San Martín bol hrdina nezávislosti Argentíny."
+      "explanation": "Mayovia preslávili písaný jazyk a kalendár."
     },
     {
-      "question": "Ktorá krajina získala nezávislosť od Španielska v roku 1810?",
+      "question": "Ktorá civilizácia žila v Mexiku a mala obetné rituály?",
       "options": [
-        { "code": "CO", "text": "Kolumbia", "correct": true },
-        { "code": "AR", "text": "Argentína", "correct": false },
-        { "code": "BR", "text": "Brazília", "correct": false }
+        { "code": "AZTEC", "text": "Aztékovia", "correct": true },
+        { "code": "AZTEC", "text": "Mayovia", "correct": false },
+        { "code": "AZTEC", "text": "Inkovia", "correct": false }
       ],
-      "explanation": "Kolumbia získala nezávislosť od Španielska v roku 1810."
+      "explanation": "Aztékovia žili v Mexiku a mali obetné rituály."
+    },
+    {
+      "question": "Ktoré krajiny kolonizovali Južnú Ameriku?",
+      "options": [
+        { "code": "COLON", "text": "Španielsko a Portugalsko", "correct": true },
+        { "code": "COLON", "text": "Francúzsko a Nemecko", "correct": false },
+        { "code": "COLON", "text": "Holandsko a Belgicko", "correct": false }
+      ],
+      "explanation": "Južnú Ameriku kolonizovali Španielsko a Portugalsko."
+    },
+    {
+      "question": "Ktorá krajina bola kolóniou Portugalska?",
+      "options": [
+        { "code": "BRA", "text": "Brazília", "correct": true },
+        { "code": "BRA", "text": "Argentína", "correct": false },
+        { "code": "BRA", "text": "Peru", "correct": false }
+      ],
+      "explanation": "Brazília bola kolóniou Portugalska."
+    },
+    {
+      "question": "Ako vznikli nezávislé štáty v Južnej Amerike?",
+      "options": [
+        { "code": "INDEP", "text": "Po boji proti kolonizátorom", "correct": true },
+        { "code": "INDEP", "text": "Po vojne s USA", "correct": false },
+        { "code": "INDEP", "text": "Po druhej svetovej vojne", "correct": false }
+      ],
+      "explanation": "Nezávislé štáty vznikli po boji proti kolonizátorom."
+    },
+    {
+      "question": "Ako sa Južná Amerika zapojila do prvej svetovej vojny?",
+      "options": [
+        { "code": "WW1", "text": "Obmedzenou materiálnou podporou", "correct": true },
+        { "code": "WW1", "text": "Účasťou vojenských jednotiek", "correct": false },
+        { "code": "WW1", "text": "Neutrálne bez akejkoľvek podpory", "correct": false }
+      ],
+      "explanation": "Južná Amerika sa zapojila obmedzenou materiálnou podporou."
+    },
+    {
+      "question": "Ktorá krajina poslala vojenské jednotky do Európy počas druhej svetovej vojny?",
+      "options": [
+        { "code": "WW2", "text": "Brazília", "correct": true },
+        { "code": "WW2", "text": "Peru", "correct": false },
+        { "code": "WW2", "text": "Chile", "correct": false }
+      ],
+      "explanation": "Brazília poslala vojenské jednotky do Európy."
+    },
+    {
+      "question": "Ako vyzerá Južná Amerika dnes?",
+      "options": [
+        { "code": "MODERN", "text": "Nezávislé štáty s bohatou kultúrou", "correct": true },
+        { "code": "MODERN", "text": "Kolónie Európy", "correct": false },
+        { "code": "MODERN", "text": "Rozdelená medzi USA a Kanadu", "correct": false }
+      ],
+      "explanation": "Južná Amerika je dnes zložená z nezávislých štátov s bohatou kultúrou."
     }
   ]
 }

@@ -1,52 +1,178 @@
 {
-  "id": "history",
-  "name": "História",
-  "description": "Otázky o histórii Európy",
+  "id": "history_europe",
+  "name": "História Európy",
+  "description": "Otázky z histórie Európy pre 8. ročník ZŠ",
   "facts": {
-    "FR": [
-      "Táto krajina je známa revolučnými zmenami, ktoré ovplyvnili celú Európu.",
-      "V jej histórii sa objavujú významné osobnosti, ktoré menili politické usporiadanie kontinentu.",
-      "Je domovom paláca, kde sa podpisovali dôležité medzinárodné dohody."
+    "GREECE": [
+      "Vznikla v staroveku na Balkáne.",
+      "Preslávila sa filozofiou a demokraciou.",
+      "Mala mestské štáty ako Atény a Sparta."
     ],
-    "DE": [
-      "V tejto krajine sa nachádza mesto, ktoré bolo kedysi rozdelené múrom.",
-      "Je známa zásadnými zmenami v 20. storočí, ktoré viedli k jej zjednoteniu.",
-      "Jej dejiny sú spojené s reformáciou a významnými náboženskými pohybmi."
+    "ROMAN": [
+      "Bola najväčšou ríšou staroveku v Stredomorí.",
+      "Preslávila sa cestami a právom.",
+      "Rozšírila kresťanstvo."
     ],
-    "RU": [
-      "V tejto krajine sa odohrali významné revolúcie, ktoré zmenili jej politický systém.",
-      "Je známa rozsiahlou železničnou sieťou, ktorá spája Európu s Áziou.",
-      "V jej hlavnom meste sa rozhodovalo o osude veľkej časti sveta v 20. storočí."
+    "VIKING": [
+      "Skandinávski moreplavci.",
+      "Obývali severské krajiny.",
+      "Preslávili sa lúpežnými nájazdmi."
+    ],
+    "MIDDLE": [
+      "Obdobie po páde Rímskej ríše.",
+      "Charakterizovali ho hrady a feudálna spoločnosť.",
+      "Trvalo približne od 5. do 15. storočia."
+    ],
+    "REN": [
+      "Obdobie umenia, vedy a vzdelania.",
+      "Začalo v Taliansku.",
+      "Obnovovalo antickú kultúru."
+    ],
+    "REF": [
+      "Vznikla v 16. storočí.",
+      "Zmenila náboženskú mapu Európy.",
+      "Líderom bol Martin Luther."
+    ],
+    "INDREV": [
+      "Začala v 18. storočí v Británii.",
+      "Priniesla stroje a továreň.",
+      "Zmenila spôsob výroby a práce."
+    ],
+    "NAP": [
+      "Viedol vojny po celej Európe.",
+      "Bol cisárom Francúzska.",
+      "Preslávil sa kódexom práv."
+    ],
+    "WW1": [
+      "Prebiehala v rokoch 1914 – 1918.",
+      "Zapojilo sa do nej mnoho európskych štátov.",
+      "Vznikli nové hranice a štáty."
+    ],
+    "WW2": [
+      "Prebiehala v rokoch 1939 – 1945.",
+      "Zapojilo sa do nej celý svet.",
+      "Skončila sa porážkou nacistického Nemecka."
+    ],
+    "EU": [
+      "Vznikla po druhej svetovej vojne.",
+      "Cieľom bolo zabezpečiť mier a spoluprácu.",
+      "Má vlastnú menu – euro, v niektorých štátoch."
+    ],
+    "COLD": [
+      "Obdobie napätia medzi Západom a Východom.",
+      "Trvalo po druhej svetovej vojne až do 1991.",
+      "Charakterizovali ho ideologické konflikty a pretek v zbrojení."
     ]
   },
-  "total": 3,
+  "total": 12,
   "rounds": [
     {
-      "question": "Kde sa odohrala Veľká francúzska revolúcia?",
+      "question": "Kde vznikla staroveká grécka civilizácia?",
       "options": [
-        { "code": "FR", "text": "Francúzsko", "correct": true },
-        { "code": "DE", "text": "Nemecko", "correct": false },
-        { "code": "RU", "text": "Rusko", "correct": false }
+        { "code": "GREECE", "text": "Na Balkáne", "correct": true },
+        { "code": "GREECE", "text": "V Taliansku", "correct": false },
+        { "code": "GREECE", "text": "V Egypte", "correct": false }
       ],
-      "explanation": "Veľká francúzska revolúcia sa odohrala vo Francúzsku v roku 1789."
+      "explanation": "Staroveká grécka civilizácia vznikla na Balkáne."
     },
     {
-      "question": "Ktorá krajina bola rozdelená Berlínskym múrom?",
+      "question": "Ktorá ríša bola najväčšia v Stredomorí?",
       "options": [
-        { "code": "DE", "text": "Nemecko", "correct": true },
-        { "code": "FR", "text": "Francúzsko", "correct": false },
-        { "code": "RU", "text": "Rusko", "correct": false }
+        { "code": "ROMAN", "text": "Rímska ríša", "correct": true },
+        { "code": "ROMAN", "text": "Grécka ríša", "correct": false },
+        { "code": "ROMAN", "text": "Byzantská ríša", "correct": false }
       ],
-      "explanation": "Berlínsky múr rozdeľoval Nemecko od roku 1961 do 1989."
+      "explanation": "Najväčšia v Stredomorí bola Rímska ríša."
     },
     {
-      "question": "Kde prebehla Ruská revolúcia v roku 1917?",
+      "question": "Kto boli Vikingovia?",
       "options": [
-        { "code": "RU", "text": "Rusko", "correct": true },
-        { "code": "DE", "text": "Nemecko", "correct": false },
-        { "code": "FR", "text": "Francúzsko", "correct": false }
+        { "code": "VIKING", "text": "Skandinávski moreplavci", "correct": true },
+        { "code": "VIKING", "text": "Rímski vojaci", "correct": false },
+        { "code": "VIKING", "text": "Grécki filozofi", "correct": false }
       ],
-      "explanation": "Ruská revolúcia prebehla v Rusku v roku 1917."
+      "explanation": "Vikingovia boli Skandinávski moreplavci."
+    },
+    {
+      "question": "Kedy trvalo stredoveké obdobie?",
+      "options": [
+        { "code": "MIDDLE", "text": "5. – 15. storočie", "correct": true },
+        { "code": "MIDDLE", "text": "1. – 5. storočie", "correct": false },
+        { "code": "MIDDLE", "text": "15. – 18. storočie", "correct": false }
+      ],
+      "explanation": "Stredovek trval približne od 5. do 15. storočia."
+    },
+    {
+      "question": "Kde začalo obdobie renesancie?",
+      "options": [
+        { "code": "REN", "text": "V Taliansku", "correct": true },
+        { "code": "REN", "text": "V Francúzsku", "correct": false },
+        { "code": "REN", "text": "V Nemecku", "correct": false }
+      ],
+      "explanation": "Renesancia začala v Taliansku."
+    },
+    {
+      "question": "Kto bol líderom reformácie?",
+      "options": [
+        { "code": "REF", "text": "Martin Luther", "correct": true },
+        { "code": "REF", "text": "Jan Hus", "correct": false },
+        { "code": "REF", "text": "Galileo Galilei", "correct": false }
+      ],
+      "explanation": "Líderom reformácie bol Martin Luther."
+    },
+    {
+      "question": "Kde začala priemyselná revolúcia?",
+      "options": [
+        { "code": "INDREV", "text": "V Británii", "correct": true },
+        { "code": "INDREV", "text": "V Nemecku", "correct": false },
+        { "code": "INDREV", "text": "Vo Francúzsku", "correct": false }
+      ],
+      "explanation": "Priemyselná revolúcia začala v Británii."
+    },
+    {
+      "question": "Kto bol cisárom Francúzska počas napoleonských vojen?",
+      "options": [
+        { "code": "NAP", "text": "Napoleon Bonaparte", "correct": true },
+        { "code": "NAP", "text": "Ludovít XIV.", "correct": false },
+        { "code": "NAP", "text": "Jozef II.", "correct": false }
+      ],
+      "explanation": "Cisárom bol Napoleon Bonaparte."
+    },
+    {
+      "question": "Kedy prebiehala prvá svetová vojna?",
+      "options": [
+        { "code": "WW1", "text": "1914 – 1918", "correct": true },
+        { "code": "WW1", "text": "1939 – 1945", "correct": false },
+        { "code": "WW1", "text": "1900 – 1905", "correct": false }
+      ],
+      "explanation": "Prvá svetová vojna prebiehala v rokoch 1914 – 1918."
+    },
+    {
+      "question": "Kedy skončila druhá svetová vojna v Európe?",
+      "options": [
+        { "code": "WW2", "text": "1945", "correct": true },
+        { "code": "WW2", "text": "1939", "correct": false },
+        { "code": "WW2", "text": "1918", "correct": false }
+      ],
+      "explanation": "Druhá svetová vojna skončila v roku 1945."
+    },
+    {
+      "question": "Na čo vznikla Európska únia?",
+      "options": [
+        { "code": "EU", "text": "Na zabezpečenie mieru a spolupráce", "correct": true },
+        { "code": "EU", "text": "Na vojenskú expanziu", "correct": false },
+        { "code": "EU", "text": "Na obchod len medzi USA a Európou", "correct": false }
+      ],
+      "explanation": "Európska únia vznikla na zabezpečenie mieru a spolupráce."
+    },
+    {
+      "question": "Ako sa nazýva obdobie napätia medzi Západom a Východom?",
+      "options": [
+        { "code": "COLD", "text": "Studená vojna", "correct": true },
+        { "code": "COLD", "text": "Prvá svetová vojna", "correct": false },
+        { "code": "COLD", "text": "Napoleonské vojny", "correct": false }
+      ],
+      "explanation": "Obdobie napätia sa nazýva studená vojna."
     }
   ]
 }
