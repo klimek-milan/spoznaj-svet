@@ -1,32 +1,117 @@
 {
-  "id": "capitals",
+  "id": "capitals_oceania",
   "name": "Hlavné mestá Oceánie",
-  "description": "Otázky o hlavných mestách Oceánie",
+  "description": "Otázky o hlavných mestách Oceánie pre 8. ročník ZŠ",
   "facts": {
     "AU": [
-      "Toto mesto bolo postavené medzi dvoma najväčšími mestami krajiny ako kompromis.",
-      "Je známe veľkým umelým jazerom a modernou architektúrou.",
-      "V jeho centre sa nachádza významná budova, kde sa schádza vláda."
+      "Nie je najväčším mestom krajiny.",
+      "Bolo vybrané ako kompromis medzi Sydney a Melbourne.",
+      "Je sídlom vlády Austrálie."
     ],
     "NZ": [
-      "Toto mesto je známe svojimi farebnými domami na kopcoch a rušným prístavom.",
-      "Leží v oblasti, kde sa často vyskytujú silné vetry.",
-      "Je kultúrnym centrom krajiny a sídlom mnohých festivalov."
+      "Leží na južnom cípe Severného ostrova.",
+      "Je najjužnejším hlavným mestom sveta.",
+      "Je politickým centrom krajiny."
+    ],
+    "PG": [
+      "Leží na ostrove Nová Guinea.",
+      "Je významným prístavom.",
+      "Je najväčším mestom krajiny."
     ],
     "FJ": [
-      "Toto mesto je najväčším prístavom v krajine a dôležitým obchodným centrom.",
-      "Leží na juhovýchodnom pobreží najväčšieho ostrova krajiny.",
-      "Je známe tropickým podnebím a pestrou zmesou kultúr."
+      "Leží na ostrove Viti Levu.",
+      "Je politickým a hospodárskym centrom.",
+      "Je významným prístavom."
+    ],
+    "SB": [
+      "Leží na ostrove Guadalcanal.",
+      "Je malé hlavné mesto.",
+      "Je politickým centrom krajiny."
+    ],
+    "VU": [
+      "Leží na ostrove Efate.",
+      "Je malé hlavné mesto.",
+      "Je hlavným prístavom krajiny."
+    ],
+    "WS": [
+      "Leží na ostrove Upolu.",
+      "Je politickým centrom krajiny.",
+      "Má koloniálnu históriu."
+    ],
+    "TO": [
+      "Leží na ostrove Tongatapu.",
+      "Je sídlom kráľa.",
+      "Je malé hlavné mesto."
+    ],
+    "KI": [
+      "Leží blízko rovníka.",
+      "Je rozložené na atole.",
+      "Je politickým centrom krajiny."
+    ],
+    "NR": [
+      "Krajina nemá oficiálne hlavné mesto.",
+      "Yaren je sídlom vlády.",
+      "Ide o veľmi malý štát."
+    ],
+    "FM": [
+      "Leží na ostrove Pohnpei.",
+      "Je obklopené dažďovým pralesom.",
+      "Je politickým centrom krajiny."
+    ],
+    "MH": [
+      "Leží na atole.",
+      "Je malé ostrovné hlavné mesto.",
+      "Je sídlom vlády."
+    ],
+    "PW": [
+      "Je jedným z najmenších hlavných miest.",
+      "Leží na ostrove Babeldaob.",
+      "Je politickým centrom krajiny."
+    ],
+    "TV": [
+      "Leží na ostrove Funafuti.",
+      "Ohrozené stúpaním hladiny oceánov.",
+      "Je malé hlavné mesto."
+    ],
+    "CK": [
+      "Leží na ostrove Rarotonga.",
+      "Je správnym centrom územia.",
+      "Má úzke vzťahy s Novým Zélandom."
+    ],
+    "NC": [
+      "Leží na ostrove Nová Kaledónia.",
+      "Je významným prístavom.",
+      "Je správnym centrom územia."
+    ],
+    "PF": [
+      "Leží na ostrove Tahiti.",
+      "Je kultúrnym centrom Polynézie.",
+      "Je významným prístavom."
+    ],
+    "GU": [
+      "Leží v Mikronézii.",
+      "Je územím USA.",
+      "Je významnou vojenskou základňou."
+    ],
+    "AS": [
+      "Leží na ostrove Tutuila.",
+      "Je územím USA.",
+      "Je malým hlavným mestom."
+    ],
+    "MP": [
+      "Leží na ostrove Saipan.",
+      "Je územím USA.",
+      "Je správnym centrom."
     ]
   },
-  "total": 3,
+  "total": 20,
   "rounds": [
     {
       "question": "Aké je hlavné mesto Austrálie?",
       "options": [
         { "code": "AU", "text": "Canberra", "correct": true },
-        { "code": "NZ", "text": "Wellington", "correct": false },
-        { "code": "FJ", "text": "Suva", "correct": false }
+        { "code": "AU", "text": "Sydney", "correct": false },
+        { "code": "AU", "text": "Melbourne", "correct": false }
       ],
       "explanation": "Hlavné mesto Austrálie je Canberra."
     },
@@ -34,19 +119,172 @@
       "question": "Aké je hlavné mesto Nového Zélandu?",
       "options": [
         { "code": "NZ", "text": "Wellington", "correct": true },
-        { "code": "AU", "text": "Canberra", "correct": false },
-        { "code": "FJ", "text": "Suva", "correct": false }
+        { "code": "NZ", "text": "Auckland", "correct": false },
+        { "code": "AU", "text": "Canberra", "correct": false }
       ],
       "explanation": "Hlavné mesto Nového Zélandu je Wellington."
+    },
+    {
+      "question": "Aké je hlavné mesto Papuy-Novej Guiney?",
+      "options": [
+        { "code": "PG", "text": "Port Moresby", "correct": true },
+        { "code": "FJ", "text": "Suva", "correct": false },
+        { "code": "SB", "text": "Honiara", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Papuy-Novej Guiney je Port Moresby."
     },
     {
       "question": "Aké je hlavné mesto Fidži?",
       "options": [
         { "code": "FJ", "text": "Suva", "correct": true },
-        { "code": "AU", "text": "Canberra", "correct": false },
-        { "code": "NZ", "text": "Wellington", "correct": false }
+        { "code": "TO", "text": "Nukuʻalofa", "correct": false },
+        { "code": "WS", "text": "Apia", "correct": false }
       ],
       "explanation": "Hlavné mesto Fidži je Suva."
+    },
+    {
+      "question": "Aké je hlavné mesto Šalamúnových ostrovov?",
+      "options": [
+        { "code": "SB", "text": "Honiara", "correct": true },
+        { "code": "VU", "text": "Port Vila", "correct": false },
+        { "code": "PG", "text": "Port Moresby", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Šalamúnových ostrovov je Honiara."
+    },
+    {
+      "question": "Aké je hlavné mesto Vanuatu?",
+      "options": [
+        { "code": "VU", "text": "Port Vila", "correct": true },
+        { "code": "FJ", "text": "Suva", "correct": false },
+        { "code": "SB", "text": "Honiara", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Vanuatu je Port Vila."
+    },
+    {
+      "question": "Aké je hlavné mesto Samoy?",
+      "options": [
+        { "code": "WS", "text": "Apia", "correct": true },
+        { "code": "TO", "text": "Nukuʻalofa", "correct": false },
+        { "code": "FJ", "text": "Suva", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Samoy je Apia."
+    },
+    {
+      "question": "Aké je hlavné mesto Tongy?",
+      "options": [
+        { "code": "TO", "text": "Nukuʻalofa", "correct": true },
+        { "code": "WS", "text": "Apia", "correct": false },
+        { "code": "FJ", "text": "Suva", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Tongy je Nukuʻalofa."
+    },
+    {
+      "question": "Ktoré mesto je sídlom vlády Nauru?",
+      "options": [
+        { "code": "NR", "text": "Yaren", "correct": true },
+        { "code": "KI", "text": "Tarawa", "correct": false },
+        { "code": "MH", "text": "Majuro", "correct": false }
+      ],
+      "explanation": "Yaren je sídlom vlády Nauru."
+    },
+    {
+      "question": "Aké je hlavné mesto Kiribati?",
+      "options": [
+        { "code": "KI", "text": "Tarawa", "correct": true },
+        { "code": "TV", "text": "Funafuti", "correct": false },
+        { "code": "MH", "text": "Majuro", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Kiribati je Tarawa."
+    },
+    {
+      "question": "Aké je hlavné mesto Mikronézie?",
+      "options": [
+        { "code": "FM", "text": "Palikir", "correct": true },
+        { "code": "MH", "text": "Majuro", "correct": false },
+        { "code": "PW", "text": "Ngerulmud", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Mikronézie je Palikir."
+    },
+    {
+      "question": "Aké je hlavné mesto Marshallových ostrovov?",
+      "options": [
+        { "code": "MH", "text": "Majuro", "correct": true },
+        { "code": "KI", "text": "Tarawa", "correct": false },
+        { "code": "FM", "text": "Palikir", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Marshallových ostrovov je Majuro."
+    },
+    {
+      "question": "Aké je hlavné mesto Palau?",
+      "options": [
+        { "code": "PW", "text": "Ngerulmud", "correct": true },
+        { "code": "FM", "text": "Palikir", "correct": false },
+        { "code": "MH", "text": "Majuro", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Palau je Ngerulmud."
+    },
+    {
+      "question": "Aké je hlavné mesto Tuvalu?",
+      "options": [
+        { "code": "TV", "text": "Funafuti", "correct": true },
+        { "code": "KI", "text": "Tarawa", "correct": false },
+        { "code": "TO", "text": "Nukuʻalofa", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Tuvalu je Funafuti."
+    },
+    {
+      "question": "Aké je správne centrum Cookových ostrovov?",
+      "options": [
+        { "code": "CK", "text": "Avarua", "correct": true },
+        { "code": "PF", "text": "Papeete", "correct": false },
+        { "code": "WS", "text": "Apia", "correct": false }
+      ],
+      "explanation": "Správnym centrom Cookových ostrovov je Avarua."
+    },
+    {
+      "question": "Aké je hlavné mesto Novej Kaledónie?",
+      "options": [
+        { "code": "NC", "text": "Nouméa", "correct": true },
+        { "code": "PF", "text": "Papeete", "correct": false },
+        { "code": "AU", "text": "Canberra", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Novej Kaledónie je Nouméa."
+    },
+    {
+      "question": "Aké je hlavné mesto Francúzskej Polynézie?",
+      "options": [
+        { "code": "PF", "text": "Papeete", "correct": true },
+        { "code": "WS", "text": "Apia", "correct": false },
+        { "code": "FJ", "text": "Suva", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Francúzskej Polynézie je Papeete."
+    },
+    {
+      "question": "Aké je hlavné mesto Guamu?",
+      "options": [
+        { "code": "GU", "text": "Hagåtña", "correct": true },
+        { "code": "MP", "text": "Saipan", "correct": false },
+        { "code": "FM", "text": "Palikir", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Guamu je Hagåtña."
+    },
+    {
+      "question": "Aké je hlavné mesto Americkej Samoy?",
+      "options": [
+        { "code": "AS", "text": "Pago Pago", "correct": true },
+        { "code": "WS", "text": "Apia", "correct": false },
+        { "code": "TO", "text": "Nukuʻalofa", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Americkej Samoy je Pago Pago."
+    },
+    {
+      "question": "Aké je hlavné mesto Severomariánskych ostrovov?",
+      "options": [
+        { "code": "MP", "text": "Saipan", "correct": true },
+        { "code": "GU", "text": "Hagåtña", "correct": false },
+        { "code": "FM", "text": "Palikir", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Severomariánskych ostrovov je Saipan."
     }
   ]
 }

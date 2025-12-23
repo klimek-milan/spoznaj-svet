@@ -1,52 +1,290 @@
 {
-  "id": "capitals",
+  "id": "capitals_north_america",
   "name": "Hlavné mestá Severnej Ameriky",
-  "description": "Otázky o hlavných mestách Severnej Ameriky",
+  "description": "Otázky o hlavných mestách Severnej Ameriky pre 8. ročník ZŠ",
   "facts": {
     "US": [
-      "Toto mesto je známe pamätníkom, ktorý má tvar obelisku a je venovaný prvému prezidentovi krajiny.",
-      "V jeho uliciach sa nachádza sídlo vlády, ktoré je bielej farby.",
-      "Leží na východnom pobreží krajiny, medzi štátmi Maryland a Virgínia."
+      "Nie je najväčším mestom krajiny.",
+      "Nachádza sa tu Biely dom.",
+      "Je sídlom prezidenta a Kongresu."
     ],
     "CA": [
-      "Toto mesto je známe festivalom tulipánov a nachádza sa na brehu rieky.",
-      "Je sídlom parlamentu, ktorého budova je jednou z najznámejších v krajine.",
-      "Leží neďaleko hranice s Quebecom a je dvojjazyčné."
+      "Leží v provincii Ontario.",
+      "Nie je najväčším mestom Kanady.",
+      "Je sídlom federálnej vlády."
     ],
     "MX": [
-      "Toto mesto je postavené na mieste bývalého aztéckeho hlavného mesta.",
-      "Je známe svojimi rušnými námestiami a bohatou kultúrou.",
-      "Leží vo vysokej nadmorskej výške a je obklopené horami."
+      "Patrí medzi najväčšie mestá sveta.",
+      "Leží na náhornej plošine.",
+      "Má veľmi dlhú históriu."
+    ],
+    "CU": [
+      "Leží na ostrove Kuba.",
+      "Je známe koloniálnou architektúrou.",
+      "Je hlavným prístavom krajiny."
+    ],
+    "GT": [
+      "Leží v sopečnej oblasti.",
+      "Je najväčším mestom krajiny.",
+      "Je politickým centrom Guatemaly."
+    ],
+    "BZ": [
+      "Leží pri Karibskom mori.",
+      "Je najmenším hlavným mestom v regióne.",
+      "Má nízky počet obyvateľov."
+    ],
+    "SV": [
+      "Leží v seizmicky aktívnej oblasti.",
+      "Je najväčším mestom krajiny.",
+      "Je hospodárskym centrom."
+    ],
+    "HN": [
+      "Leží vo vnútrozemí krajiny.",
+      "Má koloniálne centrum.",
+      "Je politickým centrom Hondurasu."
+    ],
+    "NI": [
+      "Leží pri veľkom jazere.",
+      "Je jedným z najstarších miest regiónu.",
+      "Je hlavným mestom Nikaraguy."
+    ],
+    "CR": [
+      "Leží na náhornej plošine.",
+      "Je politickým a kultúrnym centrom.",
+      "Má mierne podnebie."
+    ],
+    "PA": [
+      "Leží pri Panamskom prieplave.",
+      "Je významným obchodným centrom.",
+      "Má moderné mrakodrapy."
+    ],
+    "JM": [
+      "Leží na ostrove Jamajka.",
+      "Je najväčším mestom krajiny.",
+      "Je významným prístavom."
+    ],
+    "HT": [
+      "Leží pri Karibskom mori.",
+      "Patrí medzi najchudobnejšie mestá regiónu.",
+      "Je politickým centrom krajiny."
+    ],
+    "DO": [
+      "Je najstarším európskym mestom v Amerike.",
+      "Leží pri Karibskom mori.",
+      "Má historické centrum UNESCO."
+    ],
+    "BS": [
+      "Leží na súostroví ostrovov.",
+      "Má významný prístav.",
+      "Je turistickým centrom."
+    ],
+    "TT": [
+      "Leží na ostrove Trinidad.",
+      "Je významným priemyselným mestom.",
+      "Má veľký prístav."
+    ],
+    "BB": [
+      "Leží na ostrove Barbados.",
+      "Je malé hlavné mesto.",
+      "Je politickým centrom ostrova."
+    ],
+    "GD": [
+      "Leží v Karibiku.",
+      "Je malé ostrovné hlavné mesto.",
+      "Je známe prístavom."
+    ],
+    "LC": [
+      "Leží na ostrove Svätá Lucia.",
+      "Je významným prístavom.",
+      "Je hlavným mestom ostrovného štátu."
+    ],
+    "AG": [
+      "Leží v Karibiku.",
+      "Je malé hlavné mesto.",
+      "Je turisticky významné."
     ]
   },
-  "total": 3,
+  "total": 20,
   "rounds": [
     {
       "question": "Aké je hlavné mesto USA?",
       "options": [
         { "code": "US", "text": "Washington, D.C.", "correct": true },
-        { "code": "CA", "text": "Ottawa", "correct": false },
-        { "code": "MX", "text": "Mexiko City", "correct": false }
+        { "code": "US", "text": "New York", "correct": false },
+        { "code": "CA", "text": "Ottawa", "correct": false }
       ],
-      "explanation": "Hlavné mesto USA je Washington, D.C." 
+      "explanation": "Hlavné mesto USA je Washington, D.C."
     },
     {
       "question": "Aké je hlavné mesto Kanady?",
       "options": [
         { "code": "CA", "text": "Ottawa", "correct": true },
-        { "code": "US", "text": "Washington, D.C.", "correct": false },
-        { "code": "MX", "text": "Mexiko City", "correct": false }
+        { "code": "CA", "text": "Toronto", "correct": false },
+        { "code": "US", "text": "Washington, D.C.", "correct": false }
       ],
       "explanation": "Hlavné mesto Kanady je Ottawa."
     },
     {
       "question": "Aké je hlavné mesto Mexika?",
       "options": [
-        { "code": "MX", "text": "Mexiko City", "correct": true },
-        { "code": "CA", "text": "Ottawa", "correct": false },
-        { "code": "US", "text": "Washington, D.C.", "correct": false }
+        { "code": "MX", "text": "Mexiko", "correct": true },
+        { "code": "MX", "text": "Guadalajara", "correct": false },
+        { "code": "CU", "text": "Havana", "correct": false }
       ],
-      "explanation": "Hlavné mesto Mexika je Mexiko City."
+      "explanation": "Hlavné mesto Mexika je Mexiko."
+    },
+    {
+      "question": "Aké je hlavné mesto Kuby?",
+      "options": [
+        { "code": "CU", "text": "Havana", "correct": true },
+        { "code": "JM", "text": "Kingston", "correct": false },
+        { "code": "DO", "text": "Santo Domingo", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Kuby je Havana."
+    },
+    {
+      "question": "Aké je hlavné mesto Guatemaly?",
+      "options": [
+        { "code": "GT", "text": "Guatemala", "correct": true },
+        { "code": "SV", "text": "San Salvador", "correct": false },
+        { "code": "HN", "text": "Tegucigalpa", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Guatemaly je Guatemala."
+    },
+    {
+      "question": "Aké je hlavné mesto Belize?",
+      "options": [
+        { "code": "BZ", "text": "Belmopan", "correct": true },
+        { "code": "BZ", "text": "Belize City", "correct": false },
+        { "code": "GT", "text": "Guatemala", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Belize je Belmopan."
+    },
+    {
+      "question": "Aké je hlavné mesto Salvádoru?",
+      "options": [
+        { "code": "SV", "text": "San Salvador", "correct": true },
+        { "code": "HN", "text": "Tegucigalpa", "correct": false },
+        { "code": "NI", "text": "Managua", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Salvádoru je San Salvador."
+    },
+    {
+      "question": "Aké je hlavné mesto Hondurasu?",
+      "options": [
+        { "code": "HN", "text": "Tegucigalpa", "correct": true },
+        { "code": "NI", "text": "Managua", "correct": false },
+        { "code": "CR", "text": "San José", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Hondurasu je Tegucigalpa."
+    },
+    {
+      "question": "Aké je hlavné mesto Nikaraguy?",
+      "options": [
+        { "code": "NI", "text": "Managua", "correct": true },
+        { "code": "CR", "text": "San José", "correct": false },
+        { "code": "PA", "text": "Panama", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Nikaraguy je Managua."
+    },
+    {
+      "question": "Aké je hlavné mesto Kostariky?",
+      "options": [
+        { "code": "CR", "text": "San José", "correct": true },
+        { "code": "NI", "text": "Managua", "correct": false },
+        { "code": "PA", "text": "Panama", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Kostariky je San José."
+    },
+    {
+      "question": "Aké je hlavné mesto Panamy?",
+      "options": [
+        { "code": "PA", "text": "Panama", "correct": true },
+        { "code": "CR", "text": "San José", "correct": false },
+        { "code": "CO", "text": "Bogotá", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Panamy je Panama."
+    },
+    {
+      "question": "Aké je hlavné mesto Jamajky?",
+      "options": [
+        { "code": "JM", "text": "Kingston", "correct": true },
+        { "code": "CU", "text": "Havana", "correct": false },
+        { "code": "HT", "text": "Port-au-Prince", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Jamajky je Kingston."
+    },
+    {
+      "question": "Aké je hlavné mesto Haiti?",
+      "options": [
+        { "code": "HT", "text": "Port-au-Prince", "correct": true },
+        { "code": "DO", "text": "Santo Domingo", "correct": false },
+        { "code": "CU", "text": "Havana", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Haiti je Port-au-Prince."
+    },
+    {
+      "question": "Aké je hlavné mesto Dominikánskej republiky?",
+      "options": [
+        { "code": "DO", "text": "Santo Domingo", "correct": true },
+        { "code": "HT", "text": "Port-au-Prince", "correct": false },
+        { "code": "CU", "text": "Havana", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Dominikánskej republiky je Santo Domingo."
+    },
+    {
+      "question": "Aké je hlavné mesto Bahám?",
+      "options": [
+        { "code": "BS", "text": "Nassau", "correct": true },
+        { "code": "CU", "text": "Havana", "correct": false },
+        { "code": "JM", "text": "Kingston", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Bahám je Nassau."
+    },
+    {
+      "question": "Aké je hlavné mesto Trinidadu a Tobaga?",
+      "options": [
+        { "code": "TT", "text": "Port of Spain", "correct": true },
+        { "code": "JM", "text": "Kingston", "correct": false },
+        { "code": "BB", "text": "Bridgetown", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Trinidadu a Tobaga je Port of Spain."
+    },
+    {
+      "question": "Aké je hlavné mesto Barbadosu?",
+      "options": [
+        { "code": "BB", "text": "Bridgetown", "correct": true },
+        { "code": "LC", "text": "Castries", "correct": false },
+        { "code": "GD", "text": "St. George's", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Barbadosu je Bridgetown."
+    },
+    {
+      "question": "Aké je hlavné mesto Grenady?",
+      "options": [
+        { "code": "GD", "text": "St. George's", "correct": true },
+        { "code": "AG", "text": "St. John's", "correct": false },
+        { "code": "BB", "text": "Bridgetown", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Grenady je St. George's."
+    },
+    {
+      "question": "Aké je hlavné mesto Svätej Lucie?",
+      "options": [
+        { "code": "LC", "text": "Castries", "correct": true },
+        { "code": "BB", "text": "Bridgetown", "correct": false },
+        { "code": "GD", "text": "St. George's", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Svätej Lucie je Castries."
+    },
+    {
+      "question": "Aké je hlavné mesto Antiguy a Barbudy?",
+      "options": [
+        { "code": "AG", "text": "St. John's", "correct": true },
+        { "code": "BS", "text": "Nassau", "correct": false },
+        { "code": "JM", "text": "Kingston", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Antiguy a Barbudy je St. John's."
     }
   ]
 }

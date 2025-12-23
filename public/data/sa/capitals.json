@@ -1,32 +1,82 @@
 {
-  "id": "capitals",
+  "id": "capitals_south_america",
   "name": "Hlavné mestá Južnej Ameriky",
-  "description": "Otázky o hlavných mestách Južnej Ameriky",
+  "description": "Otázky o hlavných mestách Južnej Ameriky pre 8. ročník ZŠ",
   "facts": {
     "BR": [
-      "Toto mesto bolo vybudované v 20. storočí a je známe svojím futuristickým dizajnom.",
-      "Leží v centrálnej časti krajiny, ďaleko od pobrežia.",
-      "Je domovom mnohých vládnych budov a pamätníkov."
+      "Nie je najväčším mestom krajiny.",
+      "Bolo postavené vo vnútrozemí.",
+      "Je známe modernou architektúrou."
     ],
     "AR": [
-      "Toto mesto je známe svojimi kaviarňami, tangom a rušnými bulvármi.",
-      "Leží pri veľkej rieke, ktorá ústi do Atlantického oceánu.",
-      "Je kultúrnym centrom krajiny a domovom slávneho divadla."
+      "Leží pri rieke La Plata.",
+      "Je kultúrnym centrom krajiny.",
+      "Má silný európsky vplyv."
+    ],
+    "CL": [
+      "Leží v údolí medzi Andami.",
+      "Je politickým a hospodárskym centrom.",
+      "Patrí medzi najväčšie mestá krajiny."
+    ],
+    "PE": [
+      "Leží pri pobreží Tichého oceánu.",
+      "Má bohatú koloniálnu históriu.",
+      "Je najväčším mestom krajiny."
     ],
     "CO": [
-      "Toto mesto sa nachádza vo vysokej nadmorskej výške v pohorí Andy.",
-      "Je známe bohatou históriou a množstvom múzeí.",
-      "V jeho okolí sa pestuje kvalitná káva, ktorá je známa po celom svete."
+      "Leží vysoko v Andách.",
+      "Má mierne podnebie po celý rok.",
+      "Je politickým centrom krajiny."
+    ],
+    "VE": [
+      "Leží blízko Karibského mora.",
+      "Nachádza sa v horskej oblasti.",
+      "Je najväčším mestom krajiny."
+    ],
+    "EC": [
+      "Leží blízko rovníka.",
+      "Patrí medzi najvyššie položené hlavné mestá.",
+      "Má zachované historické centrum."
+    ],
+    "BO": [
+      "Je sídlom vlády krajiny.",
+      "Leží vysoko v Andách.",
+      "Je jedným z najvyššie položených hlavných miest."
+    ],
+    "PY": [
+      "Leží pri rieke Paraguay.",
+      "Je najväčším mestom krajiny.",
+      "Má koloniálnu minulosť."
+    ],
+    "UY": [
+      "Leží pri Atlantickom oceáne.",
+      "Je najväčším mestom krajiny.",
+      "Je významným prístavom."
+    ],
+    "GY": [
+      "Leží pri Atlantickom oceáne.",
+      "Je jedinou anglicky hovoriacou krajinou regiónu.",
+      "Je politickým centrom krajiny."
+    ],
+    "SR": [
+      "Leží pri rieke Suriname.",
+      "Má multikultúrne obyvateľstvo.",
+      "Je najväčším mestom krajiny."
+    ],
+    "GF": [
+      "Je zámorským územím Francúzska.",
+      "Leží pri Atlantickom oceáne.",
+      "Je správnym centrom územia."
     ]
   },
-  "total": 3,
+  "total": 13,
   "rounds": [
     {
       "question": "Aké je hlavné mesto Brazílie?",
       "options": [
         { "code": "BR", "text": "Brasília", "correct": true },
-        { "code": "AR", "text": "Buenos Aires", "correct": false },
-        { "code": "CO", "text": "Bogotá", "correct": false }
+        { "code": "BR", "text": "Rio de Janeiro", "correct": false },
+        { "code": "AR", "text": "Buenos Aires", "correct": false }
       ],
       "explanation": "Hlavné mesto Brazílie je Brasília."
     },
@@ -34,19 +84,109 @@
       "question": "Aké je hlavné mesto Argentíny?",
       "options": [
         { "code": "AR", "text": "Buenos Aires", "correct": true },
-        { "code": "BR", "text": "Brasília", "correct": false },
-        { "code": "CO", "text": "Bogotá", "correct": false }
+        { "code": "UY", "text": "Montevideo", "correct": false },
+        { "code": "CL", "text": "Santiago", "correct": false }
       ],
       "explanation": "Hlavné mesto Argentíny je Buenos Aires."
+    },
+    {
+      "question": "Aké je hlavné mesto Čile?",
+      "options": [
+        { "code": "CL", "text": "Santiago", "correct": true },
+        { "code": "PE", "text": "Lima", "correct": false },
+        { "code": "BO", "text": "La Paz", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Čile je Santiago."
+    },
+    {
+      "question": "Aké je hlavné mesto Peru?",
+      "options": [
+        { "code": "PE", "text": "Lima", "correct": true },
+        { "code": "EC", "text": "Quito", "correct": false },
+        { "code": "CL", "text": "Santiago", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Peru je Lima."
     },
     {
       "question": "Aké je hlavné mesto Kolumbie?",
       "options": [
         { "code": "CO", "text": "Bogotá", "correct": true },
+        { "code": "VE", "text": "Caracas", "correct": false },
+        { "code": "EC", "text": "Quito", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Kolumbie je Bogotá."
+    },
+    {
+      "question": "Aké je hlavné mesto Venezuely?",
+      "options": [
+        { "code": "VE", "text": "Caracas", "correct": true },
+        { "code": "CO", "text": "Bogotá", "correct": false },
+        { "code": "GY", "text": "Georgetown", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Venezuely je Caracas."
+    },
+    {
+      "question": "Aké je hlavné mesto Ekvádoru?",
+      "options": [
+        { "code": "EC", "text": "Quito", "correct": true },
+        { "code": "PE", "text": "Lima", "correct": false },
+        { "code": "CO", "text": "Bogotá", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Ekvádoru je Quito."
+    },
+    {
+      "question": "Aké je hlavné mesto Bolívie (sídlo vlády)?",
+      "options": [
+        { "code": "BO", "text": "La Paz", "correct": true },
+        { "code": "BO", "text": "Sucre", "correct": false },
+        { "code": "PE", "text": "Lima", "correct": false }
+      ],
+      "explanation": "Sídlo vlády Bolívie je La Paz."
+    },
+    {
+      "question": "Aké je hlavné mesto Paraguaja?",
+      "options": [
+        { "code": "PY", "text": "Asunción", "correct": true },
+        { "code": "AR", "text": "Buenos Aires", "correct": false },
+        { "code": "UY", "text": "Montevideo", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Paraguaja je Asunción."
+    },
+    {
+      "question": "Aké je hlavné mesto Uruguaja?",
+      "options": [
+        { "code": "UY", "text": "Montevideo", "correct": true },
         { "code": "AR", "text": "Buenos Aires", "correct": false },
         { "code": "BR", "text": "Brasília", "correct": false }
       ],
-      "explanation": "Hlavné mesto Kolumbie je Bogotá."
+      "explanation": "Hlavné mesto Uruguaja je Montevideo."
+    },
+    {
+      "question": "Aké je hlavné mesto Guyany?",
+      "options": [
+        { "code": "GY", "text": "Georgetown", "correct": true },
+        { "code": "SR", "text": "Paramaribo", "correct": false },
+        { "code": "VE", "text": "Caracas", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Guyany je Georgetown."
+    },
+    {
+      "question": "Aké je hlavné mesto Surinamu?",
+      "options": [
+        { "code": "SR", "text": "Paramaribo", "correct": true },
+        { "code": "GY", "text": "Georgetown", "correct": false },
+        { "code": "GF", "text": "Cayenne", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Surinamu je Paramaribo."
+    },
+    {
+      "question": "Aké je správne centrum Francúzskej Guyany?",
+      "options": [
+        { "code": "GF", "text": "Cayenne", "correct": true },
+        { "code": "GY", "text": "Georgetown", "correct": false },
+        { "code": "SR", "text": "Paramaribo", "correct": false }
+      ],
+      "explanation": "Správnym centrom Francúzskej Guyany je Cayenne."
     }
   ]
 }
