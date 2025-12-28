@@ -64,115 +64,142 @@
       "Charakterizovali ho ideologické konflikty a pretek v zbrojení."
     ]
   },
-  "total": 12,
+ "total": 15,
   "rounds": [
     {
-      "question": "Kde vznikla staroveká grécka civilizácia?",
+      "question": "Ktoré mestské štáty patrili do starovekého Grécka?",
       "options": [
-        { "code": "GREECE", "text": "Na Balkáne", "correct": true },
-        { "code": "GREECE", "text": "V Taliansku", "correct": false },
-        { "code": "GREECE", "text": "V Egypte", "correct": false }
+        { "code": "GREECE", "text": "Atény a Sparta", "correct": true },
+        { "code": "GREECE", "text": "Rím a Kartágo", "correct": false },
+        { "code": "GREECE", "text": "Paríž a Londýn", "correct": false }
       ],
-      "explanation": "Staroveká grécka civilizácia vznikla na Balkáne."
+      "explanation": "Medzi najznámejšie grécke mestské štáty patrili Atény a Sparta."
     },
     {
-      "question": "Ktorá ríša bola najväčšia v Stredomorí?",
+      "question": "Čím sa preslávilo staroveké Grécko?",
+      "options": [
+        { "code": "GREECE", "text": "Filozofiou a demokraciou", "correct": true },
+        { "code": "GREECE", "text": "Priemyslom", "correct": false },
+        { "code": "GREECE", "text": "Kolóniami v Amerike", "correct": false }
+      ],
+      "explanation": "Gréci položili základy filozofie a demokracie."
+    },
+    {
+      "question": "Ktorá ríša bola najväčšia v oblasti Stredomoria?",
       "options": [
         { "code": "ROMAN", "text": "Rímska ríša", "correct": true },
         { "code": "ROMAN", "text": "Grécka ríša", "correct": false },
-        { "code": "ROMAN", "text": "Byzantská ríša", "correct": false }
+        { "code": "ROMAN", "text": "Egyptská ríša", "correct": false }
       ],
-      "explanation": "Najväčšia v Stredomorí bola Rímska ríša."
+      "explanation": "Najväčšou ríšou v Stredomorí bola Rímska ríša."
+    },
+    {
+      "question": "Čím sa preslávila Rímska ríša?",
+      "options": [
+        { "code": "ROMAN", "text": "Cestami a právom", "correct": true },
+        { "code": "ROMAN", "text": "Filozofiou", "correct": false },
+        { "code": "ROMAN", "text": "Moreplavbou", "correct": false }
+      ],
+      "explanation": "Rimania vybudovali rozsiahlu sieť ciest a právny systém."
     },
     {
       "question": "Kto boli Vikingovia?",
       "options": [
         { "code": "VIKING", "text": "Skandinávski moreplavci", "correct": true },
-        { "code": "VIKING", "text": "Rímski vojaci", "correct": false },
-        { "code": "VIKING", "text": "Grécki filozofi", "correct": false }
+        { "code": "VIKING", "text": "Rímski obchodníci", "correct": false },
+        { "code": "VIKING", "text": "Grécki vojaci", "correct": false }
       ],
-      "explanation": "Vikingovia boli Skandinávski moreplavci."
+      "explanation": "Vikingovia pochádzali zo severnej Európy."
     },
     {
-      "question": "Kedy trvalo stredoveké obdobie?",
+      "question": "Čím sa Vikingovia preslávili?",
+      "options": [
+        { "code": "VIKING", "text": "Lúpežnými nájazdmi", "correct": true },
+        { "code": "VIKING", "text": "Demokraciou", "correct": false },
+        { "code": "VIKING", "text": "Továrňami", "correct": false }
+      ],
+      "explanation": "Vikingovia podnikali nájazdy po celej Európe."
+    },
+    {
+      "question": "Čo je typické pre stredovek?",
+      "options": [
+        { "code": "MIDDLE", "text": "Hrady a feudálna spoločnosť", "correct": true },
+        { "code": "MIDDLE", "text": "Priemyselné mestá", "correct": false },
+        { "code": "MIDDLE", "text": "Demokracia", "correct": false }
+      ],
+      "explanation": "Stredovek bol obdobím feudálnej spoločnosti."
+    },
+    {
+      "question": "V ktorých storočiach trval stredovek?",
       "options": [
         { "code": "MIDDLE", "text": "5. – 15. storočie", "correct": true },
         { "code": "MIDDLE", "text": "1. – 5. storočie", "correct": false },
-        { "code": "MIDDLE", "text": "15. – 18. storočie", "correct": false }
+        { "code": "MIDDLE", "text": "16. – 19. storočie", "correct": false }
       ],
-      "explanation": "Stredovek trval približne od 5. do 15. storočia."
+      "explanation": "Stredovek trval približne tisíc rokov."
     },
     {
-      "question": "Kde začalo obdobie renesancie?",
+      "question": "Kde začala renesancia?",
       "options": [
         { "code": "REN", "text": "V Taliansku", "correct": true },
-        { "code": "REN", "text": "V Francúzsku", "correct": false },
-        { "code": "REN", "text": "V Nemecku", "correct": false }
+        { "code": "REN", "text": "V Anglicku", "correct": false },
+        { "code": "REN", "text": "V Rusku", "correct": false }
       ],
-      "explanation": "Renesancia začala v Taliansku."
+      "explanation": "Renesancia vznikla v talianskych mestách."
     },
     {
-      "question": "Kto bol líderom reformácie?",
+      "question": "Čo bolo hlavným cieľom renesancie?",
+      "options": [
+        { "code": "REN", "text": "Obnova antickej kultúry", "correct": true },
+        { "code": "REN", "text": "Rozvoj tovární", "correct": false },
+        { "code": "REN", "text": "Kolonizácia", "correct": false }
+      ],
+      "explanation": "Renesancia sa inšpirovala antikou."
+    },
+    {
+      "question": "Kto bol vodcom reformácie?",
       "options": [
         { "code": "REF", "text": "Martin Luther", "correct": true },
-        { "code": "REF", "text": "Jan Hus", "correct": false },
-        { "code": "REF", "text": "Galileo Galilei", "correct": false }
+        { "code": "REF", "text": "Napoleon Bonaparte", "correct": false },
+        { "code": "REF", "text": "Karol Veľký", "correct": false }
       ],
-      "explanation": "Líderom reformácie bol Martin Luther."
+      "explanation": "Martin Luther vystúpil proti praktikám cirkvi."
+    },
+    {
+      "question": "V ktorom storočí vznikla reformácia?",
+      "options": [
+        { "code": "REF", "text": "16. storočie", "correct": true },
+        { "code": "REF", "text": "10. storočie", "correct": false },
+        { "code": "REF", "text": "19. storočie", "correct": false }
+      ],
+      "explanation": "Reformácia začala v 16. storočí."
     },
     {
       "question": "Kde začala priemyselná revolúcia?",
       "options": [
         { "code": "INDREV", "text": "V Británii", "correct": true },
-        { "code": "INDREV", "text": "V Nemecku", "correct": false },
-        { "code": "INDREV", "text": "Vo Francúzsku", "correct": false }
+        { "code": "INDREV", "text": "Vo Francúzsku", "correct": false },
+        { "code": "INDREV", "text": "V Taliansku", "correct": false }
       ],
-      "explanation": "Priemyselná revolúcia začala v Británii."
+      "explanation": "Priemyselná revolúcia sa začala v Británii."
     },
     {
-      "question": "Kto bol cisárom Francúzska počas napoleonských vojen?",
+      "question": "Kto bol Napoleon Bonaparte?",
       "options": [
-        { "code": "NAP", "text": "Napoleon Bonaparte", "correct": true },
-        { "code": "NAP", "text": "Ludovít XIV.", "correct": false },
-        { "code": "NAP", "text": "Jozef II.", "correct": false }
+        { "code": "NAP", "text": "Cisár Francúzska", "correct": true },
+        { "code": "NAP", "text": "Rímsky cisár", "correct": false },
+        { "code": "NAP", "text": "Nemecký kráľ", "correct": false }
       ],
-      "explanation": "Cisárom bol Napoleon Bonaparte."
+      "explanation": "Napoleon bol cisárom Francúzska."
     },
     {
-      "question": "Kedy prebiehala prvá svetová vojna?",
+      "question": "Ako sa skončila druhá svetová vojna?",
       "options": [
-        { "code": "WW1", "text": "1914 – 1918", "correct": true },
-        { "code": "WW1", "text": "1939 – 1945", "correct": false },
-        { "code": "WW1", "text": "1900 – 1905", "correct": false }
-      ],
-      "explanation": "Prvá svetová vojna prebiehala v rokoch 1914 – 1918."
-    },
-    {
-      "question": "Kedy skončila druhá svetová vojna v Európe?",
-      "options": [
-        { "code": "WW2", "text": "1945", "correct": true },
-        { "code": "WW2", "text": "1939", "correct": false },
-        { "code": "WW2", "text": "1918", "correct": false }
+        { "code": "WW2", "text": "Porážkou nacistického Nemecka", "correct": true },
+        { "code": "WW2", "text": "Víťazstvom Nemecka", "correct": false },
+        { "code": "WW2", "text": "Rozpadom EÚ", "correct": false }
       ],
       "explanation": "Druhá svetová vojna skončila v roku 1945."
-    },
-    {
-      "question": "Na čo vznikla Európska únia?",
-      "options": [
-        { "code": "EU", "text": "Na zabezpečenie mieru a spolupráce", "correct": true },
-        { "code": "EU", "text": "Na vojenskú expanziu", "correct": false },
-        { "code": "EU", "text": "Na obchod len medzi USA a Európou", "correct": false }
-      ],
-      "explanation": "Európska únia vznikla na zabezpečenie mieru a spolupráce."
-    },
-    {
-      "question": "Ako sa nazýva obdobie napätia medzi Západom a Východom?",
-      "options": [
-        { "code": "COLD", "text": "Studená vojna", "correct": true },
-        { "code": "COLD", "text": "Prvá svetová vojna", "correct": false },
-        { "code": "COLD", "text": "Napoleonské vojny", "correct": false }
-      ],
-      "explanation": "Obdobie napätia sa nazýva studená vojna."
     }
   ]
 }

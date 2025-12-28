@@ -44,7 +44,7 @@
       "Zachovávajú sa tradície pôvodných obyvateľov."
     ]
   },
-  "total": 8,
+  "total": 15,
   "rounds": [
     {
       "question": "Kto sú pôvodní obyvatelia Austrálie?",
@@ -53,70 +53,133 @@
         { "code": "ABOR", "text": "Maori", "correct": false },
         { "code": "ABOR", "text": "Polynézania", "correct": false }
       ],
-      "explanation": "Pôvodní obyvatelia Austrálie sú Aborigéni."
+      "explanation": "Pôvodnými obyvateľmi Austrálie sú Aborigéni."
+    },
+    {
+      "question": "Ako žili Aborigéni v minulosti?",
+      "options": [
+        { "code": "ABOR", "text": "Lovom a zberom", "correct": true },
+        { "code": "ABOR", "text": "Priemyselnou výrobou", "correct": false },
+        { "code": "ABOR", "text": "Poľnohospodárstvom na veľkých farmách", "correct": false }
+      ],
+      "explanation": "Aborigéni žili lovom a zberom."
     },
     {
       "question": "Kto sú pôvodní obyvatelia Nového Zélandu?",
       "options": [
         { "code": "MAORI", "text": "Maori", "correct": true },
         { "code": "MAORI", "text": "Aborigéni", "correct": false },
-        { "code": "MAORI", "text": "Havajčania", "correct": false }
+        { "code": "MAORI", "text": "Austrálčania", "correct": false }
       ],
       "explanation": "Pôvodní obyvatelia Nového Zélandu sú Maori."
+    },
+    {
+      "question": "Čím sa preslávili Maori?",
+      "options": [
+        { "code": "MAORI", "text": "Bojovou kultúrou a tetovaním", "correct": true },
+        { "code": "MAORI", "text": "Stavbou pyramíd", "correct": false },
+        { "code": "MAORI", "text": "Rímskymi cestami", "correct": false }
+      ],
+      "explanation": "Maori sú známi bojovou kultúrou a tetovaním."
     },
     {
       "question": "Kedy začala kolonizácia Oceánie Európanmi?",
       "options": [
         { "code": "COL_OCE", "text": "18. – 19. storočie", "correct": true },
-        { "code": "COL_OCE", "text": "16. – 17. storočie", "correct": false },
+        { "code": "COL_OCE", "text": "15. – 16. storočie", "correct": false },
         { "code": "COL_OCE", "text": "20. storočie", "correct": false }
       ],
-      "explanation": "Kolonizácia Oceánie začala v 18. – 19. storočí."
+      "explanation": "Kolonizácia začala v 18. a 19. storočí."
+    },
+    {
+      "question": "Čo spôsobila kolonizácia Oceánie?",
+      "options": [
+        { "code": "COL_OCE", "text": "Ovplyvnila pôvodné obyvateľstvo", "correct": true },
+        { "code": "COL_OCE", "text": "Zánik Európy", "correct": false },
+        { "code": "COL_OCE", "text": "Vznik rímskej ríše", "correct": false }
+      ],
+      "explanation": "Kolonizácia výrazne ovplyvnila pôvodných obyvateľov."
     },
     {
       "question": "Ako vznikla Austrália ako kolónia?",
       "options": [
-        { "code": "AU_IND", "text": "Ako trestanecká kolónia Británie", "correct": true },
-        { "code": "AU_IND", "text": "Ako nezávislý štát", "correct": false },
-        { "code": "AU_IND", "text": "Ako španielska kolónia", "correct": false }
+        { "code": "AU_IND", "text": "Ako britská trestanecká kolónia", "correct": true },
+        { "code": "AU_IND", "text": "Ako francúzska kolónia", "correct": false },
+        { "code": "AU_IND", "text": "Ako nezávislý štát", "correct": false }
       ],
       "explanation": "Austrália vznikla ako trestanecká kolónia Británie."
     },
     {
-      "question": "Ako sa stal Nový Zéland nezávislým štátom?",
+      "question": "Čo získala Austrália postupne?",
       "options": [
-        { "code": "NZ_IND", "text": "Postupne vytvorením vlastného parlamentu", "correct": true },
-        { "code": "NZ_IND", "text": "Po vojne s Austráliou", "correct": false },
-        { "code": "NZ_IND", "text": "Po kolonizácii Francúzskom", "correct": false }
+        { "code": "AU_IND", "text": "Samosprávu", "correct": true },
+        { "code": "AU_IND", "text": "Kolónie v Európe", "correct": false },
+        { "code": "AU_IND", "text": "Rímske právo", "correct": false }
       ],
-      "explanation": "Nový Zéland získal nezávislosť postupne vytvorením vlastného parlamentu."
+      "explanation": "Austrália postupne získala samosprávu."
     },
     {
-      "question": "Kto bojoval na Gallipolskom fronte počas prvej svetovej vojny?",
+      "question": "Ako bol spravovaný Nový Zéland počas kolonizácie?",
+      "options": [
+        { "code": "NZ_IND", "text": "Ako britská kolónia", "correct": true },
+        { "code": "NZ_IND", "text": "Ako francúzska kolónia", "correct": false },
+        { "code": "NZ_IND", "text": "Ako španielska kolónia", "correct": false }
+      ],
+      "explanation": "Nový Zéland bol britskou kolóniou."
+    },
+    {
+      "question": "Čo si Nový Zéland vytvoril počas cesty k nezávislosti?",
+      "options": [
+        { "code": "NZ_IND", "text": "Vlastný parlament", "correct": true },
+        { "code": "NZ_IND", "text": "Cisárstvo", "correct": false },
+        { "code": "NZ_IND", "text": "Kolónie v Afrike", "correct": false }
+      ],
+      "explanation": "Nový Zéland si vytvoril vlastný parlament."
+    },
+    {
+      "question": "Kto bojoval po boku Británie v prvej svetovej vojne?",
       "options": [
         { "code": "WW1", "text": "Austrália a Nový Zéland", "correct": true },
-        { "code": "WW1", "text": "Japonsko a Austrália", "correct": false },
-        { "code": "WW1", "text": "USA a Havaj", "correct": false }
+        { "code": "WW1", "text": "Japonsko a USA", "correct": false },
+        { "code": "WW1", "text": "Čína a India", "correct": false }
       ],
-      "explanation": "Austrália a Nový Zéland bojovali na Gallipolskom fronte."
+      "explanation": "Austrália a Nový Zéland bojovali po boku Británie."
     },
     {
-      "question": "Ktoré krajiny bojovali proti Japonsku na tichomorskom fronte počas druhej svetovej vojny?",
+      "question": "Na ktorom fronte bojovali vojaci z Oceánie počas prvej svetovej vojny?",
+      "options": [
+        { "code": "WW1", "text": "Gallipolský front", "correct": true },
+        { "code": "WW1", "text": "Západný front", "correct": false },
+        { "code": "WW1", "text": "Východný front", "correct": false }
+      ],
+      "explanation": "Zúčastnili sa bojov na Gallipolskom fronte."
+    },
+    {
+      "question": "Kto bojoval proti Japonsku v druhej svetovej vojne v Tichomorí?",
       "options": [
         { "code": "WW2", "text": "USA a Austrália", "correct": true },
-        { "code": "WW2", "text": "Nový Zéland a Japonsko", "correct": false },
-        { "code": "WW2", "text": "Kanada a USA", "correct": false }
+        { "code": "WW2", "text": "Británia a Nemecko", "correct": false },
+        { "code": "WW2", "text": "Francúzsko a Taliansko", "correct": false }
       ],
-      "explanation": "USA a Austrália bojovali proti Japonsku na tichomorskom fronte."
+      "explanation": "USA a Austrália bojovali proti Japonsku."
     },
     {
-      "question": "Ako vyzerá Oceánia dnes?",
+      "question": "Čo sa dialo s niektorými ostrovmi Oceánie počas druhej svetovej vojny?",
+      "options": [
+        { "code": "WW2", "text": "Boli okupované Japonskom", "correct": true },
+        { "code": "WW2", "text": "Stali sa nezávislými", "correct": false },
+        { "code": "WW2", "text": "Kolonizovalo ich Španielsko", "correct": false }
+      ],
+      "explanation": "Niektoré ostrovy okupovalo Japonsko."
+    },
+    {
+      "question": "Ako vyzerá Oceánia v súčasnosti?",
       "options": [
         { "code": "MODERN", "text": "Má rozvinuté štáty a zachováva tradície pôvodných obyvateľov", "correct": true },
-        { "code": "MODERN", "text": "Je úplne kolonizovaná Európou", "correct": false },
-        { "code": "MODERN", "text": "Nie je súčasťou moderného sveta", "correct": false }
+        { "code": "MODERN", "text": "Je izolovaná od sveta", "correct": false },
+        { "code": "MODERN", "text": "Je pod koloniálnou správou", "correct": false }
       ],
-      "explanation": "Oceánia má dnes rozvinuté štáty a zachováva tradície pôvodných obyvateľov."
+      "explanation": "Oceánia je dnes moderná a zároveň si chráni tradície."
     }
   ]
 }
