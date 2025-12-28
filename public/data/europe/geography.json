@@ -19,34 +19,107 @@
       "Je domovom mesta, kde sa zrodila renesancia."
     ]
   },
-  "total": 3,
+  "total": 10,
   "rounds": [
     {
       "question": "Ktorá krajina je spojená s Eiffelovou vežou?",
       "options": [
-        { "code": "FR", "text": "France", "correct": true },
         { "code": "IT", "text": "Italy", "correct": false },
-        { "code": "ES", "text": "Spain", "correct": false }
+        { "code": "ES", "text": "Spain", "correct": false },
+        { "code": "FR", "text": "France", "correct": true }
       ],
+      "hint": "Hlavné mesto tejto krajiny je domovom známej Eiffelovej veže.",
       "explanation": "Eiffelova veža je v Paríži (Francúzsko)."
     },
     {
       "question": "Aké je hlavné mesto Slovenska?",
       "options": [
-        { "code": "BA", "text": "Bratislava", "correct": true },
         { "code": "KE", "text": "Košice", "correct": false },
-        { "code": "BB", "text": "Banská Bystrica", "correct": false }
+        { "code": "BB", "text": "Banská Bystrica", "correct": false },
+        { "code": "BA", "text": "Bratislava", "correct": true }
       ],
+      "hint": "Toto mesto leží pri rieke Dunaj a je blízko hraníc s Rakúskom.",
       "explanation": "Hlavné mesto SR je Bratislava."
     },
     {
       "question": "Ktorá krajina leží na Apeninskom polostrove?",
       "options": [
-        { "code": "IT", "text": "Italy", "correct": true },
         { "code": "DE", "text": "Germany", "correct": false },
-        { "code": "PT", "text": "Portugal", "correct": false }
+        { "code": "PT", "text": "Portugal", "correct": false },
+        { "code": "IT", "text": "Italy", "correct": true }
       ],
+      "hint": "Toto je krajina známa svojimi antickými ruinami a stredomorským podnebím.",
       "explanation": "Apeninský polostrov tvorí najmä Taliansko."
+    },
+    {
+      "question": "Aké je hlavné mesto Talianska?",
+      "options": [
+        { "code": "FL", "text": "Florence", "correct": false },
+        { "code": "RM", "text": "Rome", "correct": true },
+        { "code": "MI", "text": "Milan", "correct": false }
+      ],
+      "hint": "Toto mesto je známe ako kolíska Rímskej ríše.",
+      "explanation": "Rím je hlavným mestom Talianska."
+    },
+    {
+      "question": "Ktorá krajina je domovom mesta Barcelona?",
+      "options": [
+        { "code": "FR", "text": "France", "correct": false },
+        { "code": "ES", "text": "Spain", "correct": true },
+        { "code": "IT", "text": "Italy", "correct": false }
+      ],
+      "hint": "Toto mesto leží na východnom pobreží krajiny známej flamencem a paellou.",
+      "explanation": "Barcelona sa nachádza v Španielsku."
+    },
+    {
+      "question": "Ktoré mesto je hlavným mestom Belgicka?",
+      "options": [
+        { "code": "BR", "text": "Brussels", "correct": true },
+        { "code": "AM", "text": "Amsterdam", "correct": false },
+        { "code": "OS", "text": "Oslo", "correct": false }
+      ],
+      "hint": "Toto mesto je známe ako sídlo Európskej únie.",
+      "explanation": "Brusel je hlavným mestom Belgicka."
+    },
+    {
+      "question": "Ktoré mesto je hlavné mesto Nórska?",
+      "options": [
+        { "code": "CO", "text": "Copenhagen", "correct": false },
+        { "code": "OS", "text": "Oslo", "correct": true },
+        { "code": "ST", "text": "Stockholm", "correct": false }
+      ],
+      "hint": "Toto mesto je známe svojimi fjordami a modernou architektúrou.",
+      "explanation": "Oslo je hlavným mestom Nórska."
+    },
+    {
+      "question": "Ktoré z týchto krajín je v strednej Európe?",
+      "options": [
+        { "code": "PL", "text": "Poland", "correct": true },
+        { "code": "FR", "text": "France", "correct": false },
+        { "code": "IE", "text": "Ireland", "correct": false }
+      ],
+      "hint": "Toto je krajina, ktorá má veľkú hranicu s Nemeckom a je známa svojimi jazerami.",
+      "explanation": "Poľsko je krajina v strednej Európe."
+    },
+    {
+      "question": "Ktoré z týchto miest je hlavným mestom Holandska?",
+      "options": [
+        { "code": "AM", "text": "Amsterdam", "correct": true },
+        { "code": "HA", "text": "Hague", "correct": false },
+        { "code": "BR", "text": "Brussels", "correct": false }
+      ],
+      "hint": "Toto mesto je známe svojimi kanálmi a múzeami.",
+      "explanation": "Amsterdam je hlavným mestom Holandska."
+    },
+    {
+      "question": "Ktoré mesto je hlavným mestom Švajčiarska?",
+      "options": [
+        { "code": "ZH", "text": "Zurich", "correct": false },
+        { "code": "GE", "text": "Geneva", "correct": false },
+        { "code": "BE", "text": "Bern", "correct": true }
+      ],
+      "hint": "Toto mesto je politickým centrom krajiny, ale nie je to najväčšie mesto.",
+      "explanation": "Bern je hlavným mestom Švajčiarska."
     }
   ]
 }
