@@ -1,52 +1,79 @@
 {
-  "id": "geography",
+  "id": "geografia_severna_amerika",
   "name": "Geografia Severnej Ameriky",
-  "description": "Otázky o geografii Severnej Ameriky",
+  "description": "Otázky z geografie Severnej Ameriky pre 8. ročník ZŠ",
   "facts": {
-    "US": [
-      "Táto krajina je známa rozmanitosťou prírody od púští po dažďové lesy.",
-      "Na jej území sa nachádza veľké pohorie, ktoré sa tiahne od Kanady až po Nové Mexiko.",
-      "Je domovom najväčšieho sladkovodného jazera na svete."
+    "USA": [
+      "Najväčšia krajina Severnej Ameriky podľa ekonomiky.",
+      "Hlavné mesto je Washington D.C.",
+      "Má rozmanité podnebie a krajinný ráz."
     ],
-    "CA": [
-      "V tejto krajine sa nachádza najväčšia koncentrácia jazier na svete.",
-      "Je známa rozsiahlymi lesmi a tundrou na severe.",
-      "Na jej území sa rozprestiera rieka, ktorá tečie na sever do arktického oceánu."
+    "CANADA": [
+      "Druhá najväčšia krajina sveta.",
+      "Hlavné mesto je Ottawa.",
+      "Rozsiahle lesy a veľké jazerá."
     ],
-    "MX": [
-      "Táto krajina je známa vysokými horami, púšťami aj tropickými plážami.",
-      "Na jej území sa nachádza aktívna sopka, ktorá je jednou z najvyšších v Severnej Amerike.",
-      "Je obklopená dvoma oceánmi a má bohatú biodiverzitu."
+    "MEXICO": [
+      "Krajina na juhu Severnej Ameriky.",
+      "Hlavné mesto je Ciudad de México.",
+      "Známym regiónom je Yucatán."
+    ],
+    "GRANDCANYON": [
+      "Veľký kaňon v USA.",
+      "Nachádza sa v Arizone.",
+      "Obľúbená turistická destinácia."
+    ],
+    "MISSISSIPPI": [
+      "Jedna z najdlhších riek Severnej Ameriky.",
+      "Preteká USA.",
+      "Dôležitá pre dopravu a poľnohospodárstvo."
+    ],
+    "ROCKIES": [
+      "Horské pásmo v Severnej Amerike.",
+      "Prechádza USA a Kanadou.",
+      "Známym vrcholom je Mount Elbert."
+    ],
+    "GREATLAKES": [
+      "Najväčšie sústava sladkovodných jazier na svete.",
+      "Nachádza sa medzi USA a Kanadou.",
+      "Dôležité pre dopravu a rybolov."
+    ],
+    "ALASKA": [
+      "Severozápadná štát USA.",
+      "Známym prírodným javom sú ľadovce a sopky.",
+      "Hlavné mesto je Juneau."
+    ],
+    "CARIBBEAN": [
+      "Karibské more a ostrovy na juhovýchode Severnej Ameriky.",
+      "Obľúbené turistické destinácie.",
+      "Patria sem krajiny ako Kuba, Jamajka a Portoriko."
+    ],
+    "HAWAII": [
+      "Ostrovy v Tichom oceáne, súčasť USA.",
+      "Hlavné mesto je Honolulu.",
+      "Známym javom sú sopky a pláže."
     ]
   },
-  "total": 3,
+  "total": 20,
   "rounds": [
-    {
-      "question": "Ktorá krajina je druhá najväčšia na svete?",
-      "options": [
-        { "code": "CA", "text": "Kanada", "correct": true },
-        { "code": "US", "text": "USA", "correct": false },
-        { "code": "MX", "text": "Mexiko", "correct": false }
-      ],
-      "explanation": "Kanada je druhá najväčšia krajina sveta."
-    },
-    {
-      "question": "Kde sa nachádza pohorie Rocky Mountains?",
-      "options": [
-        { "code": "US", "text": "USA", "correct": true },
-        { "code": "CA", "text": "Kanada", "correct": false },
-        { "code": "MX", "text": "Mexiko", "correct": false }
-      ],
-      "explanation": "Rocky Mountains sú hlavné pohorie západu USA."
-    },
-    {
-      "question": "Ktorá krajina má pobrežie pri Tichom aj Atlantickom oceáne?",
-      "options": [
-        { "code": "MX", "text": "Mexiko", "correct": true },
-        { "code": "US", "text": "USA", "correct": false },
-        { "code": "CA", "text": "Kanada", "correct": false }
-      ],
-      "explanation": "Mexiko má pobrežie pri Tichom aj Atlantickom oceáne."
-    }
+    { "question": "Hlavné mesto USA je?", "options": [ { "code": "USA", "text": "Washington D.C.", "correct": true }, { "code": "USA", "text": "New York", "correct": false }, { "code": "USA", "text": "Los Angeles", "correct": false } ], "explanation": "Hlavné mesto USA je Washington D.C." },
+    { "question": "Ktorá krajina je druhá najväčšia na svete?", "options": [ { "code": "CANADA", "text": "Kanada", "correct": true }, { "code": "CANADA", "text": "USA", "correct": false }, { "code": "CANADA", "text": "Mexiko", "correct": false } ], "explanation": "Druhá najväčšia krajina sveta je Kanada." },
+    { "question": "Hlavné mesto Kanady je?", "options": [ { "code": "CANADA", "text": "Ottawa", "correct": true }, { "code": "CANADA", "text": "Toronto", "correct": false }, { "code": "CANADA", "text": "Vancouver", "correct": false } ], "explanation": "Hlavné mesto Kanady je Ottawa." },
+    { "question": "Hlavné mesto Mexika je?", "options": [ { "code": "MEXICO", "text": "Ciudad de México", "correct": true }, { "code": "MEXICO", "text": "Cancún", "correct": false }, { "code": "MEXICO", "text": "Guadalajara", "correct": false } ], "explanation": "Hlavné mesto Mexika je Ciudad de México." },
+    { "question": "Grand Canyon sa nachádza v ktorej štáte USA?", "options": [ { "code": "GRANDCANYON", "text": "Arizona", "correct": true }, { "code": "GRANDCANYON", "text": "Nevada", "correct": false }, { "code": "GRANDCANYON", "text": "Utah", "correct": false } ], "explanation": "Grand Canyon sa nachádza v Arizone." },
+    { "question": "Mississippi je?", "options": [ { "code": "MISSISSIPPI", "text": "Rieka v USA", "correct": true }, { "code": "MISSISSIPPI", "text": "Hora v Kanade", "correct": false }, { "code": "MISSISSIPPI", "text": "Jazero v Mexiku", "correct": false } ], "explanation": "Mississippi je rieka v USA." },
+    { "question": "Horské pásmo prechádzajúce USA a Kanadou je?", "options": [ { "code": "ROCKIES", "text": "Rocky Mountains", "correct": true }, { "code": "ROCKIES", "text": "Appalaches", "correct": false }, { "code": "ROCKIES", "text": "Sierra Nevada", "correct": false } ], "explanation": "Horské pásmo prechádzajúce USA a Kanadou sú Rockies." },
+    { "question": "Najväčšia sústava sladkovodných jazier na svete sa nachádza medzi?", "options": [ { "code": "GREATLAKES", "text": "USA a Kanadou", "correct": true }, { "code": "GREATLAKES", "text": "USA a Mexikom", "correct": false }, { "code": "GREATLAKES", "text": "Kanadou a Grónskom", "correct": false } ], "explanation": "Najväčšia sústava sladkovodných jazier je medzi USA a Kanadou." },
+    { "question": "Alaska je súčasťou ktorého štátu?", "options": [ { "code": "ALASKA", "text": "USA", "correct": true }, { "code": "ALASKA", "text": "Kanada", "correct": false }, { "code": "ALASKA", "text": "Rusko", "correct": false } ], "explanation": "Alaska je severozápadná súčasť USA." },
+    { "question": "Hlavné mesto Alasky je?", "options": [ { "code": "ALASKA", "text": "Juneau", "correct": true }, { "code": "ALASKA", "text": "Anchorage", "correct": false }, { "code": "ALASKA", "text": "Fairbanks", "correct": false } ], "explanation": "Hlavné mesto Alasky je Juneau." },
+    { "question": "Karibské ostrovy patria do ktorého regiónu?", "options": [ { "code": "CARIBBEAN", "text": "Severnej Ameriky", "correct": true }, { "code": "CARIBBEAN", "text": "Južnej Ameriky", "correct": false }, { "code": "CARIBBEAN", "text": "Európy", "correct": false } ], "explanation": "Karibské ostrovy patria k Severnej Amerike." },
+    { "question": "Medzi Karibské krajiny patrí?", "options": [ { "code": "CARIBBEAN", "text": "Kuba", "correct": true }, { "code": "CARIBBEAN", "text": "Bahamy", "correct": true }, { "code": "CARIBBEAN", "text": "Havaj", "correct": false } ], "explanation": "Karibské krajiny sú Kuba, Jamajka, Bahamy a ďalšie." },
+    { "question": "Hlavné mesto Havajských ostrovov je?", "options": [ { "code": "HAWAII", "text": "Honolulu", "correct": true }, { "code": "HAWAII", "text": "Hilo", "correct": false }, { "code": "HAWAII", "text": "Kailua", "correct": false } ], "explanation": "Hlavné mesto Havajských ostrovov je Honolulu." },
+    { "question": "Havaj patrí ktorému štátu?", "options": [ { "code": "HAWAII", "text": "USA", "correct": true }, { "code": "HAWAII", "text": "Kanada", "correct": false }, { "code": "HAWAII", "text": "Mexiko", "correct": false } ], "explanation": "Havaj patrí USA." },
+    { "question": "Severná Amerika má veľké jazero známou sústavou ako?", "options": [ { "code": "GREATLAKES", "text": "Great Lakes", "correct": true }, { "code": "GREATLAKES", "text": "Great Salt Lake", "correct": false }, { "code": "GREATLAKES", "text": "Lake Tahoe", "correct": false } ], "explanation": "Najväčšia sústava sladkovodných jazier je Great Lakes." },
+    { "question": "Grand Canyon je obľúbená turistická destinácia – pravda alebo lož?", "options": [ { "code": "GRANDCANYON", "text": "Pravda", "correct": true }, { "code": "GRANDCANYON", "text": "Lož", "correct": false } ], "explanation": "Grand Canyon je obľúbená turistická destinácia." },
+    { "question": "Rocky Mountains sú v USA a Kanade – pravda alebo lož?", "options": [ { "code": "ROCKIES", "text": "Pravda", "correct": true }, { "code": "ROCKIES", "text": "Lož", "correct": false } ], "explanation": "Rocky Mountains sa nachádzajú v USA a Kanade." },
+    { "question": "Mississippi preteká Mexikom – pravda alebo lož?", "options": [ { "code": "MISSISSIPPI", "text": "Lož", "correct": true }, { "code": "MISSISSIPPI", "text": "Pravda", "correct": false } ], "explanation": "Mississippi preteká USA, nie Mexikom." },
+    { "question": "Alaska je známa pre ľadovce a sopky – pravda alebo lož?", "options": [ { "code": "ALASKA", "text": "Pravda", "correct": true }, { "code": "ALASKA", "text": "Lož", "correct": false } ], "explanation": "Alaska je známa pre ľadovce a sopky." }
   ]
 }
