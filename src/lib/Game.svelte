@@ -488,7 +488,6 @@
           on:click={() => pick(idx)}
           disabled={locked}
         >
-          <div class="code">{o.code}</div>
           <div class="text">{o.text}</div>
         </button>
       {/each}
@@ -769,6 +768,7 @@
     padding-left: 14px;
     font-size: 18px;
     color: var(--text);
+    font-weight: bold;
   }
 
   /* Visual states of answer cards */
