@@ -69,8 +69,8 @@
     {
       "question": "Ktoré mestské štáty patrili do starovekého Grécka?",
       "options": [
-        { "code": "GREECE", "text": "Atény a Sparta", "correct": true },
-        { "code": "GREECE", "text": "Rím a Kartágo", "correct": false },
+        { "code": "GREECE", "text": "Atény a Sparta", "correct": false },
+        { "code": "GREECE", "text": "Rím a Kartágo", "correct": true },
         { "code": "GREECE", "text": "Paríž a Londýn", "correct": false }
       ],
       "explanation": "Medzi najznámejšie grécke mestské štáty patrili Atény a Sparta."
@@ -78,8 +78,8 @@
     {
       "question": "Čím sa preslávilo staroveké Grécko?",
       "options": [
-        { "code": "GREECE", "text": "Filozofiou a demokraciou", "correct": true },
-        { "code": "GREECE", "text": "Priemyslom", "correct": false },
+        { "code": "GREECE", "text": "Filozofiou a demokraciou", "correct": false },
+        { "code": "GREECE", "text": "Priemyslom", "correct": true },
         { "code": "GREECE", "text": "Kolóniami v Amerike", "correct": false }
       ],
       "explanation": "Gréci položili základy filozofie a demokracie."
@@ -87,8 +87,8 @@
     {
       "question": "Ktorá ríša bola najväčšia v oblasti Stredomoria?",
       "options": [
-        { "code": "ROMAN", "text": "Rímska ríša", "correct": true },
-        { "code": "ROMAN", "text": "Grécka ríša", "correct": false },
+        { "code": "ROMAN", "text": "Rímska ríša", "correct": false },
+        { "code": "ROMAN", "text": "Grécka ríša", "correct": true },
         { "code": "ROMAN", "text": "Egyptská ríša", "correct": false }
       ],
       "explanation": "Najväčšou ríšou v Stredomorí bola Rímska ríša."
@@ -96,8 +96,8 @@
     {
       "question": "Čím sa preslávila Rímska ríša?",
       "options": [
-        { "code": "ROMAN", "text": "Cestami a právom", "correct": true },
-        { "code": "ROMAN", "text": "Filozofiou", "correct": false },
+        { "code": "ROMAN", "text": "Cestami a právom", "correct": false },
+        { "code": "ROMAN", "text": "Filozofiou", "correct": true },
         { "code": "ROMAN", "text": "Moreplavbou", "correct": false }
       ],
       "explanation": "Rimania vybudovali rozsiahlu sieť ciest a právny systém."
@@ -105,8 +105,8 @@
     {
       "question": "Kto boli Vikingovia?",
       "options": [
-        { "code": "VIKING", "text": "Skandinávski moreplavci", "correct": true },
-        { "code": "VIKING", "text": "Rímski obchodníci", "correct": false },
+        { "code": "VIKING", "text": "Skandinávski moreplavci", "correct": false },
+        { "code": "VIKING", "text": "Rímski obchodníci", "correct": true },
         { "code": "VIKING", "text": "Grécki vojaci", "correct": false }
       ],
       "explanation": "Vikingovia pochádzali zo severnej Európy."
@@ -114,8 +114,8 @@
     {
       "question": "Čím sa Vikingovia preslávili?",
       "options": [
-        { "code": "VIKING", "text": "Lúpežnými nájazdmi", "correct": true },
-        { "code": "VIKING", "text": "Demokraciou", "correct": false },
+        { "code": "VIKING", "text": "Lúpežnými nájazdmi", "correct": false },
+        { "code": "VIKING", "text": "Demokraciou", "correct": true },
         { "code": "VIKING", "text": "Továrňami", "correct": false }
       ],
       "explanation": "Vikingovia podnikali nájazdy po celej Európe."
@@ -123,8 +123,8 @@
     {
       "question": "Čo je typické pre stredovek?",
       "options": [
-        { "code": "MIDDLE", "text": "Hrady a feudálna spoločnosť", "correct": true },
-        { "code": "MIDDLE", "text": "Priemyselné mestá", "correct": false },
+        { "code": "MIDDLE", "text": "Hrady a feudálna spoločnosť", "correct": false },
+        { "code": "MIDDLE", "text": "Priemyselné mestá", "correct": true },
         { "code": "MIDDLE", "text": "Demokracia", "correct": false }
       ],
       "explanation": "Stredovek bol obdobím feudálnej spoločnosti."
@@ -132,8 +132,8 @@
     {
       "question": "V ktorých storočiach trval stredovek?",
       "options": [
-        { "code": "MIDDLE", "text": "5. – 15. storočie", "correct": true },
-        { "code": "MIDDLE", "text": "1. – 5. storočie", "correct": false },
+        { "code": "MIDDLE", "text": "5. – 15. storočie", "correct": false },
+        { "code": "MIDDLE", "text": "1. – 5. storočie", "correct": true },
         { "code": "MIDDLE", "text": "16. – 19. storočie", "correct": false }
       ],
       "explanation": "Stredovek trval približne tisíc rokov."
@@ -141,8 +141,8 @@
     {
       "question": "Kde začala renesancia?",
       "options": [
-        { "code": "REN", "text": "V Taliansku", "correct": true },
-        { "code": "REN", "text": "V Anglicku", "correct": false },
+        { "code": "REN", "text": "V Taliansku", "correct": false },
+        { "code": "REN", "text": "V Anglicku", "correct": true },
         { "code": "REN", "text": "V Rusku", "correct": false }
       ],
       "explanation": "Renesancia vznikla v talianskych mestách."
@@ -150,8 +150,8 @@
     {
       "question": "Čo bolo hlavným cieľom renesancie?",
       "options": [
-        { "code": "REN", "text": "Obnova antickej kultúry", "correct": true },
-        { "code": "REN", "text": "Rozvoj tovární", "correct": false },
+        { "code": "REN", "text": "Obnova antickej kultúry", "correct": false },
+        { "code": "REN", "text": "Rozvoj tovární", "correct": true },
         { "code": "REN", "text": "Kolonizácia", "correct": false }
       ],
       "explanation": "Renesancia sa inšpirovala antikou."
@@ -159,8 +159,8 @@
     {
       "question": "Kto bol vodcom reformácie?",
       "options": [
-        { "code": "REF", "text": "Martin Luther", "correct": true },
-        { "code": "REF", "text": "Napoleon Bonaparte", "correct": false },
+        { "code": "REF", "text": "Martin Luther", "correct": false },
+        { "code": "REF", "text": "Napoleon Bonaparte", "correct": true },
         { "code": "REF", "text": "Karol Veľký", "correct": false }
       ],
       "explanation": "Martin Luther vystúpil proti praktikám cirkvi."
@@ -168,8 +168,8 @@
     {
       "question": "V ktorom storočí vznikla reformácia?",
       "options": [
-        { "code": "REF", "text": "16. storočie", "correct": true },
-        { "code": "REF", "text": "10. storočie", "correct": false },
+        { "code": "REF", "text": "16. storočie", "correct": false },
+        { "code": "REF", "text": "10. storočie", "correct": true },
         { "code": "REF", "text": "19. storočie", "correct": false }
       ],
       "explanation": "Reformácia začala v 16. storočí."
@@ -177,8 +177,8 @@
     {
       "question": "Kde začala priemyselná revolúcia?",
       "options": [
-        { "code": "INDREV", "text": "V Británii", "correct": true },
-        { "code": "INDREV", "text": "Vo Francúzsku", "correct": false },
+        { "code": "INDREV", "text": "V Británii", "correct": false },
+        { "code": "INDREV", "text": "Vo Francúzsku", "correct": true },
         { "code": "INDREV", "text": "V Taliansku", "correct": false }
       ],
       "explanation": "Priemyselná revolúcia sa začala v Británii."
@@ -186,8 +186,8 @@
     {
       "question": "Kto bol Napoleon Bonaparte?",
       "options": [
-        { "code": "NAP", "text": "Cisár Francúzska", "correct": true },
-        { "code": "NAP", "text": "Rímsky cisár", "correct": false },
+        { "code": "NAP", "text": "Cisár Francúzska", "correct": false },
+        { "code": "NAP", "text": "Rímsky cisár", "correct": true },
         { "code": "NAP", "text": "Nemecký kráľ", "correct": false }
       ],
       "explanation": "Napoleon bol cisárom Francúzska."
@@ -195,11 +195,12 @@
     {
       "question": "Ako sa skončila druhá svetová vojna?",
       "options": [
-        { "code": "WW2", "text": "Porážkou nacistického Nemecka", "correct": true },
-        { "code": "WW2", "text": "Víťazstvom Nemecka", "correct": false },
+        { "code": "WW2", "text": "Porážkou nacistického Nemecka", "correct": false },
+        { "code": "WW2", "text": "Víťazstvom Nemecka", "correct": true },
         { "code": "WW2", "text": "Rozpadom EÚ", "correct": false }
       ],
       "explanation": "Druhá svetová vojna skončila v roku 1945."
     }
-  ]
+]
+
 }

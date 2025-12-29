@@ -128,8 +128,8 @@
       "question": "Aké je hlavné mesto Indie?",
       "options": [
         { "code": "PK", "text": "Islamabad", "correct": false },
-        { "code": "BD", "text": "Dháka", "correct": false }
-        { "code": "IN", "text": "Naí Dillí", "correct": true },        
+        { "code": "BD", "text": "Dháka", "correct": false },
+        { "code": "IN", "text": "Naí Dillí", "correct": true }        
       ],
       "explanation": "Hlavné mesto Indie je Naí Dillí."
     },
@@ -164,8 +164,8 @@
       "question": "Aké je hlavné mesto Indonézie?",
       "options": [
         { "code": "MY", "text": "Kuala Lumpur", "correct": false },
-        { "code": "PH", "text": "Manila", "correct": false }
-        { "code": "ID", "text": "Jakarta", "correct": true },        
+        { "code": "PH", "text": "Manila", "correct": false },
+        { "code": "ID", "text": "Jakarta", "correct": true }        
       ],
       "explanation": "Hlavné mesto Indonézie je Jakarta."
     },
@@ -191,17 +191,17 @@
       "question": "Aké je hlavné mesto Iraku?",
       "options": [
         { "code": "IR", "text": "Teherán", "correct": false },
-        { "code": "SY", "text": "Damask", "correct": false }
-        { "code": "IQ", "text": "Bagdad", "correct": true },        
+        { "code": "SY", "text": "Damask", "correct": false },
+        { "code": "IQ", "text": "Bagdad", "correct": true }       
       ],
       "explanation": "Hlavné mesto Iraku je Bagdad."
     },
     {
       "question": "Aké je hlavné mesto Izraela?",
       "options": [
-        { "code": "JO", "text": "Ammán", "correct": false }
+        { "code": "JO", "text": "Ammán", "correct": false },
         { "code": "IL", "text": "Jeruzalem", "correct": true },
-        { "code": "LB", "text": "Bejrút", "correct": false },
+        { "code": "LB", "text": "Bejrút", "correct": false }
 
       ],
       "explanation": "Hlavné mesto Izraela je Jeruzalem."
@@ -228,8 +228,8 @@
       "question": "Aké je hlavné mesto Afganistanu?",
       "options": [
         { "code": "IR", "text": "Teherán", "correct": false },
-        { "code": "PK", "text": "Islamabad", "correct": false }
-        { "code": "AF", "text": "Kábul", "correct": true },
+        { "code": "PK", "text": "Islamabad", "correct": false },
+        { "code": "AF", "text": "Kábul", "correct": true }
       ],
       "explanation": "Hlavné mesto Afganistanu je Kábul."
     },
@@ -254,9 +254,9 @@
     {
       "question": "Aké je hlavné mesto Malajzie?",
       "options": [
-        { "code": "ID", "text": "Jakarta", "correct": false }
+        { "code": "ID", "text": "Jakarta", "correct": false },
         { "code": "MY", "text": "Kuala Lumpur", "correct": true },
-        { "code": "SG", "text": "Singapur", "correct": false },
+        { "code": "SG", "text": "Singapur", "correct": false }
       ],
       "explanation": "Hlavné mesto Malajzie je Kuala Lumpur."
     },
@@ -264,8 +264,8 @@
       "question": "Aké je hlavné mesto Nepálu?",
       "options": [
         { "code": "IN", "text": "Naí Dillí", "correct": false },
-        { "code": "BT", "text": "Thimphu", "correct": false }
-        { "code": "NP", "text": "Káthmandu", "correct": true },
+        { "code": "BT", "text": "Thimphu", "correct": false },
+        { "code": "NP", "text": "Káthmandu", "correct": true }
       ],
       "explanation": "Hlavné mesto Nepálu je Káthmandu."
     },

@@ -59,9 +59,9 @@
     {
       "question": "Kto obýval Severnú Ameriku pred príchodom Európanov?",
       "options": [
-        { "code": "NA_IND", "text": "Pôvodní obyvatelia (Indiáni)", "correct": true },
         { "code": "NA_IND", "text": "Európania", "correct": false },
-        { "code": "NA_IND", "text": "Ázijci", "correct": false }
+        { "code": "NA_IND", "text": "Ázijci", "correct": false },
+        { "code": "NA_IND", "text": "Pôvodní obyvatelia (Indiáni)", "correct": true }
       ],
       "explanation": "Severnú Ameriku obývali pôvodní obyvatelia ešte pred príchodom Európanov."
     },
@@ -69,43 +69,43 @@
       "question": "Čím sa vyznačovali pôvodní obyvatelia Severnej Ameriky?",
       "options": [
         { "code": "NA_IND", "text": "Rozmanitými kultúrami a jazykmi", "correct": true },
-        { "code": "NA_IND", "text": "Jednotným jazykom", "correct": false },
-        { "code": "NA_IND", "text": "Priemyselnou výrobou", "correct": false }
+        { "code": "NA_IND", "text": "Priemyselnou výrobou", "correct": false },
+        { "code": "NA_IND", "text": "Jednotným jazykom", "correct": false }
       ],
       "explanation": "Pôvodní obyvatelia mali rôzne kultúry a jazyky."
     },
     {
       "question": "Kedy začala kolonizácia Severnej Ameriky?",
       "options": [
+        { "code": "COLON", "text": "18. storočie", "correct": false },
         { "code": "COLON", "text": "16. storočie", "correct": true },
-        { "code": "COLON", "text": "14. storočie", "correct": false },
-        { "code": "COLON", "text": "18. storočie", "correct": false }
+        { "code": "COLON", "text": "14. storočie", "correct": false }
       ],
       "explanation": "Kolonizácia začala v 16. storočí."
     },
     {
       "question": "Kto zakladal osady v Severnej Amerike?",
       "options": [
-        { "code": "COLON", "text": "Európske mocnosti", "correct": true },
         { "code": "COLON", "text": "Ázijské ríše", "correct": false },
-        { "code": "COLON", "text": "Africké štáty", "correct": false }
+        { "code": "COLON", "text": "Africké štáty", "correct": false },
+        { "code": "COLON", "text": "Európske mocnosti", "correct": true }
       ],
       "explanation": "Osady zakladali európske mocnosti."
     },
     {
       "question": "Kedy vznikli Spojené štáty americké?",
       "options": [
+        { "code": "USA_IND", "text": "19. storočie", "correct": false },
         { "code": "USA_IND", "text": "18. storočie", "correct": true },
-        { "code": "USA_IND", "text": "17. storočie", "correct": false },
-        { "code": "USA_IND", "text": "19. storočie", "correct": false }
+        { "code": "USA_IND", "text": "17. storočie", "correct": false }
       ],
       "explanation": "USA vznikli v 18. storočí."
     },
     {
       "question": "Od koho vyhlásili USA nezávislosť?",
       "options": [
-        { "code": "USA_IND", "text": "Od Británie", "correct": true },
         { "code": "USA_IND", "text": "Od Francúzska", "correct": false },
+        { "code": "USA_IND", "text": "Od Británie", "correct": true },
         { "code": "USA_IND", "text": "Od Španielska", "correct": false }
       ],
       "explanation": "USA vyhlásili nezávislosť od Británie."
@@ -113,17 +113,17 @@
     {
       "question": "O čo sa bojovalo počas americkej občianskej vojny?",
       "options": [
+        { "code": "USA_CIV", "text": "O kolónie", "correct": false },
         { "code": "USA_CIV", "text": "O otroctvo a moc štátov", "correct": true },
-        { "code": "USA_CIV", "text": "O nezávislosť", "correct": false },
-        { "code": "USA_CIV", "text": "O kolónie", "correct": false }
+        { "code": "USA_CIV", "text": "O nezávislosť", "correct": false }
       ],
       "explanation": "Vojna sa týkala otroctva a práv štátov."
     },
     {
       "question": "Ktorá strana vyhrala americkú občiansku vojnu?",
       "options": [
-        { "code": "USA_CIV", "text": "Sever", "correct": true },
         { "code": "USA_CIV", "text": "Juh", "correct": false },
+        { "code": "USA_CIV", "text": "Sever", "correct": true },
         { "code": "USA_CIV", "text": "Británia", "correct": false }
       ],
       "explanation": "V občianskej vojne zvíťazil Sever."
@@ -131,17 +131,17 @@
     {
       "question": "Čo priniesla expanzia USA na západ?",
       "options": [
+        { "code": "US_EXP", "text": "Kolonizáciu Európy", "correct": false },
         { "code": "US_EXP", "text": "Vznik nových štátov a železníc", "correct": true },
-        { "code": "US_EXP", "text": "Zánik miest", "correct": false },
-        { "code": "US_EXP", "text": "Kolonizáciu Európy", "correct": false }
+        { "code": "US_EXP", "text": "Zánik miest", "correct": false }
       ],
       "explanation": "Expanzia viedla k rozvoju územia."
     },
     {
       "question": "Ktoré krajiny ovládali Kanadu v minulosti?",
       "options": [
-        { "code": "CAN", "text": "Francúzsko a Británia", "correct": true },
         { "code": "CAN", "text": "Španielsko a Portugalsko", "correct": false },
+        { "code": "CAN", "text": "Francúzsko a Británia", "correct": true },
         { "code": "CAN", "text": "USA a Mexiko", "correct": false }
       ],
       "explanation": "Kanada bola kolóniou Francúzska a Británie."
@@ -149,9 +149,9 @@
     {
       "question": "Ako získala Kanada nezávislosť?",
       "options": [
-        { "code": "CAN", "text": "Postupne", "correct": true },
+        { "code": "CAN", "text": "Vojnou s USA", "correct": false },
         { "code": "CAN", "text": "Revolúciou", "correct": false },
-        { "code": "CAN", "text": "Vojnou s USA", "correct": false }
+        { "code": "CAN", "text": "Postupne", "correct": true }
       ],
       "explanation": "Kanada získavala samosprávu postupne."
     },
@@ -159,16 +159,16 @@
       "question": "Ktorá krajina bola súčasťou Španielskej ríše?",
       "options": [
         { "code": "MEX", "text": "Mexiko", "correct": true },
-        { "code": "MEX", "text": "Kanada", "correct": false },
-        { "code": "MEX", "text": "USA", "correct": false }
+        { "code": "MEX", "text": "USA", "correct": false },
+        { "code": "MEX", "text": "Kanada", "correct": false }
       ],
       "explanation": "Mexiko patrilo k Španielskej ríši."
     },
     {
       "question": "Kedy vstúpili USA do prvej svetovej vojny?",
       "options": [
-        { "code": "WW1", "text": "1917", "correct": true },
         { "code": "WW1", "text": "1914", "correct": false },
+        { "code": "WW1", "text": "1917", "correct": true },
         { "code": "WW1", "text": "1918", "correct": false }
       ],
       "explanation": "USA vstúpili do vojny v roku 1917."
@@ -176,9 +176,9 @@
     {
       "question": "Čo spôsobilo vstup USA do druhej svetovej vojny?",
       "options": [
+        { "code": "WW2", "text": "Studená vojna", "correct": false },
         { "code": "WW2", "text": "Útok na Pearl Harbor", "correct": true },
-        { "code": "WW2", "text": "Začiatok vojny v Európe", "correct": false },
-        { "code": "WW2", "text": "Studená vojna", "correct": false }
+        { "code": "WW2", "text": "Začiatok vojny v Európe", "correct": false }
       ],
       "explanation": "USA vstúpili do vojny po útoku na Pearl Harbor."
     },
@@ -186,8 +186,8 @@
       "question": "Ako sa nazývalo napätie medzi USA a ZSSR po druhej svetovej vojne?",
       "options": [
         { "code": "COLD", "text": "Studená vojna", "correct": true },
-        { "code": "COLD", "text": "Občianska vojna", "correct": false },
-        { "code": "COLD", "text": "Kolonizácia", "correct": false }
+        { "code": "COLD", "text": "Kolonizácia", "correct": false },
+        { "code": "COLD", "text": "Občianska vojna", "correct": false }
       ],
       "explanation": "Toto obdobie sa nazývalo studená vojna."
     }

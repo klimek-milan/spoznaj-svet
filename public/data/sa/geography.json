@@ -55,26 +55,182 @@
     ]
   },
   "total": 20,
-  "rounds": [
-    { "question": "Najväčšia krajina Južnej Ameriky je?", "options": [ { "code": "BRAZIL", "text": "Brazília", "correct": true }, { "code": "BRAZIL", "text": "Argentina", "correct": false }, { "code": "BRAZIL", "text": "Chile", "correct": false } ], "explanation": "Najväčšia krajina Južnej Ameriky je Brazília." },
-    { "question": "Hlavné mesto Brazílie je?", "options": [ { "code": "BRAZIL", "text": "Brasília", "correct": true }, { "code": "BRAZIL", "text": "Rio de Janeiro", "correct": false }, { "code": "BRAZIL", "text": "São Paulo", "correct": false } ], "explanation": "Hlavné mesto Brazílie je Brasília." },
-    { "question": "Druhá najväčšia krajina Južnej Ameriky je?", "options": [ { "code": "ARGENTINA", "text": "Argentina", "correct": true }, { "code": "ARGENTINA", "text": "Chile", "correct": false }, { "code": "ARGENTINA", "text": "Peru", "correct": false } ], "explanation": "Druhá najväčšia krajina je Argentina." },
-    { "question": "Hlavné mesto Argentíny je?", "options": [ { "code": "ARGENTINA", "text": "Buenos Aires", "correct": true }, { "code": "ARGENTINA", "text": "Cordoba", "correct": false }, { "code": "ARGENTINA", "text": "Rosario", "correct": false } ], "explanation": "Hlavné mesto Argentíny je Buenos Aires." },
-    { "question": "Úzka krajina pozdĺž západného pobrežia je?", "options": [ { "code": "CHILE", "text": "Chile", "correct": true }, { "code": "CHILE", "text": "Peru", "correct": false }, { "code": "CHILE", "text": "Bolívia", "correct": false } ], "explanation": "Úzka krajina pozdĺž západného pobrežia je Chile." },
-    { "question": "Hlavné mesto Chile je?", "options": [ { "code": "CHILE", "text": "Santiago", "correct": true }, { "code": "CHILE", "text": "Valparaíso", "correct": false }, { "code": "CHILE", "text": "Concepción", "correct": false } ], "explanation": "Hlavné mesto Chile je Santiago." },
-    { "question": "Leží Peru na západe Južnej Ameriky – pravda alebo lož?", "options": [ { "code": "PERU", "text": "Pravda", "correct": true }, { "code": "PERU", "text": "Lož", "correct": false } ], "explanation": "Peru leží na západe Južnej Ameriky." },
-    { "question": "Hlavné mesto Peru je?", "options": [ { "code": "PERU", "text": "Lima", "correct": true }, { "code": "PERU", "text": "Cusco", "correct": false }, { "code": "PERU", "text": "Arequipa", "correct": false } ], "explanation": "Hlavné mesto Peru je Lima." },
-    { "question": "Ktorá krajina leží na severe kontinentu?", "options": [ { "code": "COLOMBIA", "text": "Kolumbia", "correct": true }, { "code": "COLOMBIA", "text": "Bolívia", "correct": false }, { "code": "COLOMBIA", "text": "Paraguay", "correct": false } ], "explanation": "Kolumbia leží na severe Južnej Ameriky." },
-    { "question": "Hlavné mesto Kolumbie je?", "options": [ { "code": "COLOMBIA", "text": "Bogotá", "correct": true }, { "code": "COLOMBIA", "text": "Medellín", "correct": false }, { "code": "COLOMBIA", "text": "Cali", "correct": false } ], "explanation": "Hlavné mesto Kolumbie je Bogotá." },
-    { "question": "Venezuela má pobrežie ktorého mora?", "options": [ { "code": "VENEZUELA", "text": "Karibské more", "correct": true }, { "code": "VENEZUELA", "text": "Tichý oceán", "correct": false }, { "code": "VENEZUELA", "text": "Atlantský oceán", "correct": false } ], "explanation": "Venezuela má pobrežie Karibiku." },
-    { "question": "Hlavné mesto Venezuely je?", "options": [ { "code": "VENEZUELA", "text": "Caracas", "correct": true }, { "code": "VENEZUELA", "text": "Maracaibo", "correct": false }, { "code": "VENEZUELA", "text": "Valencia", "correct": false } ], "explanation": "Hlavné mesto Venezuely je Caracas." },
-    { "question": "Ekvádor leží na rovníku – pravda alebo lož?", "options": [ { "code": "ECUADOR", "text": "Pravda", "correct": true }, { "code": "ECUADOR", "text": "Lož", "correct": false } ], "explanation": "Ekvádor leží na rovníku." },
-    { "question": "Hlavné mesto Ekvádoru je?", "options": [ { "code": "ECUADOR", "text": "Quito", "correct": true }, { "code": "ECUADOR", "text": "Guayaquil", "correct": false }, { "code": "ECUADOR", "text": "Cuenca", "correct": false } ], "explanation": "Hlavné mesto Ekvádoru je Quito." },
-    { "question": "Bolívia má prístup k moru – pravda alebo lož?", "options": [ { "code": "BOLIVIA", "text": "Lož", "correct": true }, { "code": "BOLIVIA", "text": "Pravda", "correct": false } ], "explanation": "Bolívia nemá prístup k moru." },
-    { "question": "Hlavné mesto Bolívie je?", "options": [ { "code": "BOLIVIA", "text": "La Paz", "correct": true }, { "code": "BOLIVIA", "text": "Sucre", "correct": false }, { "code": "BOLIVIA", "text": "Santa Cruz", "correct": false } ], "explanation": "Hlavné mesto Bolívie je La Paz." },
-    { "question": "Paraguay je krajina bez prístupu k moru – pravda alebo lož?", "options": [ { "code": "PARAGUAY", "text": "Pravda", "correct": true }, { "code": "PARAGUAY", "text": "Lož", "correct": false } ], "explanation": "Paraguay nemá prístup k moru." },
-    { "question": "Hlavné mesto Paraguaya je?", "options": [ { "code": "PARAGUAY", "text": "Asunción", "correct": true }, { "code": "PARAGUAY", "text": "Encarnación", "correct": false }, { "code": "PARAGUAY", "text": "Ciudad del Este", "correct": false } ], "explanation": "Hlavné mesto Paraguaya je Asunción." },
-    { "question": "Uruguaj má pobrežie Atlantiku – pravda alebo lož?", "options": [ { "code": "URUGUAY", "text": "Pravda", "correct": true }, { "code": "URUGUAY", "text": "Lož", "correct": false } ], "explanation": "Uruguaj má pobrežie Atlantiku." },
-    { "question": "Hlavné mesto Uruguaja je?", "options": [ { "code": "URUGUAY", "text": "Montevideo", "correct": true }, { "code": "URUGUAY", "text": "Punta del Este", "correct": false }, { "code": "URUGUAY", "text": "Colonia", "correct": false } ], "explanation": "Hlavné mesto Uruguaja je Montevideo." }
-  ]
+"rounds": [
+  {
+    "question": "Najväčšia krajina Južnej Ameriky je?",
+    "options": [
+      { "code": "BRAZIL", "text": "Argentina", "correct": false },
+      { "code": "BRAZIL", "text": "Brazília", "correct": true },
+      { "code": "BRAZIL", "text": "Chile", "correct": false }
+    ],
+    "explanation": "Najväčšia krajina Južnej Ameriky je Brazília."
+  },
+  {
+    "question": "Hlavné mesto Brazílie je?",
+    "options": [
+      { "code": "BRAZIL", "text": "São Paulo", "correct": false },
+      { "code": "BRAZIL", "text": "Brasília", "correct": true },
+      { "code": "BRAZIL", "text": "Rio de Janeiro", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Brazílie je Brasília."
+  },
+  {
+    "question": "Druhá najväčšia krajina Južnej Ameriky je?",
+    "options": [
+      { "code": "ARGENTINA", "text": "Peru", "correct": false },
+      { "code": "ARGENTINA", "text": "Chile", "correct": false },
+      { "code": "ARGENTINA", "text": "Argentina", "correct": true }
+    ],
+    "explanation": "Druhá najväčšia krajina je Argentina."
+  },
+  {
+    "question": "Hlavné mesto Argentíny je?",
+    "options": [
+      { "code": "ARGENTINA", "text": "Rosario", "correct": false },
+      { "code": "ARGENTINA", "text": "Buenos Aires", "correct": true },
+      { "code": "ARGENTINA", "text": "Cordoba", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Argentíny je Buenos Aires."
+  },
+  {
+    "question": "Úzka krajina pozdĺž západného pobrežia je?",
+    "options": [
+      { "code": "CHILE", "text": "Bolívia", "correct": false },
+      { "code": "CHILE", "text": "Chile", "correct": true },
+      { "code": "CHILE", "text": "Peru", "correct": false }
+    ],
+    "explanation": "Úzka krajina pozdĺž západného pobrežia je Chile."
+  },
+  {
+    "question": "Hlavné mesto Chile je?",
+    "options": [
+      { "code": "CHILE", "text": "Santiago", "correct": true },
+      { "code": "CHILE", "text": "Valparaíso", "correct": false },
+      { "code": "CHILE", "text": "Concepción", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Chile je Santiago."
+  },
+  {
+    "question": "Leží Peru na západe Južnej Ameriky – pravda alebo lož?",
+    "options": [
+      { "code": "PERU", "text": "Lož", "correct": false },
+      { "code": "PERU", "text": "Pravda", "correct": true }
+    ],
+    "explanation": "Peru leží na západe Južnej Ameriky."
+  },
+  {
+    "question": "Hlavné mesto Peru je?",
+    "options": [
+      { "code": "PERU", "text": "Cusco", "correct": false },
+      { "code": "PERU", "text": "Lima", "correct": true },
+      { "code": "PERU", "text": "Arequipa", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Peru je Lima."
+  },
+  {
+    "question": "Ktorá krajina leží na severe kontinentu?",
+    "options": [
+      { "code": "COLOMBIA", "text": "Bolívia", "correct": false },
+      { "code": "COLOMBIA", "text": "Kolumbia", "correct": true },
+      { "code": "COLOMBIA", "text": "Paraguay", "correct": false }
+    ],
+    "explanation": "Kolumbia leží na severe Južnej Ameriky."
+  },
+  {
+    "question": "Hlavné mesto Kolumbie je?",
+    "options": [
+      { "code": "COLOMBIA", "text": "Medellín", "correct": false },
+      { "code": "COLOMBIA", "text": "Bogotá", "correct": true },
+      { "code": "COLOMBIA", "text": "Cali", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Kolumbie je Bogotá."
+  },
+  {
+    "question": "Venezuela má pobrežie ktorého mora?",
+    "options": [
+      { "code": "VENEZUELA", "text": "Atlantský oceán", "correct": false },
+      { "code": "VENEZUELA", "text": "Tichý oceán", "correct": false },
+      { "code": "VENEZUELA", "text": "Karibské more", "correct": true }
+    ],
+    "explanation": "Venezuela má pobrežie Karibiku."
+  },
+  {
+    "question": "Hlavné mesto Venezuely je?",
+    "options": [
+      { "code": "VENEZUELA", "text": "Caracas", "correct": true },
+      { "code": "VENEZUELA", "text": "Maracaibo", "correct": false },
+      { "code": "VENEZUELA", "text": "Valencia", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Venezuely je Caracas."
+  },
+  {
+    "question": "Ekvádor leží na rovníku – pravda alebo lož?",
+    "options": [
+      { "code": "ECUADOR", "text": "Lož", "correct": false },
+      { "code": "ECUADOR", "text": "Pravda", "correct": true }
+    ],
+    "explanation": "Ekvádor leží na rovníku."
+  },
+  {
+    "question": "Hlavné mesto Ekvádoru je?",
+    "options": [
+      { "code": "ECUADOR", "text": "Quito", "correct": true },
+      { "code": "ECUADOR", "text": "Guayaquil", "correct": false },
+      { "code": "ECUADOR", "text": "Cuenca", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Ekvádoru je Quito."
+  },
+  {
+    "question": "Bolívia má prístup k moru – pravda alebo lož?",
+    "options": [
+      { "code": "BOLIVIA", "text": "Pravda", "correct": false },
+      { "code": "BOLIVIA", "text": "Lož", "correct": true }
+    ],
+    "explanation": "Bolívia nemá prístup k moru."
+  },
+  {
+    "question": "Hlavné mesto Bolívie je?",
+    "options": [
+      { "code": "BOLIVIA", "text": "La Paz", "correct": true },
+      { "code": "BOLIVIA", "text": "Sucre", "correct": false },
+      { "code": "BOLIVIA", "text": "Santa Cruz", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Bolívie je La Paz."
+  },
+  {
+    "question": "Paraguay je krajina bez prístupu k moru – pravda alebo lož?",
+    "options": [
+      { "code": "PARAGUAY", "text": "Lož", "correct": false },
+      { "code": "PARAGUAY", "text": "Pravda", "correct": true }
+    ],
+    "explanation": "Paraguay nemá prístup k moru."
+  },
+  {
+    "question": "Hlavné mesto Paraguaya je?",
+    "options": [
+      { "code": "PARAGUAY", "text": "Asunción", "correct": true },
+      { "code": "PARAGUAY", "text": "Encarnación", "correct": false },
+      { "code": "PARAGUAY", "text": "Ciudad del Este", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Paraguaya je Asunción."
+  },
+  {
+    "question": "Uruguaj má pobrežie Atlantiku – pravda alebo lož?",
+    "options": [
+      { "code": "URUGUAY", "text": "Lož", "correct": false },
+      { "code": "URUGUAY", "text": "Pravda", "correct": true }
+    ],
+    "explanation": "Uruguaj má pobrežie Atlantiku."
+  },
+  {
+    "question": "Hlavné mesto Uruguaja je?",
+    "options": [
+      { "code": "URUGUAY", "text": "Colonia", "correct": false },
+      { "code": "URUGUAY", "text": "Montevideo", "correct": true },
+      { "code": "URUGUAY", "text": "Punta del Este", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Uruguaja je Montevideo."
+  }
+]
+
 }
