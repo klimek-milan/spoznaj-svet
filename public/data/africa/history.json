@@ -1,67 +1,25 @@
 {
-  "id": "history_africa",
-  "name": "História Afriky",
   "description": "Otázky z histórie Afriky pre 8. ročník ZŠ",
   "facts": {
-    "EG_OLD": [
-      "Vznikla pri rieke Níl.",
-      "Jedna z najstarších civilizácií sveta.",
-      "Vládli jej faraóni."
+    "AKS": [
+      "Staroveká ríša vo východnej Afrike.",
+      "Bola významným obchodným centrom.",
+      "Prijala kresťanstvo."
     ],
-    "PYR": [
-      "Slúžili ako hrobky faraónov.",
-      "Nachádzajú sa pri meste Gíza.",
-      "Sú jedným zo siedmich divov starovekého sveta."
+    "BER": [
+      "Konala sa v roku 1884 – 1885.",
+      "Rozdelila Afriku medzi európske mocnosti.",
+      "Africké štáty sa jej nezúčastnili."
     ],
     "CAR": [
       "Ležala na severe Afriky.",
       "Bola významným obchodným centrom.",
       "Viedla vojny s Rímom."
     ],
-    "ROM": [
-      "Ovládala sever Afriky.",
-      "Budovala cesty a mestá.",
-      "Rozšírila kresťanstvo."
-    ],
-    "AKS": [
-      "Staroveká ríša vo východnej Afrike.",
-      "Bola významným obchodným centrom.",
-      "Prijala kresťanstvo."
-    ],
-    "ISLAM": [
-      "Vznikol na Arabskom polostrove.",
-      "Rýchlo sa rozšíril do severnej Afriky.",
-      "Ovplyvnil kultúru a vedu."
-    ],
-    "GHA": [
-      "Ležala v západnej Afrike.",
-      "Zbohatla na obchode so zlatom.",
-      "Jedna z prvých afrických ríš."
-    ],
-    "MLI": [
-      "Nachádzala sa v západnej Afrike.",
-      "Preslávila sa bohatstvom.",
-      "Známym panovníkom bol Mansa Musa."
-    ],
-    "SON": [
-      "Vznikla po páde ríše Mali.",
-      "Kontrolovala obchodné cesty.",
-      "Ležala pri rieke Niger."
-    ],
     "COL": [
       "Začala v 15. storočí.",
       "Európske mocnosti ovládli Afriku.",
       "Viedla k vykorisťovaniu miestneho obyvateľstva."
-    ],
-    "SLAVE": [
-      "Prebiehal medzi Afrikou, Amerikou a Európou.",
-      "Milióny Afričanov boli odvlečené.",
-      "Mal tragické následky."
-    ],
-    "BER": [
-      "Konala sa v roku 1884 – 1885.",
-      "Rozdelila Afriku medzi európske mocnosti.",
-      "Africké štáty sa jej nezúčastnili."
     ],
     "COL20": [
       "Afrika bola rozdelená na kolónie.",
@@ -73,148 +31,370 @@
       "Vznikli nezávislé štáty.",
       "Súvisela s oslobodzovacím hnutím."
     ],
+    "EG_OLD": [
+      "Vznikla pri rieke Níl.",
+      "Jedna z najstarších civilizácií sveta.",
+      "Vládli jej faraóni."
+    ],
+    "GHA": [
+      "Ležala v západnej Afrike.",
+      "Zbohatla na obchode so zlatom.",
+      "Jedna z prvých afrických ríš."
+    ],
+    "ISLAM": [
+      "Vznikol na Arabskom polostrove.",
+      "Rýchlo sa rozšíril do severnej Afriky.",
+      "Ovplyvnil kultúru a vedu."
+    ],
+    "MLI": [
+      "Nachádzala sa v západnej Afrike.",
+      "Preslávila sa bohatstvom.",
+      "Známym panovníkom bol Mansa Musa."
+    ],
+    "PYR": [
+      "Slúžili ako hrobky faraónov.",
+      "Nachádzajú sa pri meste Gíza.",
+      "Sú jedným zo siedmich divov starovekého sveta."
+    ],
+    "ROM": [
+      "Ovládala sever Afriky.",
+      "Budovala cesty a mestá.",
+      "Rozšírila kresťanstvo."
+    ],
     "RSA": [
       "Politika rasovej segregácie.",
       "Platila v Juhoafrickej republike.",
       "Zrušená v 90. rokoch 20. storočia."
+    ],
+    "SLAVE": [
+      "Prebiehal medzi Afrikou, Amerikou a Európou.",
+      "Milióny Afričanov boli odvlečené.",
+      "Mal tragické následky."
+    ],
+    "SON": [
+      "Vznikla po páde ríše Mali.",
+      "Kontrolovala obchodné cesty.",
+      "Ležala pri rieke Niger."
     ]
   },
-  "total": 15,
+  "id": "history_africa",
+  "name": "História Afriky",
   "rounds": [
     {
-      "question": "Pri ktorej rieke vznikla staroveká egyptská civilizácia?",
+      "explanation": "Staroveký Egypt vznikol pri rieke Níl.",
       "options": [
-        { "code": "EG_OLD", "text": "Níl", "correct": true },
-        { "code": "EG_OLD", "text": "Kongo", "correct": false },
-        { "code": "EG_OLD", "text": "Niger", "correct": false }
+        {
+          "code": "EG_OLD",
+          "correct": false,
+          "text": "Niger"
+        },
+        {
+          "code": "EG_OLD",
+          "correct": true,
+          "text": "Níl"
+        },
+        {
+          "code": "EG_OLD",
+          "correct": false,
+          "text": "Kongo"
+        }
       ],
-      "explanation": "Staroveký Egypt vznikol pri rieke Níl."
+      "question": "Pri ktorej rieke vznikla staroveká egyptská civilizácia?"
     },
     {
-      "question": "Na čo slúžili pyramídy v starovekom Egypte?",
+      "explanation": "Pyramídy slúžili ako hrobky faraónov.",
       "options": [
-        { "code": "PYR", "text": "Ako hrobky faraónov", "correct": true },
-        { "code": "PYR", "text": "Ako chrámy bohov", "correct": false },
-        { "code": "PYR", "text": "Ako obytné domy", "correct": false }
+        {
+          "code": "PYR",
+          "correct": false,
+          "text": "Ako obytné domy"
+        },
+        {
+          "code": "PYR",
+          "correct": true,
+          "text": "Ako hrobky faraónov"
+        },
+        {
+          "code": "PYR",
+          "correct": false,
+          "text": "Ako chrámy bohov"
+        }
       ],
-      "explanation": "Pyramídy slúžili ako hrobky faraónov."
+      "question": "Na čo slúžili pyramídy v starovekom Egypte?"
     },
     {
-      "question": "S ktorou ríšou viedlo Kartágo vojny?",
+      "explanation": "Kartágo viedlo púnské vojny s Rímom.",
       "options": [
-        { "code": "CAR", "text": "Rímska ríša", "correct": true },
-        { "code": "CAR", "text": "Egyptská ríša", "correct": false },
-        { "code": "CAR", "text": "Aksumská ríša", "correct": false }
+        {
+          "code": "CAR",
+          "correct": false,
+          "text": "Egyptská ríša"
+        },
+        {
+          "code": "CAR",
+          "correct": true,
+          "text": "Rímska ríša"
+        },
+        {
+          "code": "CAR",
+          "correct": false,
+          "text": "Aksumská ríša"
+        }
       ],
-      "explanation": "Kartágo viedlo púnské vojny s Rímom."
+      "question": "S ktorou ríšou viedlo Kartágo vojny?"
     },
     {
-      "question": "Ktorá ríša ovládala sever Afriky v staroveku?",
+      "explanation": "Sever Afriky ovládala Rímska ríša.",
       "options": [
-        { "code": "ROM", "text": "Rímska ríša", "correct": true },
-        { "code": "ROM", "text": "Čínska ríša", "correct": false },
-        { "code": "ROM", "text": "Indická ríša", "correct": false }
+        {
+          "code": "ROM",
+          "correct": false,
+          "text": "Indická ríša"
+        },
+        {
+          "code": "ROM",
+          "correct": true,
+          "text": "Rímska ríša"
+        },
+        {
+          "code": "ROM",
+          "correct": false,
+          "text": "Čínska ríša"
+        }
       ],
-      "explanation": "Sever Afriky ovládala Rímska ríša."
+      "question": "Ktorá ríša ovládala sever Afriky v staroveku?"
     },
     {
-      "question": "Ktoré náboženstvo sa rýchlo rozšírilo do severnej Afriky?",
+      "explanation": "Do severnej Afriky sa rozšíril islam.",
       "options": [
-        { "code": "ISLAM", "text": "Islam", "correct": true },
-        { "code": "ISLAM", "text": "Budhizmus", "correct": false },
-        { "code": "ISLAM", "text": "Hinduizmus", "correct": false }
+        {
+          "code": "ISLAM",
+          "correct": false,
+          "text": "Hinduizmus"
+        },
+        {
+          "code": "ISLAM",
+          "correct": true,
+          "text": "Islam"
+        },
+        {
+          "code": "ISLAM",
+          "correct": false,
+          "text": "Budhizmus"
+        }
       ],
-      "explanation": "Do severnej Afriky sa rozšíril islam."
+      "question": "Ktoré náboženstvo sa rýchlo rozšírilo do severnej Afriky?"
     },
     {
-      "question": "Ktorá ríša zbohatla na obchode so zlatom?",
+      "explanation": "Ríša Ghana zbohatla na obchode so zlatom.",
       "options": [
-        { "code": "GHA", "text": "Ríša Ghana", "correct": true },
-        { "code": "GHA", "text": "Ríša Aksum", "correct": false },
-        { "code": "GHA", "text": "Egyptská ríša", "correct": false }
+        {
+          "code": "GHA",
+          "correct": false,
+          "text": "Egyptská ríša"
+        },
+        {
+          "code": "GHA",
+          "correct": true,
+          "text": "Ríša Ghana"
+        },
+        {
+          "code": "GHA",
+          "correct": false,
+          "text": "Ríša Aksum"
+        }
       ],
-      "explanation": "Ríša Ghana zbohatla na obchode so zlatom."
+      "question": "Ktorá ríša zbohatla na obchode so zlatom?"
     },
     {
-      "question": "Ktorý panovník preslávil ríšu Mali?",
+      "explanation": "Najznámejším panovníkom ríše Mali bol Mansa Musa.",
       "options": [
-        { "code": "MLI", "text": "Mansa Musa", "correct": true },
-        { "code": "MLI", "text": "Ramses II.", "correct": false },
-        { "code": "MLI", "text": "Hannibal", "correct": false }
+        {
+          "code": "MLI",
+          "correct": false,
+          "text": "Hannibal"
+        },
+        {
+          "code": "MLI",
+          "correct": true,
+          "text": "Mansa Musa"
+        },
+        {
+          "code": "MLI",
+          "correct": false,
+          "text": "Ramses II."
+        }
       ],
-      "explanation": "Najznámejším panovníkom ríše Mali bol Mansa Musa."
+      "question": "Ktorý panovník preslávil ríšu Mali?"
     },
     {
-      "question": "Ktorá konferencia rozdelila Afriku medzi európske mocnosti?",
+      "explanation": "Afriku rozdelila Berlínska konferencia.",
       "options": [
-        { "code": "BER", "text": "Berlínska konferencia", "correct": true },
-        { "code": "BER", "text": "Viedenský kongres", "correct": false },
-        { "code": "BER", "text": "Parížska konferencia", "correct": false }
+        {
+          "code": "BER",
+          "correct": false,
+          "text": "Parížska konferencia"
+        },
+        {
+          "code": "BER",
+          "correct": true,
+          "text": "Berlínska konferencia"
+        },
+        {
+          "code": "BER",
+          "correct": false,
+          "text": "Viedenský kongres"
+        }
       ],
-      "explanation": "Afriku rozdelila Berlínska konferencia."
+      "question": "Ktorá konferencia rozdelila Afriku medzi európske mocnosti?"
     },
     {
-      "question": "Ako sa nazýva obchod, pri ktorom boli Afričania odvlečení do Ameriky?",
+      "explanation": "Išlo o obchod s otrokmi.",
       "options": [
-        { "code": "SLAVE", "text": "Obchod s otrokmi", "correct": true },
-        { "code": "SLAVE", "text": "Hodvábna cesta", "correct": false },
-        { "code": "SLAVE", "text": "Kolumbovská výmena", "correct": false }
+        {
+          "code": "SLAVE",
+          "correct": false,
+          "text": "Kolumbovská výmena"
+        },
+        {
+          "code": "SLAVE",
+          "correct": true,
+          "text": "Obchod s otrokmi"
+        },
+        {
+          "code": "SLAVE",
+          "correct": false,
+          "text": "Hodvábna cesta"
+        }
       ],
-      "explanation": "Išlo o obchod s otrokmi."
+      "question": "Ako sa nazýva obchod, pri ktorom boli Afričania odvlečení do Ameriky?"
     },
     {
-      "question": "Ako sa nazýva proces osamostatňovania afrických štátov?",
+      "explanation": "Proces sa nazýva dekolonizácia.",
       "options": [
-        { "code": "DECOL", "text": "Dekolonizácia", "correct": true },
-        { "code": "DECOL", "text": "Industrializácia", "correct": false },
-        { "code": "DECOL", "text": "Globalizácia", "correct": false }
+        {
+          "code": "DECOL",
+          "correct": false,
+          "text": "Globalizácia"
+        },
+        {
+          "code": "DECOL",
+          "correct": true,
+          "text": "Dekolonizácia"
+        },
+        {
+          "code": "DECOL",
+          "correct": false,
+          "text": "Industrializácia"
+        }
       ],
-      "explanation": "Proces sa nazýva dekolonizácia."
+      "question": "Ako sa nazýva proces osamostatňovania afrických štátov?"
     },
     {
-      "question": "V ktorej krajine platila politika apartheidu?",
+      "explanation": "Apartheid platil v Juhoafrickej republike.",
       "options": [
-        { "code": "RSA", "text": "Juhoafrická republika", "correct": true },
-        { "code": "RSA", "text": "Nigéria", "correct": false },
-        { "code": "RSA", "text": "Keňa", "correct": false }
+        {
+          "code": "RSA",
+          "correct": false,
+          "text": "Keňa"
+        },
+        {
+          "code": "RSA",
+          "correct": true,
+          "text": "Juhoafrická republika"
+        },
+        {
+          "code": "RSA",
+          "correct": false,
+          "text": "Nigéria"
+        }
       ],
-      "explanation": "Apartheid platil v Juhoafrickej republike."
+      "question": "V ktorej krajine platila politika apartheidu?"
     },
     {
-      "question": "Ktorá rieka bola dôležitá pre ríše západnej Afriky?",
+      "explanation": "Pre západnú Afriku bola dôležitá rieka Niger.",
       "options": [
-        { "code": "SON", "text": "Niger", "correct": true },
-        { "code": "SON", "text": "Níl", "correct": false },
-        { "code": "SON", "text": "Zambezi", "correct": false }
+        {
+          "code": "SON",
+          "correct": false,
+          "text": "Zambezi"
+        },
+        {
+          "code": "SON",
+          "correct": true,
+          "text": "Niger"
+        },
+        {
+          "code": "SON",
+          "correct": false,
+          "text": "Níl"
+        }
       ],
-      "explanation": "Pre západnú Afriku bola dôležitá rieka Niger."
+      "question": "Ktorá rieka bola dôležitá pre ríše západnej Afriky?"
     },
     {
-      "question": "V ktorom storočí začala európska kolonizácia Afriky?",
+      "explanation": "Kolonizácia začala v 15. storočí.",
       "options": [
-        { "code": "COL", "text": "15. storočie", "correct": true },
-        { "code": "COL", "text": "10. storočie", "correct": false },
-        { "code": "COL", "text": "20. storočie", "correct": false }
+        {
+          "code": "COL",
+          "correct": false,
+          "text": "20. storočie"
+        },
+        {
+          "code": "COL",
+          "correct": true,
+          "text": "15. storočie"
+        },
+        {
+          "code": "COL",
+          "correct": false,
+          "text": "10. storočie"
+        }
       ],
-      "explanation": "Kolonizácia začala v 15. storočí."
+      "question": "V ktorom storočí začala európska kolonizácia Afriky?"
     },
     {
-      "question": "Ktorá ríša vznikla po páde ríše Mali?",
+      "explanation": "Po Mali vznikla ríša Songhaj.",
       "options": [
-        { "code": "SON", "text": "Ríša Songhaj", "correct": true },
-        { "code": "SON", "text": "Ríša Ghana", "correct": false },
-        { "code": "SON", "text": "Ríša Aksum", "correct": false }
+        {
+          "code": "SON",
+          "correct": false,
+          "text": "Ríša Aksum"
+        },
+        {
+          "code": "SON",
+          "correct": true,
+          "text": "Ríša Songhaj"
+        },
+        {
+          "code": "SON",
+          "correct": false,
+          "text": "Ríša Ghana"
+        }
       ],
-      "explanation": "Po Mali vznikla ríša Songhaj."
+      "question": "Ktorá ríša vznikla po páde ríše Mali?"
     },
     {
-      "question": "Ktorá africká ríša prijala kresťanstvo už v staroveku?",
+      "explanation": "Kresťanstvo prijala Aksumská ríša.",
       "options": [
-        { "code": "AKS", "text": "Aksumská ríša", "correct": true },
-        { "code": "AKS", "text": "Ríša Ghana", "correct": false },
-        { "code": "AKS", "text": "Kartágo", "correct": false }
+        {
+          "code": "AKS",
+          "correct": false,
+          "text": "Kartágo"
+        },
+        {
+          "code": "AKS",
+          "correct": true,
+          "text": "Aksumská ríša"
+        },
+        {
+          "code": "AKS",
+          "correct": false,
+          "text": "Ríša Ghana"
+        }
       ],
-      "explanation": "Kresťanstvo prijala Aksumská ríša."
+      "question": "Ktorá africká ríša prijala kresťanstvo už v staroveku?"
     }
-  ]
+  ],
+  "total": 15
 }
