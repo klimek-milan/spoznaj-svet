@@ -32,10 +32,24 @@ body {
   background:
     linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.85),
-      rgba(255, 255, 255, 0.85)
-    ),
-    var(--bg-img) center / cover no-repeat fixed;
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    );
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: var(--bg-img);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.1;
+    filter: blur(8px);
 }
 
 /* Dark režim – ak má používateľ tmavý systémový režim */
@@ -44,10 +58,9 @@ body {
     background:
       linear-gradient(
         180deg,
-        rgba(13, 20, 35, 0.80),
-        rgba(13, 20, 35, 0.80)
-      ),
-      var(--bg-img) center / cover no-repeat fixed;
+        rgba(13, 20, 35, 0.90),
+        rgba(13, 20, 35, 0.90)
+      );
     color: var(--surface);
   }
 }
