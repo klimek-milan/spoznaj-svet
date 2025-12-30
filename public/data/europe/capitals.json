@@ -106,185 +106,26 @@
   },
   "total": 20,
   "rounds": [
-    {
-      "question": "Aké je hlavné mesto Francúzska?",
-      "options": [
-        { "code": "FR", "text": "Paríž", "correct": true },
-        { "code": "BE", "text": "Brusel", "correct": false },
-        { "code": "ES", "text": "Madrid", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Francúzska je Paríž."
-    },
-    {
-      "question": "Aké je hlavné mesto Nemecka?",
-      "options": [
-        { "code": "DE", "text": "Berlín", "correct": true },
-        { "code": "DE", "text": "Mníchov", "correct": false },
-        { "code": "AT", "text": "Viedeň", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Nemecka je Berlín."
-    },
-    {
-      "question": "Aké je hlavné mesto Talianska?",
-      "options": [
-        { "code": "IT", "text": "Rím", "correct": true },
-        { "code": "IT", "text": "Miláno", "correct": false },
-        { "code": "GR", "text": "Atény", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Talianska je Rím."
-    },
-    {
-      "question": "Aké je hlavné mesto Španielska?",
-      "options": [
-        { "code": "ES", "text": "Madrid", "correct": true },
-        { "code": "PT", "text": "Lisabon", "correct": false },
-        { "code": "FR", "text": "Paríž", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Španielska je Madrid."
-    },
-    {
-      "question": "Aké je hlavné mesto Spojeného kráľovstva?",
-      "options": [
-        { "code": "GB", "text": "Londýn", "correct": true },
-        { "code": "IE", "text": "Dublin", "correct": false },
-        { "code": "FR", "text": "Paríž", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Spojeného kráľovstva je Londýn."
-    },
-    {
-      "question": "Aké je hlavné mesto Rakúska?",
-      "options": [
-        { "code": "AT", "text": "Viedeň", "correct": true },
-        { "code": "DE", "text": "Berlín", "correct": false },
-        { "code": "HU", "text": "Budapešť", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Rakúska je Viedeň."
-    },
-    {
-      "question": "Aké je hlavné mesto Česka?",
-      "options": [
-        { "code": "CZ", "text": "Praha", "correct": true },
-        { "code": "SK", "text": "Bratislava", "correct": false },
-        { "code": "PL", "text": "Varšava", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Česka je Praha."
-    },
-    {
-      "question": "Aké je hlavné mesto Slovenska?",
-      "options": [
-        { "code": "SK", "text": "Bratislava", "correct": true },
-        { "code": "AT", "text": "Viedeň", "correct": false },
-        { "code": "HU", "text": "Budapešť", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Slovenska je Bratislava."
-    },
-    {
-      "question": "Aké je hlavné mesto Poľska?",
-      "options": [
-        { "code": "PL", "text": "Varšava", "correct": true },
-        { "code": "CZ", "text": "Praha", "correct": false },
-        { "code": "DE", "text": "Berlín", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Poľska je Varšava."
-    },
-    {
-      "question": "Aké je hlavné mesto Maďarska?",
-      "options": [
-        { "code": "HU", "text": "Budapešť", "correct": true },
-        { "code": "AT", "text": "Viedeň", "correct": false },
-        { "code": "RO", "text": "Bukurešť", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Maďarska je Budapešť."
-    },
-    {
-      "question": "Aké je hlavné mesto Grécka?",
-      "options": [
-        { "code": "GR", "text": "Atény", "correct": true },
-        { "code": "IT", "text": "Rím", "correct": false },
-        { "code": "TR", "text": "Ankara", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Grécka sú Atény."
-    },
-    {
-      "question": "Aké je hlavné mesto Portugalska?",
-      "options": [
-        { "code": "PT", "text": "Lisabon", "correct": true },
-        { "code": "ES", "text": "Madrid", "correct": false },
-        { "code": "FR", "text": "Paríž", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Portugalska je Lisabon."
-    },
-    {
-      "question": "Aké je hlavné mesto Belgicka?",
-      "options": [
-        { "code": "BE", "text": "Brusel", "correct": true },
-        { "code": "NL", "text": "Amsterdam", "correct": false },
-        { "code": "FR", "text": "Paríž", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Belgicka je Brusel."
-    },
-    {
-      "question": "Aké je hlavné mesto Holandska?",
-      "options": [
-        { "code": "NL", "text": "Amsterdam", "correct": true },
-        { "code": "NL", "text": "Haag", "correct": false },
-        { "code": "BE", "text": "Brusel", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Holandska je Amsterdam."
-    },
-    {
-      "question": "Aké je hlavné mesto Švédska?",
-      "options": [
-        { "code": "SE", "text": "Štokholm", "correct": true },
-        { "code": "NO", "text": "Oslo", "correct": false },
-        { "code": "FI", "text": "Helsinki", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Švédska je Štokholm."
-    },
-    {
-      "question": "Aké je hlavné mesto Nórska?",
-      "options": [
-        { "code": "NO", "text": "Oslo", "correct": true },
-        { "code": "SE", "text": "Štokholm", "correct": false },
-        { "code": "DK", "text": "Kodaň", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Nórska je Oslo."
-    },
-    {
-      "question": "Aké je hlavné mesto Fínska?",
-      "options": [
-        { "code": "FI", "text": "Helsinki", "correct": true },
-        { "code": "EE", "text": "Tallinn", "correct": false },
-        { "code": "SE", "text": "Štokholm", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Fínska je Helsinki."
-    },
-    {
-      "question": "Aké je hlavné mesto Dánska?",
-      "options": [
-        { "code": "DK", "text": "Kodaň", "correct": true },
-        { "code": "NO", "text": "Oslo", "correct": false },
-        { "code": "SE", "text": "Štokholm", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Dánska je Kodaň."
-    },
-    {
-      "question": "Ktoré mesto je sídlom vlády Švajčiarska?",
-      "options": [
-        { "code": "CH", "text": "Bern", "correct": true },
-        { "code": "CH", "text": "Zürich", "correct": false },
-        { "code": "AT", "text": "Viedeň", "correct": false }
-      ],
-      "explanation": "Bern je sídlom vlády Švajčiarska."
-    },
-    {
-      "question": "Aké je hlavné mesto Ukrajiny?",
-      "options": [
-        { "code": "UA", "text": "Kyjev", "correct": true },
-        { "code": "RU", "text": "Moskva", "correct": false },
-        { "code": "PL", "text": "Varšava", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Ukrajiny je Kyjev."
-    }
-  ]
+  { "question": "Aké je hlavné mesto Francúzska?", "options": [ { "code": "BE", "text": "Brusel", "correct": false }, { "code": "FR", "text": "Paríž", "correct": true }, { "code": "ES", "text": "Madrid", "correct": false } ], "explanation": "Hlavné mesto Francúzska je Paríž." },
+  { "question": "Aké je hlavné mesto Nemecka?", "options": [ { "code": "AT", "text": "Viedeň", "correct": false }, { "code": "DE", "text": "Berlín", "correct": true }, { "code": "DE", "text": "Mníchov", "correct": false } ], "explanation": "Hlavné mesto Nemecka je Berlín." },
+  { "question": "Aké je hlavné mesto Talianska?", "options": [ { "code": "GR", "text": "Atény", "correct": false }, { "code": "IT", "text": "Rím", "correct": true }, { "code": "IT", "text": "Miláno", "correct": false } ], "explanation": "Hlavné mesto Talianska je Rím." },
+  { "question": "Aké je hlavné mesto Španielska?", "options": [ { "code": "FR", "text": "Paríž", "correct": false }, { "code": "PT", "text": "Lisabon", "correct": false }, { "code": "ES", "text": "Madrid", "correct": true } ], "explanation": "Hlavné mesto Španielska je Madrid." },
+  { "question": "Aké je hlavné mesto Spojeného kráľovstva?", "options": [ { "code": "FR", "text": "Paríž", "correct": false }, { "code": "GB", "text": "Londýn", "correct": true }, { "code": "IE", "text": "Dublin", "correct": false } ], "explanation": "Hlavné mesto Spojeného kráľovstva je Londýn." },
+  { "question": "Aké je hlavné mesto Rakúska?", "options": [ { "code": "HU", "text": "Budapešť", "correct": false }, { "code": "AT", "text": "Viedeň", "correct": true }, { "code": "DE", "text": "Berlín", "correct": false } ], "explanation": "Hlavné mesto Rakúska je Viedeň." },
+  { "question": "Aké je hlavné mesto Česka?", "options": [ { "code": "PL", "text": "Varšava", "correct": false }, { "code": "CZ", "text": "Praha", "correct": true }, { "code": "SK", "text": "Bratislava", "correct": false } ], "explanation": "Hlavné mesto Česka je Praha." },
+  { "question": "Aké je hlavné mesto Slovenska?", "options": [ { "code": "HU", "text": "Budapešť", "correct": false }, { "code": "SK", "text": "Bratislava", "correct": true }, { "code": "AT", "text": "Viedeň", "correct": false } ], "explanation": "Hlavné mesto Slovenska je Bratislava." },
+  { "question": "Aké je hlavné mesto Poľska?", "options": [ { "code": "DE", "text": "Berlín", "correct": false }, { "code": "PL", "text": "Varšava", "correct": true }, { "code": "CZ", "text": "Praha", "correct": false } ], "explanation": "Hlavné mesto Poľska je Varšava." },
+  { "question": "Aké je hlavné mesto Maďarska?", "options": [ { "code": "RO", "text": "Bukurešť", "correct": false }, { "code": "HU", "text": "Budapešť", "correct": true }, { "code": "AT", "text": "Viedeň", "correct": false } ], "explanation": "Hlavné mesto Maďarska je Budapešť." },
+  { "question": "Aké je hlavné mesto Grécka?", "options": [ { "code": "TR", "text": "Ankara", "correct": false }, { "code": "GR", "text": "Atény", "correct": true }, { "code": "IT", "text": "Rím", "correct": false } ], "explanation": "Hlavné mesto Grécka sú Atény." },
+  { "question": "Aké je hlavné mesto Portugalska?", "options": [ { "code": "FR", "text": "Paríž", "correct": false }, { "code": "PT", "text": "Lisabon", "correct": true }, { "code": "ES", "text": "Madrid", "correct": false } ], "explanation": "Hlavné mesto Portugalska je Lisabon." },
+  { "question": "Aké je hlavné mesto Belgicka?", "options": [ { "code": "NL", "text": "Amsterdam", "correct": false }, { "code": "BE", "text": "Brusel", "correct": true }, { "code": "FR", "text": "Paríž", "correct": false } ], "explanation": "Hlavné mesto Belgicka je Brusel." },
+  { "question": "Aké je hlavné mesto Holandska?", "options": [ { "code": "BE", "text": "Brusel", "correct": false }, { "code": "NL", "text": "Amsterdam", "correct": true }, { "code": "NL", "text": "Haag", "correct": false } ], "explanation": "Hlavné mesto Holandska je Amsterdam." },
+  { "question": "Aké je hlavné mesto Švédska?", "options": [ { "code": "FI", "text": "Helsinki", "correct": false }, { "code": "SE", "text": "Štokholm", "correct": true }, { "code": "NO", "text": "Oslo", "correct": false } ], "explanation": "Hlavné mesto Švédska je Štokholm." },
+  { "question": "Aké je hlavné mesto Nórska?", "options": [ { "code": "DK", "text": "Kodaň", "correct": false }, { "code": "NO", "text": "Oslo", "correct": true }, { "code": "SE", "text": "Štokholm", "correct": false } ], "explanation": "Hlavné mesto Nórska je Oslo." },
+  { "question": "Aké je hlavné mesto Fínska?", "options": [ { "code": "SE", "text": "Štokholm", "correct": false }, { "code": "FI", "text": "Helsinki", "correct": true }, { "code": "EE", "text": "Tallinn", "correct": false } ], "explanation": "Hlavné mesto Fínska je Helsinki." },
+  { "question": "Aké je hlavné mesto Dánska?", "options": [ { "code": "SE", "text": "Štokholm", "correct": false }, { "code": "DK", "text": "Kodaň", "correct": true }, { "code": "NO", "text": "Oslo", "correct": false } ], "explanation": "Hlavné mesto Dánska je Kodaň." },
+  { "question": "Ktoré mesto je sídlom vlády Švajčiarska?", "options": [ { "code": "AT", "text": "Viedeň", "correct": false }, { "code": "CH", "text": "Bern", "correct": true }, { "code": "CH", "text": "Zürich", "correct": false } ], "explanation": "Bern je sídlom vlády Švajčiarska." },
+  { "question": "Aké je hlavné mesto Ukrajiny?", "options": [ { "code": "PL", "text": "Varšava", "correct": false }, { "code": "UA", "text": "Kyjev", "correct": true }, { "code": "RU", "text": "Moskva", "correct": false } ], "explanation": "Hlavné mesto Ukrajiny je Kyjev." }
+]
+
 }

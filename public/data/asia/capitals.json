@@ -109,8 +109,8 @@
     {
       "question": "Aké je hlavné mesto Číny?",
       "options": [
-        { "code": "CN", "text": "Peking", "correct": true },
         { "code": "JP", "text": "Tokio", "correct": false },
+        { "code": "CN", "text": "Peking", "correct": true },
         { "code": "KR", "text": "Soul", "correct": false }
       ],
       "explanation": "Hlavné mesto Číny je Peking."
@@ -127,9 +127,9 @@
     {
       "question": "Aké je hlavné mesto Indie?",
       "options": [
-        { "code": "IN", "text": "Naí Dillí", "correct": true },
         { "code": "PK", "text": "Islamabad", "correct": false },
-        { "code": "BD", "text": "Dháka", "correct": false }
+        { "code": "BD", "text": "Dháka", "correct": false },
+        { "code": "IN", "text": "Naí Dillí", "correct": true }        
       ],
       "explanation": "Hlavné mesto Indie je Naí Dillí."
     },
@@ -145,8 +145,8 @@
     {
       "question": "Aké je hlavné mesto Thajska?",
       "options": [
-        { "code": "TH", "text": "Bangkok", "correct": true },
         { "code": "VN", "text": "Hanoj", "correct": false },
+        { "code": "TH", "text": "Bangkok", "correct": true },        
         { "code": "KH", "text": "Phnom Penh", "correct": false }
       ],
       "explanation": "Hlavné mesto Thajska je Bangkok."
@@ -163,26 +163,26 @@
     {
       "question": "Aké je hlavné mesto Indonézie?",
       "options": [
-        { "code": "ID", "text": "Jakarta", "correct": true },
         { "code": "MY", "text": "Kuala Lumpur", "correct": false },
-        { "code": "PH", "text": "Manila", "correct": false }
+        { "code": "PH", "text": "Manila", "correct": false },
+        { "code": "ID", "text": "Jakarta", "correct": true }        
       ],
       "explanation": "Hlavné mesto Indonézie je Jakarta."
     },
     {
       "question": "Aké je hlavné mesto Saudskej Arábie?",
       "options": [
-        { "code": "SA", "text": "Rijád", "correct": true },
         { "code": "AE", "text": "Abú Zabí", "correct": false },
         { "code": "IQ", "text": "Bagdad", "correct": false }
+        { "code": "SA", "text": "Rijád", "correct": true },        
       ],
       "explanation": "Hlavné mesto Saudskej Arábie je Rijád."
     },
     {
       "question": "Aké je hlavné mesto Iránu?",
       "options": [
-        { "code": "IR", "text": "Teherán", "correct": true },
         { "code": "IQ", "text": "Bagdad", "correct": false },
+        { "code": "IR", "text": "Teherán", "correct": true },
         { "code": "TR", "text": "Ankara", "correct": false }
       ],
       "explanation": "Hlavné mesto Iránu je Teherán."
@@ -190,18 +190,19 @@
     {
       "question": "Aké je hlavné mesto Iraku?",
       "options": [
-        { "code": "IQ", "text": "Bagdad", "correct": true },
         { "code": "IR", "text": "Teherán", "correct": false },
-        { "code": "SY", "text": "Damask", "correct": false }
+        { "code": "SY", "text": "Damask", "correct": false },
+        { "code": "IQ", "text": "Bagdad", "correct": true }       
       ],
       "explanation": "Hlavné mesto Iraku je Bagdad."
     },
     {
       "question": "Aké je hlavné mesto Izraela?",
       "options": [
+        { "code": "JO", "text": "Ammán", "correct": false },
         { "code": "IL", "text": "Jeruzalem", "correct": true },
-        { "code": "LB", "text": "Bejrút", "correct": false },
-        { "code": "JO", "text": "Ammán", "correct": false }
+        { "code": "LB", "text": "Bejrút", "correct": false }
+
       ],
       "explanation": "Hlavné mesto Izraela je Jeruzalem."
     },
@@ -217,8 +218,8 @@
     {
       "question": "Aké je hlavné mesto Pakistanu?",
       "options": [
-        { "code": "PK", "text": "Islamabad", "correct": true },
         { "code": "IN", "text": "Naí Dillí", "correct": false },
+        { "code": "PK", "text": "Islamabad", "correct": true },
         { "code": "AF", "text": "Kábul", "correct": false }
       ],
       "explanation": "Hlavné mesto Pakistanu je Islamabad."
@@ -226,9 +227,9 @@
     {
       "question": "Aké je hlavné mesto Afganistanu?",
       "options": [
-        { "code": "AF", "text": "Kábul", "correct": true },
         { "code": "IR", "text": "Teherán", "correct": false },
-        { "code": "PK", "text": "Islamabad", "correct": false }
+        { "code": "PK", "text": "Islamabad", "correct": false },
+        { "code": "AF", "text": "Kábul", "correct": true }
       ],
       "explanation": "Hlavné mesto Afganistanu je Kábul."
     },
@@ -244,8 +245,8 @@
     {
       "question": "Aké je hlavné mesto Filipín?",
       "options": [
-        { "code": "PH", "text": "Manila", "correct": true },
         { "code": "ID", "text": "Jakarta", "correct": false },
+        { "code": "PH", "text": "Manila", "correct": true },
         { "code": "MY", "text": "Kuala Lumpur", "correct": false }
       ],
       "explanation": "Hlavné mesto Filipín je Manila."
@@ -253,18 +254,18 @@
     {
       "question": "Aké je hlavné mesto Malajzie?",
       "options": [
+        { "code": "ID", "text": "Jakarta", "correct": false },
         { "code": "MY", "text": "Kuala Lumpur", "correct": true },
-        { "code": "SG", "text": "Singapur", "correct": false },
-        { "code": "ID", "text": "Jakarta", "correct": false }
+        { "code": "SG", "text": "Singapur", "correct": false }
       ],
       "explanation": "Hlavné mesto Malajzie je Kuala Lumpur."
     },
     {
       "question": "Aké je hlavné mesto Nepálu?",
       "options": [
-        { "code": "NP", "text": "Káthmandu", "correct": true },
         { "code": "IN", "text": "Naí Dillí", "correct": false },
-        { "code": "BT", "text": "Thimphu", "correct": false }
+        { "code": "BT", "text": "Thimphu", "correct": false },
+        { "code": "NP", "text": "Káthmandu", "correct": true }
       ],
       "explanation": "Hlavné mesto Nepálu je Káthmandu."
     },
@@ -280,8 +281,8 @@
     {
       "question": "Aké je administratívne hlavné mesto Srí Lanky?",
       "options": [
-        { "code": "LK", "text": "Sri Jayawardenepura Kotte", "correct": true },
         { "code": "LK", "text": "Kolombo", "correct": false },
+        { "code": "LK", "text": "Sri Jayawardenepura Kotte", "correct": true },
         { "code": "IN", "text": "Naí Dillí", "correct": false }
       ],
       "explanation": "Administratívne hlavné mesto Srí Lanky je Sri Jayawardenepura Kotte."

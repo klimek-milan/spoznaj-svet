@@ -70,123 +70,124 @@
     ]
   },
   "total": 13,
-  "rounds": [
-    {
-      "question": "Aké je hlavné mesto Brazílie?",
-      "options": [
-        { "code": "BR", "text": "Brasília", "correct": true },
-        { "code": "BR", "text": "Rio de Janeiro", "correct": false },
-        { "code": "AR", "text": "Buenos Aires", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Brazílie je Brasília."
-    },
-    {
-      "question": "Aké je hlavné mesto Argentíny?",
-      "options": [
-        { "code": "AR", "text": "Buenos Aires", "correct": true },
-        { "code": "UY", "text": "Montevideo", "correct": false },
-        { "code": "CL", "text": "Santiago", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Argentíny je Buenos Aires."
-    },
-    {
-      "question": "Aké je hlavné mesto Čile?",
-      "options": [
-        { "code": "CL", "text": "Santiago", "correct": true },
-        { "code": "PE", "text": "Lima", "correct": false },
-        { "code": "BO", "text": "La Paz", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Čile je Santiago."
-    },
-    {
-      "question": "Aké je hlavné mesto Peru?",
-      "options": [
-        { "code": "PE", "text": "Lima", "correct": true },
-        { "code": "EC", "text": "Quito", "correct": false },
-        { "code": "CL", "text": "Santiago", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Peru je Lima."
-    },
-    {
-      "question": "Aké je hlavné mesto Kolumbie?",
-      "options": [
-        { "code": "CO", "text": "Bogotá", "correct": true },
-        { "code": "VE", "text": "Caracas", "correct": false },
-        { "code": "EC", "text": "Quito", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Kolumbie je Bogotá."
-    },
-    {
-      "question": "Aké je hlavné mesto Venezuely?",
-      "options": [
-        { "code": "VE", "text": "Caracas", "correct": true },
-        { "code": "CO", "text": "Bogotá", "correct": false },
-        { "code": "GY", "text": "Georgetown", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Venezuely je Caracas."
-    },
-    {
-      "question": "Aké je hlavné mesto Ekvádoru?",
-      "options": [
-        { "code": "EC", "text": "Quito", "correct": true },
-        { "code": "PE", "text": "Lima", "correct": false },
-        { "code": "CO", "text": "Bogotá", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Ekvádoru je Quito."
-    },
-    {
-      "question": "Aké je hlavné mesto Bolívie (sídlo vlády)?",
-      "options": [
-        { "code": "BO", "text": "La Paz", "correct": true },
-        { "code": "BO", "text": "Sucre", "correct": false },
-        { "code": "PE", "text": "Lima", "correct": false }
-      ],
-      "explanation": "Sídlo vlády Bolívie je La Paz."
-    },
-    {
-      "question": "Aké je hlavné mesto Paraguaja?",
-      "options": [
-        { "code": "PY", "text": "Asunción", "correct": true },
-        { "code": "AR", "text": "Buenos Aires", "correct": false },
-        { "code": "UY", "text": "Montevideo", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Paraguaja je Asunción."
-    },
-    {
-      "question": "Aké je hlavné mesto Uruguaja?",
-      "options": [
-        { "code": "UY", "text": "Montevideo", "correct": true },
-        { "code": "AR", "text": "Buenos Aires", "correct": false },
-        { "code": "BR", "text": "Brasília", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Uruguaja je Montevideo."
-    },
-    {
-      "question": "Aké je hlavné mesto Guyany?",
-      "options": [
-        { "code": "GY", "text": "Georgetown", "correct": true },
-        { "code": "SR", "text": "Paramaribo", "correct": false },
-        { "code": "VE", "text": "Caracas", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Guyany je Georgetown."
-    },
-    {
-      "question": "Aké je hlavné mesto Surinamu?",
-      "options": [
-        { "code": "SR", "text": "Paramaribo", "correct": true },
-        { "code": "GY", "text": "Georgetown", "correct": false },
-        { "code": "GF", "text": "Cayenne", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Surinamu je Paramaribo."
-    },
-    {
-      "question": "Aké je správne centrum Francúzskej Guyany?",
-      "options": [
-        { "code": "GF", "text": "Cayenne", "correct": true },
-        { "code": "GY", "text": "Georgetown", "correct": false },
-        { "code": "SR", "text": "Paramaribo", "correct": false }
-      ],
-      "explanation": "Správnym centrom Francúzskej Guyany je Cayenne."
-    }
-  ]
+ "rounds": [
+  {
+    "question": "Aké je hlavné mesto Brazílie?",
+    "options": [
+      { "code": "BR", "text": "Rio de Janeiro", "correct": false },
+      { "code": "AR", "text": "Buenos Aires", "correct": false },
+      { "code": "BR", "text": "Brasília", "correct": true }
+    ],
+    "explanation": "Hlavné mesto Brazílie je Brasília."
+  },
+  {
+    "question": "Aké je hlavné mesto Argentíny?",
+    "options": [
+      { "code": "AR", "text": "Buenos Aires", "correct": true },
+      { "code": "CL", "text": "Santiago", "correct": false },
+      { "code": "UY", "text": "Montevideo", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Argentíny je Buenos Aires."
+  },
+  {
+    "question": "Aké je hlavné mesto Čile?",
+    "options": [
+      { "code": "PE", "text": "Lima", "correct": false },
+      { "code": "CL", "text": "Santiago", "correct": true },
+      { "code": "BO", "text": "La Paz", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Čile je Santiago."
+  },
+  {
+    "question": "Aké je hlavné mesto Peru?",
+    "options": [
+      { "code": "CL", "text": "Santiago", "correct": false },
+      { "code": "PE", "text": "Lima", "correct": true },
+      { "code": "EC", "text": "Quito", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Peru je Lima."
+  },
+  {
+    "question": "Aké je hlavné mesto Kolumbie?",
+    "options": [
+      { "code": "EC", "text": "Quito", "correct": false },
+      { "code": "VE", "text": "Caracas", "correct": false },
+      { "code": "CO", "text": "Bogotá", "correct": true }
+    ],
+    "explanation": "Hlavné mesto Kolumbie je Bogotá."
+  },
+  {
+    "question": "Aké je hlavné mesto Venezuely?",
+    "options": [
+      { "code": "CO", "text": "Bogotá", "correct": false },
+      { "code": "GY", "text": "Georgetown", "correct": false },
+      { "code": "VE", "text": "Caracas", "correct": true }
+    ],
+    "explanation": "Hlavné mesto Venezuely je Caracas."
+  },
+  {
+    "question": "Aké je hlavné mesto Ekvádoru?",
+    "options": [
+      { "code": "PE", "text": "Lima", "correct": false },
+      { "code": "EC", "text": "Quito", "correct": true },
+      { "code": "CO", "text": "Bogotá", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Ekvádoru je Quito."
+  },
+  {
+    "question": "Aké je hlavné mesto Bolívie (sídlo vlády)?",
+    "options": [
+      { "code": "PE", "text": "Lima", "correct": false },
+      { "code": "BO", "text": "Sucre", "correct": false },
+      { "code": "BO", "text": "La Paz", "correct": true }
+    ],
+    "explanation": "Sídlo vlády Bolívie je La Paz."
+  },
+  {
+    "question": "Aké je hlavné mesto Paraguaja?",
+    "options": [
+      { "code": "AR", "text": "Buenos Aires", "correct": false },
+      { "code": "PY", "text": "Asunción", "correct": true },
+      { "code": "UY", "text": "Montevideo", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Paraguaja je Asunción."
+  },
+  {
+    "question": "Aké je hlavné mesto Uruguaja?",
+    "options": [
+      { "code": "BR", "text": "Brasília", "correct": false },
+      { "code": "UY", "text": "Montevideo", "correct": true },
+      { "code": "AR", "text": "Buenos Aires", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Uruguaja je Montevideo."
+  },
+  {
+    "question": "Aké je hlavné mesto Guyany?",
+    "options": [
+      { "code": "VE", "text": "Caracas", "correct": false },
+      { "code": "GY", "text": "Georgetown", "correct": true },
+      { "code": "SR", "text": "Paramaribo", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Guyany je Georgetown."
+  },
+  {
+    "question": "Aké je hlavné mesto Surinamu?",
+    "options": [
+      { "code": "GY", "text": "Georgetown", "correct": false },
+      { "code": "SR", "text": "Paramaribo", "correct": true },
+      { "code": "GF", "text": "Cayenne", "correct": false }
+    ],
+    "explanation": "Hlavné mesto Surinamu je Paramaribo."
+  },
+  {
+    "question": "Aké je správne centrum Francúzskej Guyany?",
+    "options": [
+      { "code": "SR", "text": "Paramaribo", "correct": false },
+      { "code": "GF", "text": "Cayenne", "correct": true },
+      { "code": "GY", "text": "Georgetown", "correct": false }
+    ],
+    "explanation": "Správnym centrom Francúzskej Guyany je Cayenne."
+  }
+]
+
 }

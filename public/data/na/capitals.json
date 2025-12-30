@@ -244,8 +244,8 @@
     {
       "question": "Aké je hlavné mesto Trinidadu a Tobaga?",
       "options": [
-        { "code": "TT", "text": "Port of Spain", "correct": true },
         { "code": "JM", "text": "Kingston", "correct": false },
+                { "code": "TT", "text": "Port of Spain", "correct": true },
         { "code": "BB", "text": "Bridgetown", "correct": false }
       ],
       "explanation": "Hlavné mesto Trinidadu a Tobaga je Port of Spain."
@@ -253,9 +253,9 @@
     {
       "question": "Aké je hlavné mesto Barbadosu?",
       "options": [
-        { "code": "BB", "text": "Bridgetown", "correct": true },
         { "code": "LC", "text": "Castries", "correct": false },
-        { "code": "GD", "text": "St. George's", "correct": false }
+        { "code": "GD", "text": "St. George's", "correct": false },
+        { "code": "BB", "text": "Bridgetown", "correct": true }        
       ],
       "explanation": "Hlavné mesto Barbadosu je Bridgetown."
     },
@@ -271,9 +271,9 @@
     {
       "question": "Aké je hlavné mesto Svätej Lucie?",
       "options": [
-        { "code": "LC", "text": "Castries", "correct": true },
         { "code": "BB", "text": "Bridgetown", "correct": false },
-        { "code": "GD", "text": "St. George's", "correct": false }
+        { "code": "GD", "text": "St. George's", "correct": false },
+        { "code": "LC", "text": "Castries", "correct": true }
       ],
       "explanation": "Hlavné mesto Svätej Lucie je Castries."
     },

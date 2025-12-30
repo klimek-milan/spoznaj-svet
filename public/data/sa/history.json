@@ -54,88 +54,143 @@
       "Zachovávajú sa aj tradície pôvodných civilizácií."
     ]
   },
-  "total": 9,
+  "total": 15,
   "rounds": [
-    {
-      "question": "Kde žili Inkovia?",
-      "options": [
-        { "code": "INCA", "text": "V Andách", "correct": true },
-        { "code": "INCA", "text": "V Amazónii", "correct": false },
-        { "code": "INCA", "text": "V Patagónii", "correct": false }
-      ],
-      "explanation": "Inkovia žili v Andách."
-    },
-    {
-      "question": "Čo je známe pre civilizáciu Mayov?",
-      "options": [
-        { "code": "MAYA", "text": "Kalendár a písaný jazyk", "correct": true },
-        { "code": "MAYA", "text": "Obetné rituály", "correct": false },
-        { "code": "MAYA", "text": "Kamenné mestá Machu Picchu", "correct": false }
-      ],
-      "explanation": "Mayovia preslávili písaný jazyk a kalendár."
-    },
-    {
-      "question": "Ktorá civilizácia žila v Mexiku a mala obetné rituály?",
-      "options": [
-        { "code": "AZTEC", "text": "Aztékovia", "correct": true },
-        { "code": "AZTEC", "text": "Mayovia", "correct": false },
-        { "code": "AZTEC", "text": "Inkovia", "correct": false }
-      ],
-      "explanation": "Aztékovia žili v Mexiku a mali obetné rituály."
-    },
-    {
-      "question": "Ktoré krajiny kolonizovali Južnú Ameriku?",
-      "options": [
-        { "code": "COLON", "text": "Španielsko a Portugalsko", "correct": true },
-        { "code": "COLON", "text": "Francúzsko a Nemecko", "correct": false },
-        { "code": "COLON", "text": "Holandsko a Belgicko", "correct": false }
-      ],
-      "explanation": "Južnú Ameriku kolonizovali Španielsko a Portugalsko."
-    },
-    {
-      "question": "Ktorá krajina bola kolóniou Portugalska?",
-      "options": [
-        { "code": "BRA", "text": "Brazília", "correct": true },
-        { "code": "BRA", "text": "Argentína", "correct": false },
-        { "code": "BRA", "text": "Peru", "correct": false }
-      ],
-      "explanation": "Brazília bola kolóniou Portugalska."
-    },
-    {
-      "question": "Ako vznikli nezávislé štáty v Južnej Amerike?",
-      "options": [
-        { "code": "INDEP", "text": "Po boji proti kolonizátorom", "correct": true },
-        { "code": "INDEP", "text": "Po vojne s USA", "correct": false },
-        { "code": "INDEP", "text": "Po druhej svetovej vojne", "correct": false }
-      ],
-      "explanation": "Nezávislé štáty vznikli po boji proti kolonizátorom."
-    },
-    {
-      "question": "Ako sa Južná Amerika zapojila do prvej svetovej vojny?",
-      "options": [
-        { "code": "WW1", "text": "Obmedzenou materiálnou podporou", "correct": true },
-        { "code": "WW1", "text": "Účasťou vojenských jednotiek", "correct": false },
-        { "code": "WW1", "text": "Neutrálne bez akejkoľvek podpory", "correct": false }
-      ],
-      "explanation": "Južná Amerika sa zapojila obmedzenou materiálnou podporou."
-    },
-    {
-      "question": "Ktorá krajina poslala vojenské jednotky do Európy počas druhej svetovej vojny?",
-      "options": [
-        { "code": "WW2", "text": "Brazília", "correct": true },
-        { "code": "WW2", "text": "Peru", "correct": false },
-        { "code": "WW2", "text": "Chile", "correct": false }
-      ],
-      "explanation": "Brazília poslala vojenské jednotky do Európy."
-    },
-    {
-      "question": "Ako vyzerá Južná Amerika dnes?",
-      "options": [
-        { "code": "MODERN", "text": "Nezávislé štáty s bohatou kultúrou", "correct": true },
-        { "code": "MODERN", "text": "Kolónie Európy", "correct": false },
-        { "code": "MODERN", "text": "Rozdelená medzi USA a Kanadu", "correct": false }
-      ],
-      "explanation": "Južná Amerika je dnes zložená z nezávislých štátov s bohatou kultúrou."
-    }
-  ]
+  {
+    "question": "Kde žili Inkovia?",
+    "options": [
+      { "code": "INCA", "text": "V Patagónii", "correct": false },
+      { "code": "INCA", "text": "V Andách", "correct": true },
+      { "code": "INCA", "text": "V Amazónii", "correct": false }
+    ],
+    "explanation": "Inkovia žili v horskej oblasti Ánd."
+  },
+  {
+    "question": "Čím sa Inkovia preslávili?",
+    "options": [
+      { "code": "INCA", "text": "Námorné výpravy", "correct": false },
+      { "code": "INCA", "text": "Rozsiahlu cestnú sieť", "correct": true },
+      { "code": "INCA", "text": "Písaný jazyk", "correct": false }
+    ],
+    "explanation": "Inkovia vybudovali rozsiahlu sieť ciest."
+  },
+  {
+    "question": "Ktoré mesto postavili Inkovia?",
+    "options": [
+      { "code": "INCA", "text": "Machu Picchu", "correct": true },
+      { "code": "INCA", "text": "Chichén Itzá", "correct": false },
+      { "code": "INCA", "text": "Tenochtitlán", "correct": false }
+    ],
+    "explanation": "Machu Picchu je známe kamenné mesto Inkov."
+  },
+  {
+    "question": "Čo je typické pre civilizáciu Mayov?",
+    "options": [
+      { "code": "MAYA", "text": "Písaný jazyk a kalendár", "correct": true },
+      { "code": "MAYA", "text": "Kolonizácia Európy", "correct": false },
+      { "code": "MAYA", "text": "Cestná sieť v horách", "correct": false }
+    ],
+    "explanation": "Mayovia mali vyspelý kalendár a písmo."
+  },
+  {
+    "question": "Ktorá civilizácia stavala pyramídy a chrámy?",
+    "options": [
+      { "code": "MAYA", "text": "Mayovia", "correct": true },
+      { "code": "MAYA", "text": "Európania", "correct": false },
+      { "code": "MAYA", "text": "Inkovia", "correct": false }
+    ],
+    "explanation": "Mayovia stavali pyramídy a chrámy."
+  },
+  {
+    "question": "Ktorá civilizácia žila v Mexiku a mala obetné rituály?",
+    "options": [
+      { "code": "AZTEC", "text": "Inkovia", "correct": false },
+      { "code": "AZTEC", "text": "Mayovia", "correct": false },
+      { "code": "AZTEC", "text": "Aztékovia", "correct": true }
+    ],
+    "explanation": "Aztékovia žili v Mexiku."
+  },
+  {
+    "question": "Ako sa volalo hlavné mesto Aztékov?",
+    "options": [
+      { "code": "AZTEC", "text": "Machu Picchu", "correct": false },
+      { "code": "AZTEC", "text": "Tenochtitlán", "correct": true },
+      { "code": "AZTEC", "text": "Cusco", "correct": false }
+    ],
+    "explanation": "Hlavným mestom Aztékov bol Tenochtitlán."
+  },
+  {
+    "question": "Ktoré európske krajiny kolonizovali Južnú Ameriku?",
+    "options": [
+      { "code": "COLON", "text": "Británia a Holandsko", "correct": false },
+      { "code": "COLON", "text": "Španielsko a Portugalsko", "correct": true },
+      { "code": "COLON", "text": "Francúzsko a Nemecko", "correct": false }
+    ],
+    "explanation": "Najväčší vplyv mali Španielsko a Portugalsko."
+  },
+  {
+    "question": "Čo ovplyvnila kolonizácia v Južnej Amerike?",
+    "options": [
+      { "code": "COLON", "text": "Pohyby kontinentov", "correct": false },
+      { "code": "COLON", "text": "Kultúru a jazyk", "correct": true },
+      { "code": "COLON", "text": "Podnebie", "correct": false }
+    ],
+    "explanation": "Kolonizácia ovplyvnila kultúru a jazyk."
+  },
+  {
+    "question": "Ktorá krajina bola kolóniou Portugalska?",
+    "options": [
+      { "code": "BRAZ", "text": "Peru", "correct": false },
+      { "code": "BRAZ", "text": "Argentína", "correct": false },
+      { "code": "BRAZ", "text": "Brazília", "correct": true }
+    ],
+    "explanation": "Brazília bola kolóniou Portugalska."
+  },
+  {
+    "question": "Kedy sa Brazília stala nezávislou?",
+    "options": [
+      { "code": "BRAZ", "text": "V 16. storočí", "correct": false },
+      { "code": "BRAZ", "text": "V 20. storočí", "correct": false },
+      { "code": "BRAZ", "text": "V 19. storočí", "correct": true }
+    ],
+    "explanation": "Brazília získala nezávislosť v 19. storočí."
+  },
+  {
+    "question": "Kedy vznikali boje za nezávislosť v španielskych kolóniách?",
+    "options": [
+      { "code": "SPAN", "text": "Po druhej svetovej vojne", "correct": false },
+      { "code": "SPAN", "text": "V 16. storočí", "correct": false },
+      { "code": "SPAN", "text": "V 19. storočí", "correct": true }
+    ],
+    "explanation": "Boje za nezávislosť prebiehali v 19. storočí."
+  },
+  {
+    "question": "Ako vznikali nezávislé štáty v Južnej Amerike?",
+    "options": [
+      { "code": "INDEP", "text": "Po prvej svetovej vojne", "correct": false },
+      { "code": "INDEP", "text": "Po boji proti kolonizátorom", "correct": true },
+      { "code": "INDEP", "text": "Rozhodnutím OSN", "correct": false }
+    ],
+    "explanation": "Vznikli po boji proti európskym mocnostiam."
+  },
+  {
+    "question": "Ako sa Južná Amerika zapojila do prvej svetovej vojny?",
+    "options": [
+      { "code": "WW1", "text": "Masovým nasadením armád", "correct": false },
+      { "code": "WW1", "text": "Vôbec sa nezapojila", "correct": false },
+      { "code": "WW1", "text": "Obmedzenou materiálnou podporou", "correct": true }
+    ],
+    "explanation": "Zapojenie bolo obmedzené."
+  },
+  {
+    "question": "Ako vyzerá Južná Amerika dnes?",
+    "options": [
+      { "code": "MODERN", "text": "Súčasť USA", "correct": false },
+      { "code": "MODERN", "text": "Kolónie Európy", "correct": false },
+      { "code": "MODERN", "text": "Nezávislé štáty s bohatou kultúrou", "correct": true }
+    ],
+    "explanation": "Dnes ide o nezávislé štáty s bohatou kultúrou."
+  }
+]
+
 }

@@ -1,57 +1,80 @@
 {
-  "id": "capitals",
-  "name": "Hlavné mestá Afriky",
   "description": "Otázky o hlavných mestách Afriky pre 8. ročník ZŠ",
   "facts": {
-    "EG": [
-      "Nachádza sa pri rieke Níl.",
-      "Je najväčším mestom Afriky podľa počtu obyvateľov.",
-      "V blízkosti sa nachádzajú známe pyramídy v Gíze."
+    "AO": [
+      "Leží na pobreží Atlantiku.",
+      "Je najväčším mestom krajiny.",
+      "Je významným prístavom."
     ],
-    "NG": [
-      "Bola vybudovaná ako plánované hlavné mesto.",
-      "Leží v strede krajiny.",
-      "Je sídlom vlády Nigérie."
-    ],
-    "ZA": [
-      "Je jedným z troch hlavných miest krajiny.",
-      "Nachádza sa v provincii Gauteng.",
-      "Je známa veľkým počtom stromov."
-    ],
-    "KE": [
-      "Leží neďaleko rovníka.",
-      "Je významným dopravným uzlom východnej Afriky.",
-      "V meste sa nachádza národný park."
-    ],
-    "ET": [
-      "Je sídlom Africkej únie.",
-      "Patrí medzi najvyššie položené hlavné mestá sveta.",
-      "Je politickým centrom krajiny."
-    ],
-    "MA": [
-      "Leží pri pobreží Atlantického oceánu.",
-      "Je jedným zo štyroch kráľovských miest.",
-      "Je správnym hlavným mestom krajiny."
-    ],
-    "TN": [
-      "Leží pri Stredozemnom mori.",
-      "Má bohatú históriu spojenú s Kartágom.",
-      "Je politickým centrom Tuniska."
+    "CM": [
+      "Leží vo vnútrozemí krajiny.",
+      "Je politickým centrom Kamerunu.",
+      "Má francúzsky názov."
     ],
     "DZ": [
       "Leží na severe Afriky.",
       "Nachádza sa pri Stredozemnom mori.",
       "Je najväčším mestom krajiny."
     ],
+    "EG": [
+      "Nachádza sa pri rieke Níl.",
+      "Je najväčším mestom Afriky podľa počtu obyvateľov.",
+      "V blízkosti sa nachádzajú známe pyramídy v Gíze."
+    ],
+    "ET": [
+      "Je sídlom Africkej únie.",
+      "Patrí medzi najvyššie položené hlavné mestá sveta.",
+      "Je politickým centrom krajiny."
+    ],
     "GH": [
       "Leží pri Guinejskom zálive.",
       "Je hospodárskym centrom krajiny.",
       "Má významný prístav."
     ],
+    "KE": [
+      "Leží neďaleko rovníka.",
+      "Je významným dopravným uzlom východnej Afriky.",
+      "V meste sa nachádza národný park."
+    ],
+    "MA": [
+      "Leží pri pobreží Atlantického oceánu.",
+      "Je jedným zo štyroch kráľovských miest.",
+      "Je správnym hlavným mestom krajiny."
+    ],
+    "MG": [
+      "Leží vo vnútrozemí ostrova.",
+      "Patrí medzi najväčšie mestá ostrovnej Afriky.",
+      "Je politickým a kultúrnym centrom."
+    ],
+    "MZ": [
+      "Leží na pobreží Indického oceánu.",
+      "Je najväčším mestom krajiny.",
+      "Má významný prístav."
+    ],
+    "NG": [
+      "Bola vybudovaná ako plánované hlavné mesto.",
+      "Leží v strede krajiny.",
+      "Je sídlom vlády Nigérie."
+    ],
+    "RW": [
+      "Leží v kopcovitej krajine.",
+      "Je čisté a moderné mesto.",
+      "Je politickým centrom Rwandy."
+    ],
     "SN": [
       "Leží na pobreží Atlantiku.",
       "Je najzápadnejším hlavným mestom Afriky.",
       "Je kultúrnym centrom krajiny."
+    ],
+    "SO": [
+      "Leží na pobreží Indického oceánu.",
+      "Má významný prístav.",
+      "Je najväčším mestom krajiny."
+    ],
+    "TN": [
+      "Leží pri Stredozemnom mori.",
+      "Má bohatú históriu spojenú s Kartágom.",
+      "Je politickým centrom Tuniska."
     ],
     "TZ": [
       "Bola určená za hlavné mesto v roku 1974.",
@@ -63,20 +86,10 @@
       "Je najväčším mestom krajiny.",
       "Je hospodárskym centrom Ugandy."
     ],
-    "CM": [
-      "Leží vo vnútrozemí krajiny.",
-      "Je politickým centrom Kamerunu.",
-      "Má francúzsky názov."
-    ],
-    "AO": [
-      "Leží na pobreží Atlantiku.",
-      "Je najväčším mestom krajiny.",
-      "Je významným prístavom."
-    ],
-    "MZ": [
-      "Leží na pobreží Indického oceánu.",
-      "Je najväčším mestom krajiny.",
-      "Má významný prístav."
+    "ZA": [
+      "Je jedným z troch hlavných miest krajiny.",
+      "Nachádza sa v provincii Gauteng.",
+      "Je známa veľkým počtom stromov."
     ],
     "ZM": [
       "Leží vo vnútrozemí Afriky.",
@@ -87,204 +100,432 @@
       "Leží na severovýchode krajiny.",
       "Je najväčším mestom Zimbabwe.",
       "Je obchodným centrom."
-    ],
-    "RW": [
-      "Leží v kopcovitej krajine.",
-      "Je čisté a moderné mesto.",
-      "Je politickým centrom Rwandy."
-    ],
-    "SO": [
-      "Leží na pobreží Indického oceánu.",
-      "Má významný prístav.",
-      "Je najväčším mestom krajiny."
-    ],
-    "MG": [
-      "Leží vo vnútrozemí ostrova.",
-      "Patrí medzi najväčšie mestá ostrovnej Afriky.",
-      "Je politickým a kultúrnym centrom."
     ]
   },
-  "total": 20,
-  "rounds": [
-    {
-      "question": "Aké je hlavné mesto Egypta?",
-      "options": [
-        { "code": "EG", "text": "Káhira", "correct": true },
-        { "code": "MA", "text": "Rabat", "correct": false },
-        { "code": "NG", "text": "Abuja", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Egypta je Káhira."
-    },
-    {
-      "question": "Aké je hlavné mesto Nigérie?",
-      "options": [
-        { "code": "NG", "text": "Abuja", "correct": true },
-        { "code": "GH", "text": "Accra", "correct": false },
-        { "code": "KE", "text": "Nairobi", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Nigérie je Abuja."
-    },
-    {
-      "question": "Aké je hlavné mesto Juhoafrickej republiky?",
-      "options": [
-        { "code": "ZA", "text": "Pretoria", "correct": true },
-        { "code": "ZA", "text": "Kapské Mesto", "correct": false },
-        { "code": "ZW", "text": "Harare", "correct": false }
-      ],
-      "explanation": "Jedným z hlavných miest JAR je Pretoria."
-    },
-    {
-      "question": "Aké je hlavné mesto Kene?",
-      "options": [
-        { "code": "KE", "text": "Nairobi", "correct": true },
-        { "code": "TZ", "text": "Dodoma", "correct": false },
-        { "code": "UG", "text": "Kampala", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Kene je Nairobi."
-    },
-    {
-      "question": "Aké je hlavné mesto Etiópie?",
-      "options": [
-        { "code": "ET", "text": "Addis Abeba", "correct": true },
-        { "code": "ER", "text": "Asmara", "correct": false },
-        { "code": "SD", "text": "Chartúm", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Etiópie je Addis Abeba."
-    },
-    {
-      "question": "Aké je hlavné mesto Maroka?",
-      "options": [
-        { "code": "MA", "text": "Rabat", "correct": true },
-        { "code": "DZ", "text": "Alžír", "correct": false },
-        { "code": "TN", "text": "Tunis", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Maroka je Rabat."
-    },
-    {
-      "question": "Aké je hlavné mesto Tuniska?",
-      "options": [
-        { "code": "TN", "text": "Tunis", "correct": true },
-        { "code": "LY", "text": "Tripolis", "correct": false },
-        { "code": "EG", "text": "Káhira", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Tuniska je Tunis."
-    },
-    {
-      "question": "Aké je hlavné mesto Alžírska?",
-      "options": [
-        { "code": "DZ", "text": "Alžír", "correct": true },
-        { "code": "MA", "text": "Casablanca", "correct": false },
-        { "code": "TN", "text": "Tunis", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Alžírska je Alžír."
-    },
-    {
-      "question": "Aké je hlavné mesto Ghany?",
-      "options": [
-        { "code": "GH", "text": "Accra", "correct": true },
-        { "code": "NG", "text": "Lagos", "correct": false },
-        { "code": "CI", "text": "Yamoussoukro", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Ghany je Accra."
-    },
-    {
-      "question": "Aké je hlavné mesto Senegalu?",
-      "options": [
-        { "code": "SN", "text": "Dakar", "correct": true },
-        { "code": "ML", "text": "Bamako", "correct": false },
-        { "code": "GM", "text": "Banjul", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Senegalu je Dakar."
-    },
-    {
-      "question": "Aké je hlavné mesto Tanzánie?",
-      "options": [
-        { "code": "TZ", "text": "Dodoma", "correct": true },
-        { "code": "TZ", "text": "Dar es Salaam", "correct": false },
-        { "code": "KE", "text": "Nairobi", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Tanzánie je Dodoma."
-    },
-    {
-      "question": "Aké je hlavné mesto Ugandy?",
-      "options": [
-        { "code": "UG", "text": "Kampala", "correct": true },
-        { "code": "RW", "text": "Kigali", "correct": false },
-        { "code": "KE", "text": "Nairobi", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Ugandy je Kampala."
-    },
-    {
-      "question": "Aké je hlavné mesto Kamerunu?",
-      "options": [
-        { "code": "CM", "text": "Yaoundé", "correct": true },
-        { "code": "CM", "text": "Douala", "correct": false },
-        { "code": "GA", "text": "Libreville", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Kamerunu je Yaoundé."
-    },
-    {
-      "question": "Aké je hlavné mesto Angoly?",
-      "options": [
-        { "code": "AO", "text": "Luanda", "correct": true },
-        { "code": "MZ", "text": "Maputo", "correct": false },
-        { "code": "NA", "text": "Windhoek", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Angoly je Luanda."
-    },
-    {
-      "question": "Aké je hlavné mesto Mozambiku?",
-      "options": [
-        { "code": "MZ", "text": "Maputo", "correct": true },
-        { "code": "ZW", "text": "Harare", "correct": false },
-        { "code": "ZM", "text": "Lusaka", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Mozambiku je Maputo."
-    },
-    {
-      "question": "Aké je hlavné mesto Zambie?",
-      "options": [
-        { "code": "ZM", "text": "Lusaka", "correct": true },
-        { "code": "ZW", "text": "Harare", "correct": false },
-        { "code": "BW", "text": "Gaborone", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Zambie je Lusaka."
-    },
-    {
-      "question": "Aké je hlavné mesto Zimbabwe?",
-      "options": [
-        { "code": "ZW", "text": "Harare", "correct": true },
-        { "code": "ZM", "text": "Lusaka", "correct": false },
-        { "code": "MZ", "text": "Maputo", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Zimbabwe je Harare."
-    },
-    {
-      "question": "Aké je hlavné mesto Rwandy?",
-      "options": [
-        { "code": "RW", "text": "Kigali", "correct": true },
-        { "code": "BI", "text": "Gitega", "correct": false },
-        { "code": "UG", "text": "Kampala", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Rwandy je Kigali."
-    },
-    {
-      "question": "Aké je hlavné mesto Somálska?",
-      "options": [
-        { "code": "SO", "text": "Mogadišu", "correct": true },
-        { "code": "DJ", "text": "Džibuti", "correct": false },
-        { "code": "ET", "text": "Addis Abeba", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Somálska je Mogadišu."
-    },
-    {
-      "question": "Aké je hlavné mesto Madagaskaru?",
-      "options": [
-        { "code": "MG", "text": "Antananarivo", "correct": true },
-        { "code": "MU", "text": "Port Louis", "correct": false },
-        { "code": "SC", "text": "Victoria", "correct": false }
-      ],
-      "explanation": "Hlavné mesto Madagaskaru je Antananarivo."
-    }
-  ]
-}
+  "id": "capitals",
+  "name": "Hlavné mestá Afriky",
+  "total": 20
+  {
+    "rounds": [
+      {
+        "explanation": "Hlavné mesto Egypta je Káhira.",
+        "options": [
+          {
+            "code": "NG",
+            "correct": false,
+            "text": "Abuja"
+          },
+          {
+            "code": "EG",
+            "correct": true,
+            "text": "Káhira"
+          },
+          {
+            "code": "MA",
+            "correct": false,
+            "text": "Rabat"
+          }
+        ],
+        "question": "Aké je hlavné mesto Egypta?"
+      },
+      {
+        "explanation": "Hlavné mesto Nigérie je Abuja.",
+        "options": [
+          {
+            "code": "NG",
+            "correct": true,
+            "text": "Abuja"
+          },
+          {
+            "code": "KE",
+            "correct": false,
+            "text": "Nairobi"
+          },
+          {
+            "code": "GH",
+            "correct": false,
+            "text": "Accra"
+          }
+        ],
+        "question": "Aké je hlavné mesto Nigérie?"
+      },
+      {
+        "explanation": "Jedným z hlavných miest JAR je Pretoria.",
+        "options": [
+          {
+            "code": "ZW",
+            "correct": false,
+            "text": "Harare"
+          },
+          {
+            "code": "ZA",
+            "correct": true,
+            "text": "Pretoria"
+          },
+          {
+            "code": "ZA",
+            "correct": false,
+            "text": "Kapské Mesto"
+          }
+        ],
+        "question": "Aké je hlavné mesto Juhoafrickej republiky?"
+      },
+      {
+        "explanation": "Hlavné mesto Kene je Nairobi.",
+        "options": [
+          {
+            "code": "KE",
+            "correct": true,
+            "text": "Nairobi"
+          },
+          {
+            "code": "UG",
+            "correct": false,
+            "text": "Kampala"
+          },
+          {
+            "code": "TZ",
+            "correct": false,
+            "text": "Dodoma"
+          }
+        ],
+        "question": "Aké je hlavné mesto Kene?"
+      },
+      {
+        "explanation": "Hlavné mesto Etiópie je Addis Abeba.",
+        "options": [
+          {
+            "code": "SD",
+            "correct": false,
+            "text": "Chartúm"
+          },
+          {
+            "code": "ER",
+            "correct": false,
+            "text": "Asmara"
+          },
+          {
+            "code": "ET",
+            "correct": true,
+            "text": "Addis Abeba"
+          }
+        ],
+        "question": "Aké je hlavné mesto Etiópie?"
+      },
+      {
+        "explanation": "Hlavné mesto Maroka je Rabat.",
+        "options": [
+          {
+            "code": "MA",
+            "correct": true,
+            "text": "Rabat"
+          },
+          {
+            "code": "TN",
+            "correct": false,
+            "text": "Tunis"
+          },
+          {
+            "code": "DZ",
+            "correct": false,
+            "text": "Alžír"
+          }
+        ],
+        "question": "Aké je hlavné mesto Maroka?"
+      },
+      {
+        "explanation": "Hlavné mesto Tuniska je Tunis.",
+        "options": [
+          {
+            "code": "EG",
+            "correct": false,
+            "text": "Káhira"
+          },
+          {
+            "code": "TN",
+            "correct": true,
+            "text": "Tunis"
+          },
+          {
+            "code": "LY",
+            "correct": false,
+            "text": "Tripolis"
+          }
+        ],
+        "question": "Aké je hlavné mesto Tuniska?"
+      },
+      {
+        "explanation": "Hlavné mesto Alžírska je Alžír.",
+        "options": [
+          {
+            "code": "TN",
+            "correct": false,
+            "text": "Tunis"
+          },
+          {
+            "code": "MA",
+            "correct": false,
+            "text": "Casablanca"
+          },
+          {
+            "code": "DZ",
+            "correct": true,
+            "text": "Alžír"
+          }
+        ],
+        "question": "Aké je hlavné mesto Alžírska?"
+      },
+      {
+        "explanation": "Hlavné mesto Ghany je Accra.",
+        "options": [
+          {
+            "code": "GH",
+            "correct": true,
+            "text": "Accra"
+          },
+          {
+            "code": "CI",
+            "correct": false,
+            "text": "Yamoussoukro"
+          },
+          {
+            "code": "NG",
+            "correct": false,
+            "text": "Lagos"
+          }
+        ],
+        "question": "Aké je hlavné mesto Ghany?"
+      },
+      {
+        "explanation": "Hlavné mesto Senegalu je Dakar.",
+        "options": [
+          {
+            "code": "GM",
+            "correct": false,
+            "text": "Banjul"
+          },
+          {
+            "code": "SN",
+            "correct": true,
+            "text": "Dakar"
+          },
+          {
+            "code": "ML",
+            "correct": false,
+            "text": "Bamako"
+          }
+        ],
+        "question": "Aké je hlavné mesto Senegalu?"
+      },
+      {
+        "explanation": "Hlavné mesto Tanzánie je Dodoma.",
+        "options": [
+          {
+            "code": "KE",
+            "correct": false,
+            "text": "Nairobi"
+          },
+          {
+            "code": "TZ",
+            "correct": true,
+            "text": "Dodoma"
+          },
+          {
+            "code": "TZ",
+            "correct": false,
+            "text": "Dar es Salaam"
+          }
+        ],
+        "question": "Aké je hlavné mesto Tanzánie?"
+      },
+      {
+        "explanation": "Hlavné mesto Ugandy je Kampala.",
+        "options": [
+          {
+            "code": "UG",
+            "correct": true,
+            "text": "Kampala"
+          },
+          {
+            "code": "KE",
+            "correct": false,
+            "text": "Nairobi"
+          },
+          {
+            "code": "RW",
+            "correct": false,
+            "text": "Kigali"
+          }
+        ],
+        "question": "Aké je hlavné mesto Ugandy?"
+      },
+      {
+        "explanation": "Hlavné mesto Kamerunu je Yaoundé.",
+        "options": [
+          {
+            "code": "GA",
+            "correct": false,
+            "text": "Libreville"
+          },
+          {
+            "code": "CM",
+            "correct": true,
+            "text": "Yaoundé"
+          },
+          {
+            "code": "CM",
+            "correct": false,
+            "text": "Douala"
+          }
+        ],
+        "question": "Aké je hlavné mesto Kamerunu?"
+      },
+      {
+        "explanation": "Hlavné mesto Angoly je Luanda.",
+        "options": [
+          {
+            "code": "NA",
+            "correct": false,
+            "text": "Windhoek"
+          },
+          {
+            "code": "AO",
+            "correct": true,
+            "text": "Luanda"
+          },
+          {
+            "code": "MZ",
+            "correct": false,
+            "text": "Maputo"
+          }
+        ],
+        "question": "Aké je hlavné mesto Angoly?"
+      },
+      {
+        "explanation": "Hlavné mesto Mozambiku je Maputo.",
+        "options": [
+          {
+            "code": "MZ",
+            "correct": true,
+            "text": "Maputo"
+          },
+          {
+            "code": "ZM",
+            "correct": false,
+            "text": "Lusaka"
+          },
+          {
+            "code": "ZW",
+            "correct": false,
+            "text": "Harare"
+          }
+        ],
+        "question": "Aké je hlavné mesto Mozambiku?"
+      },
+      {
+        "explanation": "Hlavné mesto Zambie je Lusaka.",
+        "options": [
+          {
+            "code": "BW",
+            "correct": false,
+            "text": "Gaborone"
+          },
+          {
+            "code": "ZW",
+            "correct": false,
+            "text": "Harare"
+          },
+          {
+            "code": "ZM",
+            "correct": true,
+            "text": "Lusaka"
+          }
+        ],
+        "question": "Aké je hlavné mesto Zambie?"
+      },
+      {
+        "explanation": "Hlavné mesto Zimbabwe je Harare.",
+        "options": [
+          {
+            "code": "ZW",
+            "correct": true,
+            "text": "Harare"
+          },
+          {
+            "code": "MZ",
+            "correct": false,
+            "text": "Maputo"
+          },
+          {
+            "code": "ZM",
+            "correct": false,
+            "text": "Lusaka"
+          }
+        ],
+        "question": "Aké je hlavné mesto Zimbabwe?"
+      },
+      {
+        "explanation": "Hlavné mesto Rwandy je Kigali.",
+        "options": [
+          {
+            "code": "UG",
+            "correct": false,
+            "text": "Kampala"
+          },
+          {
+            "code": "RW",
+            "correct": true,
+            "text": "Kigali"
+          },
+          {
+            "code": "BI",
+            "correct": false,
+            "text": "Gitega"
+          }
+        ],
+        "question": "Aké je hlavné mesto Rwandy?"
+      },
+      {
+        "explanation": "Hlavné mesto Somálska je Mogadišu.",
+        "options": [
+          {
+            "code": "SO",
+            "correct": true,
+            "text": "Mogadišu"
+          },
+          {
+            "code": "ET",
+            "correct": false,
+            "text": "Addis Abeba"
+          },
+          {
+            "code": "DJ",
+            "correct": false,
+            "text": "Džibuti"
+          }
+        ],
+        "question": "Aké je hlavné mesto Somálska?"
+      },
+      {
+        "explanation": "Hlavné mesto Madagaskaru je Antananarivo.",
+        "options": [
+          {
+            "code": "SC",
+            "correct": false,
+            "text": "Victoria"
+          },
+          {
+            "code": "MG",
+            "correct": true,
+            "text": "Antananarivo"
+          },
+          {
+            "code": "MU",
+            "correct": false,
+            "text": "Port Louis"
+          }
+        ],
+        "question": "Aké je hlavné mesto Madagaskaru?"
+      }
+    ]
+  }

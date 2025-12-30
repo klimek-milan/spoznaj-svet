@@ -81,140 +81,21 @@
   },
   "total": 15,
   "rounds": [
-    {
-      "question": "Medzi ktorými riekami vznikla Mezopotámia?",
-      "options": [
-        { "code": "MES", "text": "Eufrat a Tigris", "correct": true },
-        { "code": "MES", "text": "Níl a Niger", "correct": false },
-        { "code": "MES", "text": "Indus a Ganga", "correct": false }
-      ],
-      "explanation": "Mezopotámia vznikla medzi riekami Eufrat a Tigris."
-    },
-    {
-      "question": "Pri ktorej rieke vznikla civilizácia v Indii?",
-      "options": [
-        { "code": "IND", "text": "Indus", "correct": true },
-        { "code": "IND", "text": "Ganga", "correct": false },
-        { "code": "IND", "text": "Chuang-che", "correct": false }
-      ],
-      "explanation": "Indická civilizácia vznikla pri rieke Indus."
-    },
-    {
-      "question": "Pri ktorej rieke vznikla čínska civilizácia?",
-      "options": [
-        { "code": "CHN", "text": "Chuang-che", "correct": true },
-        { "code": "CHN", "text": "Jang-c’-ťiang", "correct": false },
-        { "code": "CHN", "text": "Mekong", "correct": false }
-      ],
-      "explanation": "Čínska civilizácia vznikla pri rieke Chuang-che."
-    },
-    {
-      "question": "Kde vznikol hinduizmus?",
-      "options": [
-        { "code": "HIND", "text": "V Indii", "correct": true },
-        { "code": "HIND", "text": "V Číne", "correct": false },
-        { "code": "HIND", "text": "V Japonsku", "correct": false }
-      ],
-      "explanation": "Hinduizmus vznikol v Indii."
-    },
-    {
-      "question": "Kto založil budhizmus?",
-      "options": [
-        { "code": "BUD", "text": "Siddhártha Gautama", "correct": true },
-        { "code": "BUD", "text": "Konfucius", "correct": false },
-        { "code": "BUD", "text": "Mohamed", "correct": false }
-      ],
-      "explanation": "Zakladateľom budhizmu bol Siddhártha Gautama."
-    },
-    {
-      "question": "Ktoré učenie zdôrazňuje úctu k starším?",
-      "options": [
-        { "code": "CONF", "text": "Konfucianizmus", "correct": true },
-        { "code": "CONF", "text": "Budhizmus", "correct": false },
-        { "code": "CONF", "text": "Hinduizmus", "correct": false }
-      ],
-      "explanation": "Úctu k starším zdôrazňuje konfucianizmus."
-    },
-    {
-      "question": "Na čo slúžil Veľký čínsky múr?",
-      "options": [
-        { "code": "WALL", "text": "Na obranu", "correct": true },
-        { "code": "WALL", "text": "Na obchod", "correct": false },
-        { "code": "WALL", "text": "Ako chrám", "correct": false }
-      ],
-      "explanation": "Veľký čínsky múr slúžil na obranu."
-    },
-    {
-      "question": "Ako sa nazývala obchodná cesta spájajúca Áziu s Európou?",
-      "options": [
-        { "code": "SILK", "text": "Hodvábna cesta", "correct": true },
-        { "code": "SILK", "text": "Jantárová cesta", "correct": false },
-        { "code": "SILK", "text": "Cesta korenia", "correct": false }
-      ],
-      "explanation": "Áziu s Európou spájala Hodvábna cesta."
-    },
-    {
-      "question": "Kde vznikol islam?",
-      "options": [
-        { "code": "ISL", "text": "Na Arabskom polostrove", "correct": true },
-        { "code": "ISL", "text": "V Indii", "correct": false },
-        { "code": "ISL", "text": "V Číne", "correct": false }
-      ],
-      "explanation": "Islam vznikol na Arabskom polostrove."
-    },
-    {
-      "question": "Ako sa nazýval islamský štát po smrti Mohameda?",
-      "options": [
-        { "code": "CAL", "text": "Kalifát", "correct": true },
-        { "code": "CAL", "text": "Cisárstvo", "correct": false },
-        { "code": "CAL", "text": "Republika", "correct": false }
-      ],
-      "explanation": "Po smrti Mohameda vznikol kalifát."
-    },
-    {
-      "question": "Kto bol vodcom Mongolskej ríše?",
-      "options": [
-        { "code": "MONG", "text": "Džingischán", "correct": true },
-        { "code": "MONG", "text": "Konfucius", "correct": false },
-        { "code": "MONG", "text": "Buddha", "correct": false }
-      ],
-      "explanation": "Vodcom Mongolskej ríše bol Džingischán."
-    },
-    {
-      "question": "Kto vládol v stredovekom Japonsku?",
-      "options": [
-        { "code": "JPN", "text": "Šóguni", "correct": true },
-        { "code": "JPN", "text": "Faraóni", "correct": false },
-        { "code": "JPN", "text": "Kalifovia", "correct": false }
-      ],
-      "explanation": "V Japonsku vládli šóguni."
-    },
-    {
-      "question": "Ktorá ríša dobyla Konštantínopol?",
-      "options": [
-        { "code": "OTT", "text": "Osmanská ríša", "correct": true },
-        { "code": "OTT", "text": "Rímska ríša", "correct": false },
-        { "code": "OTT", "text": "Mongolská ríša", "correct": false }
-      ],
-      "explanation": "Konštantínopol dobyla Osmanská ríša."
-    },
-    {
-      "question": "V ktorom storočí prebiehala kolonizácia Ázie?",
-      "options": [
-        { "code": "COLA", "text": "19. storočie", "correct": true },
-        { "code": "COLA", "text": "12. storočie", "correct": false },
-        { "code": "COLA", "text": "5. storočie", "correct": false }
-      ],
-      "explanation": "Kolonizácia Ázie prebiehala najmä v 19. storočí."
-    },
-    {
-      "question": "Ako sa nazýva proces osamostatňovania ázijských štátov?",
-      "options": [
-        { "code": "INDP", "text": "Dekolonizácia", "correct": true },
-        { "code": "INDP", "text": "Feudalizmus", "correct": false },
-        { "code": "INDP", "text": "Industrializácia", "correct": false }
-      ],
-      "explanation": "Proces sa nazýva dekolonizácia."
-    }
-  ]
+  { "question": "Medzi ktorými riekami vznikla Mezopotámia?", "options": [ { "code": "MES", "text": "Níl a Niger", "correct": false }, { "code": "MES", "text": "Eufrat a Tigris", "correct": true }, { "code": "MES", "text": "Indus a Ganga", "correct": false } ], "explanation": "Mezopotámia vznikla medzi riekami Eufrat a Tigris." },
+  { "question": "Pri ktorej rieke vznikla civilizácia v Indii?", "options": [ { "code": "IND", "text": "Ganga", "correct": false }, { "code": "IND", "text": "Chuang-che", "correct": false }, { "code": "IND", "text": "Indus", "correct": true } ], "explanation": "Indická civilizácia vznikla pri rieke Indus." },
+  { "question": "Pri ktorej rieke vznikla čínska civilizácia?", "options": [ { "code": "CHN", "text": "Chuang-che", "correct": true }, { "code": "CHN", "text": "Mekong", "correct": false }, { "code": "CHN", "text": "Jang-c’-ťiang", "correct": false } ], "explanation": "Čínska civilizácia vznikla pri rieke Chuang-che." },
+  { "question": "Kde vznikol hinduizmus?", "options": [ { "code": "HIND", "text": "V Číne", "correct": false }, { "code": "HIND", "text": "V Indii", "correct": true }, { "code": "HIND", "text": "V Japonsku", "correct": false } ], "explanation": "Hinduizmus vznikol v Indii." },
+  { "question": "Kto založil budhizmus?", "options": [ { "code": "BUD", "text": "Mohamed", "correct": false }, { "code": "BUD", "text": "Siddhártha Gautama", "correct": true }, { "code": "BUD", "text": "Konfucius", "correct": false } ], "explanation": "Zakladateľom budhizmu bol Siddhártha Gautama." },
+  { "question": "Ktoré učenie zdôrazňuje úctu k starším?", "options": [ { "code": "CONF", "text": "Budhizmus", "correct": false }, { "code": "CONF", "text": "Konfucianizmus", "correct": true }, { "code": "CONF", "text": "Hinduizmus", "correct": false } ], "explanation": "Úctu k starším zdôrazňuje konfucianizmus." },
+  { "question": "Na čo slúžil Veľký čínsky múr?", "options": [ { "code": "WALL", "text": "Ako chrám", "correct": false }, { "code": "WALL", "text": "Na obranu", "correct": true }, { "code": "WALL", "text": "Na obchod", "correct": false } ], "explanation": "Veľký čínsky múr slúžil na obranu." },
+  { "question": "Ako sa nazývala obchodná cesta spájajúca Áziu s Európou?", "options": [ { "code": "SILK", "text": "Cesta korenia", "correct": false }, { "code": "SILK", "text": "Hodvábna cesta", "correct": true }, { "code": "SILK", "text": "Jantárová cesta", "correct": false } ], "explanation": "Áziu s Európou spájala Hodvábna cesta." },
+  { "question": "Kde vznikol islam?", "options": [ { "code": "ISL", "text": "V Indii", "correct": false }, { "code": "ISL", "text": "V Číne", "correct": false }, { "code": "ISL", "text": "Na Arabskom polostrove", "correct": true } ], "explanation": "Islam vznikol na Arabskom polostrove." },
+  { "question": "Ako sa nazýval islamský štát po smrti Mohameda?", "options": [ { "code": "CAL", "text": "Republika", "correct": false }, { "code": "CAL", "text": "Kalifát", "correct": true }, { "code": "CAL", "text": "Cisárstvo", "correct": false } ], "explanation": "Po smrti Mohameda vznikol kalifát." },
+  { "question": "Kto bol vodcom Mongolskej ríše?", "options": [ { "code": "MONG", "text": "Buddha", "correct": false }, { "code": "MONG", "text": "Džingischán", "correct": true }, { "code": "MONG", "text": "Konfucius", "correct": false } ], "explanation": "Vodcom Mongolskej ríše bol Džingischán." },
+  { "question": "Kto vládol v stredovekom Japonsku?", "options": [ { "code": "JPN", "text": "Kalifovia", "correct": false }, { "code": "JPN", "text": "Šóguni", "correct": true }, { "code": "JPN", "text": "Faraóni", "correct": false } ], "explanation": "V Japonsku vládli šóguni." },
+  { "question": "Ktorá ríša dobyla Konštantínopol?", "options": [ { "code": "OTT", "text": "Rímska ríša", "correct": false }, { "code": "OTT", "text": "Mongolská ríša", "correct": false }, { "code": "OTT", "text": "Osmanská ríša", "correct": true } ], "explanation": "Konštantínopol dobyla Osmanská ríša." },
+  { "question": "V ktorom storočí prebiehala kolonizácia Ázie?", "options": [ { "code": "COLA", "text": "12. storočie", "correct": false }, { "code": "COLA", "text": "19. storočie", "correct": true }, { "code": "COLA", "text": "5. storočie", "correct": false } ], "explanation": "Kolonizácia Ázie prebiehala najmä v 19. storočí." },
+  { "question": "Ako sa nazýva proces osamostatňovania ázijských štátov?", "options": [ { "code": "INDP", "text": "Industrializácia", "correct": false }, { "code": "INDP", "text": "Dekolonizácia", "correct": true }, { "code": "INDP", "text": "Feudalizmus", "correct": false } ], "explanation": "Proces sa nazýva dekolonizácia." }
+]
+
 }

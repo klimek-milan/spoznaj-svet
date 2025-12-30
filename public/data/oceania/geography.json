@@ -1,52 +1,81 @@
 {
-  "id": "geography",
+  "id": "geografia_oceania",
   "name": "Geografia Oceánie",
-  "description": "Otázky o geografii Oceánie",
+  "description": "Otázky z geografie Oceánie pre 8. ročník ZŠ",
   "facts": {
-    "AU": [
-      "Táto krajina je známa rozľahlými púšťami, dažďovými lesmi a unikátnymi živočíchmi.",
-      "Pri jej pobreží sa nachádza farebný podmorský svet, ktorý láka potápačov z celého sveta.",
-      "V jej vnútrozemí sa rozprestiera oblasť, kde žije málo ľudí a je známa extrémnymi teplotami."
+    "AUSTRALIA": [
+      "Najväčšia krajina Oceánie.",
+      "Hlavné mesto je Canberra.",
+      "Má púšte, savany a veľké mestá na pobreží."
     ],
-    "NZ": [
-      "Táto krajina je známa zelenými kopcami, fjordmi a aktívnymi sopkami.",
-      "Na jej území sa nachádza hora, ktorá je najvyššia v južnej časti Pacifiku.",
-      "Je domovom gejzírov, horúcich prameňov a bohatého vtáčieho života."
+    "NEWZEALAND": [
+      "Ostrovy na juhovýchode Oceánie.",
+      "Hlavné mesto je Wellington.",
+      "Rozmanité podnebie, hory a fjordy."
     ],
-    "FJ": [
-      "Táto krajina je tvorená stovkami ostrovov s tropickým podnebím.",
-      "Je známa pestrou kultúrou, tradičnými tancami a hudbou.",
-      "Na jej ostrovoch sa nachádzajú koralové útesy a palmové pláže."
+    "PAPUA": [
+      "Papua Nová Guinea leží na sever od Austrálie.",
+      "Hlavné mesto je Port Moresby.",
+      "Dážďové pralesy a horské oblasti."
+    ],
+    "GREATBARRIER": [
+      "Najväčší koralový útes na svete.",
+      "Nachádza sa pri pobreží Austrálie.",
+      "Bohatý morský život."
+    ],
+    "AYERSROCK": [
+      "Obrovská skalná formácia v Austrálii.",
+      "Tiež známa ako Uluru.",
+      "Dôležité miesto pre pôvodných obyvateľov."
+    ],
+    "FIJI": [
+      "Ostrovy v južnom Tichom oceáne.",
+      "Hlavné mesto je Suva.",
+      "Obľúbené turistické destinácie a pláže."
+    ],
+    "SAMOA": [
+      "Ostrovy v južnom Tichom oceáne.",
+      "Hlavné mesto je Apia.",
+      "Kultúra a tradície Polynézanov."
+    ],
+    "TONGA": [
+      "Malá ostrovná krajina v Tichom oceáne.",
+      "Hlavné mesto je Nukuʻalofa.",
+      "Zachované tradičné spoločenstvo."
+    ],
+    "VANUATU": [
+      "Ostrovy v južnom Tichom oceáne.",
+      "Hlavné mesto je Port Vila.",
+      "Sopečná činnosť a tropické lesy."
+    ],
+    "MELANESIA": [
+      "Regionálna oblasť Oceánie.",
+      "Zahŕňa ostrovy ako Papua Nová Guinea a Vanuatu.",
+      "Rozmanité kultúry a prírodné prostredie."
     ]
   },
-  "total": 3,
-  "rounds": [
-    {
-      "question": "Kde sa nachádza Veľký bariérový útes?",
-      "options": [
-        { "code": "AU", "text": "Austrália", "correct": true },
-        { "code": "NZ", "text": "Nový Zéland", "correct": false },
-        { "code": "FJ", "text": "Fidži", "correct": false }
-      ],
-      "explanation": "Veľký bariérový útes sa nachádza pri pobreží Austrálie."
-    },
-    {
-      "question": "Ktorá krajina sa skladá z dvoch hlavných ostrovov?",
-      "options": [
-        { "code": "NZ", "text": "Nový Zéland", "correct": true },
-        { "code": "AU", "text": "Austrália", "correct": false },
-        { "code": "FJ", "text": "Fidži", "correct": false }
-      ],
-      "explanation": "Nový Zéland sa skladá z dvoch hlavných ostrovov."
-    },
-    {
-      "question": "Ktorá krajina je známa krásnymi plážami?",
-      "options": [
-        { "code": "FJ", "text": "Fidži", "correct": true },
-        { "code": "NZ", "text": "Nový Zéland", "correct": false },
-        { "code": "AU", "text": "Austrália", "correct": false }
-      ],
-      "explanation": "Fidži je známe krásnymi plážami."
-    }
-  ]
+  "total": 20,
+"rounds": [
+  { "question": "Najväčšia krajina Oceánie je?", "options": [ { "code": "AUSTRALIA", "text": "Nový Zéland", "correct": false }, { "code": "AUSTRALIA", "text": "Austrália", "correct": true }, { "code": "AUSTRALIA", "text": "Papua Nová Guinea", "correct": false } ], "explanation": "Najväčšia krajina Oceánie je Austrália." },
+  { "question": "Hlavné mesto Austrálie je?", "options": [ { "code": "AUSTRALIA", "text": "Sydney", "correct": false }, { "code": "AUSTRALIA", "text": "Canberra", "correct": true }, { "code": "AUSTRALIA", "text": "Melbourne", "correct": false } ], "explanation": "Hlavné mesto Austrálie je Canberra." },
+  { "question": "Hlavné mesto Nového Zélandu je?", "options": [ { "code": "NEWZEALAND", "text": "Auckland", "correct": false }, { "code": "NEWZEALAND", "text": "Christchurch", "correct": false }, { "code": "NEWZEALAND", "text": "Wellington", "correct": true } ], "explanation": "Hlavné mesto Nového Zélandu je Wellington." },
+  { "question": "Kde leží Papua Nová Guinea?", "options": [ { "code": "PAPUA", "text": "Juh od Nového Zélandu", "correct": false }, { "code": "PAPUA", "text": "Východne od Fidži", "correct": false }, { "code": "PAPUA", "text": "Severne od Austrálie", "correct": true } ], "explanation": "Papua Nová Guinea leží severne od Austrálie." },
+  { "question": "Najväčší koralový útes na svete sa nachádza pri?", "options": [ { "code": "GREATBARRIER", "text": "Fidži", "correct": false }, { "code": "GREATBARRIER", "text": "Novom Zélande", "correct": false }, { "code": "GREATBARRIER", "text": "Austrálii", "correct": true } ], "explanation": "Najväčší koralový útes je pri pobreží Austrálie." },
+  { "question": "Uluru je známa ako?", "options": [ { "code": "AYERSROCK", "text": "Mount Kosciuszko", "correct": false }, { "code": "AYERSROCK", "text": "Ayers Rock", "correct": true }, { "code": "AYERSROCK", "text": "Mount Cook", "correct": false } ], "explanation": "Uluru je známa ako Ayers Rock." },
+  { "question": "Hlavné mesto Fidži je?", "options": [ { "code": "FIJI", "text": "Suva", "correct": true }, { "code": "FIJI", "text": "Lautoka", "correct": false }, { "code": "FIJI", "text": "Nadi", "correct": false } ], "explanation": "Hlavné mesto Fidži je Suva." },
+  { "question": "Hlavné mesto Samoy je?", "options": [ { "code": "SAMOA", "text": "Funafuti", "correct": false }, { "code": "SAMOA", "text": "Pago Pago", "correct": false }, { "code": "SAMOA", "text": "Apia", "correct": true } ], "explanation": "Hlavné mesto Samoy je Apia." },
+  { "question": "Hlavné mesto Tonga je?", "options": [ { "code": "TONGA", "text": "Avarua", "correct": false }, { "code": "TONGA", "text": "Nukuʻalofa", "correct": true }, { "code": "TONGA", "text": "Honiara", "correct": false } ], "explanation": "Hlavné mesto Tonga je Nukuʻalofa." },
+  { "question": "Hlavné mesto Vanuatu je?", "options": [ { "code": "VANUATU", "text": "Suva", "correct": false }, { "code": "VANUATU", "text": "Port Vila", "correct": true }, { "code": "VANUATU", "text": "Port Moresby", "correct": false } ], "explanation": "Hlavné mesto Vanuatu je Port Vila." },
+  { "question": "Melanézia zahŕňa?", "options": [ { "code": "MELANESIA", "text": "Fidži a Tonga", "correct": false }, { "code": "MELANESIA", "text": "Samoa a Havaj", "correct": false }, { "code": "MELANESIA", "text": "Papua Nová Guinea a Vanuatu", "correct": true } ], "explanation": "Melanézia zahŕňa Papua Novú Guineu a Vanuatu." },
+  { "question": "Uluru je dôležité miesto pre koho?", "options": [ { "code": "AYERSROCK", "text": "pôvodných obyvateľov", "correct": true }, { "code": "AYERSROCK", "text": "turistov", "correct": false }, { "code": "AYERSROCK", "text": "vládu Austrálie", "correct": false } ], "explanation": "Uluru je dôležité miesto pre pôvodných obyvateľov." },
+  { "question": "Fidži sa nachádza v ktorom oceáne?", "options": [ { "code": "FIJI", "text": "Indický oceán", "correct": false }, { "code": "FIJI", "text": "Tichý oceán", "correct": true }, { "code": "FIJI", "text": "Atlantský oceán", "correct": false } ], "explanation": "Fidži sa nachádza v Tichom oceáne." },
+  { "question": "Nový Zéland má rozmanité podnebie – pravda alebo lož?", "options": [ { "code": "NEWZEALAND", "text": "Lož", "correct": false }, { "code": "NEWZEALAND", "text": "Pravda", "correct": true } ], "explanation": "Nový Zéland má rozmanité podnebie, hory a fjordy." },
+  { "question": "Veľký bariérový útes je bohatý na morský život – pravda alebo lož?", "options": [ { "code": "GREATBARRIER", "text": "Lož", "correct": false }, { "code": "GREATBARRIER", "text": "Pravda", "correct": true } ], "explanation": "Veľký bariérový útes je bohatý na morský život." },
+  { "question": "Papua Nová Guinea má husté dažďové pralesy – pravda alebo lož?", "options": [ { "code": "PAPUA", "text": "Pravda", "correct": true }, { "code": "PAPUA", "text": "Lož", "correct": false } ], "explanation": "Papua Nová Guinea má dažďové pralesy a horské oblasti." },
+  { "question": "Havaj patrí USA – pravda alebo lož?", "options": [ { "code": "HAWAII", "text": "Lož", "correct": false }, { "code": "HAWAII", "text": "Pravda", "correct": true } ], "explanation": "Havaj patrí USA." },
+  { "question": "Tonga je malá ostrovná krajina – pravda alebo lož?", "options": [ { "code": "TONGA", "text": "Pravda", "correct": true }, { "code": "TONGA", "text": "Lož", "correct": false } ], "explanation": "Tonga je malá ostrovná krajina v Tichom oceáne." },
+  { "question": "Vanuatu má sopečnú činnosť – pravda alebo lož?", "options": [ { "code": "VANUATU", "text": "Lož", "correct": false }, { "code": "VANUATU", "text": "Pravda", "correct": true } ], "explanation": "Vanuatu má sopečnú činnosť a tropické lesy." },
+  { "question": "Melanézia má rozmanité kultúry – pravda alebo lož?", "options": [ { "code": "MELANESIA", "text": "Lož", "correct": false }, { "code": "MELANESIA", "text": "Pravda", "correct": true } ], "explanation": "Melanézia má rozmanité kultúry a prírodné prostredie." }
+]
+
 }
