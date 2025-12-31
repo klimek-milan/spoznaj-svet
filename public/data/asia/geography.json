@@ -6,52 +6,52 @@
         "CHINA": [
             "Najľudnatejšia krajina sveta.",
             "Rozmanité podnebie a krajinný ráz.",
-            "Hlavné mesto je Peking."
+            "Známá svojimi veľkými riekami a Veľkým múrom."
         ],
         "INDIA": [
             "Druhá najľudnatejšia krajina sveta.",
             "Má Himaláje na severe a tropické oblasti na juhu.",
-            "Hlavné mesto je Dillí."
+            "Preslávená bohatou kultúrou a festivalmi ako Diwali."
         ],
         "RUSSIA": [
-            "Časť Ázie je najväčšou krajinou sveta podľa rozlohy.",
+            "Najväčšia krajina sveta podľa rozlohy.",
             "Rozprestiera sa od Európy po Tichý oceán.",
-            "Hlavné mesto je Moskva."
+            "Známá studenou Sibírou a rozsiahlymi lesmi."
         ],
         "JAPAN": [
             "Ostrovný štát východnej Ázie.",
             "Tvorí ho viacero ostrovov, najväčší Honšú.",
-            "Hlavné mesto je Tokio."
+            "Preslávená čajovou kultúrou a sakurou."
         ],
         "MOUNT_EVEREST": [
             "Najvyššia hora sveta.",
             "Leží v Himalájach na hranici Nepálu a Číny.",
-            "Výška je 8848 m."
+            "Populárna destinácia pre horolezcov."
         ],
         "GANGES": [
             "Dôležitá rieka Indie a Bangladéša.",
             "Má posvätný význam v hinduizme.",
-            "Povodie je veľmi husté a úrodné."
+            "Zdroj vody pre milióny ľudí a poľnohospodárstvo."
         ],
         "ARAL": [
             "Jazero medzi Kazachstanom a Uzbekistánom.",
             "Veľmi sa zmenšilo kvôli odvodňovaniu riek.",
-            "Bolo známe pre rybolov."
+            "Známe ekologické problémy a vysychajúce pobrežia."
         ],
         "SAHARA_ASIA": [
             "Púšte Ázie ako Gobi alebo Kyzylkum.",
             "Extrémne suché a horúce oblasti.",
-            "Ovládajú krajinný ráz centrálnej Ázie."
+            "Domov špecifickej flóry a fauny, prispôsobenej suchu."
         ],
         "BAIKAL": [
             "Najhlbšie sladkovodné jazero sveta.",
             "Leží v Rusku, v Sibíri.",
-            "Bohaté na biodiverzitu."
+            "Mimoriadna čistota vody a rozmanitá fauná."
         ],
         "THAILAND": [
             "Krajina v juhovýchodnej Ázii.",
             "Tropické podnebie a turistické atrakcie.",
-            "Hlavné mesto je Bangkok."
+            "Slávna tradičná kuchyňa a budhistické chrámy."
         ]
     },
     "total": 20,
