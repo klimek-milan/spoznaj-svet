@@ -62,12 +62,12 @@
                 {
                     "code": "FRANCE",
                     "text": "Paríž",
-                    "correct": false
+                    "correct": true
                 },
                 {
                     "code": "FRANCE",
                     "text": "Lyon",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "FRANCE",
@@ -82,12 +82,12 @@
             "options": [
                 {
                     "code": "FRANCE",
-                    "text": "Západná Európa",
+                    "text": "Severná Európa",
                     "correct": false
                 },
                 {
                     "code": "FRANCE",
-                    "text": "Severná Európa",
+                    "text": "Západná Európa",
                     "correct": true
                 },
                 {
@@ -103,12 +103,12 @@
             "options": [
                 {
                     "code": "GERMANY",
-                    "text": "Berlín",
+                    "text": "Mníchov",
                     "correct": false
                 },
                 {
                     "code": "GERMANY",
-                    "text": "Mníchov",
+                    "text": "Berlín",
                     "correct": true
                 },
                 {
@@ -124,18 +124,18 @@
             "options": [
                 {
                     "code": "ALPS",
-                    "text": "Alpy",
-                    "correct": false
-                },
-                {
-                    "code": "ALPS",
                     "text": "Karpatské hory",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "ALPS",
                     "text": "Pyreneje",
                     "correct": false
+                },
+                {
+                    "code": "ALPS",
+                    "text": "Alpy",
+                    "correct": true
                 }
             ],
             "explanation": "Najvyššie pohorie strednej Európy sú Alpy."
@@ -145,18 +145,18 @@
             "options": [
                 {
                     "code": "ITALY",
-                    "text": "Rím",
-                    "correct": false
-                },
-                {
-                    "code": "ITALY",
                     "text": "Miláno",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "ITALY",
                     "text": "Benátky",
                     "correct": false
+                },
+                {
+                    "code": "ITALY",
+                    "text": "Rím",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto Talianska je Rím."
@@ -166,17 +166,17 @@
             "options": [
                 {
                     "code": "ITALY",
-                    "text": "Kultúru a kuchyňu",
+                    "text": "Ropu a plyn",
                     "correct": false
                 },
                 {
                     "code": "ITALY",
-                    "text": "Vulkanické pohoria",
+                    "text": "Kultúru a kuchyňu",
                     "correct": true
                 },
                 {
                     "code": "ITALY",
-                    "text": "Ropy a plyn",
+                    "text": "Vulkanické pohoria",
                     "correct": false
                 }
             ],
@@ -187,18 +187,18 @@
             "options": [
                 {
                     "code": "SPAIN",
-                    "text": "Madrid",
-                    "correct": false
-                },
-                {
-                    "code": "SPAIN",
                     "text": "Barcelona",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "SPAIN",
                     "text": "Valencia",
                     "correct": false
+                },
+                {
+                    "code": "SPAIN",
+                    "text": "Madrid",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto Španielska je Madrid."
@@ -208,18 +208,18 @@
             "options": [
                 {
                     "code": "SPAIN",
-                    "text": "Pyrenejskom",
-                    "correct": false
-                },
-                {
-                    "code": "SPAIN",
                     "text": "Skandinávskom",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "SPAIN",
                     "text": "Italskom",
                     "correct": false
+                },
+                {
+                    "code": "SPAIN",
+                    "text": "Pyrenejskom",
+                    "correct": true
                 }
             ],
             "explanation": "Španielsko leží na Pyrenejskom polostrove."
@@ -229,18 +229,18 @@
             "options": [
                 {
                     "code": "UK",
-                    "text": "Spojené kráľovstvo",
-                    "correct": false
-                },
-                {
-                    "code": "UK",
                     "text": "Írsko",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "UK",
                     "text": "Island",
                     "correct": false
+                },
+                {
+                    "code": "UK",
+                    "text": "Spojené kráľovstvo",
+                    "correct": true
                 }
             ],
             "explanation": "Ostrovný štát západnej Európy je Spojené kráľovstvo."
@@ -250,18 +250,18 @@
             "options": [
                 {
                     "code": "UK",
-                    "text": "Londýn",
+                    "text": "Cardiff",
                     "correct": false
                 },
                 {
                     "code": "UK",
                     "text": "Edinburgh",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "UK",
-                    "text": "Cardiff",
-                    "correct": false
+                    "text": "Londýn",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto UK je Londýn."
@@ -271,18 +271,18 @@
             "options": [
                 {
                     "code": "RUSSIA",
-                    "text": "Rusko",
-                    "correct": false
-                },
-                {
-                    "code": "RUSSIA",
                     "text": "Ukrajina",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "RUSSIA",
                     "text": "Francúzsko",
                     "correct": false
+                },
+                {
+                    "code": "RUSSIA",
+                    "text": "Rusko",
+                    "correct": true
                 }
             ],
             "explanation": "Najväčšia krajina sveta je Rusko."
@@ -292,18 +292,18 @@
             "options": [
                 {
                     "code": "RUSSIA",
-                    "text": "Moskva",
-                    "correct": false
-                },
-                {
-                    "code": "RUSSIA",
                     "text": "Sankt Peterburg",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "RUSSIA",
                     "text": "Kazaň",
                     "correct": false
+                },
+                {
+                    "code": "RUSSIA",
+                    "text": "Moskva",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto Ruska je Moskva."
@@ -313,18 +313,18 @@
             "options": [
                 {
                     "code": "DANUBE",
-                    "text": "Dunaj",
-                    "correct": false
-                },
-                {
-                    "code": "DANUBE",
                     "text": "Rýn",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "DANUBE",
                     "text": "Loira",
                     "correct": false
+                },
+                {
+                    "code": "DANUBE",
+                    "text": "Dunaj",
+                    "correct": true
                 }
             ],
             "explanation": "Druhá najdlhšia rieka Európy je Dunaj."
@@ -334,18 +334,18 @@
             "options": [
                 {
                     "code": "DANUBE",
-                    "text": "Nemecko, Rakúsko, Slovensko, Maďarsko a ďalšie",
-                    "correct": false
-                },
-                {
-                    "code": "DANUBE",
                     "text": "Francúzsko, Španielsko, Portugalsko",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "DANUBE",
                     "text": "Švédsko, Nórsko, Fínsko",
                     "correct": false
+                },
+                {
+                    "code": "DANUBE",
+                    "text": "Nemecko, Rakúsko, Slovensko, Maďarsko a ďalšie",
+                    "correct": true
                 }
             ],
             "explanation": "Dunaj preteká Nemeckom, Rakúskom, Slovenskom, Maďarskom a ďalšími krajinami."
@@ -355,18 +355,18 @@
             "options": [
                 {
                     "code": "MEDITERRANEAN",
-                    "text": "Stredozemné",
-                    "correct": false
-                },
-                {
-                    "code": "MEDITERRANEAN",
                     "text": "Severné",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "MEDITERRANEAN",
                     "text": "Baltské",
                     "correct": false
+                },
+                {
+                    "code": "MEDITERRANEAN",
+                    "text": "Stredozemné",
+                    "correct": true
                 }
             ],
             "explanation": "Slávne more medzi Európou a Afrikou je Stredozemné more."
@@ -376,18 +376,18 @@
             "options": [
                 {
                     "code": "ICELAND",
-                    "text": "Gejzíry a sopky",
-                    "correct": false
-                },
-                {
-                    "code": "ICELAND",
                     "text": "Poušť",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "ICELAND",
                     "text": "Tropické pralesy",
                     "correct": false
+                },
+                {
+                    "code": "ICELAND",
+                    "text": "Gejzíry a sopky",
+                    "correct": true
                 }
             ],
             "explanation": "Island je známy gejzírmi a sopkami."
@@ -397,18 +397,18 @@
             "options": [
                 {
                     "code": "ICELAND",
-                    "text": "Reykjavík",
-                    "correct": false
-                },
-                {
-                    "code": "ICELAND",
                     "text": "Akureyri",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "ICELAND",
                     "text": "Keflavík",
                     "correct": false
+                },
+                {
+                    "code": "ICELAND",
+                    "text": "Reykjavík",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto Islandu je Reykjavík."
@@ -418,18 +418,18 @@
             "options": [
                 {
                     "code": "ALPS",
-                    "text": "Švajčiarsko, Rakúsko, Taliansko, Francúzsko",
-                    "correct": false
-                },
-                {
-                    "code": "ALPS",
                     "text": "Španielsko, Portugalsko",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "ALPS",
                     "text": "Nemecko, Poľsko, Česko",
                     "correct": false
+                },
+                {
+                    "code": "ALPS",
+                    "text": "Švajčiarsko, Rakúsko, Taliansko, Francúzsko",
+                    "correct": true
                 }
             ],
             "explanation": "Alpy prechádzajú Švajčiarskom, Rakúskom, Talianskom a Francúzskom."
@@ -439,18 +439,18 @@
             "options": [
                 {
                     "code": "SPAIN",
-                    "text": "Španielsko",
-                    "correct": false
-                },
-                {
-                    "code": "SPAIN",
                     "text": "Francúzsko",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "SPAIN",
                     "text": "Taliansko",
                     "correct": false
+                },
+                {
+                    "code": "SPAIN",
+                    "text": "Španielsko",
+                    "correct": true
                 }
             ],
             "explanation": "Barcelona je známe mesto Španielska."

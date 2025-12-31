@@ -71,17 +71,17 @@
             "options": [
                 {
                     "code": "GREECE",
-                    "text": "Atény a Sparta",
+                    "text": "Paríž a Londýn",
                     "correct": false
                 },
                 {
                     "code": "GREECE",
-                    "text": "Rím a Kartágo",
+                    "text": "Atény a Sparta",
                     "correct": true
                 },
                 {
                     "code": "GREECE",
-                    "text": "Paríž a Londýn",
+                    "text": "Rím a Kartágo",
                     "correct": false
                 }
             ],
@@ -92,12 +92,12 @@
             "options": [
                 {
                     "code": "GREECE",
-                    "text": "Filozofiou a demokraciou",
+                    "text": "Priemyslom",
                     "correct": false
                 },
                 {
                     "code": "GREECE",
-                    "text": "Priemyslom",
+                    "text": "Filozofiou a demokraciou",
                     "correct": true
                 },
                 {
@@ -113,17 +113,17 @@
             "options": [
                 {
                     "code": "ROMAN",
-                    "text": "Rímska ríša",
+                    "text": "Egyptská ríša",
                     "correct": false
                 },
                 {
                     "code": "ROMAN",
-                    "text": "Grécka ríša",
+                    "text": "Rímska ríša",
                     "correct": true
                 },
                 {
                     "code": "ROMAN",
-                    "text": "Egyptská ríša",
+                    "text": "Grécka ríša",
                     "correct": false
                 }
             ],
@@ -134,18 +134,18 @@
             "options": [
                 {
                     "code": "ROMAN",
-                    "text": "Cestami a právom",
-                    "correct": false
-                },
-                {
-                    "code": "ROMAN",
                     "text": "Filozofiou",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "ROMAN",
                     "text": "Moreplavbou",
                     "correct": false
+                },
+                {
+                    "code": "ROMAN",
+                    "text": "Cestami a právom",
+                    "correct": true
                 }
             ],
             "explanation": "Rimania vybudovali rozsiahlu sieť ciest a právny systém."
@@ -155,12 +155,12 @@
             "options": [
                 {
                     "code": "VIKING",
-                    "text": "Skandinávski moreplavci",
+                    "text": "Rímski obchodníci",
                     "correct": false
                 },
                 {
                     "code": "VIKING",
-                    "text": "Rímski obchodníci",
+                    "text": "Skandinávski moreplavci",
                     "correct": true
                 },
                 {
@@ -176,18 +176,18 @@
             "options": [
                 {
                     "code": "VIKING",
-                    "text": "Lúpežnými nájazdmi",
-                    "correct": false
-                },
-                {
-                    "code": "VIKING",
                     "text": "Demokraciou",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "VIKING",
                     "text": "Továrňami",
                     "correct": false
+                },
+                {
+                    "code": "VIKING",
+                    "text": "Lúpežnými nájazdmi",
+                    "correct": true
                 }
             ],
             "explanation": "Vikingovia podnikali nájazdy po celej Európe."
@@ -197,17 +197,17 @@
             "options": [
                 {
                     "code": "MIDDLE",
-                    "text": "Hrady a feudálna spoločnosť",
+                    "text": "Demokracia",
                     "correct": false
                 },
                 {
                     "code": "MIDDLE",
-                    "text": "Priemyselné mestá",
+                    "text": "Hrady a feudálna spoločnosť",
                     "correct": true
                 },
                 {
                     "code": "MIDDLE",
-                    "text": "Demokracia",
+                    "text": "Priemyselné mestá",
                     "correct": false
                 }
             ],
@@ -218,17 +218,17 @@
             "options": [
                 {
                     "code": "MIDDLE",
-                    "text": "5. – 15. storočie",
+                    "text": "16. – 19. storočie",
                     "correct": false
                 },
                 {
                     "code": "MIDDLE",
-                    "text": "1. – 5. storočie",
+                    "text": "5. – 15. storočie",
                     "correct": true
                 },
                 {
                     "code": "MIDDLE",
-                    "text": "16. – 19. storočie",
+                    "text": "1. – 5. storočie",
                     "correct": false
                 }
             ],
@@ -239,18 +239,18 @@
             "options": [
                 {
                     "code": "REN",
-                    "text": "V Taliansku",
-                    "correct": false
-                },
-                {
-                    "code": "REN",
                     "text": "V Anglicku",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "REN",
                     "text": "V Rusku",
                     "correct": false
+                },
+                {
+                    "code": "REN",
+                    "text": "V Taliansku",
+                    "correct": true
                 }
             ],
             "explanation": "Renesancia vznikla v talianskych mestách."
@@ -260,18 +260,18 @@
             "options": [
                 {
                     "code": "REN",
-                    "text": "Obnova antickej kultúry",
+                    "text": "Kolonizácia",
                     "correct": false
                 },
                 {
                     "code": "REN",
                     "text": "Rozvoj tovární",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "REN",
-                    "text": "Kolonizácia",
-                    "correct": false
+                    "text": "Obnova antickej kultúry",
+                    "correct": true
                 }
             ],
             "explanation": "Renesancia sa inšpirovala antikou."
@@ -281,17 +281,17 @@
             "options": [
                 {
                     "code": "REF",
-                    "text": "Martin Luther",
+                    "text": "Karol Veľký",
                     "correct": false
                 },
                 {
                     "code": "REF",
-                    "text": "Napoleon Bonaparte",
+                    "text": "Martin Luther",
                     "correct": true
                 },
                 {
                     "code": "REF",
-                    "text": "Karol Veľký",
+                    "text": "Napoleon Bonaparte",
                     "correct": false
                 }
             ],
@@ -302,18 +302,18 @@
             "options": [
                 {
                     "code": "REF",
-                    "text": "16. storočie",
-                    "correct": false
-                },
-                {
-                    "code": "REF",
                     "text": "10. storočie",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "REF",
                     "text": "19. storočie",
                     "correct": false
+                },
+                {
+                    "code": "REF",
+                    "text": "16. storočie",
+                    "correct": true
                 }
             ],
             "explanation": "Reformácia začala v 16. storočí."
@@ -323,18 +323,18 @@
             "options": [
                 {
                     "code": "INDREV",
-                    "text": "V Británii",
-                    "correct": false
-                },
-                {
-                    "code": "INDREV",
                     "text": "Vo Francúzsku",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "INDREV",
                     "text": "V Taliansku",
                     "correct": false
+                },
+                {
+                    "code": "INDREV",
+                    "text": "V Británii",
+                    "correct": true
                 }
             ],
             "explanation": "Priemyselná revolúcia sa začala v Británii."
@@ -344,18 +344,18 @@
             "options": [
                 {
                     "code": "NAP",
-                    "text": "Cisár Francúzska",
-                    "correct": false
-                },
-                {
-                    "code": "NAP",
                     "text": "Rímsky cisár",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "NAP",
                     "text": "Nemecký kráľ",
                     "correct": false
+                },
+                {
+                    "code": "NAP",
+                    "text": "Cisár Francúzska",
+                    "correct": true
                 }
             ],
             "explanation": "Napoleon bol cisárom Francúzska."
@@ -365,18 +365,18 @@
             "options": [
                 {
                     "code": "WW2",
-                    "text": "Porážkou nacistického Nemecka",
+                    "text": "Rozpadom EÚ",
                     "correct": false
                 },
                 {
                     "code": "WW2",
                     "text": "Víťazstvom Nemecka",
-                    "correct": true
+                    "correct": false
                 },
                 {
                     "code": "WW2",
-                    "text": "Rozpadom EÚ",
-                    "correct": false
+                    "text": "Porážkou nacistického Nemecka",
+                    "correct": true
                 }
             ],
             "explanation": "Druhá svetová vojna skončila v roku 1945."

@@ -110,14 +110,14 @@
             "question": "Aké je hlavné mesto Francúzska?",
             "options": [
                 {
-                    "code": "BE",
-                    "text": "Brusel",
-                    "correct": false
-                },
-                {
                     "code": "FR",
                     "text": "Paríž",
                     "correct": true
+                },
+                {
+                    "code": "BE",
+                    "text": "Brusel",
+                    "correct": false
                 },
                 {
                     "code": "ES",
@@ -152,14 +152,14 @@
             "question": "Aké je hlavné mesto Talianska?",
             "options": [
                 {
-                    "code": "GR",
-                    "text": "Atény",
-                    "correct": false
-                },
-                {
                     "code": "IT",
                     "text": "Rím",
                     "correct": true
+                },
+                {
+                    "code": "GR",
+                    "text": "Atény",
+                    "correct": false
                 },
                 {
                     "code": "IT",
@@ -199,14 +199,14 @@
                     "correct": false
                 },
                 {
-                    "code": "GB",
-                    "text": "Londýn",
-                    "correct": true
-                },
-                {
                     "code": "IE",
                     "text": "Dublin",
                     "correct": false
+                },
+                {
+                    "code": "GB",
+                    "text": "Londýn",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto Spojeného kráľovstva je Londýn."
@@ -220,14 +220,14 @@
                     "correct": false
                 },
                 {
-                    "code": "AT",
-                    "text": "Viedeň",
-                    "correct": true
-                },
-                {
                     "code": "DE",
                     "text": "Berlín",
                     "correct": false
+                },
+                {
+                    "code": "AT",
+                    "text": "Viedeň",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto Rakúska je Viedeň."
@@ -257,14 +257,14 @@
             "question": "Aké je hlavné mesto Slovenska?",
             "options": [
                 {
-                    "code": "HU",
-                    "text": "Budapešť",
-                    "correct": false
-                },
-                {
                     "code": "SK",
                     "text": "Bratislava",
                     "correct": true
+                },
+                {
+                    "code": "HU",
+                    "text": "Budapešť",
+                    "correct": false
                 },
                 {
                     "code": "AT",
@@ -277,6 +277,11 @@
         {
             "question": "Aké je hlavné mesto Poľska?",
             "options": [
+                {
+                    "code": "PL",
+                    "text": "Varšava",
+                    "correct": true
+                },
                 {
                     "code": "DE",
                     "text": "Berlín",
@@ -325,14 +330,14 @@
                     "correct": false
                 },
                 {
-                    "code": "GR",
-                    "text": "Atény",
-                    "correct": true
-                },
-                {
                     "code": "IT",
                     "text": "Rím",
                     "correct": false
+                },
+                {
+                    "code": "GR",
+                    "text": "Atény",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto Grécka sú Atény."
@@ -346,14 +351,14 @@
                     "correct": false
                 },
                 {
-                    "code": "PT",
-                    "text": "Lisabon",
-                    "correct": true
-                },
-                {
                     "code": "ES",
                     "text": "Madrid",
                     "correct": false
+                },
+                {
+                    "code": "PT",
+                    "text": "Lisabon",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto Portugalska je Lisabon."
@@ -383,14 +388,14 @@
             "question": "Aké je hlavné mesto Holandska?",
             "options": [
                 {
-                    "code": "BE",
-                    "text": "Brusel",
-                    "correct": false
-                },
-                {
                     "code": "NL",
                     "text": "Amsterdam",
                     "correct": true
+                },
+                {
+                    "code": "BE",
+                    "text": "Brusel",
+                    "correct": false
                 },
                 {
                     "code": "NL",
@@ -446,14 +451,14 @@
             "question": "Aké je hlavné mesto Fínska?",
             "options": [
                 {
-                    "code": "SE",
-                    "text": "Štokholm",
-                    "correct": false
-                },
-                {
                     "code": "FI",
                     "text": "Helsinki",
                     "correct": true
+                },
+                {
+                    "code": "SE",
+                    "text": "Štokholm",
+                    "correct": false
                 },
                 {
                     "code": "EE",
@@ -467,14 +472,14 @@
             "question": "Aké je hlavné mesto Dánska?",
             "options": [
                 {
-                    "code": "SE",
-                    "text": "Štokholm",
-                    "correct": false
-                },
-                {
                     "code": "DK",
                     "text": "Kodaň",
                     "correct": true
+                },
+                {
+                    "code": "SE",
+                    "text": "Štokholm",
+                    "correct": false
                 },
                 {
                     "code": "NO",
@@ -514,14 +519,14 @@
                     "correct": false
                 },
                 {
-                    "code": "UA",
-                    "text": "Kyjev",
-                    "correct": true
-                },
-                {
                     "code": "RU",
                     "text": "Moskva",
                     "correct": false
+                },
+                {
+                    "code": "UA",
+                    "text": "Kyjev",
+                    "correct": true
                 }
             ],
             "explanation": "Hlavné mesto Ukrajiny je Kyjev."
