@@ -71,13 +71,13 @@
             "options": [
                 {
                     "code": "GREECE",
-                    "text": "Paríž a Londýn",
-                    "correct": false
+                    "text": "Atény a Sparta",
+                    "correct": true
                 },
                 {
                     "code": "GREECE",
-                    "text": "Atény a Sparta",
-                    "correct": true
+                    "text": "Paríž a Londýn",
+                    "correct": false
                 },
                 {
                     "code": "GREECE",
@@ -92,6 +92,11 @@
             "options": [
                 {
                     "code": "GREECE",
+                    "text": "Kolóniami v Amerike",
+                    "correct": false
+                },
+                {
+                    "code": "GREECE",
                     "text": "Priemyslom",
                     "correct": false
                 },
@@ -99,11 +104,6 @@
                     "code": "GREECE",
                     "text": "Filozofiou a demokraciou",
                     "correct": true
-                },
-                {
-                    "code": "GREECE",
-                    "text": "Kolóniami v Amerike",
-                    "correct": false
                 }
             ],
             "explanation": "Gréci položili základy filozofie a demokracie."
@@ -113,13 +113,13 @@
             "options": [
                 {
                     "code": "ROMAN",
-                    "text": "Egyptská ríša",
-                    "correct": false
+                    "text": "Rímska ríša",
+                    "correct": true
                 },
                 {
                     "code": "ROMAN",
-                    "text": "Rímska ríša",
-                    "correct": true
+                    "text": "Egyptská ríša",
+                    "correct": false
                 },
                 {
                     "code": "ROMAN",
@@ -134,11 +134,6 @@
             "options": [
                 {
                     "code": "ROMAN",
-                    "text": "Filozofiou",
-                    "correct": false
-                },
-                {
-                    "code": "ROMAN",
                     "text": "Moreplavbou",
                     "correct": false
                 },
@@ -146,6 +141,11 @@
                     "code": "ROMAN",
                     "text": "Cestami a právom",
                     "correct": true
+                },
+                {
+                    "code": "ROMAN",
+                    "text": "Filozofiou",
+                    "correct": false
                 }
             ],
             "explanation": "Rimania vybudovali rozsiahlu sieť ciest a právny systém."
@@ -155,13 +155,13 @@
             "options": [
                 {
                     "code": "VIKING",
-                    "text": "Rímski obchodníci",
-                    "correct": false
+                    "text": "Skandinávski moreplavci",
+                    "correct": true
                 },
                 {
                     "code": "VIKING",
-                    "text": "Skandinávski moreplavci",
-                    "correct": true
+                    "text": "Rímski obchodníci",
+                    "correct": false
                 },
                 {
                     "code": "VIKING",
@@ -176,11 +176,6 @@
             "options": [
                 {
                     "code": "VIKING",
-                    "text": "Demokraciou",
-                    "correct": false
-                },
-                {
-                    "code": "VIKING",
                     "text": "Továrňami",
                     "correct": false
                 },
@@ -188,6 +183,11 @@
                     "code": "VIKING",
                     "text": "Lúpežnými nájazdmi",
                     "correct": true
+                },
+                {
+                    "code": "VIKING",
+                    "text": "Demokraciou",
+                    "correct": false
                 }
             ],
             "explanation": "Vikingovia podnikali nájazdy po celej Európe."
@@ -197,7 +197,7 @@
             "options": [
                 {
                     "code": "MIDDLE",
-                    "text": "Demokracia",
+                    "text": "Priemyselné mestá",
                     "correct": false
                 },
                 {
@@ -207,7 +207,7 @@
                 },
                 {
                     "code": "MIDDLE",
-                    "text": "Priemyselné mestá",
+                    "text": "Demokracia",
                     "correct": false
                 }
             ],
@@ -239,11 +239,6 @@
             "options": [
                 {
                     "code": "REN",
-                    "text": "V Anglicku",
-                    "correct": false
-                },
-                {
-                    "code": "REN",
                     "text": "V Rusku",
                     "correct": false
                 },
@@ -251,6 +246,11 @@
                     "code": "REN",
                     "text": "V Taliansku",
                     "correct": true
+                },
+                {
+                    "code": "REN",
+                    "text": "V Anglicku",
+                    "correct": false
                 }
             ],
             "explanation": "Renesancia vznikla v talianskych mestách."
@@ -265,13 +265,13 @@
                 },
                 {
                     "code": "REN",
-                    "text": "Rozvoj tovární",
-                    "correct": false
+                    "text": "Obnova antickej kultúry",
+                    "correct": true
                 },
                 {
                     "code": "REN",
-                    "text": "Obnova antickej kultúry",
-                    "correct": true
+                    "text": "Rozvoj tovární",
+                    "correct": false
                 }
             ],
             "explanation": "Renesancia sa inšpirovala antikou."
@@ -281,7 +281,7 @@
             "options": [
                 {
                     "code": "REF",
-                    "text": "Karol Veľký",
+                    "text": "Napoleon Bonaparte",
                     "correct": false
                 },
                 {
@@ -291,7 +291,7 @@
                 },
                 {
                     "code": "REF",
-                    "text": "Napoleon Bonaparte",
+                    "text": "Karol Veľký",
                     "correct": false
                 }
             ],
@@ -307,13 +307,13 @@
                 },
                 {
                     "code": "REF",
-                    "text": "19. storočie",
-                    "correct": false
+                    "text": "16. storočie",
+                    "correct": true
                 },
                 {
                     "code": "REF",
-                    "text": "16. storočie",
-                    "correct": true
+                    "text": "19. storočie",
+                    "correct": false
                 }
             ],
             "explanation": "Reformácia začala v 16. storočí."
@@ -328,13 +328,13 @@
                 },
                 {
                     "code": "INDREV",
-                    "text": "V Taliansku",
-                    "correct": false
+                    "text": "V Británii",
+                    "correct": true
                 },
                 {
                     "code": "INDREV",
-                    "text": "V Británii",
-                    "correct": true
+                    "text": "V Taliansku",
+                    "correct": false
                 }
             ],
             "explanation": "Priemyselná revolúcia sa začala v Británii."
@@ -344,11 +344,6 @@
             "options": [
                 {
                     "code": "NAP",
-                    "text": "Rímsky cisár",
-                    "correct": false
-                },
-                {
-                    "code": "NAP",
                     "text": "Nemecký kráľ",
                     "correct": false
                 },
@@ -356,6 +351,11 @@
                     "code": "NAP",
                     "text": "Cisár Francúzska",
                     "correct": true
+                },
+                {
+                    "code": "NAP",
+                    "text": "Rímsky cisár",
+                    "correct": false
                 }
             ],
             "explanation": "Napoleon bol cisárom Francúzska."
@@ -365,11 +365,6 @@
             "options": [
                 {
                     "code": "WW2",
-                    "text": "Rozpadom EÚ",
-                    "correct": false
-                },
-                {
-                    "code": "WW2",
                     "text": "Víťazstvom Nemecka",
                     "correct": false
                 },
@@ -377,6 +372,11 @@
                     "code": "WW2",
                     "text": "Porážkou nacistického Nemecka",
                     "correct": true
+                },
+                {
+                    "code": "WW2",
+                    "text": "Rozpadom EÚ",
+                    "correct": false
                 }
             ],
             "explanation": "Druhá svetová vojna skončila v roku 1945."
