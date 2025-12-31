@@ -1,80 +1,459 @@
 {
-  "id": "geografia_europa",
-  "name": "Geografia Európy",
-  "description": "Otázky z geografie Európy pre 8. ročník ZŠ",
-  "facts": {
-    "FRANCE": [
-      "Krajina v západnej Európe.",
-      "Hlavné mesto je Paríž.",
-      "Známa vinicami a Eiffelovou vežou."
-    ],
-    "GERMANY": [
-      "Stredoeurópska krajina.",
-      "Hlavné mesto je Berlín.",
-      "Známym regiónom je Bavorsko."
-    ],
-    "ITALY": [
-      "Juhoeurópska krajina tvaru čižmy.",
-      "Hlavné mesto je Rím.",
-      "Slávna je kultúrou a talianskou kuchyňou."
-    ],
-    "SPAIN": [
-      "Krajina na Pyrenejskom polostrove.",
-      "Hlavné mesto je Madrid.",
-      "Známym mestom je Barcelona."
-    ],
-    "UK": [
-      "Ostrovný štát západnej Európy.",
-      "Hlavné mesto je Londýn.",
-      "Tvorí ho Anglicko, Škótsko, Wales a Severné Írsko."
-    ],
-    "RUSSIA": [
-      "Najväčšia krajina sveta, časť leží v Európe.",
-      "Hlavné mesto je Moskva.",
-      "Rozprestiera sa od východnej Európy po Áziu."
-    ],
-    "ALPS": [
-      "Najvyššie pohorie strednej Európy.",
-      "Prechádza Švajčiarskom, Rakúskom, Talianskom a Francúzskom.",
-      "Známe pre lyžiarske strediská."
-    ],
-    "DANUBE": [
-      "Druhá najdlhšia rieka Európy.",
-      "Preteká Nemeckom, Rakúskom, Slovenskom, Maďarskom a ďalšími.",
-      "Dôležitá pre dopravu a energetiku."
-    ],
-    "MEDITERRANEAN": [
-      "Slávne more medzi Európou, Afrikou a Áziou.",
-      "Obľúbené turistické destinácie.",
-      "Známe pre mierne podnebie."
-    ],
-    "ICELAND": [
-      "Ostrovná krajina severnej Európy.",
-      "Hlavné mesto je Reykjavík.",
-      "Známym prírodným javom sú gejzíry a sopky."
+    "id": "geografia_europa",
+    "name": "Geografia Európy",
+    "description": "Otázky z geografie Európy pre 8. ročník ZŠ",
+    "facts": {
+        "FRANCE": [
+            "Krajina v západnej Európe.",
+            "Hlavné mesto je Paríž.",
+            "Známa vinicami a Eiffelovou vežou."
+        ],
+        "GERMANY": [
+            "Stredoeurópska krajina.",
+            "Hlavné mesto je Berlín.",
+            "Známym regiónom je Bavorsko."
+        ],
+        "ITALY": [
+            "Juhoeurópska krajina tvaru čižmy.",
+            "Hlavné mesto je Rím.",
+            "Slávna je kultúrou a talianskou kuchyňou."
+        ],
+        "SPAIN": [
+            "Krajina na Pyrenejskom polostrove.",
+            "Hlavné mesto je Madrid.",
+            "Známym mestom je Barcelona."
+        ],
+        "UK": [
+            "Ostrovný štát západnej Európy.",
+            "Hlavné mesto je Londýn.",
+            "Tvorí ho Anglicko, Škótsko, Wales a Severné Írsko."
+        ],
+        "RUSSIA": [
+            "Najväčšia krajina sveta, časť leží v Európe.",
+            "Hlavné mesto je Moskva.",
+            "Rozprestiera sa od východnej Európy po Áziu."
+        ],
+        "ALPS": [
+            "Najvyššie pohorie strednej Európy.",
+            "Prechádza Švajčiarskom, Rakúskom, Talianskom a Francúzskom.",
+            "Známe pre lyžiarske strediská."
+        ],
+        "DANUBE": [
+            "Druhá najdlhšia rieka Európy.",
+            "Preteká Nemeckom, Rakúskom, Slovenskom, Maďarskom a ďalšími.",
+            "Dôležitá pre dopravu a energetiku."
+        ],
+        "MEDITERRANEAN": [
+            "Slávne more medzi Európou, Afrikou a Áziou.",
+            "Obľúbené turistické destinácie.",
+            "Známe pre mierne podnebie."
+        ],
+        "ICELAND": [
+            "Ostrovná krajina severnej Európy.",
+            "Hlavné mesto je Reykjavík.",
+            "Známym prírodným javom sú gejzíry a sopky."
+        ]
+    },
+    "total": 20,
+    "rounds": [
+        {
+            "question": "Hlavné mesto Francúzska je?",
+            "options": [
+                {
+                    "code": "FRANCE",
+                    "text": "Paríž",
+                    "correct": false
+                },
+                {
+                    "code": "FRANCE",
+                    "text": "Lyon",
+                    "correct": true
+                },
+                {
+                    "code": "FRANCE",
+                    "text": "Marseille",
+                    "correct": false
+                }
+            ],
+            "explanation": "Hlavné mesto Francúzska je Paríž."
+        },
+        {
+            "question": "Francúzsko leží v ktorej časti Európy?",
+            "options": [
+                {
+                    "code": "FRANCE",
+                    "text": "Západná Európa",
+                    "correct": false
+                },
+                {
+                    "code": "FRANCE",
+                    "text": "Severná Európa",
+                    "correct": true
+                },
+                {
+                    "code": "FRANCE",
+                    "text": "Juhovýchodná Európa",
+                    "correct": false
+                }
+            ],
+            "explanation": "Francúzsko leží v západnej Európe."
+        },
+        {
+            "question": "Hlavné mesto Nemecka je?",
+            "options": [
+                {
+                    "code": "GERMANY",
+                    "text": "Berlín",
+                    "correct": false
+                },
+                {
+                    "code": "GERMANY",
+                    "text": "Mníchov",
+                    "correct": true
+                },
+                {
+                    "code": "GERMANY",
+                    "text": "Hamburg",
+                    "correct": false
+                }
+            ],
+            "explanation": "Hlavné mesto Nemecka je Berlín."
+        },
+        {
+            "question": "Slávne pohorie strednej Európy je?",
+            "options": [
+                {
+                    "code": "ALPS",
+                    "text": "Alpy",
+                    "correct": false
+                },
+                {
+                    "code": "ALPS",
+                    "text": "Karpatské hory",
+                    "correct": true
+                },
+                {
+                    "code": "ALPS",
+                    "text": "Pyreneje",
+                    "correct": false
+                }
+            ],
+            "explanation": "Najvyššie pohorie strednej Európy sú Alpy."
+        },
+        {
+            "question": "Hlavné mesto Talianska je?",
+            "options": [
+                {
+                    "code": "ITALY",
+                    "text": "Rím",
+                    "correct": false
+                },
+                {
+                    "code": "ITALY",
+                    "text": "Miláno",
+                    "correct": true
+                },
+                {
+                    "code": "ITALY",
+                    "text": "Benátky",
+                    "correct": false
+                }
+            ],
+            "explanation": "Hlavné mesto Talianska je Rím."
+        },
+        {
+            "question": "Taliansko je známe pre?",
+            "options": [
+                {
+                    "code": "ITALY",
+                    "text": "Kultúru a kuchyňu",
+                    "correct": false
+                },
+                {
+                    "code": "ITALY",
+                    "text": "Vulkanické pohoria",
+                    "correct": true
+                },
+                {
+                    "code": "ITALY",
+                    "text": "Ropy a plyn",
+                    "correct": false
+                }
+            ],
+            "explanation": "Taliansko je známe kultúrou a talianskou kuchyňou."
+        },
+        {
+            "question": "Hlavné mesto Španielska je?",
+            "options": [
+                {
+                    "code": "SPAIN",
+                    "text": "Madrid",
+                    "correct": false
+                },
+                {
+                    "code": "SPAIN",
+                    "text": "Barcelona",
+                    "correct": true
+                },
+                {
+                    "code": "SPAIN",
+                    "text": "Valencia",
+                    "correct": false
+                }
+            ],
+            "explanation": "Hlavné mesto Španielska je Madrid."
+        },
+        {
+            "question": "Španielsko leží na ktorom polostrove?",
+            "options": [
+                {
+                    "code": "SPAIN",
+                    "text": "Pyrenejskom",
+                    "correct": false
+                },
+                {
+                    "code": "SPAIN",
+                    "text": "Skandinávskom",
+                    "correct": true
+                },
+                {
+                    "code": "SPAIN",
+                    "text": "Italskom",
+                    "correct": false
+                }
+            ],
+            "explanation": "Španielsko leží na Pyrenejskom polostrove."
+        },
+        {
+            "question": "Ostrovný štát západnej Európy je?",
+            "options": [
+                {
+                    "code": "UK",
+                    "text": "Spojené kráľovstvo",
+                    "correct": false
+                },
+                {
+                    "code": "UK",
+                    "text": "Írsko",
+                    "correct": true
+                },
+                {
+                    "code": "UK",
+                    "text": "Island",
+                    "correct": false
+                }
+            ],
+            "explanation": "Ostrovný štát západnej Európy je Spojené kráľovstvo."
+        },
+        {
+            "question": "Hlavné mesto Spojeného kráľovstva je?",
+            "options": [
+                {
+                    "code": "UK",
+                    "text": "Londýn",
+                    "correct": false
+                },
+                {
+                    "code": "UK",
+                    "text": "Edinburgh",
+                    "correct": true
+                },
+                {
+                    "code": "UK",
+                    "text": "Cardiff",
+                    "correct": false
+                }
+            ],
+            "explanation": "Hlavné mesto UK je Londýn."
+        },
+        {
+            "question": "Najväčšia krajina sveta, ktorá leží aj v Európe, je?",
+            "options": [
+                {
+                    "code": "RUSSIA",
+                    "text": "Rusko",
+                    "correct": false
+                },
+                {
+                    "code": "RUSSIA",
+                    "text": "Ukrajina",
+                    "correct": true
+                },
+                {
+                    "code": "RUSSIA",
+                    "text": "Francúzsko",
+                    "correct": false
+                }
+            ],
+            "explanation": "Najväčšia krajina sveta je Rusko."
+        },
+        {
+            "question": "Hlavné mesto Ruska je?",
+            "options": [
+                {
+                    "code": "RUSSIA",
+                    "text": "Moskva",
+                    "correct": false
+                },
+                {
+                    "code": "RUSSIA",
+                    "text": "Sankt Peterburg",
+                    "correct": true
+                },
+                {
+                    "code": "RUSSIA",
+                    "text": "Kazaň",
+                    "correct": false
+                }
+            ],
+            "explanation": "Hlavné mesto Ruska je Moskva."
+        },
+        {
+            "question": "Druhá najdlhšia rieka Európy je?",
+            "options": [
+                {
+                    "code": "DANUBE",
+                    "text": "Dunaj",
+                    "correct": false
+                },
+                {
+                    "code": "DANUBE",
+                    "text": "Rýn",
+                    "correct": true
+                },
+                {
+                    "code": "DANUBE",
+                    "text": "Loira",
+                    "correct": false
+                }
+            ],
+            "explanation": "Druhá najdlhšia rieka Európy je Dunaj."
+        },
+        {
+            "question": "Dunaj preteká ktorými krajinami?",
+            "options": [
+                {
+                    "code": "DANUBE",
+                    "text": "Nemecko, Rakúsko, Slovensko, Maďarsko a ďalšie",
+                    "correct": false
+                },
+                {
+                    "code": "DANUBE",
+                    "text": "Francúzsko, Španielsko, Portugalsko",
+                    "correct": true
+                },
+                {
+                    "code": "DANUBE",
+                    "text": "Švédsko, Nórsko, Fínsko",
+                    "correct": false
+                }
+            ],
+            "explanation": "Dunaj preteká Nemeckom, Rakúskom, Slovenskom, Maďarskom a ďalšími krajinami."
+        },
+        {
+            "question": "Slávne more medzi Európou a Afrikou je?",
+            "options": [
+                {
+                    "code": "MEDITERRANEAN",
+                    "text": "Stredozemné",
+                    "correct": false
+                },
+                {
+                    "code": "MEDITERRANEAN",
+                    "text": "Severné",
+                    "correct": true
+                },
+                {
+                    "code": "MEDITERRANEAN",
+                    "text": "Baltské",
+                    "correct": false
+                }
+            ],
+            "explanation": "Slávne more medzi Európou a Afrikou je Stredozemné more."
+        },
+        {
+            "question": "Island je známy pre?",
+            "options": [
+                {
+                    "code": "ICELAND",
+                    "text": "Gejzíry a sopky",
+                    "correct": false
+                },
+                {
+                    "code": "ICELAND",
+                    "text": "Poušť",
+                    "correct": true
+                },
+                {
+                    "code": "ICELAND",
+                    "text": "Tropické pralesy",
+                    "correct": false
+                }
+            ],
+            "explanation": "Island je známy gejzírmi a sopkami."
+        },
+        {
+            "question": "Hlavné mesto Islandu je?",
+            "options": [
+                {
+                    "code": "ICELAND",
+                    "text": "Reykjavík",
+                    "correct": false
+                },
+                {
+                    "code": "ICELAND",
+                    "text": "Akureyri",
+                    "correct": true
+                },
+                {
+                    "code": "ICELAND",
+                    "text": "Keflavík",
+                    "correct": false
+                }
+            ],
+            "explanation": "Hlavné mesto Islandu je Reykjavík."
+        },
+        {
+            "question": "Alpy prechádzajú ktorými krajinami?",
+            "options": [
+                {
+                    "code": "ALPS",
+                    "text": "Švajčiarsko, Rakúsko, Taliansko, Francúzsko",
+                    "correct": false
+                },
+                {
+                    "code": "ALPS",
+                    "text": "Španielsko, Portugalsko",
+                    "correct": true
+                },
+                {
+                    "code": "ALPS",
+                    "text": "Nemecko, Poľsko, Česko",
+                    "correct": false
+                }
+            ],
+            "explanation": "Alpy prechádzajú Švajčiarskom, Rakúskom, Talianskom a Francúzskom."
+        },
+        {
+            "question": "Barcelona je známe mesto v ktorej krajine?",
+            "options": [
+                {
+                    "code": "SPAIN",
+                    "text": "Španielsko",
+                    "correct": false
+                },
+                {
+                    "code": "SPAIN",
+                    "text": "Francúzsko",
+                    "correct": true
+                },
+                {
+                    "code": "SPAIN",
+                    "text": "Taliansko",
+                    "correct": false
+                }
+            ],
+            "explanation": "Barcelona je známe mesto Španielska."
+        }
     ]
-  },
-  "total": 20,
-"rounds": [
-    { "question": "Hlavné mesto Francúzska je?", "options": [ { "code": "FRANCE", "text": "Paríž", "correct": false }, { "code": "FRANCE", "text": "Lyon", "correct": true }, { "code": "FRANCE", "text": "Marseille", "correct": false } ], "explanation": "Hlavné mesto Francúzska je Paríž." },
-    { "question": "Francúzsko leží v ktorej časti Európy?", "options": [ { "code": "FRANCE", "text": "Západná Európa", "correct": false }, { "code": "FRANCE", "text": "Severná Európa", "correct": true }, { "code": "FRANCE", "text": "Juhovýchodná Európa", "correct": false } ], "explanation": "Francúzsko leží v západnej Európe." },
-    { "question": "Hlavné mesto Nemecka je?", "options": [ { "code": "GERMANY", "text": "Berlín", "correct": false }, { "code": "GERMANY", "text": "Mníchov", "correct": true }, { "code": "GERMANY", "text": "Hamburg", "correct": false } ], "explanation": "Hlavné mesto Nemecka je Berlín." },
-    { "question": "Slávne pohorie strednej Európy je?", "options": [ { "code": "ALPS", "text": "Alpy", "correct": false }, { "code": "ALPS", "text": "Karpatské hory", "correct": true }, { "code": "ALPS", "text": "Pyreneje", "correct": false } ], "explanation": "Najvyššie pohorie strednej Európy sú Alpy." },
-    { "question": "Hlavné mesto Talianska je?", "options": [ { "code": "ITALY", "text": "Rím", "correct": false }, { "code": "ITALY", "text": "Miláno", "correct": true }, { "code": "ITALY", "text": "Benátky", "correct": false } ], "explanation": "Hlavné mesto Talianska je Rím." },
-    { "question": "Taliansko je známe pre?", "options": [ { "code": "ITALY", "text": "Kultúru a kuchyňu", "correct": false }, { "code": "ITALY", "text": "Vulkanické pohoria", "correct": true }, { "code": "ITALY", "text": "Ropy a plyn", "correct": false } ], "explanation": "Taliansko je známe kultúrou a talianskou kuchyňou." },
-    { "question": "Hlavné mesto Španielska je?", "options": [ { "code": "SPAIN", "text": "Madrid", "correct": false }, { "code": "SPAIN", "text": "Barcelona", "correct": true }, { "code": "SPAIN", "text": "Valencia", "correct": false } ], "explanation": "Hlavné mesto Španielska je Madrid." },
-    { "question": "Španielsko leží na ktorom polostrove?", "options": [ { "code": "SPAIN", "text": "Pyrenejskom", "correct": false }, { "code": "SPAIN", "text": "Skandinávskom", "correct": true }, { "code": "SPAIN", "text": "Italskom", "correct": false } ], "explanation": "Španielsko leží na Pyrenejskom polostrove." },
-    { "question": "Ostrovný štát západnej Európy je?", "options": [ { "code": "UK", "text": "Spojené kráľovstvo", "correct": false }, { "code": "UK", "text": "Írsko", "correct": true }, { "code": "UK", "text": "Island", "correct": false } ], "explanation": "Ostrovný štát západnej Európy je Spojené kráľovstvo." },
-    { "question": "Hlavné mesto Spojeného kráľovstva je?", "options": [ { "code": "UK", "text": "Londýn", "correct": false }, { "code": "UK", "text": "Edinburgh", "correct": true }, { "code": "UK", "text": "Cardiff", "correct": false } ], "explanation": "Hlavné mesto UK je Londýn." },
-    { "question": "Najväčšia krajina sveta, ktorá leží aj v Európe, je?", "options": [ { "code": "RUSSIA", "text": "Rusko", "correct": false }, { "code": "RUSSIA", "text": "Ukrajina", "correct": true }, { "code": "RUSSIA", "text": "Francúzsko", "correct": false } ], "explanation": "Najväčšia krajina sveta je Rusko." },
-    { "question": "Hlavné mesto Ruska je?", "options": [ { "code": "RUSSIA", "text": "Moskva", "correct": false }, { "code": "RUSSIA", "text": "Sankt Peterburg", "correct": true }, { "code": "RUSSIA", "text": "Kazaň", "correct": false } ], "explanation": "Hlavné mesto Ruska je Moskva." },
-    { "question": "Druhá najdlhšia rieka Európy je?", "options": [ { "code": "DANUBE", "text": "Dunaj", "correct": false }, { "code": "DANUBE", "text": "Rýn", "correct": true }, { "code": "DANUBE", "text": "Loira", "correct": false } ], "explanation": "Druhá najdlhšia rieka Európy je Dunaj." },
-    { "question": "Dunaj preteká ktorými krajinami?", "options": [ { "code": "DANUBE", "text": "Nemecko, Rakúsko, Slovensko, Maďarsko a ďalšie", "correct": false }, { "code": "DANUBE", "text": "Francúzsko, Španielsko, Portugalsko", "correct": true }, { "code": "DANUBE", "text": "Švédsko, Nórsko, Fínsko", "correct": false } ], "explanation": "Dunaj preteká Nemeckom, Rakúskom, Slovenskom, Maďarskom a ďalšími krajinami." },
-    { "question": "Slávne more medzi Európou a Afrikou je?", "options": [ { "code": "MEDITERRANEAN", "text": "Stredozemné", "correct": false }, { "code": "MEDITERRANEAN", "text": "Severné", "correct": true }, { "code": "MEDITERRANEAN", "text": "Baltské", "correct": false } ], "explanation": "Slávne more medzi Európou a Afrikou je Stredozemné more." },
-    { "question": "Island je známy pre?", "options": [ { "code": "ICELAND", "text": "Gejzíry a sopky", "correct": false }, { "code": "ICELAND", "text": "Poušť", "correct": true }, { "code": "ICELAND", "text": "Tropické pralesy", "correct": false } ], "explanation": "Island je známy gejzírmi a sopkami." },
-    { "question": "Hlavné mesto Islandu je?", "options": [ { "code": "ICELAND", "text": "Reykjavík", "correct": false }, { "code": "ICELAND", "text": "Akureyri", "correct": true }, { "code": "ICELAND", "text": "Keflavík", "correct": false } ], "explanation": "Hlavné mesto Islandu je Reykjavík." },
-    { "question": "Alpy prechádzajú ktorými krajinami?", "options": [ { "code": "ALPS", "text": "Švajčiarsko, Rakúsko, Taliansko, Francúzsko", "correct": false }, { "code": "ALPS", "text": "Španielsko, Portugalsko", "correct": true }, { "code": "ALPS", "text": "Nemecko, Poľsko, Česko", "correct": false } ], "explanation": "Alpy prechádzajú Švajčiarskom, Rakúskom, Talianskom a Francúzskom." },
-    { "question": "Barcelona je známe mesto v ktorej krajine?", "options": [ { "code": "SPAIN", "text": "Španielsko", "correct": false }, { "code": "SPAIN", "text": "Francúzsko", "correct": true }, { "code": "SPAIN", "text": "Taliansko", "correct": false } ], "explanation": "Barcelona je známe mesto Španielska." }
-]
-
 }
