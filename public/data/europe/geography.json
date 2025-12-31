@@ -5,33 +5,33 @@
     "facts": {
         "FRANCE": [
             "Krajina v západnej Európe.",
-            "Hlavné mesto je Paríž.",
-            "Známa vinicami a Eiffelovou vežou."
+            "Známa vinicami a Eiffelovou vežou.",
+            "Slávna kuchyňou a kultúrou."
         ],
         "GERMANY": [
             "Stredoeurópska krajina.",
-            "Hlavné mesto je Berlín.",
-            "Známym regiónom je Bavorsko."
+            "Známym regiónom je Bavorsko.",
+            "Preslávená históriou a pivom."
         ],
         "ITALY": [
             "Juhoeurópska krajina tvaru čižmy.",
-            "Hlavné mesto je Rím.",
-            "Slávna je kultúrou a talianskou kuchyňou."
+            "Slávna kultúrou a talianskou kuchyňou.",
+            "Mesto Rím je plné historických pamiatok."
         ],
         "SPAIN": [
             "Krajina na Pyrenejskom polostrove.",
-            "Hlavné mesto je Madrid.",
-            "Známym mestom je Barcelona."
+            "Známym mestom je Barcelona.",
+            "Preslávená flamencom a tapas."
         ],
         "UK": [
             "Ostrovný štát západnej Európy.",
-            "Hlavné mesto je Londýn.",
-            "Tvorí ho Anglicko, Škótsko, Wales a Severné Írsko."
+            "Tvorí ho Anglicko, Škótsko, Wales a Severné Írsko.",
+            "Slávna históriou, hradmi a tradíciami."
         ],
         "RUSSIA": [
             "Najväčšia krajina sveta, časť leží v Európe.",
-            "Hlavné mesto je Moskva.",
-            "Rozprestiera sa od východnej Európy po Áziu."
+            "Rozprestiera sa od východnej Európy po Áziu.",
+            "Známym fenoménom je sibírska príroda a jazero Baikal."
         ],
         "ALPS": [
             "Najvyššie pohorie strednej Európy.",
@@ -50,8 +50,8 @@
         ],
         "ICELAND": [
             "Ostrovná krajina severnej Európy.",
-            "Hlavné mesto je Reykjavík.",
-            "Známym prírodným javom sú gejzíry a sopky."
+            "Známym prírodným javom sú gejzíry a sopky.",
+            "Preslávená ľadovcami a horúcimi prameňmi."
         ]
     },
     "total": 20,
