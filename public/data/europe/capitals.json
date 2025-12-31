@@ -288,11 +288,6 @@
                     "correct": false
                 },
                 {
-                    "code": "PL",
-                    "text": "Varšava",
-                    "correct": true
-                },
-                {
                     "code": "CZ",
                     "text": "Praha",
                     "correct": false
