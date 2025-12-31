@@ -139,13 +139,13 @@
                 },
                 {
                     "code": "ROMAN",
-                    "text": "Cestami a právom",
-                    "correct": true
+                    "text": "Filozofiou",
+                    "correct": false
                 },
                 {
                     "code": "ROMAN",
-                    "text": "Filozofiou",
-                    "correct": false
+                    "text": "Cestami a právom",
+                    "correct": true
                 }
             ],
             "explanation": "Rimania vybudovali rozsiahlu sieť ciest a právny systém."
@@ -176,13 +176,13 @@
             "options": [
                 {
                     "code": "VIKING",
-                    "text": "Továrňami",
-                    "correct": false
+                    "text": "Lúpežnými nájazdmi",
+                    "correct": true
                 },
                 {
                     "code": "VIKING",
-                    "text": "Lúpežnými nájazdmi",
-                    "correct": true
+                    "text": "Továrňami",
+                    "correct": false
                 },
                 {
                     "code": "VIKING",
@@ -197,13 +197,13 @@
             "options": [
                 {
                     "code": "MIDDLE",
-                    "text": "Priemyselné mestá",
-                    "correct": false
+                    "text": "Hrady a feudálna spoločnosť",
+                    "correct": true
                 },
                 {
                     "code": "MIDDLE",
-                    "text": "Hrady a feudálna spoločnosť",
-                    "correct": true
+                    "text": "Priemyselné mestá",
+                    "correct": false
                 },
                 {
                     "code": "MIDDLE",
@@ -244,13 +244,13 @@
                 },
                 {
                     "code": "REN",
-                    "text": "V Taliansku",
-                    "correct": true
+                    "text": "V Anglicku",
+                    "correct": false
                 },
                 {
                     "code": "REN",
-                    "text": "V Anglicku",
-                    "correct": false
+                    "text": "V Taliansku",
+                    "correct": true
                 }
             ],
             "explanation": "Renesancia vznikla v talianskych mestách."
@@ -265,13 +265,13 @@
                 },
                 {
                     "code": "REN",
-                    "text": "Obnova antickej kultúry",
-                    "correct": true
+                    "text": "Rozvoj tovární",
+                    "correct": false
                 },
                 {
                     "code": "REN",
-                    "text": "Rozvoj tovární",
-                    "correct": false
+                    "text": "Obnova antickej kultúry",
+                    "correct": true
                 }
             ],
             "explanation": "Renesancia sa inšpirovala antikou."
@@ -302,13 +302,13 @@
             "options": [
                 {
                     "code": "REF",
-                    "text": "10. storočie",
-                    "correct": false
+                    "text": "16. storočie",
+                    "correct": true
                 },
                 {
                     "code": "REF",
-                    "text": "16. storočie",
-                    "correct": true
+                    "text": "10. storočie",
+                    "correct": false
                 },
                 {
                     "code": "REF",
@@ -323,13 +323,13 @@
             "options": [
                 {
                     "code": "INDREV",
-                    "text": "Vo Francúzsku",
-                    "correct": false
+                    "text": "V Británii",
+                    "correct": true
                 },
                 {
                     "code": "INDREV",
-                    "text": "V Británii",
-                    "correct": true
+                    "text": "Vo Francúzsku",
+                    "correct": false
                 },
                 {
                     "code": "INDREV",
@@ -370,13 +370,13 @@
                 },
                 {
                     "code": "WW2",
-                    "text": "Porážkou nacistického Nemecka",
-                    "correct": true
+                    "text": "Rozpadom EÚ",
+                    "correct": false
                 },
                 {
                     "code": "WW2",
-                    "text": "Rozpadom EÚ",
-                    "correct": false
+                    "text": "Porážkou nacistického Nemecka",
+                    "correct": true
                 }
             ],
             "explanation": "Druhá svetová vojna skončila v roku 1945."
