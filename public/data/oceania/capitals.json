@@ -138,7 +138,7 @@
       "options": [
         { "code": "WS", "text": "Apia", "correct": false },
         { "code": "FJ", "text": "Suva", "correct": true },
-        { "code": "TO", "text": "Nukuʻalofa", "correct": false }
+        { "code": "TO", "text": "Nukualofa", "correct": false }
       ],
       "explanation": "Hlavné mesto Fidži je Suva."
     },
@@ -164,7 +164,7 @@
       "question": "Aké je hlavné mesto Samoy?",
       "options": [
         { "code": "FJ", "text": "Suva", "correct": false },
-        { "code": "TO", "text": "Nukuʻalofa", "correct": false },
+        { "code": "TO", "text": "Nukualofa", "correct": false },
         { "code": "WS", "text": "Apia", "correct": true }
       ],
       "explanation": "Hlavné mesto Samoy je Apia."
@@ -174,9 +174,9 @@
       "options": [
         { "code": "FJ", "text": "Suva", "correct": false },
         { "code": "WS", "text": "Apia", "correct": false },
-        { "code": "TO", "text": "Nukuʻalofa", "correct": true }
+        { "code": "TO", "text": "Nukualofa", "correct": true }
       ],
-      "explanation": "Hlavné mesto Tongy je Nukuʻalofa."
+      "explanation": "Hlavné mesto Tongy je Nukualofa."
     },
     {
       "question": "Ktoré mesto je sídlom vlády Nauru?",
