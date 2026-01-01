@@ -1,186 +1,485 @@
 {
-  "id": "history_oceania",
-  "name": "História Oceánie",
-  "description": "Otázky z histórie Oceánie pre 8. ročník ZŠ",
-  "facts": {
-    "ABOR": [
-      "Pôvodní obyvatelia Austrálie.",
-      "Majú bohatú ústnu tradíciu a mýty.",
-      "Žili lovom a zberom."
-    ],
-    "MAORI": [
-      "Pôvodní obyvatelia Nového Zélandu.",
-      "Preslávili sa bojovou kultúrou a tetovaním.",
-      "Vytvorili vlastné osady a dediny."
-    ],
-    "COL_OCE": [
-      "Európske krajiny kolonizovali Oceániu.",
-      "Začalo sa v 18. a 19. storočí.",
-      "Ovplyvnilo pôvodné obyvateľstvo."
-    ],
-    "AU_IND": [
-      "Austrália bola britskou kolóniou.",
-      "Vznikla ako trestanecká kolónia.",
-      "Postupne získala samosprávu."
-    ],
-    "NZ_IND": [
-      "Nový Zéland bol britskou kolóniou.",
-      "Vytvoril vlastný parlament.",
-      "Stal sa nezávislým štátom."
-    ],
-    "WW1": [
-      "Oceánia sa zapojila do prvej svetovej vojny.",
-      "Austrália a Nový Zéland bojovali po boku Británie.",
-      "Zúčastnili sa aj na Gallipolskom fronte."
-    ],
-    "WW2": [
-      "Bojovalo sa na tichomorskom fronte.",
-      "Japonsko okupovalo niektoré ostrovy.",
-      "USA a Austrália bojovali proti Japonsku."
-    ],
-    "MODERN": [
-      "Oceánia je dnes súčasťou moderného sveta.",
-      "Má rozvinuté štáty ako Austrália a Nový Zéland.",
-      "Zachovávajú sa tradície pôvodných obyvateľov."
+    "id": "geografia_oceania",
+    "name": "Geografia Oceánie",
+    "description": "Otázky z geografie Oceánie pre 8. ročník ZŠ",
+    "facts": {
+        "AUSTRALIA": [
+            "Najväčšia krajina Oceánie.",
+            "Hlavné mesto je Canberra.",
+            "Má púšte, savany a veľké mestá na pobreží."
+        ],
+        "NEWZEALAND": [
+            "Ostrovy na juhovýchode Oceánie.",
+            "Rozmanité podnebie, hory a fjordy.",
+            "Známym je aj svojou bohatosťou na endemickú flóru a faunu."
+        ],
+        "PAPUA": [
+            "Papua Nová Guinea leží na sever od Austrálie.",
+            "Hlavné mesto je Port Moresby.",
+            "Dážďové pralesy a horské oblasti."
+        ],
+        "GREATBARRIER": [
+            "Najväčší koralový útes na svete.",
+            "Nachádza sa pri pobreží Austrálie.",
+            "Bohatý morský život."
+        ],
+        "AYERSROCK": [
+            "Obrovská skalná formácia v Austrálii.",
+            "Tiež známa ako Uluru.",
+            "Dôležité miesto pre pôvodných obyvateľov."
+        ],
+        "FIJI": [
+            "Ostrovy v južnom Tichom oceáne.",
+            "Hlavné mesto je Suva.",
+            "Obľúbené turistické destinácie a pláže."
+        ],
+        "SAMOA": [
+            "Ostrovy v južnom Tichom oceáne.",
+            "Hlavné mesto je Apia.",
+            "Kultúra a tradície Polynézanov."
+        ],
+        "TONGA": [
+            "Skladá sa z viac ako 170 ostrovov roztrúsených v južnom Tichom oceáne.",
+            "Väčšina ostrovov je vulkanického pôvodu a neobývaná.",
+            "Zachovalo si tradičné spoločenstvo a kultúrne zvyky Polynézanov."
+        ],
+        "VANUATU": [
+            "Ostrovy v južnom Tichom oceáne.",
+            "Hlavné mesto je Port Vila.",
+            "Sopečná činnosť a tropické lesy."
+        ],
+        "MELANESIA": [
+            "Regionálna oblasť Oceánie.",
+            "Zahŕňa ostrovy ako Papua Nová Guinea a Vanuatu.",
+            "Rozmanité kultúry a prírodné prostredie."
+        ],
+        "HAWAII": [
+            "Ostrovy v centrálnej časti Tichého oceánu.",
+            "Patrí k USA.",
+            "Sopečný pôvod a tropická vegetácia."
+        ]
+    },
+    "total": 20,
+    "rounds": [
+        {
+            "question": "Najväčšia krajina Oceánie je?",
+            "options": [
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Nový Zéland",
+                    "correct": false
+                },
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Austrália",
+                    "correct": true
+                },
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Papua Nová Guinea",
+                    "correct": false
+                }
+            ],
+            "explanation": "Najväčšia krajina Oceánie je Austrália."
+        },
+        {
+            "question": "Ktorá krajina leží na juhovýchode Oceánie a má rozmanité podnebie?",
+            "options": [
+                {
+                    "code": "NEWZEALAND",
+                    "text": "Nový Zéland",
+                    "correct": true
+                },
+                {
+                    "code": "FIJI",
+                    "text": "Fidži",
+                    "correct": false
+                },
+                {
+                    "code": "TONGA",
+                    "text": "Tonga",
+                    "correct": false
+                }
+            ],
+            "explanation": "Nový Zéland má rozmanité podnebie, hory a fjordy."
+        },
+        {
+            "question": "Papua Nová Guinea leží kde?",
+            "options": [
+                {
+                    "code": "PAPUA",
+                    "text": "Juh od Nového Zélandu",
+                    "correct": false
+                },
+                {
+                    "code": "PAPUA",
+                    "text": "Východne od Fidži",
+                    "correct": false
+                },
+                {
+                    "code": "PAPUA",
+                    "text": "Severne od Austrálie",
+                    "correct": true
+                }
+            ],
+            "explanation": "Papua Nová Guinea leží severne od Austrálie."
+        },
+        {
+            "question": "Najväčší koralový útes na svete sa nachádza pri?",
+            "options": [
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Fidži",
+                    "correct": false
+                },
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Novom Zélande",
+                    "correct": false
+                },
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Austrálii",
+                    "correct": true
+                }
+            ],
+            "explanation": "Najväčší koralový útes je pri pobreží Austrálie."
+        },
+        {
+            "question": "Uluru je známa aj ako?",
+            "options": [
+                {
+                    "code": "AYERSROCK",
+                    "text": "Mount Kosciuszko",
+                    "correct": false
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Ayers Rock",
+                    "correct": true
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Mount Cook",
+                    "correct": false
+                }
+            ],
+            "explanation": "Uluru je známa ako Ayers Rock."
+        },
+        {
+            "question": "Uluru je dôležité miesto pre koho?",
+            "options": [
+                {
+                    "code": "AYERSROCK",
+                    "text": "Pôvodných obyvateľov",
+                    "correct": true
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Turistov",
+                    "correct": false
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Vládu Austrálie",
+                    "correct": false
+                }
+            ],
+            "explanation": "Uluru je dôležité miesto pre pôvodných obyvateľov."
+        },
+        {
+            "question": "Fidži sa nachádza v ktorom oceáne?",
+            "options": [
+                {
+                    "code": "FIJI",
+                    "text": "Indický oceán",
+                    "correct": false
+                },
+                {
+                    "code": "FIJI",
+                    "text": "Tichý oceán",
+                    "correct": true
+                },
+                {
+                    "code": "FIJI",
+                    "text": "Atlantský oceán",
+                    "correct": false
+                }
+            ],
+            "explanation": "Fidži sa nachádza v Tichom oceáne."
+        },
+        {
+            "question": "Samoa je známa pre:",
+            "options": [
+                {
+                    "code": "SAMOA",
+                    "text": "Kultúru a tradície Polynézanov",
+                    "correct": true
+                },
+                {
+                    "code": "SAMOA",
+                    "text": "Sopečnú činnosť",
+                    "correct": false
+                },
+                {
+                    "code": "SAMOA",
+                    "text": "Rozsiahle púšte",
+                    "correct": false
+                }
+            ],
+            "explanation": "Samoa je známa pre kultúru a tradície Polynézanov."
+        },
+        {
+            "question": "Tonga je:",
+            "options": [
+                {
+                    "code": "TONGA",
+                    "text": "Malá ostrovná krajina",
+                    "correct": true
+                },
+                {
+                    "code": "TONGA",
+                    "text": "Veľký kontinent",
+                    "correct": false
+                },
+                {
+                    "code": "TONGA",
+                    "text": "Časť Havaja",
+                    "correct": false
+                }
+            ],
+            "explanation": "Tonga je malá ostrovná krajina v Tichom oceáne."
+        },
+        {
+            "question": "Vanuatu je známe pre:",
+            "options": [
+                {
+                    "code": "VANUATU",
+                    "text": "Sopečnú činnosť a tropické lesy",
+                    "correct": true
+                },
+                {
+                    "code": "VANUATU",
+                    "text": "Rozsiahle púšte",
+                    "correct": false
+                },
+                {
+                    "code": "VANUATU",
+                    "text": "Arktické podnebie",
+                    "correct": false
+                }
+            ],
+            "explanation": "Vanuatu má sopečnú činnosť a tropické lesy."
+        },
+        {
+            "question": "Melanézia zahŕňa:",
+            "options": [
+                {
+                    "code": "MELANESIA",
+                    "text": "Fidži a Tonga",
+                    "correct": false
+                },
+                {
+                    "code": "MELANESIA",
+                    "text": "Samoa a Havaj",
+                    "correct": false
+                },
+                {
+                    "code": "MELANESIA",
+                    "text": "Papua Nová Guinea a Vanuatu",
+                    "correct": true
+                }
+            ],
+            "explanation": "Melanézia zahŕňa Papua Novú Guineu a Vanuatu."
+        },
+        {
+            "question": "Veľký bariérový útes je známy pre:",
+            "options": [
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Bohatý morský život",
+                    "correct": true
+                },
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Suchú púšť",
+                    "correct": false
+                },
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Horské priesmyky",
+                    "correct": false
+                }
+            ],
+            "explanation": "Veľký bariérový útes je bohatý na morský život."
+        },
+        {
+            "question": "Papua Nová Guinea má:",
+            "options": [
+                {
+                    "code": "PAPUA",
+                    "text": "Husté dažďové pralesy",
+                    "correct": true
+                },
+                {
+                    "code": "PAPUA",
+                    "text": "Rozsiahle púšte",
+                    "correct": false
+                },
+                {
+                    "code": "PAPUA",
+                    "text": "Polárne ľadovce",
+                    "correct": false
+                }
+            ],
+            "explanation": "Papua Nová Guinea má dažďové pralesy a horské oblasti."
+        },
+        {
+            "question": "Havaj patrí k:",
+            "options": [
+                {
+                    "code": "HAWAII",
+                    "text": "USA",
+                    "correct": true
+                },
+                {
+                    "code": "HAWAII",
+                    "text": "Kanade",
+                    "correct": false
+                },
+                {
+                    "code": "HAWAII",
+                    "text": "Novému Zélandu",
+                    "correct": false
+                }
+            ],
+            "explanation": "Havaj patrí USA."
+        },
+        {
+            "question": "Aký je najväčší štát v Oceánii podľa rozlohy?",
+            "options": [
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Austrália",
+                    "correct": true
+                },
+                {
+                    "code": "NEWZEALAND",
+                    "text": "Nový Zéland",
+                    "correct": false
+                },
+                {
+                    "code": "PAPUANEWGUINEA",
+                    "text": "Papua Nová Guinea",
+                    "correct": false
+                }
+            ],
+            "explanation": "Najväčším štátom v Oceánii je Austrália, ktorá zaberá takmer celý kontinent."
+        },
+        {
+            "question": "Ktorý ostrov je známy ako sopka a turistická destinácia v Tichomorí?",
+            "options": [
+                {
+                    "code": "FIJI",
+                    "text": "Fidži",
+                    "correct": true
+                },
+                {
+                    "code": "TONGA",
+                    "text": "Tonga",
+                    "correct": false
+                },
+                {
+                    "code": "VANUATU",
+                    "text": "Vanuatu",
+                    "correct": false
+                }
+            ],
+            "explanation": "Fidži je známe svojimi sopkami a populárnymi turistickými destináciami."
+        },
+        {
+            "question": "Ktorá krajina je známa svojimi Maorskými tradíciami?",
+            "options": [
+                {
+                    "code": "NEWZEALAND",
+                    "text": "Nový Zéland",
+                    "correct": true
+                },
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Austrália",
+                    "correct": false
+                },
+                {
+                    "code": "SAMOA",
+                    "text": "Samoa",
+                    "correct": false
+                }
+            ],
+            "explanation": "Maori sú pôvodní obyvatelia Nového Zélandu a ich tradície sú veľmi známe."
+        },
+        {
+            "question": "Aká je hlavná činnosť pôvodných Aborigénov v minulosti?",
+            "options": [
+                {
+                    "code": "ABOR",
+                    "text": "Lov a zber",
+                    "correct": true
+                },
+                {
+                    "code": "ABOR",
+                    "text": "Poľnohospodárstvo na farmách",
+                    "correct": false
+                },
+                {
+                    "code": "ABOR",
+                    "text": "Rybolov pri pobreží",
+                    "correct": false
+                }
+            ],
+            "explanation": "Aborigéni sa tradične živili lovom a zberom."
+        },
+        {
+            "question": "Ktorý oceán obmýva Austráliu na východe?",
+            "options": [
+                {
+                    "code": "PACIFIC",
+                    "text": "Tichý oceán",
+                    "correct": true
+                },
+                {
+                    "code": "INDIAN",
+                    "text": "Indický oceán",
+                    "correct": false
+                },
+                {
+                    "code": "ATLANTIC",
+                    "text": "Atlantický oceán",
+                    "correct": false
+                }
+            ],
+            "explanation": "Na východnom pobreží Austrálie sa nachádza Tichý oceán."
+        },
+        {
+            "question": "Ayers Rock (Uluru) sa nachádza v:",
+            "options": [
+                {
+                    "code": "AYERSROCK",
+                    "text": "Novom Zélande",
+                    "correct": false
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Austrálii",
+                    "correct": true
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Papua Novej Guinei",
+                    "correct": false
+                }
+            ],
+            "explanation": "Ayers Rock, známy aj ako Uluru, sa nachádza v Austrálii."
+        }
     ]
-  },
-  "total": 15,
-  "rounds": [
-  {
-    "question": "Kto sú pôvodní obyvatelia Austrálie?",
-    "options": [
-      { "code": "ABOR", "text": "Maori", "correct": false },
-      { "code": "ABOR", "text": "Aborigéni", "correct": true },
-      { "code": "ABOR", "text": "Polynézania", "correct": false }
-    ],
-    "explanation": "Pôvodnými obyvateľmi Austrálie sú Aborigéni."
-  },
-  {
-    "question": "Ako žili Aborigéni v minulosti?",
-    "options": [
-      { "code": "ABOR", "text": "Priemyselnou výrobou", "correct": false },
-      { "code": "ABOR", "text": "Lovom a zberom", "correct": true },
-      { "code": "ABOR", "text": "Poľnohospodárstvom na veľkých farmách", "correct": false }
-    ],
-    "explanation": "Aborigéni žili lovom a zberom."
-  },
-  {
-    "question": "Kto sú pôvodní obyvatelia Nového Zélandu?",
-    "options": [
-      { "code": "MAORI", "text": "Austrálčania", "correct": false },
-      { "code": "MAORI", "text": "Maori", "correct": true },
-      { "code": "MAORI", "text": "Aborigéni", "correct": false }
-    ],
-    "explanation": "Pôvodní obyvatelia Nového Zélandu sú Maori."
-  },
-  {
-    "question": "Čím sa preslávili Maori?",
-    "options": [
-      { "code": "MAORI", "text": "Rímskymi cestami", "correct": false },
-      { "code": "MAORI", "text": "Bojovou kultúrou a tetovaním", "correct": true },
-      { "code": "MAORI", "text": "Stavbou pyramíd", "correct": false }
-    ],
-    "explanation": "Maori sú známi bojovou kultúrou a tetovaním."
-  },
-  {
-    "question": "Kedy začala kolonizácia Oceánie Európanmi?",
-    "options": [
-      { "code": "COL_OCE", "text": "15. – 16. storočie", "correct": false },
-      { "code": "COL_OCE", "text": "20. storočie", "correct": false },
-      { "code": "COL_OCE", "text": "18. – 19. storočie", "correct": true }
-    ],
-    "explanation": "Kolonizácia začala v 18. a 19. storočí."
-  },
-  {
-    "question": "Čo spôsobila kolonizácia Oceánie?",
-    "options": [
-      { "code": "COL_OCE", "text": "Zánik Európy", "correct": false },
-      { "code": "COL_OCE", "text": "Ovplyvnila pôvodné obyvateľstvo", "correct": true },
-      { "code": "COL_OCE", "text": "Vznik rímskej ríše", "correct": false }
-    ],
-    "explanation": "Kolonizácia výrazne ovplyvnila pôvodných obyvateľov."
-  },
-  {
-    "question": "Ako vznikla Austrália ako kolónia?",
-    "options": [
-      { "code": "AU_IND", "text": "Ako nezávislý štát", "correct": false },
-      { "code": "AU_IND", "text": "Ako britská trestanecká kolónia", "correct": true },
-      { "code": "AU_IND", "text": "Ako francúzska kolónia", "correct": false }
-    ],
-    "explanation": "Austrália vznikla ako trestanecká kolónia Británie."
-  },
-  {
-    "question": "Čo získala Austrália postupne?",
-    "options": [
-      { "code": "AU_IND", "text": "Rímske právo", "correct": false },
-      { "code": "AU_IND", "text": "Samosprávu", "correct": true },
-      { "code": "AU_IND", "text": "Kolónie v Európe", "correct": false }
-    ],
-    "explanation": "Austrália postupne získala samosprávu."
-  },
-  {
-    "question": "Ako bol spravovaný Nový Zéland počas kolonizácie?",
-    "options": [
-      { "code": "NZ_IND", "text": "Ako španielska kolónia", "correct": false },
-      { "code": "NZ_IND", "text": "Ako britská kolónia", "correct": true },
-      { "code": "NZ_IND", "text": "Ako francúzska kolónia", "correct": false }
-    ],
-    "explanation": "Nový Zéland bol britskou kolóniou."
-  },
-  {
-    "question": "Čo si Nový Zéland vytvoril počas cesty k nezávislosti?",
-    "options": [
-      { "code": "NZ_IND", "text": "Kolónie v Afrike", "correct": false },
-      { "code": "NZ_IND", "text": "Vlastný parlament", "correct": true },
-      { "code": "NZ_IND", "text": "Cisárstvo", "correct": false }
-    ],
-    "explanation": "Nový Zéland si vytvoril vlastný parlament."
-  },
-  {
-    "question": "Kto bojoval po boku Británie v prvej svetovej vojne?",
-    "options": [
-      { "code": "WW1", "text": "Čína a India", "correct": false },
-      { "code": "WW1", "text": "Austrália a Nový Zéland", "correct": true },
-      { "code": "WW1", "text": "Japonsko a USA", "correct": false }
-    ],
-    "explanation": "Austrália a Nový Zéland bojovali po boku Británie."
-  },
-  {
-    "question": "Na ktorom fronte bojovali vojaci z Oceánie počas prvej svetovej vojny?",
-    "options": [
-      { "code": "WW1", "text": "Východný front", "correct": false },
-      { "code": "WW1", "text": "Gallipolský front", "correct": true },
-      { "code": "WW1", "text": "Západný front", "correct": false }
-    ],
-    "explanation": "Zúčastnili sa bojov na Gallipolskom fronte."
-  },
-  {
-    "question": "Kto bojoval proti Japonsku v druhej svetovej vojne v Tichomorí?",
-    "options": [
-      { "code": "WW2", "text": "Francúzsko a Taliansko", "correct": false },
-      { "code": "WW2", "text": "USA a Austrália", "correct": true },
-      { "code": "WW2", "text": "Británia a Nemecko", "correct": false }
-    ],
-    "explanation": "USA a Austrália bojovali proti Japonsku."
-  },
-  {
-    "question": "Čo sa dialo s niektorými ostrovmi Oceánie počas druhej svetovej vojny?",
-    "options": [
-      { "code": "WW2", "text": "Kolonizovalo ich Španielsko", "correct": false },
-      { "code": "WW2", "text": "Boli okupované Japonskom", "correct": true },
-      { "code": "WW2", "text": "Stali sa nezávislými", "correct": false }
-    ],
-    "explanation": "Niektoré ostrovy okupovalo Japonsko."
-  },
-  {
-    "question": "Ako vyzerá Oceánia v súčasnosti?",
-    "options": [
-      { "code": "MODERN", "text": "Je izolovaná od sveta", "correct": false },
-      { "code": "MODERN", "text": "Má rozvinuté štáty a zachováva tradície pôvodných obyvateľov", "correct": true },
-      { "code": "MODERN", "text": "Je pod koloniálnou správou", "correct": false }
-    ],
-    "explanation": "Oceánia je dnes moderná a zároveň si chráni tradície."
-  }
-]
-
 }
