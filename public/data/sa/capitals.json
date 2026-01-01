@@ -3,71 +3,71 @@
     "name": "Hlavné mestá Južnej Ameriky",
     "description": "Otázky o hlavných mestách Južnej Ameriky pre 8. ročník ZŠ",
     "facts": {
-        "BR": [
-            "Nie je najväčším mestom krajiny.",
-            "Bolo postavené vo vnútrozemí.",
-            "Je známe modernou architektúrou."
-        ],
-        "AR": [
-            "Leží pri rieke La Plata.",
-            "Je kultúrnym centrom krajiny.",
-            "Má silný európsky vplyv."
-        ],
-        "CL": [
-            "Leží v údolí medzi Andami.",
-            "Je politickým a hospodárskym centrom.",
-            "Patrí medzi najväčšie mestá krajiny."
-        ],
-        "PE": [
-            "Leží pri pobreží Tichého oceánu.",
-            "Má bohatú koloniálnu históriu.",
-            "Je najväčším mestom krajiny."
-        ],
-        "CO": [
-            "Leží vysoko v Andách.",
-            "Má mierne podnebie po celý rok.",
-            "Je politickým centrom krajiny."
-        ],
-        "VE": [
-            "Leží blízko Karibského mora.",
-            "Nachádza sa v horskej oblasti.",
-            "Je najväčším mestom krajiny."
-        ],
-        "EC": [
-            "Leží blízko rovníka.",
-            "Patrí medzi najvyššie položené hlavné mestá.",
-            "Má zachované historické centrum."
-        ],
-        "BO": [
-            "Je sídlom vlády krajiny.",
-            "Leží vysoko v Andách.",
-            "Je jedným z najvyššie položených hlavných miest."
-        ],
-        "PY": [
-            "Leží pri rieke Paraguay.",
-            "Je najväčším mestom krajiny.",
-            "Má koloniálnu minulosť."
-        ],
-        "UY": [
-            "Leží pri Atlantickom oceáne.",
-            "Je najväčším mestom krajiny.",
-            "Je významným prístavom."
-        ],
-        "GY": [
-            "Leží pri Atlantickom oceáne.",
-            "Je jedinou anglicky hovoriacou krajinou regiónu.",
-            "Je politickým centrom krajiny."
-        ],
-        "SR": [
-            "Leží pri rieke Suriname.",
-            "Má multikultúrne obyvateľstvo.",
-            "Je najväčším mestom krajiny."
-        ],
-        "GF": [
-            "Je zámorským územím Francúzska.",
-            "Leží pri Atlantickom oceáne.",
-            "Je správnym centrom územia."
-        ]
+     "BR": [
+        "Nie je najväčším mestom krajiny.",
+        "Bolo postavené vo vnútrozemí.",
+        "Je známe modernou architektúrou."
+    ],
+    "AR": [
+        "Leží pri rieke La Plata.",
+        "Je kultúrnym centrom krajiny.",
+        "Má silný európsky vplyv."
+    ],
+    "CL": [
+        "Leží v údolí medzi Andami.",
+        "Je politickým a hospodárskym centrom.",
+        "Patrí medzi najväčšie mestá krajiny."
+    ],
+    "PE": [
+        "Leží pri pobreží Tichého oceánu.",
+        "Má bohatú koloniálnu históriu.",
+        "Je ekonomicky a kultúrne významné."
+    ],
+    "CO": [
+        "Leží vysoko v Andách.",
+        "Má mierne podnebie po celý rok.",
+        "Je politickým a hospodárskym centrom krajiny."
+    ],
+    "VE": [
+        "Leží blízko Karibského mora.",
+        "Nachádza sa v horskej oblasti.",
+        "Je kultúrnym a ekonomickým centrom."
+    ],
+    "EC": [
+        "Leží blízko rovníka.",
+        "Patrí medzi najvyššie položené mestá regiónu.",
+        "Má zachované historické centrum."
+    ],
+    "BO": [
+        "Je sídlom vlády krajiny.",
+        "Leží vysoko v Andách.",
+        "Je jedným z najvyššie položených veľkých miest regiónu."
+    ],
+    "PY": [
+        "Leží pri rieke Paraguay.",
+        "Je významné z hľadiska obchodu a kultúry.",
+        "Má koloniálnu minulosť."
+    ],
+    "UY": [
+        "Leží pri Atlantickom oceáne.",
+        "Je najväčším mestom krajiny.",
+        "Je významným prístavom."
+    ],
+    "GY": [
+        "Leží pri Atlantickom oceáne.",
+        "Je jedinou anglicky hovoriacou krajinou regiónu.",
+        "Je politicko-kultúrnym centrom."
+    ],
+    "SR": [
+        "Leží pri rieke Suriname.",
+        "Má multikultúrne obyvateľstvo.",
+        "Je ekonomicky a kultúrne významné."
+    ],
+    "GF": [
+        "Je zámorským územím Francúzska.",
+        "Leží pri Atlantickom oceáne.",
+        "Slúži ako správne centrum územia."
+    ]
     },
     "total": 15,
     "rounds": [
