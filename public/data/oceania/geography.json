@@ -52,6 +52,11 @@
             "Regionálna oblasť Oceánie.",
             "Zahŕňa ostrovy ako Papua Nová Guinea a Vanuatu.",
             "Rozmanité kultúry a prírodné prostredie."
+        ],
+        "HAWAII": [
+            "Ostrovy v centrálnej časti Tichého oceánu.",
+            "Patrí k USA.",
+            "Sopečný pôvod a tropická vegetácia."
         ]
     },
     "total": 20,
@@ -86,12 +91,12 @@
                     "correct": true
                 },
                 {
-                    "code": "NEWZEALAND",
+                    "code": "FIJI",
                     "text": "Fidži",
                     "correct": false
                 },
                 {
-                    "code": "NEWZEALAND",
+                    "code": "TONGA",
                     "text": "Tonga",
                     "correct": false
                 }
