@@ -52,6 +52,31 @@
             "Ostrovná krajina severnej Európy.",
             "Známym prírodným javom sú gejzíry a sopky.",
             "Preslávená ľadovcami a horúcimi prameňmi."
+        ],
+        "NORWAY": [
+            "Škandinávska krajina známa hlbokými fjordami.",
+            "Krajina polnočného slnka a polárnej žiary.",
+            "Patrí medzi svetových lídrov v ťažbe ropy a rybolove."
+        ],
+        "SWEDEN": [
+            "Najväčšia krajina Škandinávie.",
+            "Domov značiek ako IKEA, Volvo či hudobnej skupiny ABBA.",
+            "Známa svojou nedotknutou prírodou a tisíckami jazier."
+        ],
+        "FINLAND": [
+            "Krajina tisícich jazier v severnej Európe.",
+            "Miesto pôvodu populárnej sauny a Santa Clausa.",
+            "Známa vysokou kvalitou vzdelávania a lesmi."
+        ],
+        "VOLGA": [
+            "Najdlhšia a najvodnatejšia rieka Európy.",
+            "Preteká výhradne územím Ruska.",
+            "Vlieva sa do Kaspického mora."
+        ],
+        "RHINE": [
+            "Dôležitá európska rieka pretekajúca Švajčiarskom, Nemeckom a Holandskom.",
+            "Známa svojím údolím s množstvom hradov a viníc (v Nemecku).",
+            "Jedna z najrušnejších vodných ciest na svete."
         ]
     },
     "total": 20,
