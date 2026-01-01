@@ -454,6 +454,27 @@
                 }
             ],
             "explanation": "Appalačské vrchy sa nachádzajú na východe Severnej Ameriky."
+        },
+        {
+            "question": "Ktorý záliv sa nachádza na juhu USA a Mexika?",
+            "options": [
+                {
+                    "code": "GULF",
+                    "text": "Hudsonov záliv",
+                    "correct": false
+                },
+                {
+                    "code": "GULF",
+                    "text": "Mexický záliv",
+                    "correct": true
+                },
+                {
+                    "code": "GULF",
+                    "text": "Kalifornský záliv",
+                    "correct": false
+                }
+            ],
+            "explanation": "Mexický záliv sa nachádza na juhu USA a pri východnom pobreží Mexika."
         }
     ]
 }
