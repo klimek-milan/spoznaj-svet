@@ -4,54 +4,54 @@
     "description": "Otázky z histórie Severnej Ameriky pre 8. ročník ZŠ",
     "facts": {
         "NA_IND": [
-            "Obývali kontinent pred príchodom Európanov.",
-            "Mali rozmanité kultúry a jazyky.",
-            "Niektoré kmene stavali obydlia z kameňa alebo dreva."
+            "Pôvodní obyvatelia Severnej Ameriky žili na kontinente dávno pred príchodom Európanov.",
+            "Vytvorili stovky rôznych kmeňov s vlastnými jazykmi a tradíciami.",
+            "Ich spôsob života bol prispôsobený prírode a podnebiu."
         ],
         "COLON": [
-            "Začala v 16. storočí.",
-            "Európske mocnosti založili osady.",
-            "Ovplyvnila pôvodných obyvateľov."
+            "Proces začal v 16. storočí príchodom Európanov.",
+            "Európske štáty si nárokovali územia a zakladali kolónie.",
+            "Zásadne zmenil život pôvodného obyvateľstva."
         ],
         "USA_IND": [
-            "Vznikla v 18. storočí.",
-            "Vyhlásila nezávislosť od Británie.",
-            "Má Ústavu a prezidenta."
+            "Vznik nového štátu v 18. storočí.",
+            "Kolónie sa osamostatnili od európskej veľmoci.",
+            "Vznikol nový politický systém založený na ústave."
         ],
         "USA_CIV": [
-            "Prebiehala v 19. storočí.",
-            "Bojovalo sa o otroctvo a moc štátov.",
-            "Vyhrala Severná časť."
+            "Vnútorný konflikt v 19. storočí.",
+            "Sever a juh bojovali o spoločenské a politické otázky.",
+            "Vojna rozhodla o zrušení otroctva."
         ],
         "US_EXP": [
-            "19. storočie.",
-            "Expanzia na západ kontinentu.",
-            "Vznikali nové štáty a železnice."
+            "Obdobie rozširovania územia v 19. storočí.",
+            "Obyvatelia sa presúvali smerom na západ.",
+            "Rozvoj dopravy a osídľovania nových oblastí."
         ],
         "CAN": [
-            "Kolónia Francúzska a Británie.",
-            "Postupne získavala samosprávu.",
-            "Stala sa nezávislým štátom."
+            "Územie ovplyvnené Francúzskom a Britániou.",
+            "Postupne získalo politickú samostatnosť.",
+            "Dnes patrí medzi najväčšie štáty sveta."
         ],
         "MEX": [
-            "Bolo súčasťou Španielskej ríše.",
-            "Vzniklo po boji za nezávislosť.",
-            "Má bohatú kultúru a históriu."
+            "Krajina s koloniálnou minulosťou v Latinskej Amerike.",
+            "Získala nezávislosť po bojoch so Španielskom.",
+            "Spája pôvodné indiánske a európske tradície."
         ],
         "WW1": [
-            "Severná Amerika sa zapojila do prvej svetovej vojny.",
-            "USA vstúpili v roku 1917.",
-            "Kanada bola súčasťou Britského impéria."
+            "Globálny konflikt na začiatku 20. storočia.",
+            "Do vojny sa zapojili aj štáty Severnej Ameriky.",
+            "Mal veľký vplyv na medzinárodnú politiku."
         ],
         "WW2": [
-            "Severná Amerika sa zapojila do druhej svetovej vojny.",
-            "USA vstúpili po útoku na Pearl Harbor.",
-            "Kanada bojovala s Britániou proti Nemecku."
+            "Najväčší vojenský konflikt v dejinách.",
+            "Začal sa v Európe a rozšíril sa do celého sveta.",
+            "Severná Amerika zohrala dôležitú vojenskú úlohu."
         ],
         "COLD": [
-            "Obdobie napätia medzi USA a ZSSR.",
-            "Trvalo od 1947 do 1991.",
-            "Charakterizovalo ho pretekanie v zbrojení a vesmírny pretek."
+            "Dlhodobé politické a ideologické napätie po druhej svetovej vojne.",
+            "Svet bol rozdelený na dva mocenské bloky.",
+            "Súťaž prebiehala vo vede, armáde aj vesmíre."
         ]
     },
     "total": 15,
