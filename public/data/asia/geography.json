@@ -1,270 +1,168 @@
 {
-    "id": "geografia_azia",
-    "name": "Geografia Ázie",
-    "description": "Otázky z geografie Ázie pre 8. ročník ZŠ",
-    "facts": {
-        "CHINA": [
-            "Najľudnatejšia krajina sveta.",
-            "Rozmanité podnebie a krajinný ráz.",
-            "Známá svojimi veľkými riekami a Veľkým múrom."
-        ],
-        "INDIA": [
-            "Druhá najľudnatejšia krajina sveta.",
-            "Má Himaláje na severe a tropické oblasti na juhu.",
-            "Preslávená bohatou kultúrou a festivalmi ako Diwali."
-        ],
-        "RUSSIA": [
-            "Najväčšia krajina sveta podľa rozlohy.",
-            "Rozprestiera sa od Európy po Tichý oceán.",
-            "Známá studenou Sibírou a rozsiahlymi lesmi."
-        ],
-        "JAPAN": [
-            "Ostrovný štát východnej Ázie.",
-            "Tvorí ho viacero ostrovov, najväčší Honšú.",
-            "Preslávená čajovou kultúrou a sakurou."
-        ],
-        "MOUNT_EVEREST": [
-            "Najvyššia hora sveta.",
-            "Leží v Himalájach na hranici Nepálu a Číny.",
-            "Populárna destinácia pre horolezcov."
-        ],
-        "GANGES": [
-            "Dôležitá rieka Indie a Bangladéša.",
-            "Má posvätný význam v hinduizme.",
-            "Zdroj vody pre milióny ľudí a poľnohospodárstvo."
-        ],
-        "ARAL": [
-            "Jazero medzi Kazachstanom a Uzbekistánom.",
-            "Veľmi sa zmenšilo kvôli odvodňovaniu riek.",
-            "Známe ekologické problémy a vysychajúce pobrežia."
-        ],
-        "SAHARA_ASIA": [
-            "Púšte Ázie ako Gobi alebo Kyzylkum.",
-            "Extrémne suché a horúce oblasti.",
-            "Domov špecifickej flóry a fauny, prispôsobenej suchu."
-        ],
-        "BAIKAL": [
-            "Najhlbšie sladkovodné jazero sveta.",
-            "Leží v Rusku, v Sibíri.",
-            "Mimoriadna čistota vody a rozmanitá fauná."
-        ],
-        "THAILAND": [
-            "Krajina v juhovýchodnej Ázii.",
-            "Tropické podnebie a turistické atrakcie.",
-            "Slávna tradičná kuchyňa a budhistické chrámy."
-        ]
-    },
-    "total": 20,
-    "rounds": [
-        {
-            "question": "Hlavné mesto Indie je?",
-            "options": [
-                {
-                    "code": "INDIA",
-                    "text": "Dillí",
-                    "correct": true
-                },
-                {
-                    "code": "INDIA",
-                    "text": "Bombaj",
-                    "correct": false
-                },
-                {
-                    "code": "INDIA",
-                    "text": "Kalkata",
-                    "correct": false
-                }
-            ],
-            "explanation": "Hlavné mesto Indie je Dillí."
-        },
-        {
-            "question": "Najhlbšie sladkovodné jazero sveta leží v Rusku, v Sibíri?",
-            "options": [
-                {
-                    "code": "BAIKAL",
-                    "text": "Aralské jazero",
-                    "correct": false
-                },
-                {
-                    "code": "BAIKAL",
-                    "text": "Kaspické more",
-                    "correct": false
-                },
-                {
-                    "code": "BAIKAL",
-                    "text": "Bajkal",
-                    "correct": true
-                }
-            ],
-            "explanation": "Bajkal je najhlbšie sladkovodné jazero sveta."
-        },
-        {
-            "question": "Ktorá krajina je najľudnatejšia na svete?",
-            "options": [
-                {
-                    "code": "CHINA",
-                    "text": "Rusko",
-                    "correct": false
-                },
-                {
-                    "code": "CHINA",
-                    "text": "Čína",
-                    "correct": true
-                },
-                {
-                    "code": "CHINA",
-                    "text": "India",
-                    "correct": false
-                }
-            ],
-            "explanation": "Najľudnatejšia krajina sveta je Čína."
-        },
-        {
-            "question": "Ostrovný štát východnej Ázie s hlavným mestom Tokio je?",
-            "options": [
-                {
-                    "code": "JAPAN",
-                    "text": "Japonsko",
-                    "correct": true
-                },
-                {
-                    "code": "JAPAN",
-                    "text": "Filipíny",
-                    "correct": false
-                },
-                {
-                    "code": "JAPAN",
-                    "text": "Severná Kórea",
-                    "correct": false
-                }
-            ],
-            "explanation": "Ostrovný štát Japonsko má hlavné mesto Tokio."
-        },
-        {
-            "question": "Najvyššia hora sveta, ležiaca na hranici Nepálu a Číny je?",
-            "options": [
-                {
-                    "code": "MOUNT_EVEREST",
-                    "text": "Kangchenjunga",
-                    "correct": false
-                },
-                {
-                    "code": "MOUNT_EVEREST",
-                    "text": "K2",
-                    "correct": false
-                },
-                {
-                    "code": "MOUNT_EVEREST",
-                    "text": "Mount Everest",
-                    "correct": true
-                }
-            ],
-            "explanation": "Mount Everest je najvyššia hora sveta."
-        },
-        {
-            "question": "Dôležitá rieka Indie a Bangladéša s posvätným významom je?",
-            "options": [
-                {
-                    "code": "GANGES",
-                    "text": "Ganga",
-                    "correct": true
-                },
-                {
-                    "code": "GANGES",
-                    "text": "Brahmaputra",
-                    "correct": false
-                },
-                {
-                    "code": "GANGES",
-                    "text": "Indus",
-                    "correct": false
-                }
-            ],
-            "explanation": "Ganga je dôležitá rieka Indie a Bangladéša."
-        },
-        {
-            "question": "Hlavné mesto Ruska je?",
-            "options": [
-                {
-                    "code": "RUSSIA",
-                    "text": "Petrohrad",
-                    "correct": false
-                },
-                {
-                    "code": "RUSSIA",
-                    "text": "Novosibirsk",
-                    "correct": false
-                },
-                {
-                    "code": "RUSSIA",
-                    "text": "Moskva",
-                    "correct": true
-                }
-            ],
-            "explanation": "Hlavné mesto Ruska je Moskva."
-        },
-        {
-            "question": "Ktorá krajina v juhovýchodnej Ázii má hlavné mesto Bangkok?",
-            "options": [
-                {
-                    "code": "THAILAND",
-                    "text": "Malajzia",
-                    "correct": false
-                },
-                {
-                    "code": "THAILAND",
-                    "text": "Vietnam",
-                    "correct": false
-                },
-                {
-                    "code": "THAILAND",
-                    "text": "Thajsko",
-                    "correct": true
-                }
-            ],
-            "explanation": "Hlavné mesto Thajska je Bangkok."
-        },
-        {
-            "question": "Mount Everest leží na hranici ktorých krajín?",
-            "options": [
-                {
-                    "code": "MOUNT_EVEREST",
-                    "text": "India a Pakistan",
-                    "correct": false
-                },
-                {
-                    "code": "MOUNT_EVEREST",
-                    "text": "Nepál a Čína",
-                    "correct": true
-                },
-                {
-                    "code": "MOUNT_EVEREST",
-                    "text": "Bhután a India",
-                    "correct": false
-                }
-            ],
-            "explanation": "Mount Everest leží na hranici Nepálu a Číny."
-        },
-        {
-            "question": "Thajsko má aké podnebie?",
-            "options": [
-                {
-                    "code": "THAILAND",
-                    "text": "Tropické",
-                    "correct": true
-                },
-                {
-                    "code": "THAILAND",
-                    "text": "Polárne",
-                    "correct": false
-                },
-                {
-                    "code": "THAILAND",
-                    "text": "Mierne",
-                    "correct": false
-                }
-            ],
-            "explanation": "Thajsko má tropické podnebie."
-        }
+  "id": "geografia_azia",
+  "name": "Geografia Ázie",
+  "description": "Otázky z geografie Ázie pre 8. ročník ZŠ",
+  "facts": {
+    "CHINA": [
+      "Najľudnatejšia krajina sveta.",
+      "Rozmanité podnebie a krajinný ráz.",
+      "Známá svojimi veľkými riekami a Veľkým múrom."
+    ],
+    "INDIA": [
+      "Druhá najľudnatejšia krajina sveta.",
+      "Má Himaláje na severe a tropické oblasti na juhu.",
+      "Preslávená bohatou kultúrou a festivalmi ako Diwali."
+    ],
+    "RUSSIA": [
+      "Najväčšia krajina sveta podľa rozlohy.",
+      "Rozprestiera sa od Európy po Tichý oceán.",
+      "Známá studenou Sibírou a rozsiahlymi lesmi."
+    ],
+    "JAPAN": [
+      "Ostrovný štát východnej Ázie.",
+      "Tvorí ho viacero ostrovov, najväčší Honšú.",
+      "Preslávená čajovou kultúrou a sakurou."
+    ],
+    "MOUNT_EVEREST": [
+      "Najvyššia hora sveta.",
+      "Leží v Himalájach na hranici Nepálu a Číny.",
+      "Populárna destinácia pre horolezcov."
+    ],
+    "GANGES": [
+      "Dôležitá rieka Indie a Bangladéša.",
+      "Má posvätný význam v hinduizme.",
+      "Zdroj vody pre milióny ľudí a poľnohospodárstvo."
+    ],
+    "ARAL": [
+      "Jazero medzi Kazachstanom a Uzbekistánom.",
+      "Veľmi sa zmenšilo kvôli odvodňovaniu riek.",
+      "Známe ekologické problémy."
+    ],
+    "SAHARA_ASIA": [
+      "Púšte Ázie ako Gobi alebo Kyzylkum.",
+      "Extrémne suché oblasti.",
+      "Špecifická flóra a fauna."
+    ],
+    "BAIKAL": [
+      "Najhlbšie sladkovodné jazero sveta.",
+      "Leží v Rusku, v Sibíri.",
+      "Veľmi čistá voda."
+    ],
+    "THAILAND": [
+      "Krajina v juhovýchodnej Ázii.",
+      "Tropické podnebie.",
+      "Budhistické chrámy a tradičná kuchyňa."
     ]
+  },
+  "total": 20,
+  "rounds": [
+    {
+      "question": "Hlavné mesto Indie je?",
+      "options": [
+        { "code": "INDIA", "text": "Dillí", "correct": true },
+        { "code": "INDIA", "text": "Bombaj", "correct": false },
+        { "code": "INDIA", "text": "Kalkata", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Indie je Dillí."
+    },
+    {
+      "question": "Najhlbšie sladkovodné jazero sveta leží v Rusku, v Sibíri?",
+      "options": [
+        { "code": "BAIKAL", "text": "Aralské jazero", "correct": false },
+        { "code": "BAIKAL", "text": "Kaspické more", "correct": false },
+        { "code": "BAIKAL", "text": "Bajkal", "correct": true }
+      ],
+      "explanation": "Bajkal je najhlbšie sladkovodné jazero sveta."
+    },
+    {
+      "question": "Ktorá krajina je najľudnatejšia na svete?",
+      "options": [
+        { "code": "CHINA", "text": "Rusko", "correct": false },
+        { "code": "CHINA", "text": "Čína", "correct": true },
+        { "code": "CHINA", "text": "India", "correct": false }
+      ],
+      "explanation": "Najľudnatejšia krajina sveta je Čína."
+    },
+    {
+      "question": "Ostrovný štát východnej Ázie s hlavným mestom Tokio je?",
+      "options": [
+        { "code": "JAPAN", "text": "Japonsko", "correct": true },
+        { "code": "JAPAN", "text": "Filipíny", "correct": false },
+        { "code": "JAPAN", "text": "Severná Kórea", "correct": false }
+      ],
+      "explanation": "Ostrovný štát Japonsko má hlavné mesto Tokio."
+    },
+    {
+      "question": "Najvyššia hora sveta je?",
+      "options": [
+        { "code": "MOUNT_EVEREST", "text": "K2", "correct": false },
+        { "code": "MOUNT_EVEREST", "text": "Mount Everest", "correct": true },
+        { "code": "MOUNT_EVEREST", "text": "Makalu", "correct": false }
+      ],
+      "explanation": "Mount Everest je najvyššia hora sveta."
+    },
+    {
+      "question": "Posvätná rieka hinduizmu je?",
+      "options": [
+        { "code": "GANGES", "text": "Ganga", "correct": true },
+        { "code": "GANGES", "text": "Indus", "correct": false },
+        { "code": "GANGES", "text": "Tigris", "correct": false }
+      ],
+      "explanation": "Ganga má posvätný význam v hinduizme."
+    },
+    {
+      "question": "Najväčšia krajina sveta podľa rozlohy je?",
+      "options": [
+        { "code": "RUSSIA", "text": "Čína", "correct": false },
+        { "code": "RUSSIA", "text": "USA", "correct": false },
+        { "code": "RUSSIA", "text": "Rusko", "correct": true }
+      ],
+      "explanation": "Rusko je najväčšia krajina sveta."
+    },
+    {
+      "question": "Hlavné mesto Thajska je?",
+      "options": [
+        { "code": "THAILAND", "text": "Hanoj", "correct": false },
+        { "code": "THAILAND", "text": "Bangkok", "correct": true },
+        { "code": "THAILAND", "text": "Manila", "correct": false }
+      ],
+      "explanation": "Hlavné mesto Thajska je Bangkok."
+    },
+    {
+      "question": "Najväčší ostrov Japonska je?",
+      "options": [
+        { "code": "JAPAN", "text": "Hokkaidó", "correct": false },
+        { "code": "JAPAN", "text": "Honšú", "correct": true },
+        { "code": "JAPAN", "text": "Kjúšú", "correct": false }
+      ],
+      "explanation": "Najväčší ostrov Japonska je Honšú."
+    },
+    {
+      "question": "Ktoré jazero sa výrazne zmenšilo kvôli odvodňovaniu riek?",
+      "options": [
+        { "code": "ARAL", "text": "Bajkal", "correct": false },
+        { "code": "ARAL", "text": "Aralské jazero", "correct": true },
+        { "code": "ARAL", "text": "Balchaš", "correct": false }
+      ],
+      "explanation": "Aralské jazero sa výrazne zmenšilo."
+    },
+    {
+      "question": "Ktorá púšť leží v Ázii?",
+      "options": [
+        { "code": "SAHARA_ASIA", "text": "Gobi", "correct": true },
+        { "code": "SAHARA_ASIA", "text": "Sahara", "correct": false },
+        { "code": "SAHARA_ASIA", "text": "Kalahari", "correct": false }
+      ],
+      "explanation": "Púšť Gobi leží v Ázii."
+    },
+    {
+      "question": "Himaláje sa nachádzajú najmä v ktorej krajine?",
+      "options": [
+        { "code": "INDIA", "text": "India", "correct": true },
+        { "code": "INDIA", "text": "Japonsko", "correct": false },
+        { "code": "INDIA", "text": "Thajsko", "correct": false }
+      ],
+      "explanation": "Himaláje sa nachádzajú na severe Indie."
+    }
+  ]
 }
