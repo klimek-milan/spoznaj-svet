@@ -55,8 +55,8 @@
       pxX: 2240,
       pxY: 1104,
     },
-    { id: "sa", order: 5, name: "Južná Amerika", pxX: 429, pxY: 546 },
-    { id: "na", order: 6, name: "Severná Amerika", pxX: 726, pxY: 1035 },
+    { id: "na", order: 5, name: "Severná Amerika", pxX: 429, pxY: 546 },
+    { id: "sa", order: 6, name: "Južná Amerika", pxX: 726, pxY: 1035 },
   ];
 
   function toPercent(p: RawPoint): MapPoint {

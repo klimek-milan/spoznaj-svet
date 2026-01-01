@@ -90,7 +90,7 @@
       africa: "Afrika",
       na: "Severná Amerika",
       sa: "Južná Amerika",
-      oceania: "Oceánia"
+      oceania: "Oceánia",
     };
     return map[continentId] || continentId;
   }
@@ -100,7 +100,7 @@
     const map: Record<string, string> = {
       geography: "Geografia",
       capitals: "Hlavné mestá",
-      history: "História"
+      history: "História",
     };
     return map[topicId] || topicId;
   }
@@ -109,8 +109,18 @@
   onMount(async () => {
     const resp = await fetch(base + `data/${continent}/${category}.json`);
     const data = await resp.json();
-    rounds = data.rounds;
-    total = data.total ?? rounds.length;
+    rounds = data.rounds ?? [];
+    total =
+      typeof data.total === "number"
+        ? Math.min(data.total, rounds.length)
+        : rounds.length;
+    if (!rounds.length) {
+      console.error("Quiz nemá žiadne otázky", {
+        continent,
+        category,
+        data,
+      });
+    }
     facts = data.facts || {};
     pickRandomFact();
   });
@@ -172,7 +182,7 @@
       c: colors[(Math.random() * colors.length) | 0],
       life: 120 + Math.random() * 30,
       rot: Math.random() * Math.PI,
-      vr: (Math.random() - 0.5) * 0.3
+      vr: (Math.random() - 0.5) * 0.3,
     }));
 
     let frame = 0;
@@ -342,7 +352,7 @@
   // Toggle pause state
   function togglePause() {
     isPaused = !isPaused;
-    
+
     // Pause/resume timer when pausing
     if (isPaused) {
       if (timerInterval !== null) {
@@ -361,7 +371,7 @@
   function openSettings() {
     isPaused = false; // Close pause menu when opening settings
     showSettings = true;
-    
+
     // Pause timer when settings opens
     if (timerInterval !== null) {
       clearInterval(timerInterval);
@@ -372,7 +382,7 @@
   // Close settings and resume timer
   function closeSettings() {
     showSettings = false;
-    
+
     // Resume timer if not locked and timer is enabled
     if (!locked && s.timer && timerInterval === null) {
       resumeTimer();
@@ -422,7 +432,7 @@
 {#if rounds[i]}
   <div
     class="layout"
-    class:shake={shake}
+    class:shake
     style={`--img:${rounds[i].image ? `url('${base + rounds[i].image}')` : "none"}`}
   >
     <!-- TOP: score + progress bar -->
@@ -449,7 +459,8 @@
         <div class="question">{rounds[i].question}</div>
         {#if randomFact}
           <div class="tip">
-            <span class="tip-label">Tip:</span> {randomFact}
+            <span class="tip-label">Tip:</span>
+            {randomFact}
           </div>
         {/if}
       </div>
@@ -497,8 +508,10 @@
 
 <!-- OVERLAY: confetti + sounds + character -->
 <canvas bind:this={confettiCanvas} class="confetti"></canvas>
-<audio bind:this={sfxOk} src={`${base}data/sounds/correct.mp3`} preload="auto"></audio>
-<audio bind:this={sfxBad} src={`${base}data/sounds/wrong.mp3`} preload="auto"></audio>
+<audio bind:this={sfxOk} src={`${base}data/sounds/correct.mp3`} preload="auto"
+></audio>
+<audio bind:this={sfxBad} src={`${base}data/sounds/wrong.mp3`} preload="auto"
+></audio>
 
 <!-- Character:
      - idle  -> player_idle.png
@@ -515,8 +528,8 @@
 
 {#if isPaused}
   <div class="pause-overlay">
-    <PauseMenu 
-      onResume={togglePause} 
+    <PauseMenu
+      onResume={togglePause}
       onSettings={openSettings}
       onMenu={onQuit}
     />
@@ -543,6 +556,8 @@
     </div>
   </div>
 {/if}
+
+<!-- Ensure the component is properly exported -->
 
 <style>
   /* GRID: top | (left,center) | answers */
@@ -726,16 +741,19 @@
     flex-wrap: wrap;
   }
   .card {
-    display: grid;
-    grid-template-columns: 86px 1fr;
+    display: flex;
     align-items: center;
+    justify-content: center;
+
     width: min(420px, 30vw);
     min-width: 260px;
+
     background: var(--surface);
     border: 2px solid var(--border);
     border-radius: 22px;
     padding: 16px;
-    text-align: left;
+
+    text-align: center;
     cursor: pointer;
     box-shadow: var(--shadow);
     transition:
@@ -765,10 +783,12 @@
     color: var(--text);
   }
   .text {
-    padding-left: 14px;
     font-size: 18px;
-    color: var(--text);
     font-weight: bold;
+    color: var(--text);
+
+    white-space: normal;
+    word-break: keep-all;
   }
 
   /* Visual states of answer cards */
@@ -949,5 +969,3 @@
     overflow-y: auto;
   }
 </style>
-
-<!-- Ensure the component is properly exported -->

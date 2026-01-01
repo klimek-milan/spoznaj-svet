@@ -4,9 +4,9 @@
   <h1>Credentials</h1>
   <ul>
     <li>Milan Klimek</li>
-    <li>Roman</li>
-    <li>Vadym</li>
-    <li>Martin</li>
+    <li>Roman Slezák</li>
+    <li>Vadym Shevchuk</li>
+    <li>Martin Dobiaš</li>
     <li>© 2025</li>
   </ul>
   <button on:click={onBack}>Späť</button>

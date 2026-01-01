@@ -263,7 +263,7 @@
   <div class="brand">Spoznaj svet</div>
   <div class="spacer"></div>
   <button on:click={openSettings}>Nastavenia</button>
-  <button on:click={() => go("credits")}>Credits</button>
+  <button on:click={() => go("credits")}>Credentials</button>
 </nav>
 
 <div class="app-wrapper">
