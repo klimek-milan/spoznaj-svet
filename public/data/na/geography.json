@@ -334,13 +334,13 @@
             "options": [
                 {
                     "code": "HAWAII",
-                    "text": "Kanada",
-                    "correct": false
+                    "text": "USA",
+                    "correct": true
                 },
                 {
                     "code": "HAWAII",
-                    "text": "USA",
-                    "correct": true
+                    "text": "Kanada",
+                    "correct": false
                 },
                 {
                     "code": "HAWAII",
@@ -381,13 +381,13 @@
                 },
                 {
                     "code": "GRANDCANYON",
-                    "text": "Arizona",
-                    "correct": true
+                    "text": "Utah",
+                    "correct": false
                 },
                 {
                     "code": "GRANDCANYON",
-                    "text": "Utah",
-                    "correct": false
+                    "text": "Arizona",
+                    "correct": true
                 }
             ],
             "explanation": "Grand Canyon sa nachádza v štáte Arizona."
@@ -402,13 +402,13 @@
                 },
                 {
                     "code": "OCEAN",
-                    "text": "Tichý oceán",
-                    "correct": true
+                    "text": "Indický oceán",
+                    "correct": false
                 },
                 {
                     "code": "OCEAN",
-                    "text": "Indický oceán",
-                    "correct": false
+                    "text": "Tichý oceán",
+                    "correct": true
                 }
             ],
             "explanation": "Západné pobrežie Severnej Ameriky obmýva Tichý oceán."
@@ -444,13 +444,13 @@
                 },
                 {
                     "code": "MOUNTAINS",
-                    "text": "Appalačské vrchy",
-                    "correct": true
+                    "text": "Sierra Nevada",
+                    "correct": false
                 },
                 {
                     "code": "MOUNTAINS",
-                    "text": "Sierra Nevada",
-                    "correct": false
+                    "text": "Appalačské vrchy",
+                    "correct": true
                 }
             ],
             "explanation": "Appalačské vrchy sa nachádzajú na východe Severnej Ameriky."
