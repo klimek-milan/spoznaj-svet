@@ -1,236 +1,480 @@
 {
-  "id": "geografia_juzna_amerika",
-  "name": "Geografia Južnej Ameriky",
-  "description": "Otázky z geografie Južnej Ameriky pre 8. ročník ZŠ",
-  "facts": {
-    "BRAZIL": [
-      "Najväčšia krajina Južnej Ameriky.",
-      "Hlavné mesto je Brasília.",
-      "Má Amazóniu a rozsiahle pobrežie."
-    ],
-    "ARGENTINA": [
-      "Druhá najväčšia krajina.",
-      "Hlavné mesto je Buenos Aires.",
-      "Má Patagóniu, hory a stepi."
-    ],
-    "CHILE": [
-      "Úzka krajina pozdĺž západného pobrežia.",
-      "Hlavné mesto je Santiago.",
-      "Má Andy a púšť Atacama."
-    ],
-    "PERU": [
-      "Leží na západe Južnej Ameriky.",
-      "Hlavné mesto je Lima.",
-      "Domov Inkov a hory Andy."
-    ],
-    "COLOMBIA": [
-      "Leží na severe kontinentu.",
-      "Hlavné mesto je Bogotá.",
-      "Rozmanité podnebie a tropické lesy."
-    ],
-    "VENEZUELA": [
-      "Severná krajina s pobrežím Karibiku.",
-      "Hlavné mesto je Caracas.",
-      "Má hory, roviny a deltu Orinoka."
-    ],
-    "ECUADOR": [
-      "Leží na rovníku.",
-      "Hlavné mesto je Quito.",
-      "Rozmanité podnebie, Andy a amazonský prales."
-    ],
-    "BOLIVIA": [
-      "Bez prístupu k moru.",
-      "Hlavné mesto La Paz.",
-      "Má Andy a soľné pláne Salar de Uyuni."
-    ],
-    "PARAGUAY": [
-      "Bez prístupu k moru.",
-      "Hlavné mesto Asunción.",
-      "Rieky Paraná a Paraguay."
-    ],
-    "URUGUAY": [
-      "Malá krajina na juhovýchode kontinentu.",
-      "Hlavné mesto Montevideo.",
-      "Pobrežie Atlantiku a pastviny."
+    "id": "geografia_juzna_amerika",
+    "name": "Geografia Južnej Ameriky",
+    "description": "Otázky z geografie Južnej Ameriky pre 8. ročník ZŠ",
+    "facts": {
+        "BRAZIL": [
+            "Najväčšia krajina Južnej Ameriky.",
+            "Má Amazóniu a rozsiahle pobrežie.",
+            "Sao Paulo je najväčšie mesto v krajine."
+        ],
+        "ARGENTINA": [
+            "Druhá najväčšia krajina.",
+            "Má Patagóniu, hory a stepi.",
+            "Iguazú je známy vodopád na jej hraniciach."
+        ],
+        "CHILE": [
+            "Úzka krajina pozdĺž západného pobrežia.",
+            "Má Andy a púšť Atacama.",
+            "Je známa výrobou vína a rybolovom."
+        ],
+        "PERU": [
+            "Leží na západe Južnej Ameriky.",
+            "Domov Inkov a hory Andy.",
+            "Machu Picchu je známa historická lokalita."
+        ],
+        "COLOMBIA": [
+            "Leží na severe kontinentu.",
+            "Rozmanité podnebie a tropické lesy.",
+            "Je známa výrobou kávy a kvetov."
+        ],
+        "VENEZUELA": [
+            "Severná krajina s pobrežím Karibiku.",
+            "Má hory, roviny a deltu Orinoka.",
+            "Angelov vodopád je najvyšší na svete."
+        ],
+        "ECUADOR": [
+            "Leží na rovníku.",
+            "Rozmanité podnebie, Andy a amazonský prales.",
+            "Galapágy sú známe unikátnou faunou."
+        ],
+        "BOLIVIA": [
+            "Bez prístupu k moru.",
+            "Má Andy a soľné pláne Salar de Uyuni.",
+            "La Paz je jedno z najvyššie položených hlavných miest."
+        ],
+        "PARAGUAY": [
+            "Bez prístupu k moru.",
+            "Rieky Paraná a Paraguay.",
+            "Je známy hydroelektrickou priehradou Itaipú."
+        ],
+        "URUGUAY": [
+            "Malá krajina na juhovýchode kontinentu.",
+            "Pobrežie Atlantiku a pastviny.",
+            "Je známa chovom hovädzieho dobytka a plážami."
+        ]
+    },
+    "total": 20,
+    "rounds": [
+        {
+            "question": "Najväčšia krajina Južnej Ameriky je?",
+            "options": [
+                {
+                    "code": "BRAZIL",
+                    "text": "Argentina",
+                    "correct": false
+                },
+                {
+                    "code": "BRAZIL",
+                    "text": "Brazília",
+                    "correct": true
+                },
+                {
+                    "code": "BRAZIL",
+                    "text": "Chile",
+                    "correct": false
+                }
+            ],
+            "explanation": "Najväčšia krajina Južnej Ameriky je Brazília."
+        },
+        {
+            "question": "Ktorá krajina má Amazóniu a rozsiahle pobrežie?",
+            "options": [
+                {
+                    "code": "BRAZIL",
+                    "text": "Peru",
+                    "correct": false
+                },
+                {
+                    "code": "BRAZIL",
+                    "text": "Brazília",
+                    "correct": true
+                },
+                {
+                    "code": "BRAZIL",
+                    "text": "Kolumbia",
+                    "correct": false
+                }
+            ],
+            "explanation": "Brazília má Amazóniu a rozsiahle pobrežie."
+        },
+        {
+            "question": "Druhá najväčšia krajina Južnej Ameriky je?",
+            "options": [
+                {
+                    "code": "ARGENTINA",
+                    "text": "Peru",
+                    "correct": false
+                },
+                {
+                    "code": "ARGENTINA",
+                    "text": "Chile",
+                    "correct": false
+                },
+                {
+                    "code": "ARGENTINA",
+                    "text": "Argentina",
+                    "correct": true
+                }
+            ],
+            "explanation": "Druhá najväčšia krajina je Argentina."
+        },
+        {
+            "question": "Ktorá krajina má známy vodopád Iguazú?",
+            "options": [
+                {
+                    "code": "ARGENTINA",
+                    "text": "Argentina",
+                    "correct": true
+                },
+                {
+                    "code": "ARGENTINA",
+                    "text": "Brazília",
+                    "correct": false
+                },
+                {
+                    "code": "ARGENTINA",
+                    "text": "Paraguay",
+                    "correct": false
+                }
+            ],
+            "explanation": "Vodopád Iguazú sa nachádza na hranici Argentíny a Brazílie."
+        },
+        {
+            "question": "Úzka krajina pozdĺž západného pobrežia je?",
+            "options": [
+                {
+                    "code": "CHILE",
+                    "text": "Bolívia",
+                    "correct": false
+                },
+                {
+                    "code": "CHILE",
+                    "text": "Chile",
+                    "correct": true
+                },
+                {
+                    "code": "CHILE",
+                    "text": "Peru",
+                    "correct": false
+                }
+            ],
+            "explanation": "Úzka krajina pozdĺž západného pobrežia je Chile."
+        },
+        {
+            "question": "Ktorá krajina je známa púšťou Atacama a výrobou vína?",
+            "options": [
+                {
+                    "code": "CHILE",
+                    "text": "Chile",
+                    "correct": true
+                },
+                {
+                    "code": "CHILE",
+                    "text": "Peru",
+                    "correct": false
+                },
+                {
+                    "code": "CHILE",
+                    "text": "Argentina",
+                    "correct": false
+                }
+            ],
+            "explanation": "Chile je známe púšťou Atacama a výrobou vína."
+        },
+        {
+            "question": "Ktorá krajina je domovom Machu Picchu?",
+            "options": [
+                {
+                    "code": "PERU",
+                    "text": "Peru",
+                    "correct": true
+                },
+                {
+                    "code": "PERU",
+                    "text": "Ekvádor",
+                    "correct": false
+                },
+                {
+                    "code": "PERU",
+                    "text": "Bolívia",
+                    "correct": false
+                }
+            ],
+            "explanation": "Machu Picchu sa nachádza v Peru."
+        },
+        {
+            "question": "Ktorá krajina leží na severe kontinentu?",
+            "options": [
+                {
+                    "code": "COLOMBIA",
+                    "text": "Bolívia",
+                    "correct": false
+                },
+                {
+                    "code": "COLOMBIA",
+                    "text": "Kolumbia",
+                    "correct": true
+                },
+                {
+                    "code": "COLOMBIA",
+                    "text": "Paraguay",
+                    "correct": false
+                }
+            ],
+            "explanation": "Kolumbia leží na severe Južnej Ameriky."
+        },
+        {
+            "question": "Ktorá krajina je známa výrobou kávy a kvetov?",
+            "options": [
+                {
+                    "code": "COLOMBIA",
+                    "text": "Kolumbia",
+                    "correct": true
+                },
+                {
+                    "code": "COLOMBIA",
+                    "text": "Ekvádor",
+                    "correct": false
+                },
+                {
+                    "code": "COLOMBIA",
+                    "text": "Venezuela",
+                    "correct": false
+                }
+            ],
+            "explanation": "Kolumbia je známa výrobou kávy a kvetov."
+        },
+        {
+            "question": "Venezuela má pobrežie ktorého mora?",
+            "options": [
+                {
+                    "code": "VENEZUELA",
+                    "text": "Atlantský oceán",
+                    "correct": false
+                },
+                {
+                    "code": "VENEZUELA",
+                    "text": "Tichý oceán",
+                    "correct": false
+                },
+                {
+                    "code": "VENEZUELA",
+                    "text": "Karibské more",
+                    "correct": true
+                }
+            ],
+            "explanation": "Venezuela má pobrežie Karibiku."
+        },
+        {
+            "question": "Ktorý vodopád vo Venezuele je najvyšší na svete?",
+            "options": [
+                {
+                    "code": "VENEZUELA",
+                    "text": "Angelov vodopád",
+                    "correct": true
+                },
+                {
+                    "code": "VENEZUELA",
+                    "text": "Iguazú",
+                    "correct": false
+                },
+                {
+                    "code": "VENEZUELA",
+                    "text": "Niagarský vodopád",
+                    "correct": false
+                }
+            ],
+            "explanation": "Angelov vodopád vo Venezuele je najvyšší na svete."
+        },
+        {
+            "question": "Ktorý súostrov patrí Ekvádoru a je známy unikátnou faunou?",
+            "options": [
+                {
+                    "code": "ECUADOR",
+                    "text": "Galapágy",
+                    "correct": true
+                },
+                {
+                    "code": "ECUADOR",
+                    "text": "Falklandy",
+                    "correct": false
+                },
+                {
+                    "code": "ECUADOR",
+                    "text": "Kuba",
+                    "correct": false
+                }
+            ],
+            "explanation": "Galapágy patria Ekvádoru a sú známe unikátnou faunou."
+        },
+        {
+            "question": "Ktorá krajina má soľné pláne Salar de Uyuni?",
+            "options": [
+                {
+                    "code": "BOLIVIA",
+                    "text": "Paraguay",
+                    "correct": false
+                },
+                {
+                    "code": "BOLIVIA",
+                    "text": "Bolívia",
+                    "correct": true
+                },
+                {
+                    "code": "BOLIVIA",
+                    "text": "Chile",
+                    "correct": false
+                }
+            ],
+            "explanation": "Salar de Uyuni sa nachádza v Bolívii."
+        },
+        {
+            "question": "Ktorá krajina je známa hydroelektrickou priehradou Itaipú?",
+            "options": [
+                {
+                    "code": "PARAGUAY",
+                    "text": "Paraguay",
+                    "correct": true
+                },
+                {
+                    "code": "PARAGUAY",
+                    "text": "Bolívia",
+                    "correct": false
+                },
+                {
+                    "code": "PARAGUAY",
+                    "text": "Uruguaj",
+                    "correct": false
+                }
+            ],
+            "explanation": "Itaipú sa nachádza na hranici Paraguaya a Brazílie."
+        },
+        {
+            "question": "Ktorá krajina je známa chovom hovädzieho dobytka a plážami?",
+            "options": [
+                {
+                    "code": "URUGUAY",
+                    "text": "Paraguay",
+                    "correct": false
+                },
+                {
+                    "code": "URUGUAY",
+                    "text": "Argentína",
+                    "correct": false
+                },
+                {
+                    "code": "URUGUAY",
+                    "text": "Uruguaj",
+                    "correct": true
+                }
+            ],
+            "explanation": "Uruguaj je známy chovom hovädzieho dobytka a plážami."
+        },
+        {
+            "question": "Ktorá krajina má pobrežie Atlantiku?",
+            "options": [
+                {
+                    "code": "URUGUAY",
+                    "text": "Uruguaj",
+                    "correct": true
+                },
+                {
+                    "code": "PARAGUAY",
+                    "text": "Paraguay",
+                    "correct": false
+                },
+                {
+                    "code": "BOLIVIA",
+                    "text": "Bolívia",
+                    "correct": false
+                }
+            ],
+            "explanation": "Uruguaj má pobrežie Atlantiku, Paraguay a Bolívia sú vnútrozemské krajiny."
+        },
+        {
+            "question": "Ktorá krajina nemá prístup k moru?",
+            "options": [
+                {
+                    "code": "ECUADOR",
+                    "text": "Ekvádor",
+                    "correct": false
+                },
+                {
+                    "code": "CHILE",
+                    "text": "Chile",
+                    "correct": false
+                },
+                {
+                    "code": "PARAGUAY",
+                    "text": "Paraguay",
+                    "correct": true
+                }
+            ],
+            "explanation": "Paraguay je vnútrozemská krajina, Ekvádor a Chile majú prístup k moru."
+        },
+        {
+            "question": "Ktorá krajina leží na západe Južnej Ameriky?",
+            "options": [
+                {
+                    "code": "PERU",
+                    "text": "Peru",
+                    "correct": true
+                },
+                {
+                    "code": "BOLIVIA",
+                    "text": "Bolívia",
+                    "correct": false
+                },
+                {
+                    "code": "VENEZUELA",
+                    "text": "Venezuela",
+                    "correct": false
+                }
+            ],
+            "explanation": "Peru leží na západnom pobreží Južnej Ameriky, Bolívia je vnútrozemská a Venezuela je na severe."
+        },
+        {
+            "question": "Ktorá krajina leží priamo na rovníku?",
+            "options": [
+                {
+                    "code": "BRAZIL",
+                    "text": "Brazília",
+                    "correct": false
+                },
+                {
+                    "code": "ARGENTINA",
+                    "text": "Argentina",
+                    "correct": false
+                },
+                {
+                    "code": "ECUADOR",
+                    "text": "Ekvádor",
+                    "correct": true
+                }
+            ],
+            "explanation": "Ekvádor leží na rovníku, Brazília a Argentina nie."
+        },
+        {
+            "question": "Ktorá krajina má Andské pohorie a Machu Picchu?",
+            "options": [
+                {
+                    "code": "PERU",
+                    "text": "Peru",
+                    "correct": true
+                },
+                {
+                    "code": "CHILE",
+                    "text": "Chile",
+                    "correct": false
+                },
+                {
+                    "code": "URUGUAY",
+                    "text": "Uruguaj",
+                    "correct": false
+                }
+            ],
+            "explanation": "Machu Picchu a Andy sa nachádzajú v Peru, Chile má Andy, ale nie Machu Picchu, Uruguaj nemá Andy."
+        }
     ]
-  },
-  "total": 20,
-"rounds": [
-  {
-    "question": "Najväčšia krajina Južnej Ameriky je?",
-    "options": [
-      { "code": "BRAZIL", "text": "Argentina", "correct": false },
-      { "code": "BRAZIL", "text": "Brazília", "correct": true },
-      { "code": "BRAZIL", "text": "Chile", "correct": false }
-    ],
-    "explanation": "Najväčšia krajina Južnej Ameriky je Brazília."
-  },
-  {
-    "question": "Hlavné mesto Brazílie je?",
-    "options": [
-      { "code": "BRAZIL", "text": "São Paulo", "correct": false },
-      { "code": "BRAZIL", "text": "Brasília", "correct": true },
-      { "code": "BRAZIL", "text": "Rio de Janeiro", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Brazílie je Brasília."
-  },
-  {
-    "question": "Druhá najväčšia krajina Južnej Ameriky je?",
-    "options": [
-      { "code": "ARGENTINA", "text": "Peru", "correct": false },
-      { "code": "ARGENTINA", "text": "Chile", "correct": false },
-      { "code": "ARGENTINA", "text": "Argentina", "correct": true }
-    ],
-    "explanation": "Druhá najväčšia krajina je Argentina."
-  },
-  {
-    "question": "Hlavné mesto Argentíny je?",
-    "options": [
-      { "code": "ARGENTINA", "text": "Rosario", "correct": false },
-      { "code": "ARGENTINA", "text": "Buenos Aires", "correct": true },
-      { "code": "ARGENTINA", "text": "Cordoba", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Argentíny je Buenos Aires."
-  },
-  {
-    "question": "Úzka krajina pozdĺž západného pobrežia je?",
-    "options": [
-      { "code": "CHILE", "text": "Bolívia", "correct": false },
-      { "code": "CHILE", "text": "Chile", "correct": true },
-      { "code": "CHILE", "text": "Peru", "correct": false }
-    ],
-    "explanation": "Úzka krajina pozdĺž západného pobrežia je Chile."
-  },
-  {
-    "question": "Hlavné mesto Chile je?",
-    "options": [
-      { "code": "CHILE", "text": "Santiago", "correct": true },
-      { "code": "CHILE", "text": "Valparaíso", "correct": false },
-      { "code": "CHILE", "text": "Concepción", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Chile je Santiago."
-  },
-  {
-    "question": "Leží Peru na západe Južnej Ameriky – pravda alebo lož?",
-    "options": [
-      { "code": "PERU", "text": "Lož", "correct": false },
-      { "code": "PERU", "text": "Pravda", "correct": true }
-    ],
-    "explanation": "Peru leží na západe Južnej Ameriky."
-  },
-  {
-    "question": "Hlavné mesto Peru je?",
-    "options": [
-      { "code": "PERU", "text": "Cusco", "correct": false },
-      { "code": "PERU", "text": "Lima", "correct": true },
-      { "code": "PERU", "text": "Arequipa", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Peru je Lima."
-  },
-  {
-    "question": "Ktorá krajina leží na severe kontinentu?",
-    "options": [
-      { "code": "COLOMBIA", "text": "Bolívia", "correct": false },
-      { "code": "COLOMBIA", "text": "Kolumbia", "correct": true },
-      { "code": "COLOMBIA", "text": "Paraguay", "correct": false }
-    ],
-    "explanation": "Kolumbia leží na severe Južnej Ameriky."
-  },
-  {
-    "question": "Hlavné mesto Kolumbie je?",
-    "options": [
-      { "code": "COLOMBIA", "text": "Medellín", "correct": false },
-      { "code": "COLOMBIA", "text": "Bogotá", "correct": true },
-      { "code": "COLOMBIA", "text": "Cali", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Kolumbie je Bogotá."
-  },
-  {
-    "question": "Venezuela má pobrežie ktorého mora?",
-    "options": [
-      { "code": "VENEZUELA", "text": "Atlantský oceán", "correct": false },
-      { "code": "VENEZUELA", "text": "Tichý oceán", "correct": false },
-      { "code": "VENEZUELA", "text": "Karibské more", "correct": true }
-    ],
-    "explanation": "Venezuela má pobrežie Karibiku."
-  },
-  {
-    "question": "Hlavné mesto Venezuely je?",
-    "options": [
-      { "code": "VENEZUELA", "text": "Caracas", "correct": true },
-      { "code": "VENEZUELA", "text": "Maracaibo", "correct": false },
-      { "code": "VENEZUELA", "text": "Valencia", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Venezuely je Caracas."
-  },
-  {
-    "question": "Ekvádor leží na rovníku – pravda alebo lož?",
-    "options": [
-      { "code": "ECUADOR", "text": "Lož", "correct": false },
-      { "code": "ECUADOR", "text": "Pravda", "correct": true }
-    ],
-    "explanation": "Ekvádor leží na rovníku."
-  },
-  {
-    "question": "Hlavné mesto Ekvádoru je?",
-    "options": [
-      { "code": "ECUADOR", "text": "Quito", "correct": true },
-      { "code": "ECUADOR", "text": "Guayaquil", "correct": false },
-      { "code": "ECUADOR", "text": "Cuenca", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Ekvádoru je Quito."
-  },
-  {
-    "question": "Bolívia má prístup k moru – pravda alebo lož?",
-    "options": [
-      { "code": "BOLIVIA", "text": "Pravda", "correct": false },
-      { "code": "BOLIVIA", "text": "Lož", "correct": true }
-    ],
-    "explanation": "Bolívia nemá prístup k moru."
-  },
-  {
-    "question": "Hlavné mesto Bolívie je?",
-    "options": [
-      { "code": "BOLIVIA", "text": "La Paz", "correct": true },
-      { "code": "BOLIVIA", "text": "Sucre", "correct": false },
-      { "code": "BOLIVIA", "text": "Santa Cruz", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Bolívie je La Paz."
-  },
-  {
-    "question": "Paraguay je krajina bez prístupu k moru – pravda alebo lož?",
-    "options": [
-      { "code": "PARAGUAY", "text": "Lož", "correct": false },
-      { "code": "PARAGUAY", "text": "Pravda", "correct": true }
-    ],
-    "explanation": "Paraguay nemá prístup k moru."
-  },
-  {
-    "question": "Hlavné mesto Paraguaya je?",
-    "options": [
-      { "code": "PARAGUAY", "text": "Asunción", "correct": true },
-      { "code": "PARAGUAY", "text": "Encarnación", "correct": false },
-      { "code": "PARAGUAY", "text": "Ciudad del Este", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Paraguaya je Asunción."
-  },
-  {
-    "question": "Uruguaj má pobrežie Atlantiku – pravda alebo lož?",
-    "options": [
-      { "code": "URUGUAY", "text": "Lož", "correct": false },
-      { "code": "URUGUAY", "text": "Pravda", "correct": true }
-    ],
-    "explanation": "Uruguaj má pobrežie Atlantiku."
-  },
-  {
-    "question": "Hlavné mesto Uruguaja je?",
-    "options": [
-      { "code": "URUGUAY", "text": "Colonia", "correct": false },
-      { "code": "URUGUAY", "text": "Montevideo", "correct": true },
-      { "code": "URUGUAY", "text": "Punta del Este", "correct": false }
-    ],
-    "explanation": "Hlavné mesto Uruguaja je Montevideo."
-  }
-]
-
 }
