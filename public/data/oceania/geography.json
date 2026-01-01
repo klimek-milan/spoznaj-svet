@@ -355,13 +355,13 @@
             "options": [
                 {
                     "code": "AUSTRALIA",
-                    "text": "Pravda",
-                    "correct": true
+                    "text": "Lož",
+                    "correct": false
                 },
                 {
                     "code": "AUSTRALIA",
-                    "text": "Lož",
-                    "correct": false
+                    "text": "Pravda",
+                    "correct": true
                 },
                 {
                     "code": "AUSTRALIA",
@@ -397,11 +397,6 @@
             "options": [
                 {
                     "code": "TONGA",
-                    "text": "Pravda",
-                    "correct": true
-                },
-                {
-                    "code": "TONGA",
                     "text": "Lož",
                     "correct": false
                 },
@@ -409,6 +404,11 @@
                     "code": "TONGA",
                     "text": "Len na hlavnom ostrove",
                     "correct": false
+                },
+                {
+                    "code": "TONGA",
+                    "text": "Pravda",
+                    "correct": true
                 }
             ],
             "explanation": "Tonga má zachované tradičné spoločenstvo."
@@ -418,11 +418,6 @@
             "options": [
                 {
                     "code": "MELANESIA",
-                    "text": "Pravda",
-                    "correct": true
-                },
-                {
-                    "code": "MELANESIA",
                     "text": "Lož",
                     "correct": false
                 },
@@ -430,6 +425,11 @@
                     "code": "MELANESIA",
                     "text": "Len niektoré ostrovy",
                     "correct": false
+                },
+                {
+                    "code": "MELANESIA",
+                    "text": "Pravda",
+                    "correct": true
                 }
             ],
             "explanation": "Melanézia má rozmanité kultúry a prírodné prostredie."
