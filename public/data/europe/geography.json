@@ -2,58 +2,6 @@
     "id": "geografia_europa",
     "name": "Geografia Európy",
     "description": "Otázky z geografie Európy pre 8. ročník ZŠ",
-    "facts": {
-        "FRANCE": [
-            "Krajina v západnej Európe.",
-            "Známa vinicami a Eiffelovou vežou.",
-            "Slávna kuchyňou a kultúrou."
-        ],
-        "GERMANY": [
-            "Stredoeurópska krajina.",
-            "Známym regiónom je Bavorsko.",
-            "Preslávená históriou a pivom."
-        ],
-        "ITALY": [
-            "Juhoeurópska krajina tvaru čižmy.",
-            "Slávna kultúrou a talianskou kuchyňou.",
-            "Mesto Rím je plné historických pamiatok."
-        ],
-        "SPAIN": [
-            "Krajina na Pyrenejskom polostrove.",
-            "Známym mestom je Barcelona.",
-            "Preslávená flamencom a tapas."
-        ],
-        "UK": [
-            "Ostrovný štát západnej Európy.",
-            "Tvorí ho Anglicko, Škótsko, Wales a Severné Írsko.",
-            "Slávna históriou, hradmi a tradíciami."
-        ],
-        "RUSSIA": [
-            "Najväčšia krajina sveta, časť leží v Európe.",
-            "Rozprestiera sa od východnej Európy po Áziu.",
-            "Známym fenoménom je sibírska príroda a jazero Baikal."
-        ],
-        "ALPS": [
-            "Najvyššie pohorie strednej Európy.",
-            "Prechádza Švajčiarskom, Rakúskom, Talianskom a Francúzskom.",
-            "Známe pre lyžiarske strediská."
-        ],
-        "DANUBE": [
-            "Druhá najdlhšia rieka Európy.",
-            "Preteká Nemeckom, Rakúskom, Slovenskom, Maďarskom a ďalšími.",
-            "Dôležitá pre dopravu a energetiku."
-        ],
-        "MEDITERRANEAN": [
-            "Slávne more medzi Európou, Afrikou a Áziou.",
-            "Obľúbené turistické destinácie.",
-            "Známe pre mierne podnebie."
-        ],
-        "ICELAND": [
-            "Ostrovná krajina severnej Európy.",
-            "Známym prírodným javom sú gejzíry a sopky.",
-            "Preslávená ľadovcami a horúcimi prameňmi."
-        ]
-    },
     "total": 20,
     "rounds": [
         {
@@ -62,17 +10,20 @@
                 {
                     "code": "NORWAY",
                     "text": "Nórsko",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Nórsko je známe svojimi hlbokými fjordami pozdĺž pobrežia."
                 },
                 {
                     "code": "SWEDEN",
                     "text": "Švédsko",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Švédsko má množstvo jazier, ale fjordy sú typické pre Nórsko."
                 },
                 {
                     "code": "FINLAND",
                     "text": "Fínsko",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Fínsko je známe ako Zem tisícich jazier, fjordy tam nie sú."
                 }
             ],
             "explanation": "Nórsko je známe svojimi hlbokými fjordami pozdĺž pobrežia."
@@ -83,17 +34,20 @@
                 {
                     "code": "VOLGA",
                     "text": "Volga",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Volga je najdlhšia rieka Európy a preteká Ruskom."
                 },
                 {
                     "code": "DANUBE",
                     "text": "Dunaj",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Dunaj je druhá najdlhšia rieka Európy."
                 },
                 {
                     "code": "RHINE",
                     "text": "Rýn",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Rýn je významná rieka strednej Európy, ale nie najdlhšia."
                 }
             ],
             "explanation": "Najdlhšia rieka Európy je Volga v Rusku."
@@ -104,17 +58,20 @@
                 {
                     "code": "PYRENEES",
                     "text": "Pyreneje",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Pyreneje tvoria hranicu medzi Francúzskom a Španielskom."
                 },
                 {
                     "code": "ALPS",
                     "text": "Alpy",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Alpy sa nachádzajú ďalej na sever a tvoria hranice iných krajín."
                 },
                 {
                     "code": "CARPATHIANS",
                     "text": "Karpatské hory",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Karpatské hory ležia v strednej a východnej Európe, nie na hranici Francúzska a Španielska."
                 }
             ],
             "explanation": "Pyreneje tvoria hranicu medzi Francúzskom a Španielskom."
@@ -125,17 +82,20 @@
                 {
                     "code": "BALTIC",
                     "text": "Baltské more",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Baltské more leží medzi Švédskom a Fínskom."
                 },
                 {
                     "code": "NORTH",
                     "text": "Severné more",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Severné more je západne od Švédska, pri Nórsku a Dánsku."
                 },
                 {
                     "code": "MEDITERRANEAN",
                     "text": "Stredozemné more",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Stredozemné more je južne od Európy, medzi Európou a Afrikou."
                 }
             ],
             "explanation": "Medzi Švédskom a Fínskom je Baltské more."
@@ -146,17 +106,20 @@
                 {
                     "code": "FINLAND",
                     "text": "Fínsko",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Fínsko má tisíce jazier a husté lesy, preto sa mu hovorí Zem tisícich jazier."
                 },
                 {
                     "code": "SWEDEN",
                     "text": "Švédsko",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Švédsko má tiež veľa jazier, ale prezývka patrí Fínsku."
                 },
                 {
                     "code": "NORWAY",
                     "text": "Nórsko",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Nórsko je známe fjordami, nie tisíckami jazier."
                 }
             ],
             "explanation": "Fínsko je známe množstvom jazier a lesov, preto sa mu hovorí 'Zem tisícich jazier'."
@@ -167,17 +130,20 @@
                 {
                     "code": "IBERIAN",
                     "text": "Pyrenejský polostrov",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Pyrenejský polostrov zahŕňa Španielsko a Portugalsko."
                 },
                 {
                     "code": "ITALIAN",
                     "text": "Taliansky polostrov",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Taliansky polostrov je menší a nachádza sa v južnej Európe."
                 },
                 {
                     "code": "SCANDINAVIAN",
                     "text": "Skandinávsky polostrov",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Skandinávsky polostrov je na severe Európy a je menší ako Pyrenejský."
                 }
             ],
             "explanation": "Najväčší polostrov juhozápadnej Európy je Pyrenejský polostrov."
@@ -188,38 +154,44 @@
                 {
                     "code": "DANUBE",
                     "text": "Dunaj",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Dunaj preteká Viedňou, Bratislavou a Budapešťou."
                 },
                 {
                     "code": "RHINE",
                     "text": "Rýn",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Rýn tečie Nemeckom a Holandskom, nie cez tieto mestá."
                 },
                 {
                     "code": "ELBE",
                     "text": "Labe",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Labe preteká Českom a Nemeckom, nie Viedňou alebo Budapešťou."
                 }
             ],
             "explanation": "Dunaj preteká Viedňou, Bratislavou a Budapešťou."
         },
         {
-            "question": "Ktoré pohorie je známe svojimi sopečnými vrchmi a gejzírmi?",
+            "question": "Ktorá krajina je známa sopkami a gejzírmi?",
             "options": [
                 {
-                    "code": "ICELAND_VOLCANO",
+                    "code": "ICELAND",
                     "text": "Island",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Island je známy sopkami, gejzírmi a horúcimi prameňmi."
                 },
                 {
-                    "code": "ITALY_ALPS",
-                    "text": "Alpy",
-                    "correct": false
+                    "code": "ITALY",
+                    "text": "Taliansko",
+                    "correct": false,
+                    "fact": "Taliansko má niekoľko sopiek, ale nie gejzírov."
                 },
                 {
-                    "code": "NORWAY_FJORDS",
-                    "text": "Nórske fjordy",
-                    "correct": false
+                    "code": "NORWAY",
+                    "text": "Nórsko",
+                    "correct": false,
+                    "fact": "Nórsko je známe fjordami, nie sopkami ani gejzírmi."
                 }
             ],
             "explanation": "Island je známy sopkami a gejzírmi."
@@ -230,17 +202,20 @@
                 {
                     "code": "SICILY",
                     "text": "Sicília",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Sicília je najväčší ostrov Stredozemného mora."
                 },
                 {
                     "code": "CRETE",
                     "text": "Kréta",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Kréta je veľká, ale menšia ako Sicília."
                 },
                 {
                     "code": "CYPRUS",
                     "text": "Cyperský ostrov",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Cyperský ostrov je východne, menší ako Sicília."
                 }
             ],
             "explanation": "Najväčší ostrov Stredozemného mora je Sicília."
@@ -251,17 +226,20 @@
                 {
                     "code": "SWITZERLAND",
                     "text": "Švajčiarsko",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Švajčiarsko je známe čokoládou a presnými hodinkami."
                 },
                 {
                     "code": "BELGIUM",
                     "text": "Belgicko",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Belgicko je známe čokoládou, ale nie hodinkami."
                 },
                 {
                     "code": "FRANCE",
                     "text": "Francúzsko",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Francúzsko je známe vínom a syrom, nie hodinkami."
                 }
             ],
             "explanation": "Švajčiarsko je známe čokoládou a hodinkami."
@@ -272,17 +250,20 @@
                 {
                     "code": "ALPS",
                     "text": "Alpy",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Alpy prechádzajú Švajčiarskom, Rakúskom a Talianskom."
                 },
                 {
                     "code": "CARPATHIANS",
                     "text": "Karpatské hory",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Karpatské hory sa nachádzajú v strednej a východnej Európe."
                 },
                 {
                     "code": "PYRENEES",
                     "text": "Pyreneje",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Pyreneje sú na hranici Španielska a Francúzska."
                 }
             ],
             "explanation": "Alpy prechádzajú Švajčiarskom, Rakúskom a Talianskom."
@@ -293,17 +274,20 @@
                 {
                     "code": "MEDITERRANEAN",
                     "text": "Stredozemné more",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Stredozemné more leží medzi Európou a Afrikou."
                 },
                 {
                     "code": "NORTH",
                     "text": "Severné more",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Severné more je na severe Európy, pri Britských ostrovoch a Nemecku."
                 },
                 {
                     "code": "BLACK",
                     "text": "Čierne more",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Čierne more je na východ od Balkánu, nie medzi Španielskom a Afrikou."
                 }
             ],
             "explanation": "Medzi Španielskom a Afrikou je Stredozemné more."
@@ -314,17 +298,20 @@
                 {
                     "code": "MONT_BLANC",
                     "text": "Mont Blanc",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Mont Blanc je najvyšší vrch Álp a Európy."
                 },
                 {
                     "code": "ELBRUS",
                     "text": "Elbrus",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Elbrus leží v Kaukaze, na hranici Európy a Ázie."
                 },
                 {
-                    "code": "CERVINO",
+                    "code": "MATTERHORN",
                     "text": "Matterhorn",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Matterhorn je známy vrch Álp, ale nie najvyšší."
                 }
             ],
             "explanation": "Najvyšší vrch Európy je Mont Blanc."
@@ -335,17 +322,20 @@
                 {
                     "code": "GOTLAND",
                     "text": "Gotland",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Gotland je švédsky ostrov v Baltskom mori."
                 },
                 {
                     "code": "SICILY",
                     "text": "Sicília",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Sicília patrí Taliansku."
                 },
                 {
                     "code": "ICELAND",
                     "text": "Island",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Island je samostatná krajina v severnej Európe."
                 }
             ],
             "explanation": "Gotland je švédsky ostrov."
@@ -356,41 +346,47 @@
                 {
                     "code": "RHINE",
                     "text": "Rýn",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Rýn tvorí časť hranice medzi Nemeckom a Francúzskom."
                 },
                 {
                     "code": "DANUBE",
                     "text": "Dunaj",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Dunaj tečie juhovýchodnou Európou."
                 },
                 {
                     "code": "ELBE",
                     "text": "Labe",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Labe tečie Nemeckom a Českom, nie Francúzskom."
                 }
             ],
             "explanation": "Rýn tvorí časť hranice medzi Nemeckom a Francúzskom."
         },
         {
-            "question": "Ktorá európska krajina je známa svojim púštnym terénom a sopečnými oblasťami, najmä na ostrove Lanzarote?",
+            "question": "Ktorá krajina je známa svojimi veternými mlynmi a kanálmi?",
             "options": [
                 {
-                    "code": "SPAIN",
-                    "text": "Španielsko",
-                    "correct": true
+                    "code": "NETHERLANDS",
+                    "text": "Holandsko",
+                    "correct": true,
+                    "fact": "Holandsko je známe veternými mlynmi, kanálmi a tulipánmi."
                 },
                 {
-                    "code": "ITALY",
-                    "text": "Taliansko",
-                    "correct": false
+                    "code": "BELGIUM",
+                    "text": "Belgicko",
+                    "correct": false,
+                    "fact": "Belgicko je známe čokoládou a pivom, nie veternými mlynmi."
                 },
                 {
-                    "code": "GREECE",
-                    "text": "Grécko",
-                    "correct": false
+                    "code": "DENMARK",
+                    "text": "Dánsko",
+                    "correct": false,
+                    "fact": "Dánsko je pobrežná krajina, ale nie je známe kanálmi a mlynmi ako Holandsko."
                 }
             ],
-            "explanation": "Kanárske ostrovy patria Španielsku a sú známe sopečným a púštnym terénom."
+            "explanation": "Holandsko je známe veternými mlynmi a kanálmi."
         },
         {
             "question": "Ktoré pohorie sa tiahne cez Slovensko, Poľsko a Ukrajinu?",
@@ -398,17 +394,20 @@
                 {
                     "code": "CARPATHIANS",
                     "text": "Karpatské hory",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Karpatské hory prechádzajú Slovenskom, Poľskom a Ukrajinou."
                 },
                 {
                     "code": "ALPS",
                     "text": "Alpy",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Alpy sa nachádzajú v strednej Európe, nie na Slovensku."
                 },
                 {
                     "code": "PYRENEES",
                     "text": "Pyreneje",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Pyreneje sú na hranici Španielska a Francúzska."
                 }
             ],
             "explanation": "Karpatské hory prechádzajú Slovenskom, Poľskom a Ukrajinou."
@@ -419,41 +418,23 @@
                 {
                     "code": "ADRIATIC",
                     "text": "Jadranské more",
-                    "correct": true
+                    "correct": true,
+                    "fact": "Jadranské more leží na východ od Talianska, medzi Talianskom a Balkánom."
                 },
                 {
                     "code": "IONIAN",
                     "text": "Iónske more",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Iónske more je južne od Jadranského mora, pri Grécku."
                 },
                 {
                     "code": "TYRRHENIAN",
                     "text": "Tyrhénske more",
-                    "correct": false
+                    "correct": false,
+                    "fact": "Tyrhénske more je na západ od Talianska."
                 }
             ],
             "explanation": "Jadranské more leží na východ od Talianska."
-        },
-        {
-            "question": "Ktorá krajina je známa svojimi veternými mlynmi a kanálmi?",
-            "options": [
-                {
-                    "code": "NETHERLANDS",
-                    "text": "Holandsko",
-                    "correct": true
-                },
-                {
-                    "code": "BELGIUM",
-                    "text": "Belgicko",
-                    "correct": false
-                },
-                {
-                    "code": "DENMARK",
-                    "text": "Dánsko",
-                    "correct": false
-                }
-            ],
-            "explanation": "Holandsko je známe veternými mlynmi a kanálmi."
         }
     ]
 }
