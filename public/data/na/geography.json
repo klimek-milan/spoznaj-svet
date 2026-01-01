@@ -5,53 +5,53 @@
     "facts": {
         "USA": [
             "Najväčšia krajina Severnej Ameriky podľa ekonomiky.",
-            "Hlavné mesto je Washington D.C.",
-            "Má rozmanité podnebie a krajinný ráz."
+            "Má rozmanité podnebie a krajinný ráz.",
+            "Je významnou svetovou veľmocou."
         ],
         "CANADA": [
             "Druhá najväčšia krajina sveta.",
-            "Hlavné mesto je Ottawa.",
-            "Rozsiahle lesy a veľké jazerá."
+            "Má rozsiahle lesy.",
+            "Je známa veľkými jazerami."
         ],
         "MEXICO": [
-            "Krajina na juhu Severnej Ameriky.",
-            "Hlavné mesto je Ciudad de México.",
+            "Krajina Severnej Ameriky.",
+            "Má bohatú históriu a kultúru.",
             "Známym regiónom je Yucatán."
         ],
         "GRANDCANYON": [
-            "Veľký kaňon v USA.",
-            "Nachádza sa v Arizone.",
+            "Veľký kaňon.",
+            "Vznikol eróziou rieky.",
             "Obľúbená turistická destinácia."
         ],
         "MISSISSIPPI": [
             "Jedna z najdlhších riek Severnej Ameriky.",
-            "Preteká USA.",
-            "Dôležitá pre dopravu a poľnohospodárstvo."
+            "Dôležitá pre dopravu.",
+            "Významná pre poľnohospodárstvo."
         ],
         "ROCKIES": [
-            "Horské pásmo v Severnej Amerike.",
-            "Prechádza USA a Kanadou.",
-            "Známym vrcholom je Mount Elbert."
+            "Rozsiahle horské pásmo.",
+            "Má množstvo vysokých vrcholov.",
+            "Dôležité pre prírodu a turistiku."
         ],
         "GREATLAKES": [
-            "Najväčšie sústava sladkovodných jazier na svete.",
-            "Nachádza sa medzi USA a Kanadou.",
-            "Dôležité pre dopravu a rybolov."
+            "Najväčšia sústava sladkovodných jazier na svete.",
+            "Majú veľký objem vody.",
+            "Dôležité pre rybolov."
         ],
         "ALASKA": [
-            "Severozápadná štát USA.",
-            "Známym prírodným javom sú ľadovce a sopky.",
-            "Hlavné mesto je Juneau."
+            "Súčasť USA.",
+            "Typické sú ľadovce a sopky.",
+            "Má bohatú divokú prírodu."
         ],
         "CARIBBEAN": [
-            "Karibské more a ostrovy na juhovýchode Severnej Ameriky.",
+            "Oblasť známa ostrovmi a morom.",
             "Obľúbené turistické destinácie.",
-            "Patria sem krajiny ako Kuba, Jamajka a Portoriko."
+            "Má teplé podnebie."
         ],
         "HAWAII": [
-            "Ostrovy v Tichom oceáne, súčasť USA.",
-            "Hlavné mesto je Honolulu.",
-            "Známym javom sú sopky a pláže."
+            "Súostrovie v Tichom oceáne.",
+            "Známymi javmi sú sopky.",
+            "Populárne pre pláže a surfovanie."
         ]
     },
     "total": 20,
