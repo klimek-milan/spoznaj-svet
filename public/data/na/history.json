@@ -141,67 +141,67 @@
             "explanation": "Osady zakladali európske mocnosti."
         },
         {
-            "question": "Kedy vznikli Spojené štáty americké?",
+            "question": "Ako sa nazýva konflikt medzi Severnou a Južnou časťou USA v 19. storočí?",
             "options": [
                 {
-                    "code": "USA_IND",
-                    "text": "19. storočie",
-                    "correct": false
-                },
-                {
-                    "code": "USA_IND",
-                    "text": "18. storočie",
+                    "code": "USA_CIV",
+                    "text": "Americká občianska vojna",
                     "correct": true
                 },
                 {
-                    "code": "USA_IND",
-                    "text": "17. storočie",
+                    "code": "USA_CIV",
+                    "text": "Revolúcia",
+                    "correct": false
+                },
+                {
+                    "code": "USA_CIV",
+                    "text": "Expanzia na západ",
                     "correct": false
                 }
             ],
-            "explanation": "USA vznikli v 18. storočí."
+            "explanation": "Konflikt medzi Severnou a Južnou časťou USA sa nazýval americká občianska vojna."
         },
         {
-            "question": "Od koho vyhlásili USA nezávislosť?",
+            "question": "Aká krajina získala nezávislosť po boji so Španielskom?",
             "options": [
                 {
-                    "code": "USA_IND",
-                    "text": "Od Británie",
+                    "code": "MEX",
+                    "text": "Mexiko",
                     "correct": true
                 },
                 {
-                    "code": "USA_IND",
-                    "text": "Od Francúzska",
+                    "code": "MEX",
+                    "text": "Kanada",
                     "correct": false
                 },
                 {
-                    "code": "USA_IND",
-                    "text": "Od Španielska",
+                    "code": "MEX",
+                    "text": "USA",
                     "correct": false
                 }
             ],
-            "explanation": "USA vyhlásili nezávislosť od Británie."
+            "explanation": "Mexiko získalo nezávislosť po boji so Španielskom."
         },
         {
-            "question": "O čo sa bojovalo počas americkej občianskej vojny?",
+            "question": "Aký bol jeden z dôsledkov prvej svetovej vojny pre Severnú Ameriku?",
             "options": [
                 {
-                    "code": "USA_CIV",
-                    "text": "O kolónie",
-                    "correct": false
-                },
-                {
-                    "code": "USA_CIV",
-                    "text": "O otroctvo a moc štátov",
+                    "code": "WW1",
+                    "text": "USA a Kanada sa zapojili do globálneho konfliktu",
                     "correct": true
                 },
                 {
-                    "code": "USA_CIV",
-                    "text": "O nezávislosť",
+                    "code": "WW1",
+                    "text": "Spojené štáty stratili nezávislosť",
+                    "correct": false
+                },
+                {
+                    "code": "WW1",
+                    "text": "Kanada sa stala súčasťou USA",
                     "correct": false
                 }
             ],
-            "explanation": "Vojna sa týkala otroctva a práv štátov."
+            "explanation": "USA a Kanada sa zapojili do prvej svetovej vojny, čo ovplyvnilo politiku a hospodárstvo."
         },
         {
             "question": "Ktorá strana vyhrala americkú občiansku vojnu?",
