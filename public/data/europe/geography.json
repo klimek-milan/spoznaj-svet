@@ -57,25 +57,46 @@
     "total": 20,
     "rounds": [
         {
-            "question": "Hlavné mesto Francúzska je?",
+            "question": "Ktorá európska krajina je známa svojimi fjordami?",
             "options": [
                 {
-                    "code": "FRANCE",
-                    "text": "Paríž",
+                    "code": "NORWAY",
+                    "text": "Nórsko",
                     "correct": true
                 },
                 {
-                    "code": "FRANCE",
-                    "text": "Marseille",
+                    "code": "SWEDEN",
+                    "text": "Švédsko",
                     "correct": false
                 },
                 {
-                    "code": "FRANCE",
-                    "text": "Lyon",
+                    "code": "FINLAND",
+                    "text": "Fínsko",
                     "correct": false
                 }
             ],
-            "explanation": "Hlavné mesto Francúzska je Paríž."
+            "explanation": "Nórsko je známe svojimi hlbokými fjordami pozdĺž pobrežia."
+        },
+        {
+            "question": "Najdlhšia rieka Európy je?",
+            "options": [
+                {
+                    "code": "VOLGA",
+                    "text": "Volga",
+                    "correct": true
+                },
+                {
+                    "code": "DANUBE",
+                    "text": "Dunaj",
+                    "correct": false
+                },
+                {
+                    "code": "RHINE",
+                    "text": "Rýn",
+                    "correct": false
+                }
+            ],
+            "explanation": "Najdlhšia rieka Európy je Volga, ktorá preteká Ruskom."
         },
         {
             "question": "Francúzsko leží v ktorej časti Európy?",
@@ -99,25 +120,28 @@
             "explanation": "Francúzsko leží v západnej Európe."
         },
         {
-            "question": "Hlavné mesto Nemecka je?",
+            "question": "Najdlhšia rieka Európy je?",
             "options": [
                 {
-                    "code": "GERMANY",
-                    "text": "Mníchov",
-                    "correct": false
+                    "code": "VOLGA",
+                    "text": "Volga",
+                    "correct": true,
+                    "hint": "Volga tečie celou západnou časťou Ruska."
                 },
                 {
-                    "code": "GERMANY",
-                    "text": "Berlín",
-                    "correct": true
+                    "code": "DANUBE",
+                    "text": "Dunaj",
+                    "correct": false,
+                    "hint": "Dunaj je druhá najdlhšia rieka Európy."
                 },
                 {
-                    "code": "GERMANY",
-                    "text": "Hamburg",
-                    "correct": false
+                    "code": "RHINE",
+                    "text": "Rýn",
+                    "correct": false,
+                    "hint": "Rýn je známy v Nemecku a Holandsku, nie najdlhší."
                 }
             ],
-            "explanation": "Hlavné mesto Nemecka je Berlín."
+            "explanation": "Najdlhšia rieka Európy je Volga v Rusku."
         },
         {
             "question": "Slávne pohorie strednej Európy je?",
