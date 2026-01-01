@@ -57,27 +57,6 @@
     "total": 20,
     "rounds": [
         {
-            "question": "Ktorá európska krajina je známa svojimi fjordami?",
-            "options": [
-                {
-                    "code": "NORWAY",
-                    "text": "Nórsko",
-                    "correct": true
-                },
-                {
-                    "code": "SWEDEN",
-                    "text": "Švédsko",
-                    "correct": false
-                },
-                {
-                    "code": "FINLAND",
-                    "text": "Fínsko",
-                    "correct": false
-                }
-            ],
-            "explanation": "Nórsko je známe svojimi hlbokými fjordami pozdĺž pobrežia."
-        },
-        {
             "question": "Hlavné mesto Francúzska je?",
             "options": [
                 {
