@@ -438,6 +438,48 @@
                 }
             ],
             "explanation": "Melanézia má rozmanité kultúry a prírodné prostredie."
+        },
+        {
+            "question": "Fidži je známe pre:",
+            "options": [
+                {
+                    "code": "FIJI",
+                    "text": "Rozsiahle púšte",
+                    "correct": false
+                },
+                {
+                    "code": "FIJI",
+                    "text": "Turistické destinácie a pláže",
+                    "correct": true
+                },
+                {
+                    "code": "FIJI",
+                    "text": "Horské fjordy",
+                    "correct": false
+                }
+            ],
+            "explanation": "Fidži je známe pre obľúbené turistické destinácie a krásne pláže."
+        },
+        {
+            "question": "Ayers Rock (Uluru) sa nachádza v:",
+            "options": [
+                {
+                    "code": "AYERSROCK",
+                    "text": "Novom Zélande",
+                    "correct": false
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Austrálii",
+                    "correct": true
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Papua Novej Guinei",
+                    "correct": false
+                }
+            ],
+            "explanation": "Ayers Rock, známy aj ako Uluru, sa nachádza v Austrálii."
         }
     ]
 }
