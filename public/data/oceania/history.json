@@ -1,176 +1,302 @@
 {
-  "id": "history_oceania",
-  "name": "História Oceánie",
-  "description": "Otázky z histórie Oceánie pre 8. ročník ZŠ",
-  "total": 15,
-  "facts": {
-    "ABOR": [
-      "Aborigéni majú bohatú kultúru s viac než 200 jazykmi.",
-      "Tradične používali hudbu a tanec na rozprávanie príbehov.",
-      "Žili v súlade s prírodou a mali zložité duchovné tradície."
-    ],
-    "MAORI": [
-      "Maori boli majstri v stavbe kanoí a opevnení osád.",
-      "Tetovanie malo pre nich duchovný význam.",
-      "Rodinné a kmeňové väzby boli pre Maori veľmi dôležité."
-    ],
-    "COL_OCE": [
-      "Kolonizácia priniesla Európanov s novými technológiami.",
-      "Miestni obyvatelia čelili chorobám z Európy.",
-      "Koloniálne mocnosti zavádzali nové zákony a poriadok."
-    ],
-    "AU_IND": [
-      "Austrália začala ako miesto pre britských trestancov.",
-      "Postupne sa vybudovali mestá a železnice.",
-      "Kolonisti ovplyvnili pôvodné obyvateľstvo aj životné prostredie."
-    ],
-    "NZ_IND": [
-      "Nový Zéland bol spravovaný britskou korúnou.",
-      "Maori a Európania mali dohody o pôde (Treaty of Waitangi).",
-      "Rozvoj samosprávy umožnil vytvoriť parlament."
-    ],
-    "WW1": [
-      "Austrália a Nový Zéland vyslali vojakov do Európy.",
-      "Vojaci sa zúčastnili významných bitiek ako Gallipoli.",
-      "Prvá svetová vojna ovplyvnila národnú identitu krajín."
-    ],
-    "WW2": [
-      "Japonské jednotky obsadili niektoré ostrovy Oceánie.",
-      "Austrália sa pripravovala na obranu svojho územia.",
-      "USA a Austrália spolu bojovali proti Japonsku na tichomorskom fronte."
-    ],
-    "MODERN": [
-      "Austrália a Nový Zéland sú dnes demokratické štáty.",
-      "Mnohé ostrovy Oceánie zachovávajú pôvodné tradície.",
-      "Ekonomický rozvoj priniesol nové mestá a infraštruktúru."
-    ]
-  },
+    "id": "history_oceania",
+    "name": "História Oceánie",
+    "description": "Otázky z histórie Oceánie pre 8. ročník ZŠ",
     "total": 15,
-  "rounds": [
-    {
-      "question": "Kto sú pôvodní obyvatelia Austrálie?",
-      "options": [
-
-        { "code": "ABOR", "text": "Maori", "correct": false },
-                { "code": "ABOR", "text": "Aborigéni", "correct": true },
-        { "code": "ABOR", "text": "Polynézania", "correct": false }
-      ],
-      "explanation": "Pôvodnými obyvateľmi Austrálie sú Aborigéni."
-    },
-    {
-      "question": "Ako žili Aborigéni tradične?",
-      "options": [
-                { "code": "ABOR", "text": "Poľnohospodárstvom na veľkých farmách", "correct": false },
-        { "code": "ABOR", "text": "Lovom a zberom", "correct": true },
-
-        { "code": "ABOR", "text": "Priemyselnou výrobou", "correct": false }
-      ],
-      "explanation": "Aborigéni žili lovom a zberom."
-    },
-    {
-      "question": "Kto sú pôvodní obyvatelia Nového Zélandu?",
-      "options": [
-        { "code": "MAORI", "text": "Maori", "correct": true },
-        { "code": "MAORI", "text": "Aborigéni", "correct": false },
-        { "code": "MAORI", "text": "Polynézania", "correct": false }
-      ],
-      "explanation": "Pôvodní obyvatelia Nového Zélandu sú Maori."
-    },
-    {
-      "question": "Čím sú Maori známi?",
-      "options": [
-
-        { "code": "MAORI", "text": "Stavbou pyramíd", "correct": false },
-        { "code": "MAORI", "text": "Rímskymi cestami", "correct": false },
-                { "code": "MAORI", "text": "Bojovou kultúrou a tetovaním", "correct": true }
-      ],
-      "explanation": "Maori sú známi bojovou kultúrou a tetovaním."
-    },
-    {
-      "question": "Kedy začala kolonizácia Oceánie Európanmi?",
-      "options": [
-                { "code": "COL_OCE", "text": "15. – 16. storočie", "correct": false },
-        { "code": "COL_OCE", "text": "18. – 19. storočie", "correct": true },
-
-        { "code": "COL_OCE", "text": "20. storočie", "correct": false }
-      ],
-      "explanation": "Kolonizácia začala v 18. a 19. storočí."
-    },
-    {
-      "question": "Čo priniesla kolonizácia do Oceánie?",
-      "options": [
-                { "code": "COL_OCE", "text": "Zánik Európy", "correct": false },
-        { "code": "COL_OCE", "text": "Nové technológie, jazyky a zákony", "correct": true },
-
-        { "code": "COL_OCE", "text": "Stavbu pyramíd", "correct": false }
-      ],
-      "explanation": "Kolonizácia priniesla Európanov s novými technológiami, jazykmi a zákonmi."
-    },
-    {
-      "question": "Ako vznikla Austrália ako kolónia?",
-      "options": [
-
-        { "code": "AU_IND", "text": "Ako francúzska kolónia", "correct": false },
-        { "code": "AU_IND", "text": "Ako nezávislý štát", "correct": false },
-                { "code": "AU_IND", "text": "Ako britská trestanecká kolónia", "correct": true }
-      ],
-      "explanation": "Austrália vznikla ako trestanecká kolónia Británie."
-    },
-    {
-      "question": "Čo získala Austrália postupne?",
-      "options": [
-
-        { "code": "AU_IND", "text": "Rímske právo", "correct": false },
-        { "code": "AU_IND", "text": "Kolónie v Európe", "correct": false },
-                { "code": "AU_IND", "text": "Samosprávu", "correct": true }
-      ],
-      "explanation": "Austrália postupne získala samosprávu."
-    },
-    {
-      "question": "Ako sa Nový Zéland stal samosprávnym štátom?",
-      "options": [
-        { "code": "NZ_IND", "text": "Vytvorením vlastného parlamentu", "correct": true },
-        { "code": "NZ_IND", "text": "Prostredníctvom vojny s Britániou", "correct": false },
-        { "code": "NZ_IND", "text": "Ako francúzska kolónia", "correct": false }
-      ],
-      "explanation": "Nový Zéland si vytvoril vlastný parlament a postupne získal nezávislosť."
-    },
-    {
-      "question": "Ktoré krajiny bojovali po boku Británie v prvej svetovej vojne?",
-      "options": [
-
-        { "code": "WW1", "text": "Fidži a Tonga", "correct": false },
-                { "code": "WW1", "text": "Austrália a Nový Zéland", "correct": true },
-        { "code": "WW1", "text": "Papua Nová Guinea a Vanuatu", "correct": false }
-      ],
-      "explanation": "Austrália a Nový Zéland bojovali po boku Británie."
-    },
-    {
-      "question": "Na ktorom fronte bojovali vojaci z Oceánie počas prvej svetovej vojny?",
-      "options": [
-        { "code": "WW1", "text": "Gallipolský front", "correct": true },
-        { "code": "WW1", "text": "Západný front", "correct": false },
-        { "code": "WW1", "text": "Východný front", "correct": false }
-      ],
-      "explanation": "Zúčastnili sa bojov na Gallipolskom fronte."
-    },
-    {
-      "question": "Kto okupoval niektoré ostrovy Oceánie počas druhej svetovej vojny?",
-      "options": [
-        { "code": "WW2", "text": "Francúzsko", "correct": false },
-        { "code": "WW2", "text": "Nemecko", "correct": false },
-                { "code": "WW2", "text": "Japonsko", "correct": true }
-      ],
-      "explanation": "Niektoré ostrovy okupovalo Japonsko."
-    },
-    {
-      "question": "Ako vyzerá Oceánia dnes?",
-      "options": [
-        { "code": "MODERN", "text": "Má moderné štáty a zachováva tradície pôvodných obyvateľov", "correct": true },
-        { "code": "MODERN", "text": "Je pod koloniálnou správou", "correct": false },
-        { "code": "MODERN", "text": "Je úplne izolovaná", "correct": false }
-      ],
-      "explanation": "Oceánia dnes má moderné štáty a zároveň zachováva tradície."
-    }
-  ]
+    "rounds": [
+        {
+            "question": "Kto sú pôvodní obyvatelia Austrálie?",
+            "options": [
+                {
+                    "code": "ABOR",
+                    "text": "Maori",
+                    "correct": false
+                },
+                {
+                    "code": "ABOR",
+                    "text": "Aborigéni",
+                    "correct": true
+                },
+                {
+                    "code": "ABOR",
+                    "text": "Polynézania",
+                    "correct": false
+                }
+            ],
+            "explanation": "Pôvodnými obyvateľmi Austrálie sú Aborigéni."
+        },
+        {
+            "question": "Ako žili Aborigéni tradične?",
+            "options": [
+                {
+                    "code": "ABOR",
+                    "text": "Poľnohospodárstvom na veľkých farmách",
+                    "correct": false
+                },
+                {
+                    "code": "ABOR",
+                    "text": "Lovom a zberom",
+                    "correct": true
+                },
+                {
+                    "code": "ABOR",
+                    "text": "Priemyselnou výrobou",
+                    "correct": false
+                }
+            ],
+            "explanation": "Aborigéni žili lovom a zberom."
+        },
+        {
+            "question": "Kto sú pôvodní obyvatelia Nového Zélandu?",
+            "options": [
+                {
+                    "code": "MAORI",
+                    "text": "Maori",
+                    "correct": true
+                },
+                {
+                    "code": "MAORI",
+                    "text": "Aborigéni",
+                    "correct": false
+                },
+                {
+                    "code": "MAORI",
+                    "text": "Polynézania",
+                    "correct": false
+                }
+            ],
+            "explanation": "Pôvodní obyvatelia Nového Zélandu sú Maori."
+        },
+        {
+            "question": "Čím sú Maori známi?",
+            "options": [
+                {
+                    "code": "MAORI",
+                    "text": "Stavbou pyramíd",
+                    "correct": false
+                },
+                {
+                    "code": "MAORI",
+                    "text": "Rímskymi cestami",
+                    "correct": false
+                },
+                {
+                    "code": "MAORI",
+                    "text": "Bojovou kultúrou a tetovaním",
+                    "correct": true
+                }
+            ],
+            "explanation": "Maori sú známi bojovou kultúrou a tetovaním."
+        },
+        {
+            "question": "Kedy začala kolonizácia Oceánie Európanmi?",
+            "options": [
+                {
+                    "code": "COL_OCE",
+                    "text": "15. – 16. storočie",
+                    "correct": false
+                },
+                {
+                    "code": "COL_OCE",
+                    "text": "18. – 19. storočie",
+                    "correct": true
+                },
+                {
+                    "code": "COL_OCE",
+                    "text": "20. storočie",
+                    "correct": false
+                }
+            ],
+            "explanation": "Kolonizácia začala v 18. a 19. storočí."
+        },
+        {
+            "question": "Čo priniesla kolonizácia do Oceánie?",
+            "options": [
+                {
+                    "code": "COL_OCE",
+                    "text": "Zánik Európy",
+                    "correct": false
+                },
+                {
+                    "code": "COL_OCE",
+                    "text": "Nové technológie, jazyky a zákony",
+                    "correct": true
+                },
+                {
+                    "code": "COL_OCE",
+                    "text": "Stavbu pyramíd",
+                    "correct": false
+                }
+            ],
+            "explanation": "Kolonizácia priniesla Európanov s novými technológiami, jazykmi a zákonmi."
+        },
+        {
+            "question": "Ako vznikla Austrália ako kolónia?",
+            "options": [
+                {
+                    "code": "AU_IND",
+                    "text": "Ako francúzska kolónia",
+                    "correct": false
+                },
+                {
+                    "code": "AU_IND",
+                    "text": "Ako nezávislý štát",
+                    "correct": false
+                },
+                {
+                    "code": "AU_IND",
+                    "text": "Ako britská trestanecká kolónia",
+                    "correct": true
+                }
+            ],
+            "explanation": "Austrália vznikla ako trestanecká kolónia Británie."
+        },
+        {
+            "question": "Čo získala Austrália postupne?",
+            "options": [
+                {
+                    "code": "AU_IND",
+                    "text": "Rímske právo",
+                    "correct": false
+                },
+                {
+                    "code": "AU_IND",
+                    "text": "Kolónie v Európe",
+                    "correct": false
+                },
+                {
+                    "code": "AU_IND",
+                    "text": "Samosprávu",
+                    "correct": true
+                }
+            ],
+            "explanation": "Austrália postupne získala samosprávu."
+        },
+        {
+            "question": "Ako sa Nový Zéland stal samosprávnym štátom?",
+            "options": [
+                {
+                    "code": "NZ_IND",
+                    "text": "Vytvorením vlastného parlamentu",
+                    "correct": true
+                },
+                {
+                    "code": "NZ_IND",
+                    "text": "Prostredníctvom vojny s Britániou",
+                    "correct": false
+                },
+                {
+                    "code": "NZ_IND",
+                    "text": "Ako francúzska kolónia",
+                    "correct": false
+                }
+            ],
+            "explanation": "Nový Zéland si vytvoril vlastný parlament a postupne získal nezávislosť."
+        },
+        {
+            "question": "Ktoré krajiny bojovali po boku Británie v prvej svetovej vojne?",
+            "options": [
+                {
+                    "code": "WW1",
+                    "text": "Fidži a Tonga",
+                    "correct": false
+                },
+                {
+                    "code": "WW1",
+                    "text": "Austrália a Nový Zéland",
+                    "correct": true
+                },
+                {
+                    "code": "WW1",
+                    "text": "Papua Nová Guinea a Vanuatu",
+                    "correct": false
+                }
+            ],
+            "explanation": "Austrália a Nový Zéland bojovali po boku Británie."
+        },
+        {
+            "question": "Na ktorom fronte bojovali vojaci z Oceánie počas prvej svetovej vojny?",
+            "options": [
+                {
+                    "code": "WW1",
+                    "text": "Gallipolský front",
+                    "correct": true
+                },
+                {
+                    "code": "WW1",
+                    "text": "Západný front",
+                    "correct": false
+                },
+                {
+                    "code": "WW1",
+                    "text": "Východný front",
+                    "correct": false
+                }
+            ],
+            "explanation": "Zúčastnili sa bojov na Gallipolskom fronte."
+        },
+        {
+            "question": "Kto okupoval niektoré ostrovy Oceánie počas druhej svetovej vojny?",
+            "options": [
+                {
+                    "code": "WW2",
+                    "text": "Francúzsko",
+                    "correct": false
+                },
+                {
+                    "code": "WW2",
+                    "text": "Nemecko",
+                    "correct": false
+                },
+                {
+                    "code": "WW2",
+                    "text": "Japonsko",
+                    "correct": true
+                }
+            ],
+            "explanation": "Niektoré ostrovy okupovalo Japonsko."
+        },
+        {
+            "question": "Ako vyzerá Oceánia dnes?",
+            "options": [
+                {
+                    "code": "MODERN",
+                    "text": "Má moderné štáty a zachováva tradície pôvodných obyvateľov",
+                    "correct": true
+                },
+                {
+                    "code": "MODERN",
+                    "text": "Je pod koloniálnou správou",
+                    "correct": false
+                },
+                {
+                    "code": "MODERN",
+                    "text": "Je úplne izolovaná",
+                    "correct": false
+                }
+            ],
+            "explanation": "Oceánia dnes má moderné štáty a zároveň zachováva tradície."
+        },
+        {
+            "question": "Ktorý oceán obklopuje väčšinu Oceánie?",
+            "options": [
+                {
+                    "code": "GEOG",
+                    "text": "Atlantický oceán",
+                    "correct": false
+                },
+                {
+                    "code": "GEOG",
+                    "text": "Indický oceán",
+                    "correct": false
+                },
+                {
+                    "code": "GEOG",
+                    "text": "Tichý oceán",
+                    "correct": true
+                }
+            ],
+            "explanation": "Väčšinu Oceánie obklopuje Tichý oceán."
+        }
+    ]
 }
