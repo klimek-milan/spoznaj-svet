@@ -318,6 +318,48 @@
                 }
             ],
             "explanation": "Oceánia dnes má moderné štáty a zároveň zachováva tradície."
+        },
+        {
+            "question": "Ktorá udalosť symbolizuje odpor Aborigénov proti britskej kolonizácii?",
+            "options": [
+                {
+                    "code": "ABOR_RES",
+                    "text": "Boje pri Gallipoli",
+                    "correct": false
+                },
+                {
+                    "code": "ABOR_RES",
+                    "text": "Eureka Stockade",
+                    "correct": true
+                },
+                {
+                    "code": "ABOR_RES",
+                    "text": "Novozélandská dohoda",
+                    "correct": false
+                }
+            ],
+            "explanation": "Eureka Stockade v roku 1854 symbolizuje odpor obyvateľov (vrátane niektorých Aborigénov) proti britskej kontrole a nespravodlivosti."
+        },
+        {
+            "question": "Kedy Nový Zéland získal úplnú nezávislosť od Británie?",
+            "options": [
+                {
+                    "code": "NZ_IND",
+                    "text": "1907",
+                    "correct": false
+                },
+                {
+                    "code": "NZ_IND",
+                    "text": "1947",
+                    "correct": true
+                },
+                {
+                    "code": "NZ_IND",
+                    "text": "1986",
+                    "correct": false
+                }
+            ],
+            "explanation": "Nový Zéland získal úplnú legislatívnu nezávislosť od Británie v roku 1947 prostredníctvom Statute of Westminster Adoption Act."
         }
     ]
 }
