@@ -10,8 +10,8 @@
         ],
         "NEWZEALAND": [
             "Ostrovy na juhovýchode Oceánie.",
-            "Hlavné mesto je Wellington.",
-            "Rozmanité podnebie, hory a fjordy."
+            "Rozmanité podnebie, hory a fjordy.",
+            "Známym je aj svojou bohatosťou na endemickú flóru a faunu."
         ],
         "PAPUA": [
             "Papua Nová Guinea leží na sever od Austrálie.",
@@ -39,9 +39,9 @@
             "Kultúra a tradície Polynézanov."
         ],
         "TONGA": [
-            "Malá ostrovná krajina v Tichom oceáne.",
-            "Hlavné mesto je Nukuʻalofa.",
-            "Zachované tradičné spoločenstvo."
+            "Skladá sa z viac ako 170 ostrovov roztrúsených v južnom Tichom oceáne.",
+            "Väčšina ostrovov je vulkanického pôvodu a neobývaná.",
+            "Zachovalo si tradičné spoločenstvo a kultúrne zvyky Polynézanov."
         ],
         "VANUATU": [
             "Ostrovy v južnom Tichom oceáne.",
@@ -59,162 +59,378 @@
         {
             "question": "Najväčšia krajina Oceánie je?",
             "options": [
-                {"code": "AUSTRALIA", "text": "Nový Zéland", "correct": false},
-                {"code": "AUSTRALIA", "text": "Austrália", "correct": true},
-                {"code": "AUSTRALIA", "text": "Papua Nová Guinea", "correct": false}
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Nový Zéland",
+                    "correct": false
+                },
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Austrália",
+                    "correct": true
+                },
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Papua Nová Guinea",
+                    "correct": false
+                }
             ],
             "explanation": "Najväčšia krajina Oceánie je Austrália."
         },
         {
             "question": "Ktorá krajina leží na juhovýchode Oceánie a má rozmanité podnebie?",
             "options": [
-                {"code": "NEWZEALAND", "text": "Nový Zéland", "correct": true},
-                {"code": "NEWZEALAND", "text": "Fidži", "correct": false},
-                {"code": "NEWZEALAND", "text": "Tonga", "correct": false}
+                {
+                    "code": "NEWZEALAND",
+                    "text": "Nový Zéland",
+                    "correct": true
+                },
+                {
+                    "code": "NEWZEALAND",
+                    "text": "Fidži",
+                    "correct": false
+                },
+                {
+                    "code": "NEWZEALAND",
+                    "text": "Tonga",
+                    "correct": false
+                }
             ],
             "explanation": "Nový Zéland má rozmanité podnebie, hory a fjordy."
         },
         {
             "question": "Papua Nová Guinea leží kde?",
             "options": [
-                {"code": "PAPUA", "text": "Juh od Nového Zélandu", "correct": false},
-                {"code": "PAPUA", "text": "Východne od Fidži", "correct": false},
-                {"code": "PAPUA", "text": "Severne od Austrálie", "correct": true}
+                {
+                    "code": "PAPUA",
+                    "text": "Juh od Nového Zélandu",
+                    "correct": false
+                },
+                {
+                    "code": "PAPUA",
+                    "text": "Východne od Fidži",
+                    "correct": false
+                },
+                {
+                    "code": "PAPUA",
+                    "text": "Severne od Austrálie",
+                    "correct": true
+                }
             ],
             "explanation": "Papua Nová Guinea leží severne od Austrálie."
         },
         {
             "question": "Najväčší koralový útes na svete sa nachádza pri?",
             "options": [
-                {"code": "GREATBARRIER", "text": "Fidži", "correct": false},
-                {"code": "GREATBARRIER", "text": "Novom Zélande", "correct": false},
-                {"code": "GREATBARRIER", "text": "Austrálii", "correct": true}
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Fidži",
+                    "correct": false
+                },
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Novom Zélande",
+                    "correct": false
+                },
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Austrálii",
+                    "correct": true
+                }
             ],
             "explanation": "Najväčší koralový útes je pri pobreží Austrálie."
         },
         {
             "question": "Uluru je známa aj ako?",
             "options": [
-                {"code": "AYERSROCK", "text": "Mount Kosciuszko", "correct": false},
-                {"code": "AYERSROCK", "text": "Ayers Rock", "correct": true},
-                {"code": "AYERSROCK", "text": "Mount Cook", "correct": false}
+                {
+                    "code": "AYERSROCK",
+                    "text": "Mount Kosciuszko",
+                    "correct": false
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Ayers Rock",
+                    "correct": true
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Mount Cook",
+                    "correct": false
+                }
             ],
             "explanation": "Uluru je známa ako Ayers Rock."
         },
         {
             "question": "Uluru je dôležité miesto pre koho?",
             "options": [
-                {"code": "AYERSROCK", "text": "Pôvodných obyvateľov", "correct": true},
-                {"code": "AYERSROCK", "text": "Turistov", "correct": false},
-                {"code": "AYERSROCK", "text": "Vládu Austrálie", "correct": false}
+                {
+                    "code": "AYERSROCK",
+                    "text": "Pôvodných obyvateľov",
+                    "correct": true
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Turistov",
+                    "correct": false
+                },
+                {
+                    "code": "AYERSROCK",
+                    "text": "Vládu Austrálie",
+                    "correct": false
+                }
             ],
             "explanation": "Uluru je dôležité miesto pre pôvodných obyvateľov."
         },
         {
             "question": "Fidži sa nachádza v ktorom oceáne?",
             "options": [
-                {"code": "FIJI", "text": "Indický oceán", "correct": false},
-                {"code": "FIJI", "text": "Tichý oceán", "correct": true},
-                {"code": "FIJI", "text": "Atlantský oceán", "correct": false}
+                {
+                    "code": "FIJI",
+                    "text": "Indický oceán",
+                    "correct": false
+                },
+                {
+                    "code": "FIJI",
+                    "text": "Tichý oceán",
+                    "correct": true
+                },
+                {
+                    "code": "FIJI",
+                    "text": "Atlantský oceán",
+                    "correct": false
+                }
             ],
             "explanation": "Fidži sa nachádza v Tichom oceáne."
         },
         {
             "question": "Samoa je známa pre:",
             "options": [
-                {"code": "SAMOA", "text": "Kultúru a tradície Polynézanov", "correct": true},
-                {"code": "SAMOA", "text": "Sopečnú činnosť", "correct": false},
-                {"code": "SAMOA", "text": "Rozsiahle púšte", "correct": false}
+                {
+                    "code": "SAMOA",
+                    "text": "Kultúru a tradície Polynézanov",
+                    "correct": true
+                },
+                {
+                    "code": "SAMOA",
+                    "text": "Sopečnú činnosť",
+                    "correct": false
+                },
+                {
+                    "code": "SAMOA",
+                    "text": "Rozsiahle púšte",
+                    "correct": false
+                }
             ],
             "explanation": "Samoa je známa pre kultúru a tradície Polynézanov."
         },
         {
             "question": "Tonga je:",
             "options": [
-                {"code": "TONGA", "text": "Malá ostrovná krajina", "correct": true},
-                {"code": "TONGA", "text": "Veľký kontinent", "correct": false},
-                {"code": "TONGA", "text": "Časť Havaja", "correct": false}
+                {
+                    "code": "TONGA",
+                    "text": "Malá ostrovná krajina",
+                    "correct": true
+                },
+                {
+                    "code": "TONGA",
+                    "text": "Veľký kontinent",
+                    "correct": false
+                },
+                {
+                    "code": "TONGA",
+                    "text": "Časť Havaja",
+                    "correct": false
+                }
             ],
             "explanation": "Tonga je malá ostrovná krajina v Tichom oceáne."
         },
         {
             "question": "Vanuatu je známe pre:",
             "options": [
-                {"code": "VANUATU", "text": "Sopečnú činnosť a tropické lesy", "correct": true},
-                {"code": "VANUATU", "text": "Rozsiahle púšte", "correct": false},
-                {"code": "VANUATU", "text": "Arktické podnebie", "correct": false}
+                {
+                    "code": "VANUATU",
+                    "text": "Sopečnú činnosť a tropické lesy",
+                    "correct": true
+                },
+                {
+                    "code": "VANUATU",
+                    "text": "Rozsiahle púšte",
+                    "correct": false
+                },
+                {
+                    "code": "VANUATU",
+                    "text": "Arktické podnebie",
+                    "correct": false
+                }
             ],
             "explanation": "Vanuatu má sopečnú činnosť a tropické lesy."
         },
         {
             "question": "Melanézia zahŕňa:",
             "options": [
-                {"code": "MELANESIA", "text": "Fidži a Tonga", "correct": false},
-                {"code": "MELANESIA", "text": "Samoa a Havaj", "correct": false},
-                {"code": "MELANESIA", "text": "Papua Nová Guinea a Vanuatu", "correct": true}
+                {
+                    "code": "MELANESIA",
+                    "text": "Fidži a Tonga",
+                    "correct": false
+                },
+                {
+                    "code": "MELANESIA",
+                    "text": "Samoa a Havaj",
+                    "correct": false
+                },
+                {
+                    "code": "MELANESIA",
+                    "text": "Papua Nová Guinea a Vanuatu",
+                    "correct": true
+                }
             ],
             "explanation": "Melanézia zahŕňa Papua Novú Guineu a Vanuatu."
         },
         {
             "question": "Veľký bariérový útes je známy pre:",
             "options": [
-                {"code": "GREATBARRIER", "text": "Bohatý morský život", "correct": true},
-                {"code": "GREATBARRIER", "text": "Suchú púšť", "correct": false},
-                {"code": "GREATBARRIER", "text": "Horské priesmyky", "correct": false}
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Bohatý morský život",
+                    "correct": true
+                },
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Suchú púšť",
+                    "correct": false
+                },
+                {
+                    "code": "GREATBARRIER",
+                    "text": "Horské priesmyky",
+                    "correct": false
+                }
             ],
             "explanation": "Veľký bariérový útes je bohatý na morský život."
         },
         {
             "question": "Papua Nová Guinea má:",
             "options": [
-                {"code": "PAPUA", "text": "Husté dažďové pralesy", "correct": true},
-                {"code": "PAPUA", "text": "Rozsiahle púšte", "correct": false},
-                {"code": "PAPUA", "text": "Polárne ľadovce", "correct": false}
+                {
+                    "code": "PAPUA",
+                    "text": "Husté dažďové pralesy",
+                    "correct": true
+                },
+                {
+                    "code": "PAPUA",
+                    "text": "Rozsiahle púšte",
+                    "correct": false
+                },
+                {
+                    "code": "PAPUA",
+                    "text": "Polárne ľadovce",
+                    "correct": false
+                }
             ],
             "explanation": "Papua Nová Guinea má dažďové pralesy a horské oblasti."
         },
         {
             "question": "Havaj patrí k:",
             "options": [
-                {"code": "HAWAII", "text": "USA", "correct": true},
-                {"code": "HAWAII", "text": "Kanade", "correct": false},
-                {"code": "HAWAII", "text": "Novému Zélandu", "correct": false}
+                {
+                    "code": "HAWAII",
+                    "text": "USA",
+                    "correct": true
+                },
+                {
+                    "code": "HAWAII",
+                    "text": "Kanade",
+                    "correct": false
+                },
+                {
+                    "code": "HAWAII",
+                    "text": "Novému Zélandu",
+                    "correct": false
+                }
             ],
             "explanation": "Havaj patrí USA."
         },
         {
             "question": "Austrália má rozsiahle púšte – platí to?",
             "options": [
-                {"code": "AUSTRALIA", "text": "Pravda", "correct": true},
-                {"code": "AUSTRALIA", "text": "Lož", "correct": false},
-                {"code": "AUSTRALIA", "text": "Iba v západnej časti", "correct": false}
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Pravda",
+                    "correct": true
+                },
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Lož",
+                    "correct": false
+                },
+                {
+                    "code": "AUSTRALIA",
+                    "text": "Iba v západnej časti",
+                    "correct": false
+                }
             ],
             "explanation": "Austrália má púšte, savany a veľké mestá na pobreží."
         },
         {
             "question": "Nový Zéland je ostrovná krajina – platí to?",
             "options": [
-                {"code": "NEWZEALAND", "text": "Pravda", "correct": true},
-                {"code": "NEWZEALAND", "text": "Lož", "correct": false},
-                {"code": "NEWZEALAND", "text": "Iba juh", "correct": false}
+                {
+                    "code": "NEWZEALAND",
+                    "text": "Pravda",
+                    "correct": true
+                },
+                {
+                    "code": "NEWZEALAND",
+                    "text": "Lož",
+                    "correct": false
+                },
+                {
+                    "code": "NEWZEALAND",
+                    "text": "Iba juh",
+                    "correct": false
+                }
             ],
             "explanation": "Nový Zéland je ostrovná krajina s rozmanitým podnebím."
         },
         {
             "question": "Tonga zachovala tradičné spoločenstvo – platí to?",
             "options": [
-                {"code": "TONGA", "text": "Pravda", "correct": true},
-                {"code": "TONGA", "text": "Lož", "correct": false},
-                {"code": "TONGA", "text": "Len na hlavnom ostrove", "correct": false}
+                {
+                    "code": "TONGA",
+                    "text": "Pravda",
+                    "correct": true
+                },
+                {
+                    "code": "TONGA",
+                    "text": "Lož",
+                    "correct": false
+                },
+                {
+                    "code": "TONGA",
+                    "text": "Len na hlavnom ostrove",
+                    "correct": false
+                }
             ],
             "explanation": "Tonga má zachované tradičné spoločenstvo."
         },
         {
             "question": "Melanézia má rozmanité kultúry – platí to?",
             "options": [
-                {"code": "MELANESIA", "text": "Pravda", "correct": true},
-                {"code": "MELANESIA", "text": "Lož", "correct": false},
-                {"code": "MELANESIA", "text": "Len niektoré ostrovy", "correct": false}
+                {
+                    "code": "MELANESIA",
+                    "text": "Pravda",
+                    "correct": true
+                },
+                {
+                    "code": "MELANESIA",
+                    "text": "Lož",
+                    "correct": false
+                },
+                {
+                    "code": "MELANESIA",
+                    "text": "Len niektoré ostrovy",
+                    "correct": false
+                }
             ],
             "explanation": "Melanézia má rozmanité kultúry a prírodné prostredie."
         }
