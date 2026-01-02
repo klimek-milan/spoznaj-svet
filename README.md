@@ -42,10 +42,8 @@ After opening the project root directory, run:
 
 ```bash
 npm install
-
-
 ---
-
+---
 # Spoznaj svet 🎮
 
 **Spoznaj svet** je vzdelávacia geografická hra vytvorená ako webová aplikácia.
