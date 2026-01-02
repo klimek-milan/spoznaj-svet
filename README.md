@@ -1,25 +1,27 @@
 # Spoznaj svet 🎮
 
-**Spoznaj svet** is an educational geography game developed as a web application.
+## 🇬🇧 English version
+
+**Spoznaj svet** is an educational geography game developed as a web application.  
 The goal of the game is to test knowledge about countries and continents of the world in an engaging and interactive way.
 
 The project was created as a **team school project**.
 
 ---
 
-## ▶️ Play the game (online version)
+### ▶️ Play the game (online version)
 
 The game can be played directly in a web browser without any installation:
 
 👉 https://klimek-milan.github.io/spoznaj-svet/
 
-Recommended browsers:
+**Recommended browsers:**
 - Google Chrome
 - Microsoft Edge
 
 ---
 
-## 📂 Project source code
+### 📂 Project source code
 
 The complete source code of the project is available in this repository.
 
@@ -31,9 +33,9 @@ The repository contains:
 
 ---
 
-## 🛠 Local development setup
+### 🛠 Local development setup
 
-If you want to run the project locally or continue development, you need to have:
+To run the project locally or continue development, you need:
 
 - Node.js (LTS version)  
   https://nodejs.org
@@ -42,8 +44,10 @@ After opening the project root directory, run:
 
 ```bash
 npm install
----
----
+npm run dev
+
+## SK Slovenská verzia
+
 # Spoznaj svet 🎮
 
 **Spoznaj svet** je vzdelávacia geografická hra vytvorená ako webová aplikácia.
