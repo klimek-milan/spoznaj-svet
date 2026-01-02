@@ -1,47 +1,93 @@
-# Svelte + TS + Vite
+# Spoznaj svet 🎮
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+**Spoznaj svet** is an educational geography game developed as a web application.
+The goal of the game is to test knowledge about countries and continents of the world in an engaging and interactive way.
 
-## Recommended IDE Setup
+The project was created as a **team school project**.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+---
 
-## Need an official Svelte framework?
+## ▶️ Play the game (online version)
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+The game can be played directly in a web browser without any installation:
 
-## Technical considerations
+👉 https://klimek-milan.github.io/spoznaj-svet/
 
-**Why use this over SvelteKit?**
+Recommended browsers:
+- Google Chrome
+- Microsoft Edge
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+---
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+## 📂 Project source code
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+The complete source code of the project is available in this repository.
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+The repository contains:
+- application source files
+- game logic
+- user interface
+- project configuration files
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+---
 
-**Why include `.vscode/extensions.json`?**
+## 🛠 Local development setup
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+If you want to run the project locally or continue development, you need to have:
 
-**Why enable `allowJs` in the TS template?**
+- Node.js (LTS version)  
+  https://nodejs.org
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+After opening the project root directory, run:
 
-**Why is HMR not preserving my local component state?**
+```bash
+npm install
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+--------------------------------------------------------
 
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+# Spoznaj svet 🎮
+
+**Spoznaj svet** je vzdelávacia geografická hra vytvorená ako webová aplikácia.
+Cieľom hry je zábavnou formou preveriť znalosti o krajinách a kontinentoch sveta.
+
+Projekt vznikol ako školský tímový projekt.
+
+---
+
+## ▶️ Hranie hry (online verzia)
+
+Hru je možné hrať priamo v prehliadači bez nutnosti inštalácie:
+
+👉 https://klimek-milan.github.io/spoznaj-svet/
+
+Odporúčaný prehliadač:
+- Google Chrome
+- Microsoft Edge
+
+---
+
+## 📂 Zdrojový kód projektu
+
+Kompletný zdrojový kód projektu je dostupný v tomto repozitári.
+
+Repozitár obsahuje:
+- zdrojové súbory aplikácie
+- hernú logiku
+- používateľské rozhranie
+- konfiguračné súbory projektu
+
+---
+
+## 🛠 Spustenie projektu lokálne (vývoj)
+
+Ak si chce používateľ projekt spustiť lokálne alebo ho ďalej upravovať,
+je potrebné mať nainštalované:
+
+- Node.js (LTS verzia)  
+  https://nodejs.org
+
+Po otvorení projektu v koreňovom priečinku spustite:
+
+```bash
+npm install
