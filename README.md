@@ -44,7 +44,7 @@ After opening the project root directory, run:
 npm install
 
 
---------------------------------------------------------
+---
 
 # Spoznaj svet 🎮
 
